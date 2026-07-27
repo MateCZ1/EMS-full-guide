@@ -1,0 +1,96 @@
+{
+  "id": "ch15",
+  "number": "15",
+  "part": "II",
+  "title": "Propuštění z nemocnice a rehabilitace",
+  "icon": "graduation",
+  "intro": "Propuštění z nemocnice není konec péče — je to přechod na jinou úroveň péče. Špatně naplánované propuštění vede k opětovné hospitalizaci a horšímu výsledku pro pacienta.",
+  "sections": [
+    {
+      "id": "15.1",
+      "title": "Kritéria pro propuštění",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Kritéria pro propuštění z nemocnice",
+          "headers": ["Oblast", "Kritéria"],
+          "rows": [
+            ["Vitální funkce", "Stabilní bez nutnosti vazopresorů nebo kyslíkové podpory nad domácí normu pacienta"],
+            ["Bolest", "Zvladatelná perorálními analgetiky"],
+            ["Pohyblivost", "Schopen základní sebeobsluhy nebo zajištěna domácí péče / rehabilitační centrum"],
+            ["Edukace", "Pacient a rodina rozumí diagnóze, lékům, omezením a varovným příznakům"],
+            ["Sledování", "Domluvena kontrola u specialisty nebo praktického lékaře do 1–2 týdnů"],
+            ["Recepty", "Vystaveny recepty na pokračovací léčbu; vysvětleny vedlejší účinky"]
+          ]
+        }
+      ],
+      "summary": [
+        "Propuštění je přechod na jinou úroveň péče — špatně naplánované vede k opětovné hospitalizaci.",
+        "Šest oblastí: vitální funkce stabilní, bolest zvladatelná, pohyblivost, edukace, sledování, recepty.",
+        "Domluvená kontrola u specialisty do 1–2 týdnů je podmínkou bezpečného propuštění."
+      ]
+    },
+    {
+      "id": "15.2",
+      "title": "Rehabilitační zařízení — americký systém",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Rehabilitační zařízení — americký systém",
+          "headers": ["Typ zařízení", "Pro koho", "Intenzita péče"],
+          "rows": [
+            ["Acute Rehabilitation Unit (ARU)", "Mozková mrtvice, poranění míchy, amputace, TBI — fyzicky schopen 3 hod terapie denně", "Nejvyšší: fyzioterapie + ergoterapie + logopedie 3× denně"],
+            ["Skilled Nursing Facility (SNF)", "Pacienti potřebující ošetřovatelskou péči + nižší rehabilitaci; zlatý standard USA", "Střední: 1–2 hod terapie denně; 24hod ošetřovatelská péče"],
+            ["Long-Term Acute Care (LTACH)", "Ventilovaní pacienti; komplexní rány; chronicky kriticky nemocní", "Nemocniční úroveň ale na delší dobu"],
+            ["Domácí péče (Home Health)", "Pacient schopen být doma s podporou", "Fyzioterapeut a sestra docházejí domů"],
+            ["Ambulantní rehabilitace", "Pacienti schopní docházet sami", "Terapie 2–5× týdně; pacient bydlí doma"]
+          ]
+        }
+      ],
+      "summary": [
+        "ARU (Acute Rehab Unit): 3 hodiny terapie denně; pro CMP, TBI, poranění míchy — nejvyšší intenzita.",
+        "SNF (Skilled Nursing Facility): 1–2 hodiny terapie + 24h ošetřovatelská péče; zlatý standard USA.",
+        "LTACH (Long-Term Acute Care): pro ventilované pacienty a komplexní rány; nemocniční úroveň ale déle."
+      ]
+    },
+    {
+      "id": "15.3",
+      "title": "Časté farmakologické léky při propuštění a jejich edukace",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Časté farmakologické léky při propuštění a jejich edukace",
+          "headers": ["Lék", "Proč ho pacient bere", "Co mu říct"],
+          "rows": [
+            ["Aspirin 81 mg denně", "Po infarktu nebo CMP — prevence nové příhody", "Brát každý den; nepřestávat bez konzultace lékaře; nezapomínat"],
+            ["Ticagrelor / klopidogrel", "Po zavedení srdečního stentu — prevence uzávěru", "ABSOLUTNĚ NEPŘESTÁVAT bez konzultace kardiologa; vysazení může způsobit infarkt do 24 hodin"],
+            ["Betablokátory (metoprolol, karvedilol)", "Po infarktu nebo při srdečním selhání — chrání srdce", "Nepřestávat náhle — riziko návratu arytmie"],
+            ["LMWH nebo DOAC (antikoagulancia)", "Po trombóze, fibrilaci síní, kloubní náhradě", "Riziko krvácení; hlásit modřiny, krev v moči nebo stolici"],
+            ["Statiny (atorvastatin, rosuvastatin)", "Snižují cholesterol a záněty po infarktu", "Brát večer; hlásit svalové bolesti — riziko rhabdomyolýzy"],
+            ["Inhibitory ACE nebo ARB (ramipril, losartan)", "Po infarktu nebo při srdečním selhání; chrání ledviny", "Suchý kašel u ACE inhibitorů je normální vedlejší účinek"],
+            ["Antiepileptika (levetiracetam, valproát)", "Po záchvatech nebo TBI", "Nikdy nepřestávat náhle — záchvat z vysazení; neřídit auto 6 měsíců po záchvatu"],
+            ["Fyzioterapie", "Po zlomeninách, CMP, TBI, operacích páteře", "Domácí cvičební program; docházení na RHB; hlásit nové příznaky"]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "ZÁVĚR ČÁSTI II",
+          "text": "Části I a II spolu tvoří celistvý obraz péče o pacienta — od prvního kontaktu záchranáře na místě události přes příjem v nemocnici až po propuštění a rehabilitaci. Záchranář v terénu je prvním článkem řetězce; ale řetězec je jen tak silný, jako jeho nejslabší článek. Znalost toho, co se děje s pacientem po předání, pomáhá záchranáři lépe pochopit smysl svých rozhodnutí a zlepšit spolupráci s nemocniční péčí."
+        }
+      ],
+      "summary": [
+        "DAPT (aspirin + ticagrelor) po stentu: ABSOLUTNĚ nepřerušovat bez kardiologa; vysazení = smrt.",
+        "Betablokátory: nepřerušovat náhle — riziko záchvatovité arytmie.",
+        "Antiepileptika: nikdy nepřerušovat náhle — záchvat z vysazení; neřídit auto 6 měsíců po záchvatu.",
+        "Statiny: brát večer; hlásit svalové bolesti — riziko rhabdomyolýzy."
+      ]
+    }
+  ],
+  "chapterSummary": [
+    "Propuštění je přechod na jinou úroveň péče — špatně naplánované vede k opětovné hospitalizaci.",
+    "DAPT (aspirin + ticagrelor) po stentu: absolutně nepřerušovat bez kardiologa; vysazení = trombóza stentu = smrt.",
+    "Acute Rehabilitation Unit: 3 hodiny terapie denně; pro CMP, TBI, poranění míchy, amputace.",
+    "Edukace při propuštění: pacient musí rozumět diagnóze, lékům, omezením a varovným příznakům."
+  ]
+}

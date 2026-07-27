@@ -1,0 +1,295 @@
+{
+  "id": "ch02",
+  "number": "2",
+  "part": "I",
+  "title": "Vybavení záchranáře EMS",
+  "icon": "kit",
+  "abbrevs": [
+    { "a": "IV", "f": "do žíly (intravenózní)" },
+    { "a": "BVM", "f": "dýchací vak s maskou (Bag-Valve-Mask)" },
+    { "a": "NPA", "f": "nosní vzduchovod" },
+    { "a": "OPA", "f": "ústní vzduchovod (Guedelův)" },
+    { "a": "SpO2", "f": "saturace krve kyslíkem" },
+    { "a": "ETCO2", "f": "CO2 na konci výdechu" },
+    { "a": "AED", "f": "automatický defibrilátor" },
+    { "a": "TQ", "f": "turniket — škrtidlo" },
+    { "a": "NS", "f": "fyziologický roztok 0,9%" },
+    { "a": "RL", "f": "Ringerův laktát" }
+  ],
+  "terms": [
+    { "t": "Kanyla do žíly", "d": "plastová trubička zasouvaná do žíly — přes ni podáváme léky nebo tekutiny" },
+    { "t": "Turniket", "d": "škrtidlo přiložené na končetinu; musí být utažen dokud krvácení fyzicky nezastaví" },
+    { "t": "Saturace kyslíkem", "d": "procento hemoglobinu nasyceného kyslíkem; normálně 95–100 %" },
+    { "t": "Dýchací vak BVM", "d": "váček z gumy nebo silikonu — mačkáním vaku nafukujeme plíce pacienta" },
+    { "t": "Průsvit kanyly G", "d": "tloušťka kanyly — čím nižší číslo, tím silnější; 14G > 16G > 18G; u traumatu vždy 14G nebo 16G" }
+  ],
+  "intro": "Vybavení záchranáře se dělí dle místa uložení — nejdůležitější pomůcky musí být vždy u záchranáře, ne ve vozidle. Organizace vybavení musí být vždy stejná — záchranář sáhne poslepu, protože se dívá na pacienta.",
+  "sections": [
+    {
+      "id": "2.1",
+      "title": "Záchranářský batoh (Jump Bag)",
+      "lead": "Záchranářský batoh se nosí na každý výjezd. Plně naložený váží 10–12 kg. Organizace je standardizovaná — záchranář musí znát obsah nazpaměť.",
+      "terms": [
+        { "t": "Junkcionální krvácení", "d": "krvácení v místech kde turniket nelze přiložit — tříslo, podpaží, krk" },
+        { "t": "Hemostatická gáza", "d": "gáza napuštěná látkou urychlující srážení krve; drží se 3 minuty bez přerušení" },
+        { "t": "Kompresní obvaz", "d": "obvaz s vestavěnou kompresní lištou; drží tlak i bez záchranářovy ruky" },
+        { "t": "Polykací reflex", "d": "automatická ochranná reakce — svírání hrdla při dotyku; chybí u bezvědomých → hrozí aspirace" },
+        { "t": "Aspirace", "d": "vdechnutí cizí látky do průdušek — způsobuje zápal plic nebo ucpání dýchacích cest" },
+        { "t": "Větrací záplata s ventilkem", "d": "záplata s jednosměrným ventilkem — vzduch může unikat ven, ale nesmí vejít dovnitř" },
+        { "t": "Ringerův laktát", "d": "infúzní tekutina podobná krevní plazmě; preferovaná při traumatickém krvácení" },
+        { "t": "Fyziologický roztok (NS)", "d": "0,9% roztok chloridu sodného; pro proplach kanyly nebo ředění léků" },
+        { "t": "Tegaderm", "d": "průhledná samolepicí náplast — kryje kanylu a umožňuje vizuální kontrolu místa vpichu" },
+        { "t": "Imobilizace", "d": "znehybnění — zafixování poraněné části těla; snižuje bolest a zabraňuje dalšímu poranění" },
+        { "t": "Záchranná deka (thermal blanket)", "d": "fólie potažená kovem; odráží 90 % tělesného tepla zpět k pacientovi" },
+        { "t": "Titrace", "d": "postupné přidávání léku v malých dávkách dokud nedosáhneme účinku" },
+        { "t": "Antagonista", "d": "lék rušící účinek jiného léku — naloxon je antagonistou opioidů" },
+        { "t": "Kontraindikace", "d": "stav nebo situace ve které se lék nesmí podat" }
+      ],
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Oddíl A — Zastavení krvácení (červený váček — vždy navrchu)",
+          "headers": ["Pomůcka", "K čemu slouží a proč", "Počet"],
+          "rows": [
+            ["Turniket CAT", "Škrtidlo pro zastavení krvácení z končetin. Navrchu — krvácení z tepny zabíjí za 3 minuty.", "2 ks"],
+            ["Turniket SOFTT-W", "Záloha za CAT; lépe funguje na silných stehnech nebo u obézních pacientů.", "1 ks"],
+            ["Hemostatická gáza QuikClot", "Pro krvácení v tříslech, podpaží nebo krku kde turniket nelze přiložit.", "4 ks"],
+            ["Kompresní obvaz Israeli 6\"", "Tlakový obvaz s kompresní lištou; drží tlak i bez záchranářovy ruky.", "4 ks"],
+            ["Kompresní obvaz Israeli 4\"", "Menší verze pro předloktí nebo bérec — velký obvaz na malou ránu netěsní.", "4 ks"],
+            ["Permanentní fix (Sharpie)", "Zápis času přiložení turniketu na kůži — chirurg musí vědět jak dlouho turniket leží.", "2 ks"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Oddíl B — Dýchací cesty a dýchání (modrý váček)",
+          "headers": ["Pomůcka", "K čemu slouží a proč", "Počet"],
+          "rows": [
+            ["Nosní vzduchovod (NPA) vel. 6, 7, 8", "Měkká trubička zavedená nosem; průchodné DC u polobezvědomých. Lze použít i u pacienta s polykacím reflexem.", "3 ks"],
+            ["Ústní vzduchovod Guedel (OPA) S/M/L", "Pouze u pacienta v hlubokém bezvědomí — u vědomého vyvolá dávení a zvracení.", "3 ks"],
+            ["Dýchací vak s maskou (BVM)", "Mačkáním vaku nafukujeme plíce; nevyžaduje elektřinu; funguje všude.", "1 ks"],
+            ["Větrací záplata s ventilkem", "Pro penetrující rány hrudníku; ventilek zabraňuje vzniku tenzního pneumothoraxu.", "4 ks"],
+            ["Dekompresní jehla 14G / 8 cm", "Uvolnění přetlaku vzduchu stlačujícího srdce (tenzní PTX). Bez jehly smrt za 3–5 min.", "2 ks"],
+            ["Záchranářské nůžky (Trauma Shears)", "Stříhání oblečení, bezpečnostních pásů — pevné, stříhají džíny i kožené pásy.", "1 ks"],
+            ["Pulzní oxymetr", "Saturace kyslíkem a tepová frekvence; saturace pod 90 % není viditelná jinak.", "1 ks"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Oddíl C — Oběhový systém a přístup do žíly (zelený váček)",
+          "headers": ["Pomůcka", "K čemu slouží a proč", "Počet"],
+          "rows": [
+            ["Kanyla 14G (oranžová)", "Nejsilnější — maximální průtok pro rychlé podání krve nebo tekutin.", "4 ks"],
+            ["Kanyla 16G (šedá)", "Standardní silná kanyla pro dospělé při traumatu.", "4 ks"],
+            ["Kanyla 18G (zelená)", "Pro podání léků nebo u křehkých žil.", "4 ks"],
+            ["Tegaderm — průhledná nálepka", "Fixace kanyly a vizuální kontrola místa vpichu — vidíte otoky bez sejmutí.", "10 ks"],
+            ["Infúzní set", "Propojuje vak s tekutinou a kanylu v žíle.", "4 ks"],
+            ["Fyziologický roztok 0,9% — 500 ml", "Doplnění objemu, proplach, ředění léků.", "2 vaky"],
+            ["Ringerův laktát — 500 ml", "Preferovaná tekutina při traumatu — složení bližší krevní plazmě.", "2 vaky"],
+            ["Stříkačky 2, 5, 10, 20 ml", "Nabírání a podávání léků; různé velikosti pro různé léky a dávky.", "Sada"],
+            ["Alkoholové tampóny", "Dezinfekce kůže před vpichem — bez dezinfekce = bakterie zanesené do žíly = sepse.", "20 ks"],
+            ["Tonometr (manžeta na krevní tlak)", "Měření krevního tlaku — bez znalosti tlaku nerozpoznáte šok.", "1 ks"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Oddíl D — Znehybnění a krytí ran",
+          "headers": ["Pomůcka", "K čemu slouží a proč", "Počet"],
+          "rows": [
+            ["Krční límec Stifneck Select (nastavitelný)", "Znehybní krční páteř — špatná velikost může způsobit hyperextenzi a zhoršit poranění míchy.", "1 ks"],
+            ["Sterilní gázy 4×4 palce", "Krytí ran, vstřebávání krve — sterilní, aby se nezanesly bakterie do rány.", "20 ks"],
+            ["Sterilní gázy 8×8 palce", "Velká zranění a rány hrudníku — menší gáza na velkou ránu nepokryje celý obvod.", "10 ks"],
+            ["Elastické obinadlo ACE wrap 4\"", "Komprese a fixace — bandážujte vždy od distálu k proximálu (od ruky ke středu těla).", "6 ks"],
+            ["Trojcípý šátek", "Závěs paže, improvizovaná dlaha — všestranný a lehký.", "3 ks"],
+            ["Záchranná deka (thermal blanket)", "Prevence podchlazení — podchlazení tvoří část smrtelné trojice.", "3 ks"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Oddíl E — Léky (pouze záchranář-paramedik nebo lékař). Léky smí podávat výhradně záchranář-paramedik nebo lékař. Každé podání: název, dávka v mg, cesta podání, čas, odpověď pacienta."
+        },
+        {
+          "type": "table",
+          "caption": "Oddíl E — Léky (pouze záchranář-paramedik nebo lékař)",
+          "headers": ["Lék", "Proč se podává", "Jak a kolik", "Nepodávat pokud"],
+          "rows": [
+            ["Morfin", "Silná bolest — snižuje bolest a stres na srdce", "2–5 mg IV titrací", "TK pod 90; útlum dýchání"],
+            ["Fentanyl", "Silná bolest; rychlý nástup; podání i nosem", "25–100 mcg IV; 2 mcg/kg nosem", "Mít BVM připravený"],
+            ["Adrenalin silný (1:1 000)", "Těžká alergická reakce (anafylaxe)", "0,3–0,5 mg IM na stehno", "—"],
+            ["Adrenalin ředěný (1:10 000)", "Zástava srdce", "1 mg IV nebo kost každé 3–5 min", "—"],
+            ["Midazolam (Versed)", "Záchvat, uklidnění, příprava před intubací", "2–5 mg IV; 10 mg nosem", "Těžká porucha dýchání"],
+            ["Naloxon (Narcan)", "Předávkování opioidy — ruší jejich účinek", "0,4–2 mg IV/IM/nosem; opakovat", "Opatrně u závislých"],
+            ["Dextróza 50%", "Nízká hladina cukru v krvi", "25 g (50 ml) IV pomalu", "Pouze po potvrzení glukometrem"],
+            ["Ondansetron (Zofran)", "Nevolnost a zvracení — prevence aspirace", "4 mg IV nebo IM", "—"],
+            ["Aspirin žvýkací", "Infarkt — inhibice shlukování destiček", "324 mg (4 tablety) žvýkat", "Alergie; krvácení do žaludku"],
+            ["Nitroglycerin spray", "Bolest na hrudi, infarkt", "0,4 mg pod jazyk; opakovat po 5 min", "TK pod 90; infarkt pravé komory; Viagra do 48 h"]
+          ]
+        }
+      ],
+      "summary": [
+        "Oddíl A (červený) je vždy navrchu — krvácení z tepny zabíjí za 3 minuty, turniket musí být okamžitě po ruce.",
+        "Turniket: přiložit 5–8 cm nad ránu, utahovat dokud krvácení fyzicky nezastaví, zapsat čas.",
+        "Hemostatická gáza pro krvácení v tříslech, podpaží a krku — přidržet minimálně 3 minuty bez uvolnění.",
+        "Kanyla 14G nebo 16G u traumatu — silnější kanyla = rychlejší přívod tekutin a léků.",
+        "Léky smí podávat výhradně záchranář-paramedik nebo lékař; každé podání dokumentovat okamžitě."
+      ]
+    },
+    {
+      "id": "2.2",
+      "title": "Vybavení sanitky",
+      "lead": "Americká ALS sanitka je mobilní jednotka intenzivní péče. Záchranář musí znát umístění každé položky nazpaměť ještě před prvním výjezdem.",
+      "terms": [
+        { "t": "Kapnometrie (ETCO2)", "d": "měření CO2 na konci výdechu — potvrzuje intubaci; při KPR ukazuje kvalitu masáže" },
+        { "t": "Vakuová matrace", "d": "polštář ze kterého se odsaje vzduch — ztuhne kolem pacienta a znehybní celé tělo" },
+        { "t": "Trakční dlaha", "d": "dlaha táhnoucí kost do osy — snižuje krvácení do stehna o 500–1000 ml" }
+      ],
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Kabina pacienta — pevně zabudované vybavení",
+          "headers": ["Zařízení", "K čemu slouží a proč"],
+          "rows": [
+            ["Nosítka (Power-Pro XT)", "Samonakládací, výškově nastavitelná, RTG průhledná deska — lze snímat bez přesunu pacienta."],
+            ["Monitor a defibrilátor (Zoll X Series nebo Lifepak 15)", "12-svodové EKG, SpO2, ETCO2, NIBP, IBP, teplota; defibrilace, kardioverze, stimulace — vše v jednom."],
+            ["Transportní ventilátor (Hamilton T1)", "Přebírá dýchání za intubovaného pacienta — záchranářova ruka unaví za 15 minut."],
+            ["Elektrická odsávačka (Laerdal LSU)", "Odsává krev a zvratky; výkon 300 mmHg — krev je hustá, slabá odsávačka ji nezasaje."],
+            ["Kyslíkový systém (D/E lahve + centrální přívod)", "Kyslík pro masku, nosní brýle, nebulizér, BVM — záloha v lahvích pokud selže centrální přívod."],
+            ["Infúzní pumpy ×2 (Braun Perfusor)", "Přesné dávkování léků — pohyb sanitky mění průtok gravitační kapačky; pumpa drží přesnou dávku."],
+            ["Videolaryngoskop", "Kamera na čepeli — krev nebo otoky zakryjí přímý pohled; kamera vidí za rohem."],
+            ["Vakuová matrace", "Ztuhne kolem těla; rovnoměrný tlak bez tlakových lézí kůže — lepší než tvrdá páteřní deska."],
+            ["Trakční dlaha (Sager nebo Hare)", "Trakce za zlomenou stehenní kost sníží krvácení o 500–1000 ml — povinně při každé femur fraktuře."],
+            ["Intraoseální vrtačka EZ-IO", "Záchranný přístup do kostní dřeně — se nehroutí ani při nejhorším šoku; funguje do 60 sekund."],
+            ["FAST ultrazvuk (přenosný)", "Krev v břiše, kolem srdce, vzduch v pohrudnici — CT je až v nemocnici, ultrazvuk pracuje za jízdy."],
+            ["Ohřívač infúzních roztoků", "Ohřeje tekutiny na 37 °C — studená infúze způsobí podchlazení, které tvoří smrtelnou trojici."]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Lékový box sanitky. Léky jsou v plombovaném boxu, který se po každém použití zkontroluje, doplní a plombuje."
+        },
+        {
+          "type": "table",
+          "caption": "Lékový box sanitky",
+          "headers": ["Lék", "Indikace a proč", "Dávka"],
+          "rows": [
+            ["Adrenalin ředěný (1:10 000)", "Zástava srdce — stimuluje srdce a stahuje cévy", "1 mg IV/kost každé 3–5 min"],
+            ["Adrenalin silný (1:1 000)", "Anafylaxe — stáhne rozšířené cévy a otevře průdušky", "0,3–0,5 mg IM na stehno"],
+            ["Amiodaron", "Fibrilace komor nebo bezpulsová komorová tachykardie", "300 mg IV; záloha 150 mg"],
+            ["Atropin", "Příliš pomalý srdeční rytmus ohrožující oběh", "0,5 mg IV; maximum 3 mg"],
+            ["Morfin", "Silná bolest — snižuje i stres na srdce", "2–5 mg IV titrací"],
+            ["Fentanyl", "Silná bolest; rychlejší nástup než morfin", "25–100 mcg IV; 2 mcg/kg nosem"],
+            ["Ketamin", "Silná bolest + zachování vědomí; příprava před intubací", "0,3–2 mg/kg IV dle indikace"],
+            ["Midazolam (Versed)", "Záchvat, sedace, příprava před intubací", "2–5 mg IV/IM; 10 mg nosem"],
+            ["Sukcinylcholin (Anectine)", "Krátkodobé uvolnění svalů pro intubaci (RSI)", "1,5 mg/kg IV"],
+            ["Rokuronium (Zemuron)", "Delší uvolnění svalů (záloha za sukcinylcholin)", "1,2 mg/kg IV"],
+            ["Sugammadex (Bridion)", "Okamžitá reverze rokuronia při neúspěšné intubaci", "16 mg/kg IV"],
+            ["Naloxon (Narcan)", "Předávkování opioidy", "0,4–2 mg IV/IM/nosem; opakovat"],
+            ["Nitroglycerin spray", "Infarkt, bolest na hrudi, plicní edém", "0,4 mg pod jazyk; ne při TK pod 90"],
+            ["Aspirin 81 mg žvýkací", "Infarkt — blokuje shlukování destiček", "324 mg (4 tablety) žvýkat"],
+            ["Dextróza 50%", "Hypoglykémie (nízký cukr)", "25–50 g pomalu IV"],
+            ["Hydrokortizón 200 mg", "Anafylaxe, adrenální krize", "200 mg IV"],
+            ["Ondansetron (Zofran)", "Nevolnost a zvracení", "4 mg IV/IM"],
+            ["Albuterol inhalace", "Bronchospasmus (astma, anafylaxe)", "2,5 mg nebulizací"],
+            ["Fyziologický roztok 250/500/1000 ml", "Doplnění objemu, proplach, ředění", "IV dle stavu"],
+            ["Ringerův laktát 500 ml", "Preferovaná tekutina při traumatu", "IV dle stavu"],
+            ["Hydroxokobalamin (Cyanokit)", "Otrava kyanidem", "5 g IV za 15 minut"]
+          ]
+        }
+      ],
+      "summary": [
+        "Sanitka je mobilní JIP — ventilátor, monitor, defibrilátor, pumpy, videolaryngoskop, vakuová matrace.",
+        "Trakční dlaha je povinná u každé zlomeniny stehenní kosti — bez trakce se do stehna vylije 1–3 litry krve.",
+        "EZ-IO vrtačka je záchranný přístup při selhání žilní kanyly — kostní dřeň se nehroutí ani při šoku.",
+        "Lékový box je plombovaný a po každém použití okamžitě doplněn.",
+        "FAST ultrazvuk diagnostikuje smrtelné krvácení za jízdy — CT je teprve v nemocnici."
+      ]
+    },
+    {
+      "id": "2.3",
+      "title": "Rychlý výjezdový vůz (QRV)",
+      "abbrevs": [
+        { "a": "QRV", "f": "Quick Response Vehicle — rychlý výjezdový vůz; dorazí před sanitkou a zahájí péči" }
+      ],
+      "lead": "QRV dorazí na místo dříve než sanitka a zahájí záchrannou péči. Projede dopravní zácpou nebo úzkými uličkami. Sanitka pak transportuje.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Vybavení rychlého výjezdového vozu QRV",
+          "headers": ["Vybavení", "Počet", "Proč právě toto v QRV"],
+          "rows": [
+            ["Záchranářský batoh (plně vybavený — oddíly A–E)", "1 ks", "QRV záchranář musí zahájit péči bez sanitky — musí mít vše"],
+            ["Automatický defibrilátor AED (Zoll AED Plus)", "1 ks", "Hlasové pokyny; každá minuta bez výboje snižuje přežití VF o 10 %"],
+            ["Přenosný monitor s defibrilátorem", "1 ks", "SpO2, 3-svodové EKG, NIBP — okamžitý přehled vitálních funkcí"],
+            ["Přenosná kyslíková lahev + sada masek", "1 ks", "Kyslík je nejzákladnější léčivý plyn; musí být dostupný okamžitě"],
+            ["Přenosná odsávačka (bateriová)", "1 ks", "Krev nebo zvratky v DC = aspirace; musí fungovat bez elektřiny"],
+            ["Páteřní deska + 6 pásů + fixátor hlavy", "1 souprava", "Kompletní sada pro znehybnění páteře"],
+            ["Krční límce Stifneck S, M, L, XL", "4 ks", "Vždy kompletní sada — špatná velikost může zhoršit poranění míchy"],
+            ["Záchranné deky + termoizolační přikrývky", "6 ks", "Prevence podchlazení u každého traumatizovaného pacienta"],
+            ["Trakční dlaha Sager (jednoramenná)", "1 ks", "Zlomenina femuru — bez trakce vteče do stehna 2–3 litry krve"],
+            ["Pánevní pás T-POD", "1 ks", "Nestabilní pánev krvácí až 5 litrů — pás tento objem výrazně snižuje"],
+            ["Nitrilové rukavice (S, M, L, XL)", "50 párů", "Vyměňovat mezi pacienty nebo při protržení"],
+            ["Hasicí přístroj práškový 2,5 lb", "1 ks", "Požár vozidla u dopravní nehody"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "QRV zahájí péči a stabilizuje pacienta; sanitka transportuje. Vždy komunikujte rozmístění s dispečinkem."
+        }
+      ],
+      "summary": [
+        "QRV dorazí první a zahájí péči; sanitka transportuje — koordinace zkracuje dobu péče.",
+        "AED v QRV: každá minuta bez výboje při VF snižuje přežití o 10 %.",
+        "Pánevní pás T-POD a trakční dlaha musejí být v QRV — krvácení z pánve nebo femuru nezačíná čekat na sanitku."
+      ]
+    },
+    {
+      "id": "2.4",
+      "title": "Záchranný vrtulník (HEMS)",
+      "terms": [
+        { "t": "HEMS", "d": "Helicopter Emergency Medical Services — letecká záchranná zdravotní služba" },
+        { "t": "Zlatá hodina", "d": "první hodina od poranění kdy je šance na přežití nejvyšší — HEMS ji zkracuje" },
+        { "t": "Hoist", "d": "kabel se záchranným sedákem; umožňuje spuštění záchranáře tam kde vrtulník nemůže přistát" }
+      ],
+      "lead": "Záchranný vrtulník se nasazuje pro stavy bezprostředně ohrožující život, kde pozemní transport trvá příliš dlouho nebo je terén nepřístupný.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Kritéria pro aktivaci záchranného vrtulníku",
+          "headers": ["Indikace", "Proč právě vrtulník"],
+          "rows": [
+            ["Polytrauma — více poranění + GCS pod 13", "Vzdálené trauma centrum Level I; pozemní transport trvá příliš dlouho"],
+            ["STEMI — transport do katetrizace nad 90 min", "Každá minuta uzávěru věnčité tepny = odumřelé buňky srdce"],
+            ["Mrtvice — příznaky do 4,5 hodiny od LKW", "tPA musí být podána do 4,5 hodiny; vrtulník ušetří rozhodující minuty"],
+            ["Těžké TBI — GCS pod 8", "Neurochirurgická intervence do 1–2 hodin; vzdálené nemocnice ji nemají"],
+            ["Těžké popáleniny nad 20 % BSA", "Popáleninové centrum je zpravidla daleko"],
+            ["Utonutí v chladné vodě se zástavou srdce", "ECMO ohřívání je jen ve specializovaných centrech"],
+            ["Terénní záchrana — hory, voda, nepřístupné místo", "Pozemní záchrana by trvala hodiny nebo je fyzicky nemožná"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Pevné vybavení záchranného vrtulníku",
+          "headers": ["Zařízení", "K čemu slouží"],
+          "rows": [
+            ["Lifepak 15 — monitor a defibrilátor", "12-svodové EKG, SpO2, ETCO2, IBP, teplota — plnohodnotná JIP monitorace i za letu"],
+            ["Transportní ventilátor Oxylog 3000+", "Odolný vůči vibracím — nemocniční ventilátory by pohybem měnily nastavení"],
+            ["Infúzní pumpy ×2", "Přesné dávkování — gravitační kapačka mění průtok s náklonem vrtulníku"],
+            ["Videolaryngoskop C-MAC", "Intubace ve stísněném prostoru kabiny — přímý pohled je ve vzduchu fyzicky nemožný"],
+            ["FAST ultrazvuk (Mindray)", "Rychlá diagnostika krvácení za letu — CT je až v nemocnici"],
+            ["Záchranný navijákový systém (Hoist)", "Spuštění záchranáře a vytažení pacienta tam kde vrtulník nemůže přistát"]
+          ]
+        }
+      ],
+      "summary": [
+        "HEMS aktivace při STEMI nad 90 minut, TBI GCS pod 8, polytraumatu nebo terénní záchraně.",
+        "Vrtulník = totožné JIP vybavení jako sanitka, ale odolné vibracím a s Hoistovým systémem.",
+        "Hoist je nezastupitelný při záchranách tam kde vrtulník nemůže přistát (hory, voda, střechy)."
+      ]
+    }
+  ],
+  "chapterSummary": [
+    "QRV dorazí první a zahájí péči; sanitka transportuje — spolupráce zkracuje dobu do ošetření.",
+    "Vrtulník HEMS se aktivuje při STEMI nad 90 minut, TBI s GCS pod 8, polytraumatu nebo terénní záchraně.",
+    "Vrtulník má identické JIP vybavení jako sanitka, ale speciálně upravenou verzi odolnou vibracím.",
+    "Hoist je nezastupitelný při záchranách v horách nebo na vodní hladině."
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "ch06",
+  "number": "6",
+  "part": "I",
+  "title": "Komunikace, dokumentace a předání pacienta",
+  "icon": "radio",
+  "sections": [
+    {
+      "id": "6.1",
+      "title": "Rádiový protokol",
+      "terms": [
+        { "t": "Avizace (Pre-notification)", "d": "telefonické nebo rádiové oznámení nemocnici před příjezdem; aktivuje trauma tým; ušetří 20–30 minut" },
+        { "t": "ETA", "d": "Estimated Time of Arrival — odhadovaný čas příjezdu" },
+        { "t": "Clear text", "d": "komunikace v přirozeném jazyce místo kódů; americká praxe se přesouvá od kódů (\"Code 3\") k popisnému jazyku" }
+      ],
+      "lead": "Rádiová komunikace musí být STRUČNÁ, STRUKTUROVANÁ a JEDNOZNAČNÁ. PROČ: na frekvenčním kanálu mluví více jednotek; dlouhá hlášení blokují ostatní; stresová situace zkracuje toleranci nepřesností.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Standardní rádiová hlášení",
+          "headers": ["Situace", "Standardní hlášení", "PROČ právě tato forma"],
+          "rows": [
+            ["Výjezd", "Dispečink, [označení vozu], vyjíždíme na [adresa], odhadovaný příjezd [čas]", "Dispečink ví kdo jede, kam a kdy dorazí; ostatní jednotky vědí, která je obsazena"],
+            ["Příjezd na místo", "Dispečink, [označení vozu] na místě, [1 věta o situaci], hlásím [X] zraněných", "Dispečink aktualizuje stav výjezdu; \"1 věta o situaci\" dá zbytku systému kontext"],
+            ["Žádost o posilu", "Dispečink, žádám zálohu [záchranku/policii/hasiče], důvod: [1 věta], priorita P1/P2", "Konkrétní záloha; konkrétní důvod; priorita určuje rychlost odezvy"],
+            ["Stav pacienta", "Dispečink, pacient P1: muž ~40 let, GCS 10, TK 85/50, puls 120, střelná rána hrudníku, stabilizuji", "Dispečink ví závažnost; může vyslat ALS zálohu nebo informovat nemocnici"],
+            ["Avizace nemocnici", "Dispečink, avizace do [nemocnice]: pacient P1 — aktivace STEMI; ETA 8 minut", "Nemocnice připraví sál; PROČ kategorizovat: \"aktivace STEMI\" = katetrizační tým se vzbudí"],
+            ["Předání", "Dispečink, pacient předán v [čas], [označení vozu] k dispozici", "Dispečink uzavře výjezd; jednotka je volná pro další výjezd"]
+          ]
+        }
+      ],
+      "summary": [
+        "Rádiová komunikace: stručná, strukturovaná, jednoznačná — na kanálu mluví více jednotek.",
+        "Avizace nemocnici vždy před příjezdem — ušetří 20–30 minut přípravy trauma týmu.",
+        "Označte typ aktivace: \"STEMI alert\", \"trauma aktivace\", \"iktová aktivace\" — nemocnice se připraví."
+      ]
+    },
+    {
+      "id": "6.2",
+      "title": "Předání pacienta — metoda SBAR",
+      "abbrevs": [
+        { "a": "SBAR", "f": "Situation, Background, Assessment, Recommendation — strukturovaný formát předání pacienta" }
+      ],
+      "terms": [
+        { "t": "Předání (Handoff)", "d": "přenesení zodpovědnosti za pacienta na jinou osobu nebo oddělení; nejrizikovější okamžik v péči o pacienta" },
+        { "t": "Kritické informace", "d": "informace, jejichž opomenutí může způsobit poranění nebo smrt pacienta; musí být vždy předány" }
+      ],
+      "lead": "Předání pacienta je nejrizikovější okamžik v celém záchranném procesu — více pacientů zemře na špatné předání než na špatnou léčbu. PROČ SBAR: strukturovaný formát zabraňuje opomenutí kritické informace; kompletní SBAR trvá 45–60 sekund.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Struktura SBAR",
+          "headers": ["Složka", "Obsah — co říkáme", "Příklad"],
+          "rows": [
+            ["S — Situace", "Kdo, co se stalo, identita pacienta", "Přivážím 35letého muže, řidiče, čelní náraz při vysoké rychlosti"],
+            ["B — Zázemí", "Anamnéza, mechanismus, co jsme udělali", "Bezvědomí na místě; KPR 8 minut; ROSC; podezření na TBI a poranění hrudníku; alergie neznámé"],
+            ["A — Hodnocení", "Aktuální vitální funkce a klinický závěr", "GCS 8, zornice vpravo 3 vlevo 5 (anizokorie!), TK 92/60, puls 118, SpO2 95 % na 100 % O2, intubován, ETCO2 38"],
+            ["R — Doporučení", "Co pacient okamžitě potřebuje", "Žádám aktivaci trauma týmu; urgentní CT mozku a pan-scan; konzultace neurochirurga"]
+          ]
+        }
+      ],
+      "summary": [
+        "Předání je nejrizikovější okamžik v celém záchranném procesu — špatné předání zabíjí.",
+        "SBAR: Situace → Zázemí → Hodnocení → Doporučení; kompletní SBAR trvá 45–60 sekund.",
+        "Anizokorie (nestejné zornice), TK a GCS jsou kritické informace — vždy předat jako první."
+      ]
+    },
+    {
+      "id": "6.3",
+      "title": "Dokumentace výjezdu (PCR — Patient Care Report)",
+      "abbrevs": [
+        { "a": "PCR", "f": "Patient Care Report — záznam o výjezdu; právní, klinický a fakturační dokument" },
+        { "a": "AMA", "f": "Against Medical Advice — záchranář odmítl; pacient informován; podpis pacienta povinný" },
+        { "a": "DNR", "f": "Do Not Resuscitate — právní dokument; záchranář MUSÍ respektovat; jinak se jedná o přepadení" },
+        { "a": "POLST", "f": "Physician Orders for Life-Sustaining Treatment — americký ekvivalent českého dříve vysloveného přání; závazný pro záchranáře" }
+      ],
+      "lead": "PCR (Patient Care Report — záznam o výjezdu) je PRÁVNÍ dokument. PROČ přesná dokumentace: soud může posuzovat péči; \"nezapsané = neudělané\"; záchranář bez záznamu nemůže prokázat že lék podal nebo pacienta informoval.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Co se dokumentuje ve výjezdu",
+          "headers": ["Co zapisujeme", "Požadovaná úroveň detailu", "PROČ"],
+          "rows": [
+            ["Identifikace výjezdu", "Číslo záznamu, datum, posádka, číslo vozu, certifikáty záchranářů", "Právní identifikace kdo byl u výjezdu; certifikát určuje co mohl záchranář dělat"],
+            ["Přesné časy", "Výzva, výjezd, příjezd na místo, odjezd, příjezd do nemocnice, dostupnost", "Čas = legalita; \"přijeli za 8 minut\" vs. \"přijeli v 14:23\" — pouze přesný čas obstojí u soudu"],
+            ["Vitální funkce s časem", "GCS, TK, puls, SpO2, dechová frekvence, teplota, glykémie — VŽDY s přesným časem; u kritického opakovat každé 5 minut", "Trend vitálních funkcí = klinická dokumentace průběhu; jeden odběr nestačí"],
+            ["Každý výkon s časem", "\"14:23 — kanyla 16G pravá loketní jamka, průchodná, Ringerův laktát 500 ml spuštěn\"", "Přesný čas výkonu prokáže kdy byl pacient ošetřen; vylučuje pochybení"],
+            ["Každý lék s časem a odpovědí", "\"14:25 — morfin 4 mg IV; bolest ze 9 na 5 za 10 minut; bez nežádoucích účinků\"", "Nežádoucí účinky léku musí být zdokumentovány; jinak nemocnice neví"],
+            ["Turniket — POVINNÝ ZÁPIS", "Místo přiložení; ČAS PŘILOŽENÍ", "Chirurg musí vědět jak dlouho turniket leží = rozhoduje o riziku amputace; ztráta tohoto záznamu = obrovská odpovědnost"],
+            ["Odmítnutí péče (AMA)", "Co záchranář vysvětlil; jak posoudil způsobilost pacienta; podpis pacienta; svědek", "Dokumentace chrání záchranáře; bez záznamu = záchranář neinformoval; záchranář neopustil pacienta svévolně"]
+          ]
+        }
+      ],
+      "summary": [
+        "PCR (záznam o výjezdu) je právní dokument — nezapsané = neudělané před soudem.",
+        "Každý výkon s přesným časem; každý lék s dávkou, cestou podání a odpovědí pacienta.",
+        "Turniket: čas přiložení je povinný zápis — bez záznamu chirurg neví jak dlouho turniket leží.",
+        "Odmítnutí péče (AMA): zdokumentovat informování, způsobilost pacienta, podpis a svědka."
+      ]
+    }
+  ],
+  "chapterSummary": [
+    "Rádiová komunikace: stručná, strukturovaná, jednoznačná — na kanálu mluví více jednotek.",
+    "SBAR předání: Situace → Zázemí → Hodnocení → Doporučení; kompletní SBAR trvá 45–60 sekund.",
+    "Avizujte nemocnici vždy před příjezdem — ušetříte 20–30 minut přípravy trauma týmu.",
+    "PCR (záznam o výjezdu) je právní dokument: každý výkon s přesným časem, každý lék s odpovědí pacienta.",
+    "Turniket: čas přiložení je povinný zápis — bez záznamu chirurg neví jak dlouho turniket leží."
+  ]
+}

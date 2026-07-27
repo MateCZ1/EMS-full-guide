@@ -1,0 +1,163 @@
+{
+  "id": "ch01",
+  "number": "1",
+  "part": "I",
+  "title": "Úvod a základní principy",
+  "icon": "compass",
+  "abbrevs": [
+    { "a": "EMS", "f": "záchranná zdravotní služba" },
+    { "a": "ALS", "f": "pokročilá záchranná péče (Advanced Life Support)" },
+    { "a": "BLS", "f": "základní záchranná péče (Basic Life Support)" },
+    { "a": "EMT", "f": "záchranář-technik (Emergency Medical Technician)" },
+    { "a": "PPE", "f": "osobní ochranné prostředky (Personal Protective Equipment)" },
+    { "a": "911", "f": "americká tísňová linka" }
+  ],
+  "terms": [
+    { "t": "Protokol", "d": "závazný pracovní postup — sled kroků, který záchranář musí dodržet; chrání pacienta i záchranáře právně" },
+    { "t": "Priorita", "d": "pořadí důležitosti — co se řeší jako první; nerespektování priorit způsobuje zbytečná úmrtí" },
+    { "t": "Triáž", "d": "třídění pacientů podle závažnosti stavu" },
+    { "t": "Dispečink", "d": "středisko přijímající tísňová volání a vysílající záchranné vozy" }
+  ],
+  "intro": "Záchranář je první zdravotník, který se dostane k pacientovi — jeho rozhodnutí v prvních minutách určuje, zda pacient přežije. U každého kroku je vysvětleno proč se dělá — záchranář, který rozumí logice, správně zareaguje i v situaci, kterou žádný protokol nepředvídal.",
+  "sections": [
+    {
+      "id": "1.1",
+      "title": "Struktura amerického systému EMS",
+      "lead": "Americký systém rozlišuje úrovně záchranářů — ne každý výjezd vyžaduje stejnou péči.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Úrovně záchranářů v americkém systému EMS",
+          "headers": ["Úroveň", "Označení", "Co záchranář smí dělat"],
+          "rows": [
+            ["Základní", "EMT — Záchranář-technik", "Resuscitace, AED, kyslík, obvazování, imobilizace, transport. Zvládne 80 % všech výjezdů."],
+            ["Střední", "AEMT", "Vše jako EMT, navíc IV přístup a omezené léky. Meziúroveň."],
+            ["Plná pokročilá péče", "Paramedic", "Vše výše + intubace, kompletní léky, 12-svodové EKG, kardioverze."],
+            ["Lékař", "Medical Director", "Dohled nad systémem, pokročilé výkony. Zodpovídá za protokoly."]
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "ems-levels"
+        }
+      ],
+      "summary": [
+        "Tři úrovně záchranářů: EMT (základní), AEMT (střední), Paramedic (pokročilá).",
+        "Paramedik = mobilní intenzivní péče: intubace, kompletní léky, 12-svodové EKG.",
+        "80 % všech výjezdů zvládne záchranář-technik (EMT) bez pokročilé péče."
+      ]
+    },
+    {
+      "id": "1.2",
+      "title": "Základní zásady záchranáře",
+      "lead": "Tyto zásady fungují jako automatický manuál chování i tehdy, kdy mozek přestane jasně přemýšlet.",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Profesionalita: Jednejte klidně a rozhodně i pod tlakem. Panika záchranáře se přenáší na pacienta.",
+            "Týmová práce: Komunikujte jasně a sdílejte informace. Špatná komunikace způsobila více zbytečných smrtí než špatné vybavení.",
+            "Dokumentace: Každý výkon se zapíše okamžitě. Nezapsané = neudělané — právně i medicínsky.",
+            "Etika: Pacient má právo péči odmítnout. Záchranář informuje o rizicích, zdokumentuje odmítnutí a odejde.",
+            "Bezpečnost: Vaše bezpečnost je priorita č. 1. Zraněný záchranář přibývá jako oběť místo záchranáře."
+          ]
+        }
+      ],
+      "summary": [
+        "Pět pilířů: profesionalita, týmová práce, dokumentace, etika, bezpečnost.",
+        "Klidný hlas záchranáře prokazatelně snižuje bolest a paniku pacienta.",
+        "Nezapsané = neudělané — záchranář bez záznamu nemůže právně prokázat žádný výkon."
+      ]
+    },
+    {
+      "id": "1.3",
+      "title": "Pravidla bezpečnosti na místě zásahu",
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "KRITICKÉ PRAVIDLO",
+          "text": "Záchranáři EMS nevstupují na místo aktivní střelby, výbuchu ani jiné přímé hrozby. Čekáte za krytem, dokud policie nepotvrdí bezpečnost. Jeden zraněný záchranář = méně pomoci pro původní pacienty."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Přijeďte z návětrné strany a ze svahu — při úniku nebezpečné látky vám vítr nesmí zanést jed k vám",
+            "Zaparkujte záchranné vozidlo čelem ke scéně, 15 metrů za místem — vozidlo jako ochranná bariéra",
+            "Ochranné rukavice, brýle a masku oblečte před výstupem z vozidla — bez PPE se viry z krve přenesou",
+            "CBRN podezření (chemikálie, biologické látky, radiace) — nevstupujte; volejte specializovaný tým"
+          ]
+        }
+      ],
+      "summary": [
+        "EMS nevstupuje na místo aktivní střelby ani přímé hrozby — bezpečnost záchranáře je absolutní priorita.",
+        "CBRN hrozby: bez speciálního obleku záchranář = oběť do 60 sekund.",
+        "Zaparkujte 15 m za místem čelem ke scéně — vozidlo jako ochranná bariéra, čelem = rychlý odjezd.",
+        "Ochranné rukavice, brýle a maska vždy před výstupem z vozidla."
+      ]
+    },
+    {
+      "id": "1.4",
+      "title": "Pořadí priorit záchranáře",
+      "lead": "Toto pořadí se zdá sobecké — ale mrtvý záchranář nepomůže nikomu.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Pořadí priorit na místě zásahu",
+          "headers": ["Priorita", "Kdo nebo Co", "Proč"],
+          "rows": [
+            ["1.", "Bezpečnost záchranáře (vy sami)", "Nemůžete pomáhat ze sanitky nebo z nemocnice"],
+            ["2.", "Bezpečnost ostatních členů posádky", "Váš partner je váš záložní záchranář"],
+            ["3.", "Bezpečnost ostatních osob na místě", "Svědci se mohou stát dalšími pacienty"],
+            ["4.", "Péče o pacienta", "Teprve když jsou první tři splněny"]
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "priority-pyramid"
+        }
+      ],
+      "summary": [
+        "Pořadí: záchranář → posádka → ostatní osoby → pacient. Mrtvý záchranář přibývá jako oběť.",
+        "Toto pořadí není sobectví — živý záchranář pomůže desítkám pacientů za kariéru."
+      ]
+    },
+    {
+      "id": "1.5",
+      "title": "Kategorie výjezdů",
+      "abbrevs": [
+        { "a": "Code 3", "f": "výjezd s majáky a sirénou — urgentní" },
+        { "a": "Code 2", "f": "výjezd s majáky bez sirény — závažné" },
+        { "a": "Code 1", "f": "výjezd bez majáků — nízká priorita" }
+      ],
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Priority výjezdů",
+          "headers": ["Priorita", "Signalizace", "Typické situace", "Rychlost"],
+          "rows": [
+            ["P1 — Kritická", "Code 3: Majáky + siréna", "Zástava srdce, střelná rána, ucpané dýchací cesty", "Okamžitě — každá sekunda zvyšuje poškození mozku"],
+            ["P2 — Závažná", "Code 2: Pouze majáky", "Zlomeniny, střední krvácení, ztráta vědomí", "Do 10 minut — stav se může zhoršit"],
+            ["P3 — Nízká", "Code 1: Bez majáků", "Drobná zranění, bolest, chronické stavy", "Do 30 minut — stav stabilní"]
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "triage-codes"
+        }
+      ],
+      "summary": [
+        "P1 (Code 3) = okamžitý výjezd — každá sekunda je rozdíl pro mozek bez kyslíku.",
+        "P2 (Code 2) = do 10 minut; P3 (Code 1) = do 30 minut.",
+        "Spěch záchranky při P3 ohrožuje záchranáře i ostatní řidiče bez přínosu pro pacienta."
+      ]
+    }
+  ],
+  "chapterSummary": [
+    "Záchranář je první zdravotník u pacienta — jeho rozhodnutí v prvních minutách rozhoduje o přežití.",
+    "Pořadí priorit: bezpečnost záchranáře → posádka → ostatní osoby → pacient. Mrtvý záchranář nepomůže nikomu.",
+    "Hlavní zásady: profesionalita, týmová práce, okamžitá dokumentace, respekt k odmítnutí péče.",
+    "Před každým vstupem na místo: zkontrolujte bezpečnost, nasaďte PPE, zhodnoťte hrozby.",
+    "Výjezdy P1 (Code 3) se zahajují okamžitě — každá vteřina navíc zhoršuje prognózu."
+  ]
+}

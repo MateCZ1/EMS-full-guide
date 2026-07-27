@@ -1,0 +1,414 @@
+{
+  "id": "ch11B",
+  "number": "11B",
+  "part": "II",
+  "title": "Chirurgické postupy",
+  "icon": "scalpel",
+  "sections": [
+    {
+      "id": "11B.1",
+      "title": "Operace zlomenin",
+      "abbrevs": [
+        { "a": "ORIF", "f": "Open Reduction Internal Fixation — otevřená repozice a vnitřní fixace" },
+        { "a": "IM hřeb", "f": "Intramedullary Nail — kovová tyčka zasouvaná do dutiny kosti zevnitř" },
+        { "a": "C-rameno", "f": "pojízdný rentgenový přístroj na kolečkách, tvar C; chirurg vidí kost na monitoru v reálném čase" },
+        { "a": "GA", "f": "General Anesthesia — celková anestézie; pacient spí a nic necítí" },
+        { "a": "ETT", "f": "Endotracheal Tube — dýchací rourka zavedená do průdušnice přes ústa; přístroj dýchá za pacienta" },
+        { "a": "CVC", "f": "Central Venous Catheter — centrální žilní katetr; silná hadička v jugulární žíle na krku pro rychlé podávání léků" },
+        { "a": "Tourniquet", "f": "tur-ni-ket — pneumatický (vzduchový) škrtič na končetinu; dočasně zastaví krvácení při operaci; maximálně 90–120 minut" }
+      ],
+      "terms": [
+        { "t": "Repozice", "d": "narovnání zlomeniny — chirurg přesune zlomené kosti zpět do správné anatomické polohy" },
+        { "t": "Periosteum", "d": "okostice — tenká blána přilepená na každou kost; citlivá na bolest; výživa kosti" },
+        { "t": "Fasciotomie", "d": "chirurgické rozříznutí tuhé blány kolem svalu; provádí se při nebezpečném otoku" },
+        { "t": "Kostní dřeň", "d": "měkká tkáň uvnitř dutiny kosti; u dospělých tvoří krvinky; do dřeňové dutiny se zasouvá IM hřeb" },
+        { "t": "Distální puls", "d": "puls na místě vzdálenějším od srdce — u nohy: tepna nártu; u ruky: tepna na zápěstí; kontrolujeme po každé operaci" },
+        { "t": "Hemoglobin (Hg)", "d": "červené krevní barvivo přenášející kyslík; nízký Hg = anemie (chudokrevnost); při velké krevní ztrátě dostane pacient transfuzi" },
+        { "t": "Antikoagulace", "d": "léky zabraňující srážení krve — podávají se po operaci aby nevznikla sraženina v žíle (trombóza)" },
+        { "t": "Fascie", "d": "tuhá vazivová blána obalující skupinu svalů; nepruží; při otoku svalů uvnitř roste tlak" },
+        { "t": "Malleolus", "d": "kotníkový výběžek — vnitřní kotník (malleolus medialis) je výběžek holenní kosti; zevní kotník (malleolus lateralis) je dolní konec lýtkové kosti" },
+        { "t": "Kloubní plocha", "d": "hladká chrupavčitá část kosti uvnitř kloubu — musí dokonale přiléhat k protilehlé ploše; odchylka 2 mm = budoucí artróza" },
+        { "t": "Artróza", "d": "opotřebení chrupavky kloubu; bolest a omezení pohybu; nelze vyléčit, jen zpomalit" },
+        { "t": "Destička (Plate)", "d": "plochá kovová lišta přišroubovaná k povrchu kosti; drží fragmenty v poloze dokud nesrostou" },
+        { "t": "K-drát", "d": "Kirschnerův drát — tenký kovový drát; dočasně přichytí fragment kosti jako „kolík“ před definitivní fixací šrouby" },
+        { "t": "Podkoží", "d": "tuková vrstva mezi kůží a svalem nebo kostí" }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**A) Nitrodřeňový hřeb (IM Nail) — zlomenina stehenní kosti**\n\nStehenní kost (femur) je největší a nejsilnější kost v těle. Při jejím zlomení se do stehna vylije 1 až 3 litry krve — i bez viditelné rány. Proto jde zlomenina femuru vždy na operační sál co nejdříve. Nitrodřeňový hřeb je titanová tyčka, která se zasune do dutiny stehenní kosti zevnitř přes malý řez — bez nutnosti otevřít celé stehno."
+        },
+        {
+          "type": "table",
+          "caption": "Postup zavedení nitrodřeňového hřebu (IM Nail) při zlomenině femuru",
+          "headers": ["Krok", "Co chirurg udělá", "Proč a co to znamená pro pacienta"],
+          "rows": [
+            ["PŘÍPRAVA — polohování na speciálním stole", "Pacient se položí na ortopedický trakční stůl. Jedna noha se přiváže k pedálu a chirurg nebo asistent zahájí jemný tah (trakci) za nohu v ose kosti.", "Tah za nohu před operací hrubě narovná zlomenou kost — chirurg pak operuje na kosti, která je přibližně ve správné poloze. Není nutné otevírat stehno pro ruční nastavení."],
+            ["PŘÍPRAVA — anestézie a monitoring", "Anesteziolog zavede dýchací rourku (ETT) a pacient usne. Sestra zavede centrální žilní katetr (CVC) na krku a arteriální linku na zápěstí. Připojí se EKG, saturace, kapnometrie a ohřívací deka.", "Operace trvá 60–120 minut. Arteriální linka měří krevní tlak každou tepovou vlnu — při náhlém krvácení to zachytí okamžitě. Ohřívací deka brání podchlazení."],
+            ["ŘEZ — malý vstupní otvor", "Chirurg provede 2–3 cm řez přímo nad horním výběžkem stehenní kosti (trochanterem major). Svaly odhrne a kovové šidlo (drát se zahnutým hrotem) pod kontrolou C-ramene propíchne vstupní otvor do dutiny kosti.", "C-rameno = pojízdný rentgen; zobrazí kost na monitoru v reálném čase. Šidlo musí vstoupit přesně do středu dutiny kosti, jinak hřeb nepůjde zavést."],
+            ["REAMING — rozšiřování dutiny kosti", "Chirurg zasune přes šidlo sérii stále silnějších vrtáků (reamery). Každý vrták je o půl milimetru širší než předchozí. Vrtáky otáčí přístroj, ne chirurgova ruka — odpadky (kostní třísky a dřeň) se odsávají.", "Dutina kosti musí být přesně tak velká, jak je hřeb silný — jinak se hřeb neprovleče nebo naopak „tančí“ uvnitř a nezafixuje zlomeninu."],
+            ["ZAVEDENÍ HŘEBU", "Titanová nebo ocelová tyčka (délka 30–45 cm, průměr 9–13 mm) se nasadí na vodič a chirurg ji jemnými údery malterem (kladívkem) zatlučí do dutiny kosti. C-rameno průběžně sleduje postup hřebu — musí přesně procházet oběma zlomenými fragmenty.", "Hřeb „splácí“ zlomeninu zevnitř — drží oba kusy dohromady jako tyčinka uvnitř dutého válce. Při správném zavedení jsou fragmenty rovné a v kontaktu."],
+            ["ZABLOKOVÁNÍ ŠROUBY — interlocking", "Přes 2–4 malé řezy (1 cm) na kůži chirurg vloží pod kontrolou C-ramene šrouby skrz kůži, svaly a kost, přímo přes otvory v hřebu. Toto jsou „interlocking šrouby“ — blokují hřeb proti rotaci a zkrácení kosti.", "Bez blokujících šroubů by se hřeb v dutině otáčel a noha by byla nestabilní. Šrouby prochází přesně otvory v hřebu — C-rameno to potvrdí na monitoru."],
+            ["KONTROLA délky a rotace", "C-rameno srovná délku obou nohou. Chirurg zkontroluje, že palce obou chodidel ukazují stejným směrem (stejná rotace). Pokud je rozdíl, šrouby se upraví.", "Rozdíl délek o 1 cm nebo špatná rotace způsobí doživotní kulhání a bolesti kyčle nebo kolene."],
+            ["UZAVŘENÍ rány", "Fascie (tuhá blána pokrývající svaly) se sešije silným vstřebatelným stehem. Podkoží (tuková vrstva pod kůží) druhým stehem. Kůže svorkami nebo intradermálním (kožním) stehem. Sterilní krytí a elastický obvaz.", "Fascie nese největší napětí — musí vydržet tlak svalů. Kůže se hojí primárně za 10–14 dní. Svorky nebo stehy se pak odstraní."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "KREV A TRANSFÚZE",
+          "text": "Zlomenina femuru způsobí ztrátu 1–3 litrů krve do stehna (viditelnou nebo skrytou). Samotná operace přidá dalších 200–500 ml. Po operaci se měří hladina hemoglobinu (krevního barviva). Pokud klesne pod 8 g/dL (normálně 12–16), pacient dostane transfúzi červených krvinek."
+        },
+        {
+          "type": "paragraph",
+          "text": "**B) Destička a šrouby (ORIF) — zlomenina kotníku**\n\nKotník nese celou váhu těla při každém kroku. Odchylka ve správném složení kloubní plochy o 2 milimetry způsobí za 5–10 let artrózu (opotřebení chrupavky). Proto se kotníkové zlomeniny opravují pod přímým pohledem s maximální přesností."
+        },
+        {
+          "type": "table",
+          "caption": "Postup ORIF (destička a šrouby) při zlomenině kotníku",
+          "headers": ["Krok", "Co chirurg udělá", "Proč a co to znamená"],
+          "rows": [
+            ["PŘÍPRAVA — polohování", "Pacient leží na zádech. Operovaná noha se podloží polštářem. Na stehno se nafouká pneumatický tourniquet — vzduchový škrtič, který dočasně uzavře cévy v noze a zastaví krvácení do operačního pole.", "Bez tourniquetu by rána krvácela a chirurg by neviděl drobné kostní fragmenty. Maximální čas tourniquetu je 120 minut — při delší operaci se odfoukne a znovu nafoukne po 5 minutách."],
+            ["ŘEZ na zevním kotníku", "Chirurg provede 10–15 cm řez přesně podél lýtkové kosti (fibuly). Oba okraje kůže se natáhnou kleštěmi (háčky). Fascie (tuhá blána) se otevře nůžkami.", "Lýtková kost tvoří zevní kotník a nejčastěji se právě ona zlomí. Zevní přístup ji obnažuje celou podél."],
+            ["REPOZICE — nastavení kosti", "Chirurg vezme kostní kleště a „zamáčkne“ oba fragmenty zpět do správné polohy. Asistent přidrží. Chirurg zasune 1–2 tenké K-dráty (kovové dráty) přes kůži přímo do kosti — ty dočasně drží polohu jako zavrtané kolíky.", "K-dráty jsou dočasné — jako „špendlíky“ dokud nepřijde definitivní fixace šrouby. C-rameno potvrdí správnou polohu na rentgenu."],
+            ["DESTIČKA a šrouby", "Chirurg přiloží anatomicky tvarovanou titanovou destičku na povrch lýtkové kosti. Přes otvory v destičce zavrtá šrouby průměru 3,5 mm — každý šroub musí projít destičkou i celou tloušťkou kosti („bikortiálně“), aby byl pevný.", "Destička drží kost jako „dlaha přišroubovaná k povrchu“ — nenechá se pohybovat. Šrouby propíchnou obě vrstvy kosti pro maximální pevnost."],
+            ["VNITŘNÍ KOTNÍK — pokud je zlomen", "Chirurg provede druhý 5 cm řez na vnitřní straně kotníku. Vnitřní kotník (malleolus medialis) se repozicuje kleštěmi a zafixuje 2 silnějšími šrouby (4,0 mm plné šrouby se závitem jen na špičce = „tahové“ šrouby).", "Vnitřní kotník se zlomí při 40 % kotníkových zlomenin. Bez jeho fixace je kotník nestabilní jako „třínohá stolička s jednou nohou chybějící“."],
+            ["KONTROLA stability a pohybu", "Chirurg uchopí chodidlo a pohybuje kotníkem — přitahuje nahoru a dolů, a klepe zprava doleva. Kloub musí klouzat hladce bez skřípání. C-rameno potvrdí výsledek na rentgenu.", "Nestabilita nebo blokující fragment se musí opravit před zavřením rány — jinak by reoperace znamenala vyšší riziko infekce."],
+            ["UVOLNĚNÍ TOURNIQUETU — kontrola krvácení", "Tourniquet se vyfoukne. Do rány se vrátí krev. Chirurg přiloží elektrokauter (elektrický skalpel) na každé krvácející místo a „zapálí“ ho elektrickým proudem — cévka se uzavře.", "Po uvolnění tourniquetu se musí zastavit veškeré viditelné krvácení. Krev v ráně = hnisání."],
+            ["UZAVŘENÍ a dlaha", "Fascie, podkoží a kůže se sešijí po vrstvách. Do rány se vloží drén (tenká hadička) pro odvod krevního výronu prvních 24 hodin. Na celý kotník se přiloží fixační dlaha pod úhlem 90°.", "Dlaha znehybní kotník dokud neodezní počáteční otok měkkých tkání. Za 6–8 týdnů se vymění za ortézu s postupným zatěžováním."]
+          ]
+        }
+      ],
+      "summary": [
+        "IM hřeb femuru: trakční stůl narovná kost před operací; hřeb se zasune bez otevření stehna.",
+        "Interlocking šrouby (zablokování) zabraňují rotaci a zkrácení — bez nich hřeb tančí uvnitř.",
+        "ORIF kotníku: tourniquet max. 120 minut; kloubní plocha s přesností 2 mm; RTG po každém kroku.",
+        "Krevní ztráta u femuru 1–3 litry před operací; transfúze při hemoglobinu pod 8 g/dL."
+      ]
+    },
+    {
+      "id": "11B.2",
+      "title": "Hrudní chirurgie",
+      "abbrevs": [
+        { "a": "Pleura", "f": "pohrudnice — dvouvrstvá blána pokrývající plíci zevně a hrudní stěnu zevnitř; mezi vrstvami normálně jen tenký film tekutiny" },
+        { "a": "Hemothorax", "f": "krev v pohrudnicové dutině — tlačí na plíci a způsobuje její kolaps" },
+        { "a": "Pneumothorax", "f": "vzduch v pohrudnicové dutině — stejný efekt jako hemothorax" },
+        { "a": "Hrudní drenáž / Chest Tube", "f": "trubice zavedená do pohrudnicové dutiny pro odvedení vzduchu nebo krve; připojuje se na podtlakový sběrný systém" },
+        { "a": "VATS", "f": "Video-Assisted Thoracoscopic Surgery — operace hrudníku miniaturní kamerou přes malé otvory" },
+        { "a": "ICS", "f": "Intercostal Space — mezižeberní prostor — mezera mezi dvěma žebry; hrudní drenáž se zavede přes tuto mezeru" }
+      ],
+      "terms": [
+        { "t": "Pohrudnicová dutina", "d": "prostor mezi plící a hrudní stěnou; normálně prázdný (vakuum); při pneumothoraxu plný vzduchu; při hemothoraxu plný krve" },
+        { "t": "Pleura viscerální", "d": "vnitřní vrstva pohrudnice přilepená přímo na plíci" },
+        { "t": "Pleura parietální", "d": "zevní vrstva pohrudnice přilepená na hrudní stěnu zevnitř" },
+        { "t": "Kolaps plíce", "d": "plíce se zhroutí jako vypuštěný balon — vzduch nebo krev v pohrudnicové dutině ji tlačí" },
+        { "t": "Vodní uzávěr (Water-Seal)", "d": "sběrný box naplněný vodou; trubice vstupuje pod hladinu vody — vzduch může unikat ven, ale nemůže se vrátit dovnitř" },
+        { "t": "Koagulum", "d": "pevná krevní sraženina (zatuhlá krev) v pohrudnicové dutině — nelze ji odtáhnout trubicí; musí se odstranit operačně" },
+        { "t": "Thorakotomie", "d": "otevření hrudní dutiny přímým řezem přes mezižeberní sval; velká operace" },
+        { "t": "Subkutánní emfyzém", "d": "vzduch v podkožní tukové vrstvě — při stisku kůže se ozývá „křupání“ jako mačkání polystyrenu; příznak pneumothoraxu nebo poranění průdušky" }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**A) Hrudní drenáž (Chest Tube — zavedení drenáže)**\n\nHrudní drenáž je výkon, při němž se do pohrudnicové dutiny zavede hadička (trubice) pro odvedení hromaděného vzduchu nebo krve. Je to URGENTNÍ výkon — vzduch nebo krev v pohrudnici tlačí na plíci a na srdce. Výkon provádí záchranář-paramedik nebo lékař. Celý výkon trvá 5–10 minut."
+        },
+        {
+          "type": "table",
+          "caption": "Postup zavedení hrudní drenáže (Chest Tube)",
+          "headers": ["Krok", "Co přesně se udělá", "Proč — co by se stalo bez tohoto kroku"],
+          "rows": [
+            ["PŘÍPRAVA — poloha a analgézie", "Pacient leží na zádech nebo mírně otočen na postiženou stranu. Ruka na operované straně se vytáhne nahoru za hlavu (opřena o čelo) — tím se rozevřou mezery mezi žebry. Do kůže, podkoží a svalu se vstříkne lidokain (lokální umrtvení, funguje jako u zubaře).", "Ruka za hlavou rozevírá mezižeberní prostory jako „harmonika“ — jinak jsou těsně u sebe a jehla by narážela na žebra. Bez lokálního umrtvení je zavedení nesnesitelně bolestivé."],
+            ["DEZINFEKCE a sterilní zakrytí", "Oblast 5. mezižeberního prostoru v přední axilární linii (imaginární čára dolů z podpaží) se třikrát natře jodovým nebo chlorhexidinovým roztokem. Kolem se přiloží sterilní zelené roušky.", "Pohrudnicová dutina je sterilní prostor (bez bakterií). Zanesení bakterie = hnisavý zánět pohrudnice (empyém) — těžká komplikace."],
+            ["ŘEZ skalpelem", "2–3 cm kožní řez skalpelem přesně v 5. mezižeberním prostoru přední axilární linie. Řez prochází jen kůží — svaly pod ní se neřežou, prochází se přes ně jinak (viz další krok).", "Malý řez = menší jizva a menší riziko infekce. Kůže se řeže nástrojem; svaly se rozhrnou tupě (bez říznutí) aby se přesněji dostal na správné místo."],
+            ["TUPÁ PREPARACE přes sval", "Kellyho kleště (kovové kleště podobné pinzetě ale silnější) se přiloží sevřené na sval. Pak se tlačí dovnitř a přitom otevírají — sval se rozhrne bez řezu. Opakuje se, dokud kleště neprojdou mezižeberní sval celou tloušťkou.", "Tupá (neřezající) preparace chrání mezižeberní nervovou a cévní trojici, která vede těsně pod dolním okrajem každého žebra. Prochází se proto TĚSNĚ NAD horním okrajem dolního žebra."],
+            ["PRŮNIK do pohrudnicové dutiny", "Kleště se posledním tlakem protlačí pohrudnicí — ozve se výrazný „pop“ (prasknutí). Lékaři to nazývají „giving way“ — jako propíchnutí balónu. Okamžitě vytryskne vzduch nebo krev.", "Tento „pop“ je potvrzením správné polohy. Pokud nevytryskne vzduch ani krev — buď je jehla mimo dutinu, nebo je dutina prázdná (špatná diagnóza)."],
+            ["KONTROLA prstem", "Přes otvor se zasune prst (s rukavicí) a otočí se o 360°. Hledáme: je v dutině volný prostor? Nejsou přirostlé plíce ke stěně? Není překážka (koagulum — pevná krevní sraženina)?", "Prst je nejspolehlivější nástroj. Přirostlá plíce (adherence z dřívějšího zánětu) by znamenala, že trubice nemůže do dutiny — nutná změna polohy nebo operace."],
+            ["ZAVEDENÍ trubice", "Trubice 28–32 French (průměr cca 1 cm) se nasadí na kleště a zavede přes otvor do pohrudnicové dutiny. Pro krev: trubice míří dozadu a dolů (krev teče dolů). Pro vzduch: trubice míří nahoru a dopředu (vzduch stoupá). Všechny boční otvory trubice musí být uvnitř dutiny.", "Pokud by byť jediný boční otvor trubice byl mimo dutinu (v podkoží), systém by sál podkožní tkáň a nefungoval. Proto se trubice zasouvá dostatečně hluboko."],
+            ["NAPOJENÍ na Water-Seal sběrný systém", "Trubice se připojí hadičkou na plexisklový sběrný box, který je naplněn vodou do rysky. Trubice z pacienta vstupuje pod hladinu vody. Box se umístí níže než pacient (na podlahu). Připojí se aktivní podtlak −20 cm H₂O.", "Vodní uzávěr funguje jako jednocestný ventil: vzduch nebo krev vytečou ven, ale vzduch z okolí nemůže nasát zpět dovnitř. Aktivní podtlak urychluje evakuaci. Box musí být níže — gravitace pomáhá odtoku krve."],
+            ["FIXACE a krytí", "Trubice se přišije k pokožce silným stehem. Steh se navíc omotá kolem trubice a pevně zauzlí. Vstupní místo se překryje vzduchonepropustnou nálepkou (Tegaderm nebo vazelínová gáza). Trubice se přilepí ke kůži druhým pruhem náplasti.", "Trubice nesmí vyklouznout — výsledkem by byl okamžitý návrat vzduchu nebo krve do pohrudnicové dutiny. Dvojitá fixace (steh + náplast) to zabraňuje."],
+            ["KONTROLNÍ RTG", "Hned po výkonu se pořídí přenosný RTG snímek hrudníku přímo u lůžka.", "RTG potvrdí: trubice je v pohrudnicové dutině (všechny otvory uvnitř); plíce se začíná rozepínat; neexistuje komplikace jako pneumothorax na druhé straně."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "KDY TRUBICI VYTÁHNOUT?",
+          "text": "Trubice se odstraní, když: za 24 hodin odteče méně než 150 ml krve; vzduch přestal unikat; RTG ukazuje rozepnutou plíci. Odstranění: pacient se nadechne a zadrží dech (maximální plíce = největší objem = hrudník stlačen) → trubice se vytáhne jedním plynulým tahem → rána se okamžitě zakryje vzduchonepropustnou nálepkou."
+        },
+        {
+          "type": "paragraph",
+          "text": "**B) Videotorakoskopie (VATS) — operace hrudníku miniaturní kamerou**\n\nVATS (Video-Assisted Thoracoscopic Surgery — videotorakoskopie) je moderní minimálně invazivní operace hrudníku. Místo 25 cm řezu přes celý hrudník stačí 3 malé otvory (každý 1–2 cm). Kamera přenáší obraz na HD monitor — chirurg operuje pohledem na obrazovku, ne přímým pohledem do hrudníku."
+        },
+        {
+          "type": "table",
+          "caption": "Postup videotorakoskopie (VATS)",
+          "headers": ["Krok", "Co přesně se udělá", "Proč — co to znamená"],
+          "rows": [
+            ["SPECIÁLNÍ ROURKA pro jednu plíci", "Anesteziolog zavede dvojlumennou rourku (Double-Lumen Tube — ETT se dvěma průchody) do průdušnice. Každý průchod vede do jednoho průdušku zvlášť. Operovaná plíce se přestane ventilovat a pomalu se „vyfoukne“ — zhroutí se jako prázdný balon.", "Aby chirurg mohl pracovat uvnitř hrudníku, potřebuje v pohrudnicové dutině prostor. Sfouknutá plíce tento prostor vytvoří. Zdravá plíce stále dýchá (přes druhý průchod rourky) a drží pacienta při kyslíku."],
+            ["POLOHA na zdravém boku", "Pacient se otočí na bok (zdravý bok dolu, operovaný bok nahoře). Ruka se vytáhne nad hlavu a připoutá k podpěře. Celé tělo se zafixuje polohovacími pomůckami.", "Poloha na boku — sfouknutá plíce padá od hrudní stěny vlastní vahou, čímž se ještě zvětší pracovní prostor pro chirurga."],
+            ["TŘI MALÉ OTVORY (porty)", "Na hrudní stěně se provede 3 × 1–2 cm kožní řez. Do každého se zasune kovová nebo plastová trubička (trokar — funguje jako uzavíratelný průchod; nástroje se zasunují přes něj dovnitř a trokar zabraňuje úniku vzduchu).", "Trokary jsou jako „vstupní brány“ do hrudníku. Přes trokar 1 = kamera. Přes trokar 2 a 3 = operační nástroje. Trokary drží rány otevřené a těsní kolem nástrojů."],
+            ["KAMERA a pohled na monitor", "Přes trokar 1 se zasune thorakoskop — tenká trubice s HD kamerou a LED světlem na konci. Obraz se zobrazuje na velký monitor vedle operačního stolu v rozlišení Full HD nebo 4K. Chirurg a asistent pracují pohledem na tento monitor.", "Kamera vidí hrudní dutinu „zevnitř“ — to, co by chirurg při otevřené operaci viděl přímým pohledem, nyní vidí na monitoru ale 10–15× zvětšené. Detaily jako drobné krvácení jsou lépe viditelné než při otevřené operaci."],
+            ["OPERAČNÍ NÁSTROJE přes ostatní trokary", "Přes trokary 2 a 3 chirurg zasune speciálně zahnuté nástroje: kleště (Grasper) pro uchopení tkáně, harmonický skalpel (vibrující nůž, který řeže i koaguluje najednou), stapler (sešívačka). Pohybuje jimi oběma rukama zároveň — pravou a levou.", "Každý nástroj je zahnutý nebo lomený, aby mohl pracovat uvnitř hrudníku pod správným úhlem. Harmonický skalpel nepotřebuje elektřinu — vibruje 55 000× za sekundu; tření vytváří teplo, které řeže a zároveň zastavuje krvácení."],
+            ["VÝKON dle diagnózy", "Hemothorax: chirurg odsaje tekutou krev odsávačkou a kleštěmi vyjme pevné koagula (zatuhlé krevní sraženiny); pak najde a zastaví krvácející cévku. Biopsie plíce: kleštěmi uchopí okraj plíce a staplem (sešívačkou) odřízne malý kousek tkáně. Resekce laloku plíce: stapler přeruší průdušku a cévní stopku; celý lalok se vyjme.", "Hemothorax starší 3 dny = koagula se neodsají trubicí → nutná VATS. Biopsie = diagnostika nádoru. Resekce laloku (Lobektomie) = léčba nádoru nebo chronické infekce."],
+            ["HRUDNÍ DRENÁŽ přes trokary", "Před uzavřením se přes trokarové otvory zavedou 1–2 hrudní drenážní trubice. Sfouknutá plíce se znovu „nafoukne“ anesteziologem (přejde na oboustrannou ventilaci).", "Trubice odvede zbytkový vzduch nebo krev po operaci. Plíce se musí napumpovat pomalu — prudké nafouknutí by poranilo tkáň."],
+            ["UZAVŘENÍ malých ran", "Trokary se vytáhnou. 3 malé rány se každá uzavře 1–2 stehy podkožně a jedním kožním stehem. Sterilní krytí.", "Malé rány = méně bolesti, kratší hospitalizace, nižší riziko infekce. Pacient se u VATS zvládá posadit za 24 hodin vs. 5–7 dní u otevřené operace."]
+          ]
+        }
+      ],
+      "summary": [
+        "Hrudní drenáž: pro krev mírí dozadu a dolů; pro vzduch dozadu a nahoru; vodní uzávěr brání zpětnému toku.",
+        "Pop při průniku přes pohrudnici = správná poloha; bez výtoku vzduchu nebo krve = špatná poloha.",
+        "VATS: sfouknutá plíce vytvoří prostor; harmonický skalpel řeže i koaguluje najednou.",
+        "Plíce se po VATS nafoukne pomalu — prudké nafouknutí by poranilo tkáň."
+      ]
+    },
+    {
+      "id": "11B.3",
+      "title": "Břišní chirurgie",
+      "abbrevs": [
+        { "a": "Laparotomie", "f": "otevření dutiny břišní přímým řezem na střední linii; „laparo“ = břicho, „tomia“ = řez" },
+        { "a": "Laparoskopie", "f": "minimálně invazivní operace břicha kamerou přes malé otvory; ekvivalent VATS pro hrudník" },
+        { "a": "DCS", "f": "Damage Control Surgery — záchranná chirurgie v etapách; nejdřív zastavit krvácení, pak JIP, pak rekonstrukce" },
+        { "a": "Hemoperitoneum", "f": "krev v dutině břišní; „hemo“ = krev, „peritoneum“ = pobřišnice (blána dutiny břišní)" }
+      ],
+      "terms": [
+        { "t": "Pobřišnice (Peritoneum)", "d": "tenká průhledná blána vystýlající celou dutinu břišní a pokrývající všechny orgány; velmi citlivá na podráždění — zápal pobřišnice (peritonitida) je smrtelně nebezpečný" },
+        { "t": "Hemoperitoneum", "d": "krev volně rozlitá v dutině břišní; způsobí šok i bez viditelné rány; FAST ultrazvuk nebo CT ho odhalí" },
+        { "t": "Koagula", "d": "pevné krevní sraženiny (ztuhlá krev); nevyteče trubicí — musí se vyjmout operačně kleštěmi" },
+        { "t": "Anastomóza", "d": "chirurgické spojení dvou konců střeva nebo jiné trubicovité struktury po resekci (odstranění části)" },
+        { "t": "Stomie", "d": "umělé vyústění střeva na kůži břicha (stoma — otvor); přechodná nebo trvalá; výkaly odcházejí do sáčku" },
+        { "t": "Fascie (břišní)", "d": "tuhá vazivová vrstva pod podkožím; drží břišní orgány; nejpevnější část břišní stěny; musí se pevně sešít" },
+        { "t": "Damage Control", "d": "„kontrola poškození“ — chirurgická filozofie: v první operaci zachránit život (zastavit krvácení), ne opravit vše najednou" },
+        { "t": "Etapová chirurgie", "d": "operace ve více fázích s pauzou na JIP; moderní přístup k polytraumatu" },
+        { "t": "Laváž", "d": "výplach — dutinu břišní se proplachuje teplým fyziologickým roztokem pro odstranění krve a bakterií" }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**A) Urgentní laparotomie — Damage Control Surgery (Záchranná chirurgie)**\n\nDamage Control Surgery (záchranná chirurgie) je přístup, při němž se u nestabilního pacienta neprovede vše najednou. Místo 5hodinové komplexní operace se provede 30–60minutová záchranná operace (zastavit krvácení a zastavit znečištění), pak 24–48 hodin intenzivní péče na JIP, a teprve potom definitivní rekonstrukce. Tento přístup snižuje mortalitu o 30–50 % u těžkého polytraumatu."
+        },
+        {
+          "type": "table",
+          "caption": "Damage Control Surgery — fáze a kroky záchranné operace",
+          "headers": ["Fáze a krok", "Co chirurg přesně udělá", "Proč — logika rozhodnutí"],
+          "rows": [
+            ["—— FÁZE 1 — ZÁCHRANNÁ OPERACE (30–60 min) ——", "", ""],
+            ["1. Řez — střední laparotomie", "Chirurg řízne skalpelem od hrudní kosti (mečíkového výběžku) přímo dolů po pupík a dál k ohanbí (pubické sponě). Řez prochází kůží, podkožím a tučnou vrstvou. Fascie (tuhá vrstva) se otevře nůžkami nebo elektrokauterem. Peritoneum (pobřišnice) se opatrně zvedne kleštěmi a prostřihne — aby se nepropíchlo střevo.", "Střední laparotomie je nejrychlejší přístup do celé dutiny břišní. Chirurg vidí všechny orgány najednou. U krvácejícího pacienta jde o každou sekundu."],
+            ["2. Evakuace krve", "Hemoperitoneum (krev v dutině břišní) se odsaje elektrickým odsávačem. Lze odsát až 3 litry tekuté krve za 30–60 sekund. Pevné koagula (zatuhlé sraženiny) se vyjmou kleštěmi.", "Odsáním krve chirurg vidí orgány — jinak by plavaly v krvi a nebylo by vidět, odkud krvácení pochází."],
+            ["3. Čtyřkvadrantová tamponáda", "Dutina břišní se rozdělí na 4 kvadranty (pravý horní, pravý dolní, levý horní, levý dolní). Do každého kvadrantu se vloží 2–3 velké sterilní roušky (suché gázové čtverce 45×45 cm) — „laparotomické roušky“. Každá rouška se přimáčkne rukou — ta absorbuje krev a tlak zastavuje difúzní krvácení ze „slzících“ ploch.", "Tamponáda rouškami je rychlé dočasné zastavení plošného krvácení. Jako přiložení tlakového obvazu zevnitř. Dává chirurgovi čas systematicky najít hlavní zdroj."],
+            ["4. Identifikace hlavního krvácení", "Chirurg systematicky odstraňuje roušky kvadrant po kvadrantu. Nejdřív kvadrant, kde je nejvíce krve. Sleduje, odkud krev aktivně tryská nebo vytéká.", "Tryskající krvácení (arteriální krvácení = jasně červená krev) je jiná priorita než pomalu vytékající žilní krvácení. Artérie se řeší jako první — pacient může exsangvinovat (vykrvácet) za 2–3 minuty."],
+            ["5. Zastavení krvácení dle orgánu", "SLEZINA (nejčastěji): uchopí se celá slezina levou rukou; pravou rukou se přeruší vazivové pruhy (ligamenta) spojující slezinu s bránicí a žaludkem; pak se svorkou sevřou a přestřihnou cévy v cévní stopce. Slezina se vyjme do nádoby. JÁTRA: koagulace elektrokauterem na povrchu; hluboké trhliny se stehují; „Pringle manévr“ = chirurg palcem a ukazovákem sevře portální triádu (vstupní cévy jater) a dočasně zastaví přítok krve do jater. PÁNEVNÍ CÉVY: svorky nebo dočasné ligaturní stehy.", "Slezina se vždy odstraňuje celá (splenektomie) — oprava je příliš pomalá a riskantní. Játra se snaží zachovat — jsou vitální. Pánevní cévy vyžadují cévního chirurga."],
+            ["6. Zastavení kontaminace střeva", "Perforované (propíchnuté) střevo se NENAPOJUJE — to by trvalo příliš dlouho. Místo toho se uzavře: buď svorkou (klipem), nebo se přeloží a staplem (sešívačkou) rychle uzavře. Obsah střeva nesmí dál kontaminovat dutinu břišní.", "Střevní obsah obsahuje miliardy bakterií. Každá minuta kontaminace dutiny břišní zvyšuje riziko sepse (těžká infekce v krvi). Dočasné uzavření trvá 5 minut místo 45 minut u definitivní anastomózy."],
+            ["7. Laváž — výplach dutiny", "Dutina břišní se proplachuje 3–5 litry teplého fyziologického roztoku (0,9% NaCl, 40 °C). Chirurg ručně promíchá a odsávačem odsaje tekutinu. Opakuje 2–3×.", "Výplach odstraní zbytky krve a bakterie. Teplý roztok navíc ohřeje dutinu břišní — zabraňuje podchlazení (součást „smrtelné trojice“)."],
+            ["8. Dočasné uzavření břicha", "Fascie (tuhá vrstva) se NESEŠÍVÁ — hojení by trvalo déle a dutina břišní se může vzdout (otoky). Místo toho se aplikuje VAC systém (Abthera): plastová fólie překryje střeva, houbička přiloží na fascii, druhá fólie přilepí na kůži, napojí se podtlak −125 mmHg. Kůže zůstane otevřená.", "Podtlakový systém odvádí tekutiny, drží okraje rány pohromadě a udržuje dutinu „živou“. Fascie se sešije za 48–72 hodin, až otoky odezní. Sešití napjaté fascie by způsobilo „abdominální kompartment syndrom“ (nebezpečný přetlak v dutině břišní)."],
+            ["—— FÁZE 2 — JIP (24–48 hodin) ——", "", ""],
+            ["JIP — stabilizace pacienta", "Pacient přechází na JIP. Zahřívání (cíl teplota 37 °C). Masivní transfúze krve (poměr červené krvinky : plazma : destičky = 1:1:1). Korekce acidózy (kyselosti krve — bikarbonát do žíly). Sledování laktátu v krvi (ukazatel perfúze tkání). Opakované odběry koagulačních faktorů.", "Tato fáze léčí „smrtelnou trojici“: Podchlazení + Acidóza + Koagulopatie. Dokud tyto tři faktory nejsou korigovány, definitivní operace by zabila pacienta."],
+            ["—— FÁZE 3 — DEFINITIVNÍ REKONSTRUKCE (2–5 h) ——", "", ""],
+            ["Definitivní rekonstrukce", "Dutina břišní se znovu otevře (VAC systém se odstraní). Roušky se vyjmou. Celotělová laváž znovu. Definitivní hemostáza (zastavení všech zbývajících krvácení). Střevní anastomóza (napojení přerušeného střeva) nebo stomie (vyústění střeva na kůži). Fascie se sešije pevnými stehy.", "Teprve nyní je pacient dostatečně stabilní na dlouhý výkon. Anastomóza v horké fázi (fáze 1) by se rozpadla — tkáně nejsou prokrveny, stehy by neunesly napětí."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "SMRTELNÁ TROJICE",
+          "text": "Smrtelná trojice traumatického krvácení: 1) Podchlazení pod 35 °C → enzymy srážení krve přestávají fungovat. 2) Acidóza — pH krve pod 7,2 → totéž. 3) Koagulopatie → krev se přestane srážet a krvácení nelze zastavit. Každý faktor zhoršuje oba ostatní — vzniká bludný kruh. Damage Control Surgery přeruší operaci právě proto, aby JIP tento kruh prolomila."
+        }
+      ],
+      "summary": [
+        "DCS fáze 1: zastavit krvácení a kontaminaci za 30–60 minut; fáze 2: JIP 24–48 h; fáze 3: rekonstrukce.",
+        "Smrtelná trojice: Podchlazení + Acidóza + Koagulopatie — DCS přeruší operaci aby JIP tuto trojici léčila.",
+        "Dočasné uzavření břicha VAC systémem: podtlak −125 mmHg drží ránu otevřenou a odvádí tekutiny.",
+        "Splenektomie: vždy celá; po operaci povinná vakcinace (pneumokok, meningokok, HiB) za 2 týdny."
+      ]
+    },
+    {
+      "id": "11B.4",
+      "title": "Neurochirurgie mozku",
+      "abbrevs": [
+        { "a": "Kraniotomie", "f": "otevření lební kosti a její opětovné uzavření po výkonu" },
+        { "a": "Kraniektomie", "f": "trvalé odebrání části lební kosti (kost se nevrátí — mozek dostane prostor)" },
+        { "a": "Hematom", "f": "ohraničená kapsa krve v tkáni; „haema“ = krev, „toma“ = nádor (kapsa)" },
+        { "a": "ICP", "f": "Intracranial Pressure — nitrolební tlak; normálně do 20 mmHg; nad 25 = nebezpečné" },
+        { "a": "Dura mater", "f": "tvrdá plena mozková — nejzevnější z mozkových plen; latinsky „tvrdá matka“" },
+        { "a": "Burr Hole", "f": "malý otvor vyvrtaný do lební kosti jako příprava pro kraniotomii" }
+      ],
+      "terms": [
+        { "t": "Skalp", "d": "kůže a podkoží pokrývající lebku; bohatě zásobena krví — každý řez na hlavě hodně krvácí" },
+        { "t": "Mozkové pleny", "d": "tři vrstvy blan chránící mozek: dura mater (tvrdá), arachnoidea (pavučinová), pia mater (jemná)" },
+        { "t": "Epidurální prostor", "d": "mezera MEZI lebkou a tvrdou plenou (durou); epidurální hematom = krev v tomto prostoru" },
+        { "t": "Subdurální prostor", "d": "mezera MEZI tvrdou plenou a arachnoidální blanou; subdurální hematom = krev pod durou" },
+        { "t": "Mozkový kmen", "d": "dolní část mozku spojující mozek s míchou; řídí dýchání, krevní tlak a vědomí; stlačení kmene = smrt" },
+        { "t": "Herniace mozku", "d": "mozek se fyzicky vtlačí skrz vnitřní přepážky lebky nebo přes velký týlní otvor; smrtelná komplikace vysokého ICP" },
+        { "t": "Titanová minidestička", "d": "malý kovový plíšek přišroubovaný ke kosti pro fixaci kostního víčka zpět na místo po kraniotomii" },
+        { "t": "Intraoperační monitoring (IOM)", "d": "sledování elektrické aktivity mozku (EEG) a nervů během operace; upozorní chirurga pokud se blíží k důležitému nervu" }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**A) Kraniotomie — evakuace epidurálního hematomu**\n\nEpidurální hematom je krev nahromaděná mezi lebkou a tvrdou plenou mozku. Nejčastěji ji způsobí prasknutí střední mozkové tepny (a. meningea media) při zlomenině spánkové kosti. Krev se hromadí pod tlakem, stlačuje mozek a způsobuje tzv. lucidní interval — pacient se krátce probudí a zdá se v pořádku, pak rychle upadne do bezvědomí. Bez operace do 1–2 hodin smrt."
+        },
+        {
+          "type": "table",
+          "caption": "Postup kraniotomie — evakuace epidurálního hematomu",
+          "headers": ["Krok", "Co chirurg přesně udělá", "Proč — co by se stalo bez tohoto kroku"],
+          "rows": [
+            ["PŘÍPRAVA — holení a poloha", "Elektrický strojek oholí celou operovanou oblast hlavy (nebo alespoň 5 cm kolem plánovaného řezu). Hlava se fixuje do speciálního rámu se třemi hroty (Mayfield fixátor) — hroty se vtlačí do lebky přes kůži. Tím je hlava absolutně nehybná.", "Nehybná hlava je podmínkou přesné neurochirurgie. Sebemenší pohyb (třeba pohyb hrudníku při dýchání) nesmí být přenesen na mozek."],
+            ["ŘEZ na skalpu (kůži hlavy)", "Chirurg řízne kůži ve tvaru „koňské podkovy“ — obloukový řez 15–20 cm nad místem hematomu. Kůže a fascie se odeberou jako jeden lalok a odhrnou dolů. Skalp velmi krvácí — každý cm řezu se ihned ošetří elektrokauterem nebo speciálními svorkami (Raney clips) pro hemostázu.", "Skalp je nejprokrvenější tkáň v těle. Bez průběžné hemostázy by se ztratilo 200–400 ml krve jen při kožním řezu."],
+            ["VRTÁNÍ OTVORŮ do lební kosti (Burr Holes)", "Neurochirurgická vrtačka (Midas Rex nebo Stryker) s vodním chlazením vyvrtá 3–4 otvory průměru 1,5 cm kolem plánované kraniotomie. Otvory se vrtají pomalu — čím blíže k duře, tím opatrněji.", "Otvory jsou „vstupní brány“ pro pilový kotouč v dalším kroku. Musí se zastavit před probodnutím tvrdé pleny (dury), aby se neporanila."],
+            ["VYŘEZÁNÍ KOSTNÍHO VÍČKA (kraniotomie)", "Přes sousední otvory se provleče tenký drát nebo se zasune kraniotom (rotační pilka) a kost se vyřízne jako víčko od plechovky. Kostní víčko 5×7 cm se opatrně zvedne kostní páčkou a vyjme. Vloží se do fyziologického roztoku nebo do kapsy v podkoží.", "Kostní víčko se musí zachovat! Po výkonu se vrátí zpět. Zuby pilky se nesmí dotknout dury — jinak krvácení nebo poranění mozku."],
+            ["ZASTAVENÍ KRVÁCENÍ Z KOSTI", "Okraje vyvrtaných a vyřezaných kostí se zatírají kostním voskem (Bone Wax — pasta z včelího vosku) nebo koagulují bipolárním elektrokauterem.", "Houbičkovitá kostní tkáň krvácí ze stovek malých cévek. Nezastavené by způsobilo pooperační hematom kolem kosti."],
+            ["OTEVŘENÍ DURY (tvrdé pleny)", "Dura (průhledná tuhá blána) se nadzvedne háčkem a nůžkami se vystřihne čtvercový lalok. Epidurální hematom (krev mezi kostí a durou) se okamžitě projeví — vylije se nebo je „pod tlakem“. Hematom se odsaje elektrickým odsávačem.", "Epidurální hematom je NAD durou — proto není nutné durou procházet. Pokud je hematom subdurální (pod durou), dura se musí otevřít více."],
+            ["IDENTIFIKACE A ZASTAVENÍ KRVÁCENÍ", "Po evakuaci hematomu chirurg hledá zdroj krvácení (nejčastěji a. meningea media — střední meningeální tepna, která tepe jako červený proud). Cévka se uchopí bipolárním kleštěm a koaguluje (elektrickým proudem se uzavře). Dura se prohlédne na další krvácení.", "Pokud se nenajde a nezastaví zdroj, hematom se do 24 hodin znovu nashromáždí a reoperace bude nutná."],
+            ["UZAVŘENÍ DURY", "Dura se sešije vstřebatelným stehem tak, aby byl uzávěr vodotěsný — ani kapka mozkomíšního moku nesmí prosakovat. Pokud je dura napjatá, vloží se záplata z umělé dury (DuraGen) nebo z periostea (blány z kosti).", "Prosakující dura = chronický likvorový výtok = riziko meningitidy. Napjatá dura nelze sešít silou — to by zvýšilo ICP."],
+            ["VRÁCENÍ KOSTNÍHO VÍČKA", "Kostní víčko se vrátí na původní místo a přidrží 4–6 titaniovými minidestičkami a šrouby (průměr šroubu 1,5 mm). Každá destička překlenuje okraj a přichytí víčko ke zbytku lebky.", "Titanové destičky jsou velmi lehké a neinterferují s RTG ani MRI. Kost sama sroste za 6–8 týdnů."],
+            ["UZAVŘENÍ SKALPU", "Skalp (kůže a fascie) se přeloží zpět na místo. Fascie se sešije silnějším stehem. Podkoží vstřebatelným stehem. Kůže skalpovacími svorkami (Staples) nebo intradermálním stehem.", "Skalp musí dobře krýt titanové destičky — infekce v oblasti kraniotomie je závažná komplikace."],
+            ["JIP — bezprostřední monitorace", "Pacient přechází na neurochirurgickou JIP. Každou hodinu: vědomí (GCS), zornice, pohyb končetin. Arteriální linka pro přesný tlak. CT mozku do 24 hodin. ICP monitor pokud je GCS ≤ 8.", "Rebound edém (otok mozku po evakuaci hematomu) může nastat za 12–24 hodin. Včasné zachycení = šance na korekci."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "title": "LUCIDNÍ INTERVAL",
+          "text": "Epidurální hematom způsobuje klasický „lucidní interval“ — pacient po úrazu krátce ztratí vědomí (otřes mozku), pak se probudí a hovoří normálně (hematom se ještě hromadí), pak rychle kolabuje jak tlak přeroste kompenzační kapacitu mozku. Pacient vypadá dobře → záchranáři zváhají → umírá. Každý trauma pacient s krátkou ztrátou vědomí a obnovenými příznaky = CT okamžitě."
+        }
+      ],
+      "summary": [
+        "Epidurální hematom: lucidní interval = pacient hovoří normálně, pak rychle kolabuje; urgentní kraniotomie.",
+        "Burr holes → kraniotom → kostní víčko; po evakuaci hematomu vrátit titaniovými minideskami.",
+        "Dekompresní kraniektomie: část kosti se záměrně nevrátí zpět; mozek dostane prostor pro expanzi.",
+        "Mayfield fixátor (hroty do lebky) drží hlavu absolutně nehybně — podmínka přesné neurochirurgie."
+      ]
+    },
+    {
+      "id": "11B.5",
+      "title": "Cévní chirurgie — Endovaskulární oprava aorty (TEVAR)",
+      "abbrevs": [
+        { "a": "TEVAR", "f": "Thoracic Endovascular Aortic Repair — endovaskulární (zevnitř cévou) oprava hrudní aorty" },
+        { "a": "Stentgraft", "f": "kovová síťová trubička (stent) potažená tkaninou (graft); zavedená zevnitř do aorty; překryje poškozenou stěnu" },
+        { "a": "Fluoroskopie", "f": "rentgen v reálném čase — nepřetržitý rentgenový obraz na monitoru (jako rentgenové video)" },
+        { "a": "Endoleak", "f": "prosakování kontrastu mimo stentgraft — aorta stále „teče“ kolem stentu; komplikace výkonu" }
+      ],
+      "terms": [
+        { "t": "Aorta", "d": "největší tepna těla; vychází přímo ze srdce; průměr cca 3 cm; rozvádí okysličenou krev do celého těla" },
+        { "t": "Disekce aorty", "d": "roztržení vnitřní vrstvy stěny aorty; krev pronikne do stěny a „rozloupne“ ji; extrémně bolestivé; smrtelné bez léčby" },
+        { "t": "Traumatická ruptura aorty", "d": "přetržení aorty při deceleračním traumatu (prudké zabrzdění); nejčastěji u MVA nebo pádu z výšky; okamžitě smrtelné nebo s odloženou rupturou" },
+        { "t": "Femorální tepna (a. femoralis)", "d": "stehenní tepna — velká tepna v třísle; katetry se nejčastěji zavádějí přes ni do celého cévního systému" },
+        { "t": "Kontrastní látka", "d": "jodová tekutina injikovaná do cévy; na rentgenu se zobrazí jako jasně bílá; umožňuje „vidět“ tepny na rentgenu" },
+        { "t": "Hemostatický zavaděč (Sheath)", "d": "plastová trubička zavedená do tepny jako „vstupní brána“; chrání cévu před poškozením zavádění katetry" },
+        { "t": "Kovová spirála (Coil)", "d": "malá platinová spirálka zavedená katetrem do krvácející cévy; způsobí trombu (sraženinu) a uzavře cévu" }
+      ],
+      "lead": "TEVAR je revoluční minimálně invazivní metoda pro léčbu poškozeného nebo oslabeného úseku hrudní aorty. Místo otevření hrudníku a přímé opravy aorty pod srdeční zástavou se celý výkon provádí ZEVNITŘ tepny přes katétry zavedené přes tříslo. Mortalita TEVAR je 3–5 % oproti 15–30 % u otevřené operace.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Postup endovaskulární opravy hrudní aorty (TEVAR)",
+          "headers": ["Krok", "Co přesně se udělá", "Proč — co to znamená"],
+          "rows": [
+            ["PŘÍPRAVA — katetrizační sál a anestézie", "Výkon se provádí v katetrizačním sále (viz Kapitola 10A.5) s velkou RTG soupravou C-ramene. Celková anestézie nebo silná sedace. Arteriální linka na obou zápěstích pro monitoring tlaku na obou stranách aorty.", "Pacient nesmí hýbat — pohyb by znamenal špatné zavedení stentgraftu. Dvě arteriální linky měří tlak vlevo i vpravo — disekce aorty může způsobit rozdíl."],
+            ["VPICH DO TŘÍSLA a zavedení zavaděče", "Chirurg provede 2 cm řez v pravém třísle a pod kontrolou ultrazvuku připíchne jehlu přímo do femorální tepny (stehenní tepny). Přes jehlu zasune vodič (tenký drát). Jehlu vytáhne. Přes vodič zasune hemostatický zavaděč (plastová trubička průměru 6–8 mm) — funguje jako „vstupní brána“ do arteriálního systému.", "Zavaděč chrání stěnu tepny před poškozením opakovaným zaváděním různých katetrů. Průhledný, takže chirurg vidí, že vodič prochází správně."],
+            ["DIAGNOSTICKÁ AORTOGRAFIE", "Přes zavaděč se zasune diagnostický katetr (tenká hadička) až do hrudní aorty. Injekčním automatem se vstříkne 20–30 ml kontrastní látky rychlostí 20 ml/sekundu. Na fluoroskopii (rentgenovém videu) se zobrazí celá aorta — viditelné: poranění, disekce, výduť (aneuryzma), vztah k cévám zásobujícím míchu a ledviny.", "Aortografie přesně ukáže rozsah poranění a vzdálenost od kritických cév (a. subclavia zásobuje levou ruku; Adamkiewiczova tepna zásobuje míchu). Stentgraft nesmí tyto cévy zakrýt."],
+            ["ZAVEDENÍ STENTGRAFTU", "Stentgraft (složený kovový stent potažený polyesterovou tkaninou, průměr 2–3 cm) je složený v doručovacím systému (delivery system — plastové pouzdro průměru 2 cm). Chirurg ho zasune přes zavaděč v třísle a posunuje ho pomalu přes celou aortu až na místo poranění. Polohování probíhá pod nepřetržitou fluoroskopií.", "Stentgraft se musí zastavit PŘESNĚ na správném místě — 2 cm od zdravé cévy (proximální landing zone) a 2 cm za poraněním (distální landing zone). Milimetrová přesnost."],
+            ["UVOLNĚNÍ STENTGRAFTU", "Chirurg zatáhne za ovladač na doručovacím systému — vnější obal stentgraftu se stáhne a stentgraft se rozvine. Kovové spirálky (Nitinolová paměťová slitina) se rozevřou a přiloží na stěnu aorty. Tkanina uvnitř překrývá poškozenou část aorty zevnitř — krev přestane pronikat do stěny nebo mimo aortu.", "Stentgraft se přizpůsobí průměru aorty (Nitinol je slitina, která si pamatuje svůj tvar a automaticky se roztáhne na správnou velikost). Tkanina těsní — krev teče pouze vnitřkem stentu."],
+            ["DOFOUKNUTÍ BALONKEM", "Přes stent se zasune balonkový katetr a balonek se nafoukne na 2–3 atm. Tím se stent přimáčkne ke stěně aorty ze strany.", "Balonek zajistí těsný kontakt stentgraftu se stěnou aorty — zabraňuje endoleaku (prosakování krve mimo stent). Bez balonku by stent „plaval“ ve středu aorty."],
+            ["KONTROLNÍ AORTOGRAFIE", "Znovu se vstříkne kontrastní látka. Na fluoroskopii se sleduje: teče krev jen vnitřkem stentu? Je poranění překryté? Prosakuje kontrast mimo stent (endoleak)?", "Endoleak = komplikace: krev stále prosakuje mimo stentgraft do aneuryzmatu nebo poranění. Typy: Type 1 = stent netěsní na okrajích (nutná korekce balonkem nebo druhý stent); Type 2 = krev přitéká postranní větví (sledování)."],
+            ["UZAVŘENÍ TŘÍSLA", "Zavaděč se vytáhne. Chirurg buď ručně přidrží místo vpichu na 10 minut (přímý tlak) nebo použije perkutánní uzavírací systém (ProStar, Proglide — speciální zařízení, které zaseje steh do tepny bez chirurgického řezu). Elastický obvaz na 6 hodin.", "Velký zavaděč (průměr 8 mm = jako silnější tužka) v tepně vytvoří otvor, který musí být uzavřen nebo stlačen dokud nezakrvácí (trombóza vpichu). Perkutánní uzavření je výhodnější pro pacienta — menší rána."],
+            ["JIP 24 hodin — sledování komplikací", "Arteriální linka měří tlak (cíl SBP < 120 mmHg — nižší tlak = menší síla na stent). Neurologické vyšetření každou hodinu (pohyb nohou, síla). CT aorty do 24 hodin a pak za 1 měsíc, 6 měsíců, 1 rok.", "Hlavní komplikace: Míšní ischémie (ochrnutí nohou, pokud byl zakryt přívod pro míchu) — nastane za 2–24 hodin; Endoleak — viditelný na CT. Sledování trvá doživotně."]
+          ]
+        }
+      ],
+      "summary": [
+        "TEVAR je minimálně invazivní: stentgraft přes tříslo, bez otevření hrudníku; mortalita 3–5 % vs. 15–30 %.",
+        "Endoleak (prosakování mimo stent) = komplikace; kontrolní aortografie potvrdí těsnost.",
+        "Cíl TK po TEVAR: SBP pod 120 mmHg; sledování míchy (ochrnutí nohou) každou hodinu.",
+        "CT aorty za 24 h, 1 měsíc, 6 měsíců, 1 rok — sledování je doživotní."
+      ]
+    },
+    {
+      "id": "11B.6",
+      "title": "Fasciotomie — Syndrom kompartmentu",
+      "terms": [
+        { "t": "Syndrom kompartmentu", "d": "stav kdy tlak uvnitř svalového prostoru (ohraničeného fascií) překročí tlak v kapilárách — sval a nervy dostávají ischemii (nedokrvení)" },
+        { "t": "Fascie", "d": "tuhá vazivová blána obalující skupinu svalů; nepoddajná — při otoku svalů uvnitř nemá kam „ustoupit“" },
+        { "t": "Ischemie", "d": "nedokrvení — tkáň nedostává kyslík; sval a nerv přestanou fungovat" },
+        { "t": "Nitrokompartmentální tlak", "d": "tlak měřený přímo jehlou uvnitř svalového oddílu; normálně 0–10 mmHg; nad 30 mmHg nebo delta P < 30 mmHg = fasciotomie" },
+        { "t": "Delta P", "d": "rozdíl: diastolický tlak pacienta minus nitrokompartmentální tlak; pokud < 30 mmHg = kritické" },
+        { "t": "Nekróza", "d": "odumření tkáně; mrtvá svalová tkáň se musí odstranit; příčinou trvalého postižení" },
+        { "t": "VAC systém (Vacuum-Assisted Closure)", "d": "podtlakový systém překrývající otevřenou ránu; houbička + podtlak −125 mmHg; udržuje ránu čistou a napomáhá hojení" }
+      ],
+      "lead": "Syndrom kompartmentu nastane, když tlak uvnitř svalové fascie stoupne natolik, že kapilára (nejtenčí cévka) nemůže dodávat krev do svalu a nervu. Sval začíná odumírat za 6 hodin od vzniku. Fascie musí být rozříznuta — fasciotomie — jinak trvalé postižení nebo amputace.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Postup fasciotomie bérce při syndromu kompartmentu",
+          "headers": ["Krok", "Co chirurg přesně udělá", "Proč a co to znamená"],
+          "rows": [
+            ["MĚŘENÍ TLAKU v kompartmentu", "Speciální jehla (Stryker STIC monitor) nebo improvizovaně — arteriální kanyla — se zapíchne přes kůži do svalu. Přístroj zobrazí tlak v mmHg. Normální tlak: 0–10 mmHg. Kritická hranice: > 30 mmHg nebo delta P < 30 mmHg (delta P = diastolický TK pacienta minus tlak v kompartmentu).", "Klinická diagnóza (bolest, napjatý sval) nestačí — u sedovaných pacientů nebo po poranění nervů jsou příznaky maskované. Přímé měření je objektivní a dokumentovatelné."],
+            ["ANESTÉZIE", "Celková anestézie (preferovaná) nebo spinální (injekce do páteřního kanálu pro znecitlivění dolní části těla). Lokální anestézii nelze — řezy jsou příliš rozsáhlé.", "Fasciotomie bérce vyžaduje 2 velké řezy celé délky bérce (15–20 cm každý). Místní umrtvení tak velké oblasti není možné."],
+            ["MEDIÁLNÍ ŘEZ na bérci", "Na holenní kosti (tibii) na vnitřní straně bérce chirurg provede 15–20 cm kožní řez podél celé délky svalu. Kůže se rozhrne. Nůžkami se přeruší fascie celou délkou řezu (pod nůžkami „chrupne“ — napjatá fascie praská jako přepjatá guma). Sval ihned vyklenuje přes fasciální defekt.", "Bérec má 4 fasciální oddíly (kompartmenty): přední, laterální (boční), hluboký zadní a povrchový zadní. Mediální řez přistupuje k hlubokému a povrchovému zadnímu kompartmentu."],
+            ["LATERÁLNÍ ŘEZ na bérci", "Na zevní straně bérce nad lýtkovou kostí (fibulou) druhý 15–20 cm řez. Fascie se opět přeruší v celé délce. Sval vyklenuje.", "Laterální řez přistupuje k přednímu a laterálnímu kompartmentu — tím jsou všechny 4 kompartmenty uvolněny."],
+            ["KONTROLA ŽIVOTNOSTI SVALU", "Chirurg pohledem posoudí barvu svalů: živý sval je jasně červený a při dotyku nebo lehkém elektrickém podráždění se stáhne (kontrahuje). Šedivý nebo hnědavý sval, který se nestáhne = nekrotický (odumřelý). Nekrotická tkáň se odstraní nůžkami nebo skalpelem (nekrektomie).", "Nekrotický sval je živnou půdou pro bakterie (klostridium = sněť) a pro toxiny. Musí být odstraněn ihned. Hranice životnosti může být nejasná — raději méně nekrektomie a druhý pohled za 48 h."],
+            ["RÁNY ZŮSTÁVAJÍ OTEVŘENÉ", "Rány se NEZAVÍRAJÍ. Kryjí se sterilními vlhkými gázami nebo — lépe — VAC systémem (houbička + průhledná fólie + podtlak −125 mmHg). Drény nejsou potřeba.", "Uzavření rány při přetrvávajícím otoku svalu by způsobilo návrat syndromu kompartmentu. Také přítomnost bakterií (kontaminace) by vedla k infekci pod uzavřenou ránou."],
+            ["DRUHÝ POHLED za 48–72 hodin", "Za 48–72 hodin reoperace. VAC systém se odstraní. Rány se prohlédnou — živý nebo nekrotický sval? Nekrotická tkáň se odstraní. Pak rozhodnutí: ránu uzavřít primárně (stehy), nebo kožními štěpy, nebo ponechat otevřenou dál.", "Za 48–72 hodin otoky obvykle ustoupí natolik, aby bylo možné rány uzavřít. Dřívější uzavření je riskantnější."],
+            ["UZAVŘENÍ RÁNY nebo KOŽNÍ ŠTĚPY", "Pokud otoky plně ustoupily a sval je živý: fascie se nesešívá (nechá se otevřená — jinak by se kompartment syndrom mohl vrátit). Kůže se sešije stehy nebo svorkami. Pokud je rána příliš velká: split-thickness skin graft (STSG) = tenká vrstva kůže z jiné části těla (stehno) se transplantuje na sval.", "Fascie se ponechá rozříznuta navždy — záměrně. Sval pak nemá pevnou fascii, ale dostatečně ho drží kůže a podkoží. STSG kryje velké defekty do 2 týdnů."]
+          ]
+        }
+      ],
+      "summary": [
+        "Nitrokompartmentální tlak nad 30 mmHg nebo delta P pod 30 = fasciotomie — bez ní odumírá sval za 6 hodin.",
+        "Mediální + laterální řez na bérci uvolní všechny 4 kompartmenty; fascie se nechá záměrně otevřená.",
+        "Rány zůstanou otevřené; VAC systém −125 mmHg; druhý pohled za 48–72 hodin.",
+        "Mrtvý sval = šedivý, nekontrahuje; musí být excidován (odstraněn) ihned pro prevenci sepse."
+      ]
+    },
+    {
+      "id": "11B.7",
+      "title": "Operace páteře — Přední krční přístup (ACDF)",
+      "abbrevs": [
+        { "a": "ACDF", "f": "Anterior Cervical Discectomy and Fusion — přední krční přístup s odstraněním ploténky a fúzí (srůstem) obratlů" },
+        { "a": "C-spine", "f": "Cervical Spine — krční páteř; obratle C1–C7" },
+        { "a": "Spondylodéza", "f": "chirurgická fúze dvou nebo více obratlů — srostou v jeden celek; odstraní pohyblivost segmentu" },
+        { "a": "PEEK", "f": "Polyetheretherketone — druh plastu; klece z PEEK jsou rentgenově průhledné a mají podobnou elasticitu jako kost" }
+      ],
+      "terms": [
+        { "t": "Obratel", "d": "kostěný článek páteře; prstenec s otvorem uprostřed (páteřní kanál) pro míchu nebo kořeny nervů" },
+        { "t": "Meziobratlová ploténka (disk)", "d": "chrupavčitý tlumič nárazů; při výhřezu se část ploténky vychlípí a tlačí na nerv nebo míchu" },
+        { "t": "Páteřní kanál", "d": "úzký tunel uvnitř páteře kudy prochází mícha; zlomenina nebo výhřez ho zužuje a tísní míchu" },
+        { "t": "Mícha", "d": "svazek nervů procházející páteřním kanálem; přenáší signály mezi mozkem a tělem; poranění = ochrnutí" },
+        { "t": "Přední přístup", "d": "řez na přední straně krku; chirurg se dostane k páteři mezi velké cévy a průdušnici; mícha je chráněna" },
+        { "t": "Klec (Cage)", "d": "titanová nebo PEEK trubička vyplněná kostní hmotou; drží výšku meziobratlového prostoru" }
+      ],
+      "lead": "ACDF je operace krční páteře přes přední stranu krku. Ploténka (meziobratlová destička) se odstraní, mícha se uvolní od tlaku a místo ploténky se zasadí klec s kostní hmotou. Obratle pak srostou v jeden celek. Výhoda přístupu zepředu: chirurg nemusí manipulovat s míchou — dostane se k ní z bezpečné strany.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Postup ACDF — přední krční discektomie a fúze",
+          "headers": ["Krok", "Co chirurg přesně udělá", "Proč — logika a co to znamená pro pacienta"],
+          "rows": [
+            ["POLOHA na zádech se záklonem", "Pacient leží na zádech. Pod ramena se vloží srolovaný ručník (svitkem). Hlava se mírně zakloní a stabilizuje se přelepením čela na speciální podložku. Chirurg stojí na pravé straně pacienta.", "Mírné zaklonutí rozevírá přední stranu krční páteře — obratle se od sebe mírně oddálí a je lépe vidět. Hlava nesmí být na stranu — to by otočilo orientaci."],
+            ["HORIZONTÁLNÍ ŘEZ na krku", "Chirurg provede 4–5 cm kožní řez přesně v záhybu kůže krku (přirozená vráska). Řez jde jen přes kůži a platysma (tenký sval krku pod kůží). Kůže v záhybu se hojí kosmeticky — jizva bude téměř neviditelná.", "Záhyb kůže se zvolí protože se přirozeně „skryje“ v kožní vrásce. Chirurg se přibližuje k páteři ze strany, kde je méně cév."],
+            ["PREPARACE k páteři — „mezi řeky a potrubím“", "Chirurg se dostává k páteři preparací mezi dvěma skupinami struktur: VPRAVO jsou velké cévy (krkavice a jugulár). VLEVO jsou dýchací struktury (průdušnice a jícen). Chirurg oba „balíky“ rozhrne tupo pomocí prstů — BEZ stříhání. Páteř se nachází vzadu jako pevná „zadní stěna“.", "„Tupo“ = bez říznutí. Nervy, cévy a dýchací trubice se nesmí poškodit. Chirurg „pluje“ v přirozeném anatomickém prostoru (fascii) kde jsou tkáně přirozeně odděleny."],
+            ["IDENTIFIKACE segmentu C-ramenem", "Na páteř se přiloží tenká jehla nebo kovový marker. C-rameno (pojízdný rentgen) pořídí snímek. Chirurg spočítá obratle od odspodu nahoru: C7 je nejnižší krční, C6 nad ním atd. Tím se potvrdí, že operuje správný segment.", "Operace na špatném segmentu (Wrong-Level Surgery) je závažná chyba. Rentgenová identifikace je povinná a dokumentuje se."],
+            ["DISEKCE ploténky — příprava", "Chirurg přiloží rozvěrač (Caspar distractor): dva šrouby se zašroubují do obratlů nad a pod ploténkou; roztáhnou a „rozevřou“ prostor. Tím se ploténka obnažuje a lépe se v prostoru pracuje.", "Prostor mezi obratli je normálně 5–8 mm. Rozvěrač ho rozevře na 10–12 mm — chirurg vidí a nástroje se vejdou."],
+            ["ODSTRANĚNÍ ploténky (Discektomie)", "Chirurgickou „lžičkou“ (curette) a speciálními kleštěmi (Kerrison rongeur) se systematicky odstraňuje ploténka. Pracuje se vrstvu po vrstvě směrem dozadu. Za ploténkou je Posterior Longitudinal Ligament (PLL) — tuhý vaz kryjící míchu. Ten se odkryje a místy přeruší pro přístup k zadnímu (epidurálnímu) prostoru.", "Ploténka = tkáň způsobující tlak na míchu nebo nervový kořen. Musí být odstraněna kompletně — jinak symptomy přetrvávají. Curette „seškrabuje“ chrupavku z krycích ploch obratlů — kost musí být obnažena pro přiložení kostní hmoty."],
+            ["DEKOMPRESE míchy nebo kořene", "Chirurgickými kleštěmi nebo diamantovým vrtáčkem se odstraní osteofyty (kostní výrůstky) a zbytky měkkého disku tlačící na míchu nebo nervový kořen. Chirurg sleduje pohyb dury (pulzující blána kolem míchy) — pokud se pulzuje volně = mícha má prostor.", "Účel operace je DEKOMPRESE — uvolnění tlakem postižené míchy nebo kořene. Bez kompletní dekomprese by příznaky přetrvávaly nebo se vrátily."],
+            ["ZAVEDENÍ KLECE", "Titanová nebo PEEK klec vyplněná kostní hmotou (autologní = vlastní kost z kyčelní lopatky, nebo syntetická náhrada = keramika, β-trikalcium fosfát) se zasune do prostoru po ploténce. Klec musí sedět pevně — chirurg ji mírně „zatlačí“ a ověří, že se nehýbe.", "Klec drží výšku meziobratlového prostoru. Kostní hmota uvnitř klece „prorůstá“ do obratlů a za 3–6 měsíců srůstají do jednoho celku (spondylodéza). PEEK klec je průhledná pro rentgen — kostní srůst lze sledovat na RTG."],
+            ["DESTIČKA a šrouby na přední straně", "Titanová destička se přiloží na přední povrch obratlů nad a pod klecí. Šroubovák zavede 4 šrouby (2 do každého obratle) přes otvory v destičce. Šrouby mají zahnutou hlavu (locked screw) — nemohou se uvolnit.", "Destička drží klec na místě dokud kost nesroste. Bez destičky by klec mohla vyklouznout dopředu (migrace) a způsobit polykací nebo dýchací obtíže."],
+            ["KONTROLA a uzavření", "C-rameno pořídí snímek — potvrdí správnou polohu klece a destičky. Neurologický monitoring (pokud se používal) potvrdí normální signál. Chirurg vyplachuje ránu. Platysma se sešije, podkoží a kůže intradermálním stehem (kůže se sešije zevnitř — bez viditelných stehů nebo svorek).", "Intradermální steh na krku = minimální jizva. Po zhojení za 3–4 měsíce bude jizva v záhybu kůže téměř neviditelná."]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "title": "KOMPLIKACE ACDF",
+          "text": "Nejzávažnější — poranění jícnu (jícen leží těsně za místem operace; perforace = závažná komplikace). Poranění cév (krkavice). Neurologická deteriorace (zhoršení příznaků po operaci). Hoarseness = chrapot z poranění n. laryngeus recurrens (nerv hlasivek). Dysfagie = obtíže s polykáním (nejčastější, přechodná). Selhání spondylodézy = kost nesroste (výskyt 5–10 %); tehdy reoperace."
+        }
+      ],
+      "summary": [
+        "ACDF: přední přístup „mezi řekami a potrubím“ — bez manipulace s míchou; přímý pohled z bezpečné strany.",
+        "Diskektomie (odstranění ploténky) + klec s kostní hmotou + titanová destička = spondylodéza za 3–6 měsíců.",
+        "Přístupová kontrola C-ramenem: operace na špatném segmentu (wrong-level) je závažná chyba; RTG je povinný.",
+        "Intradermální steh na krku = kosmetický výsledek; jizva v záhybu kůže za 3–4 měsíce téměř neviditelná."
+      ]
+    }
+  ]
+}

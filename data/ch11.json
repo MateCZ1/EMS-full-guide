@@ -1,0 +1,456 @@
+{
+  "id": "ch11",
+  "number": "11",
+  "part": "II",
+  "title": "Nemocniční péče — úrazy (navazuje na Část I, kapitola 4)",
+  "icon": "bandage",
+  "intro": "Tato kapitola popisuje, co se děje s pacientem po předání záchranáři do nemocnice. Každá sekce navazuje na odpovídající protokol záchranáře v Části I. Pořadí úrazů je totožné.",
+  "sections": [
+    {
+      "id": "11.1",
+      "title": "Pohmoždění — nemocniční ošetření",
+      "lead": "Pohmoždění (kontuze) je v nemocnici ošetřeno po vyloučení závažnějšího poranění (zlomeniny, ruptury šlach nebo vazů, vnitřního krvácení). Důraz je kladen na rehabilitaci a prevenci komplikací.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Diagnostika v nemocnici",
+          "headers": ["Vyšetření", "Kdy ho ordinujeme", "Co hledáme"],
+          "rows": [
+            ["RTG (rentgen)", "Každé pohmoždění, kde nelze vyloučit zlomeninu", "Zlomeniny, cizí tělesa, vzduch v kloubní dutině"],
+            ["Ultrazvuk pohybového aparátu", "Suspektní ruptura svalu, šlachy nebo vazu", "Přerušení kontinuity tkáně, hematom"],
+            ["MRI (magnetická rezonance)", "Nejasný nález, podezření na poranění chrupavky nebo menisků", "Detailní zobrazení měkkých tkání, chrupavky, vazů"],
+            ["Scintigrafie skeletu", "Opakované nebo přetrvávající příznaky", "Stresové zlomeniny, kostní poranění nezobrazitelná na RTG"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Medikamentózní léčba: NSAID (nesteroidní protizánětlivé léky — ibuprofen 400–600 mg 3× denně, nebo naproxen 500 mg 2× denně) plus lokální chlazení, elevace. Při silné bolesti: opioidní analgetika krátkodobě.",
+            "Fyzioterapie: Od 2.–3. dne: izometrická cvičení (stah svalu bez pohybu). Od 5.–7. dne: aktivní pohyb v bezbolestném rozsahu. Fyzioterapeut sestavuje individuální rehabilitační plán.",
+            "Kompresní terapie: Elastická komprese po dobu 2–4 týdnů snižuje edém a urychluje hojení. Správně naložená komprese: distálně ke proximálně.",
+            "Syndrom kompartmentu — urgentní chirurgie: Pokud se rozvine syndrom kompartmentu: fasciotomie (chirurgické rozříznutí svalové fascie) do 6 hodin od vzniku. Zpoždění = trvalé poškození svalu a nervů. Po fasciotomii: otevřená rána se hojí sekundárně nebo kožními štěpy."
+          ]
+        }
+      ],
+      "summary": [
+        "Vyloučení závažnějšího poranění (zlomeniny, ruptura šlach, compartment syndrom) je první krok.",
+        "NSAID (ibuprofen) snižuje i zánět, nejen bolest — je to proto lék volby u pohmoždění.",
+        "Compartment syndrom: tlak v kompartmentu přes 30 mmHg nebo delta P pod 30 = fasciotomie do 6 hodin."
+      ]
+    },
+    {
+      "id": "11.2",
+      "title": "Zlomeniny — nemocniční ošetření",
+      "abbrevs": [
+        { "a": "OR", "f": "Operating Room — operační sál" },
+        { "a": "ORIF", "f": "Open Reduction Internal Fixation — otevřená repozice a vnitřní fixace — chirurgická metoda ošetření zlomenin" },
+        { "a": "IM", "f": "Intramedullary — nitrodřeňový (hřeb zavedený do kosti)" },
+        { "a": "DVT", "f": "Deep Vein Thrombosis — trombóza hlubokých žil — krevní sraženina v žíle" },
+        { "a": "PE", "f": "Pulmonary Embolism — plicní embolie" },
+        { "a": "VTE", "f": "Venous Thromboembolism — žilní tromboembolismus" },
+        { "a": "LMWH", "f": "Low Molecular Weight Heparin — nízkomolekulární heparin — prevence trombózy" }
+      ],
+      "lead": "V nemocnici se zlomeniny ošetřují konzervativně (sádrová fixace, ortéza, klid) nebo chirurgicky (vnitřní fixace dlahou nebo hřebem, zevní fixace). Volba závisí na typu zlomeniny, přítomnosti cévního nebo nervového poranění a celkovém stavu pacienta.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Diagnostika zlomenin",
+          "headers": ["Vyšetření", "Informace"],
+          "rows": [
+            ["RTG ve 2 projekcích", "Základní zobrazení: typ, posun, angulace, kloubní postižení"],
+            ["CT se 3D rekonstrukcí", "Komplexní kloubní zlomeniny (pánev, kyčel, kotník), zlomeniny páteře — přesná operační plánování"],
+            ["Angiografie nebo CT angiografie", "Suspektní poranění tepny distálně (chybějící puls, bledost, ischemie)"],
+            ["Dopplerův ultrazvuk cév", "Posouzení průtoku krve distálně od zlomeniny"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Sádrová fixace (Cast): Sádra nebo moderní fibersklový obvaz. Provádí se po odeznění počátečního otoku (24–48 hodin). Kontrolní RTG po 1, 2 a 6 týdnech. Délka fixace: prst 3–4 týdny, předloktí 4–6 týdnů, holení 6–10 týdnů.",
+            "Ortéza (brace): Snímatelná; umožňuje řízenou rehabilitaci a hygienickou péči. Vhodná pro stabilní zlomeniny a po sejmutí sádry.",
+            "Trakce: Dočasná kosterní trakce (kirschnerův drát přes kost) pro nestabilní zlomeniny femuru jako přemostění před operací. V USA nahrazena z velké části urgentní operací."
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Chirurgická léčba zlomenin",
+          "headers": ["Metoda", "Kdy ji volíme", "Specifika"],
+          "rows": [
+            ["Nitrodřeňový hřeb (IM Nail)", "Zlomeniny diafýzy (středu) dlouhých kostí — femur, tibia, humerus", "Minimálně invazivní; umožňuje brzkou zátěž; nízká infekční komplikace"],
+            ["Destička a šrouby (Plate & Screws, ORIF)", "Periarticulární zlomeniny, zlomeniny dolního konce kosti vřetenní, kotníku", "Otevřená repozice — přesná; riziko infekce vyšší než u hřebu"],
+            ["Zevní fixátor (External Fixator)", "Otevřené zlomeniny, masivní znečištění, nestabilní pacient", "Dočasná stabilizace; definitivní chirurgie později; ranná infekce dostupná k ošetření"],
+            ["Kloubní náhrada (Arthroplasty)", "Zlomeniny hlavice femuru, těžká kloubní drcení u starších pacientů", "Přímá mobilizace pooperačně"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Prevence trombózy (DVT/PE): Nízkomolekulární heparin (LMWH — enoxaparin 40 mg podkožně 1× denně) nebo přímá perorální antikoagulancia. Antikoagulace pokračuje 4–6 týdnů po operaci kyčle nebo kolene. Kompresní punčochy.",
+            "Rehabilitace: Vertikalizace (vstávání) 1.–2. pooperační den. Fyzioterapie: nácvik chůze o berlích, postupné zatěžování. Plná zátěž dle typu fixace a lokalizace.",
+            "Kontrola ran: Denní převaz; stehy nebo svorky se odstraňují 10.–14. den. Příznaky infekce: zarudnutí, otok, horečka, sekret ze sutury."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "title": "KOMPLIKACE ZLOMENIN",
+          "text": "Nitrosvalová embolie tuku (fat embolism) — nejčastěji po zlomenině femuru: petechie (drobné krevní výrony) na kůži, zmatení, respirační selhání za 24–48 hod. Avaskulární nekróza (odumření kosti) — hlavice femuru. Infekce (zejm. u otevřených zlomenin). Pseudoartróza — zlomenina se nehojí."
+        }
+      ],
+      "summary": [
+        "ORIF kotníku: přesnost na milimetry — odchylka 2 mm = artróza za 5–10 let.",
+        "Nitrodřeňový hřeb (IM Nail) je minimálně invazivní; trakční stůl narovná kost před operací.",
+        "Prevence trombózy: LMWH (enoxaparin) podkožně od 1. dne po operaci; pokračuje 4–6 týdnů.",
+        "Vakcinace po splenektomii (pneumokok, meningokok, HiB) je povinná za 2 týdny po operaci."
+      ]
+    },
+    {
+      "id": "11.3",
+      "title": "Pád z výšky — nemocniční ošetření",
+      "lead": "Pád z výšky způsobuje vícečetné poranění, která se diagnostikují ve vrstvách. Prvotní CT celého těla odhalí zjevná poranění; sekundární vyšetření odhalí méně nápadná. Principem je systematické vyšetření a léčba priorit.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Standardní diagnostický protokol při přijetí",
+          "headers": ["Vyšetření", "Čas od příjmu", "Co hledáme"],
+          "rows": [
+            ["FAST ultrazvuk", "Do 2 minut", "Krev v břiše, hemoperikard (krev kolem srdce), hemothorax"],
+            ["RTG hrudníku + pánve (mobilní)", "Do 3 minut", "Pneumothorax, hemothorax, zlomenina pánve"],
+            ["CT celého těla (pan-scan)", "Do 10–15 minut po stabilizaci", "Kompletní traumatologická diagnostika: mozek, krk, hrudník, břicho, pánev, páteř"],
+            ["CT angiografie aorty", "Při podezření na poranění aorty (mechanismus, RTG nález)", "Disekce nebo ruptura aorty"],
+            ["EKG", "Při příjmu a opakovaně", "Myokardiální kontuze (pohmnoždění srdce), arytmie"],
+            ["Odběr krve — trauma panel", "Ihned", "Krevní obraz, koagulace, laktát, troponin, krevní skupina, kříž"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "\"Don Juan Syndrome\" — vzorec poranění při dopadu na chodidla: Při pádu na chodidla (typicky skokan ze 3. patra a výše) dochází ke klasickému \"vzestupnému\" vzorci poranění axiálním zatížením."
+        },
+        {
+          "type": "table",
+          "caption": "Don Juan Syndrome — vzestupný vzorec poranění při pádu na chodidla",
+          "headers": ["Pořadí", "Kost", "Typické poranění", "Léčba"],
+          "rows": [
+            ["1.", "Patní kost (calcaneus)", "Drtivá zlomenina s destrukcí subtalarního kloubu", "CT paty; rekonstrukce dlahou nebo kloubní náhrada"],
+            ["2.", "Holenní kost (tibia) — distální", "Pilon fraktura (drcení kloubní plochy kotníku)", "Zevní fixace → ORIF destičkami"],
+            ["3.", "Stehenní kost (femur)", "Zlomenina krčku nebo hlavy femuru", "Nitrodřeňový hřeb nebo kloubní náhrada"],
+            ["4.", "Bederní obratle (L1–L3)", "Kompresní nebo výbuchová zlomenina obratle", "CT páteře; konzervativně nebo fixace šrouby"],
+            ["5.", "Základna lební", "Zlomenina přední jámy lební", "CT mozku; konzervativně nebo neurochirurgie"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Intraabdominální krvácení: Urgentní laparotomie (otevření břicha). Damage Control Surgery (DCS) — záchranná chirurgie: zastavit krvácení, zkontaminaci a uzavřít dočasně. Definitivní chirurgie za 24–48 hodin po stabilizaci.",
+            "Hrudní krvácení: Hrudní drenáž (thorakotomická trubice) jako první; při masivním krvácení (hemothorax > 1 500 ml) urgentní thorakotomie.",
+            "Poranění aorty: Endovaskulární TEVAR (stentgraft do aorty) — minimálně invazivní metoda první volby. Otevřená chirurgie jako záloha.",
+            "Nestabilní pánev: Dočasná repozice a fixace zevním fixátorem v prvních 24 hodinách. Angioembolizace pánevních tepen při krvácení nereagujícím na fixaci. Definitivní ORIF za 3–5 dní."
+          ]
+        }
+      ],
+      "summary": [
+        "Pan-scan CT (celé tělo) do 15 minut od příjmu u stabilizovaného pacienta — kompletní traumatologická diagnostika.",
+        "Don Juan Syndrome: CT paty = povinně skenovat celou páteř; vzestupné přenášení energie.",
+        "Damage Control Surgery (DCS): záchranná operace 30–60 min → JIP 24–48 h → definitivní rekonstrukce.",
+        "Nestabilní pánev: zevní fixátor urgentně; angioembolizace při přetrvávajícím krvácení; ORIF za 3–5 dní."
+      ]
+    },
+    {
+      "id": "11.4",
+      "title": "Bodné a řezné rány — nemocniční ošetření",
+      "lead": "Bodné a řezné rány se v nemocnici hodnotí podle hloubky a anatomické lokalizace. Povrchové rány jsou ošetřeny na urgentním příjmu; penetrující rány vyžadují operační revizi.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Diagnostika bodných a řezných ran",
+          "headers": ["Vyšetření", "Indikace"],
+          "rows": [
+            ["RTG", "Cizí těleso (střep, nůž, kulka), vzduch v tělní dutině (pneumoperitoneum)"],
+            ["CT s kontrastem", "Penetrující rány trupu, krku nebo hlavy; podezření na poranění vnitřních orgánů nebo cév"],
+            ["Diagnostická laparoskopie", "Bodná rána břicha s nejasným nálezem na CT — vizuální kontrola vnitřních orgánů"],
+            ["Kontrastní polykací zkouška", "Podezření na perforaci jícnu nebo žaludku"],
+            ["Angiografie", "Poranění tepny — diagnóza i intervence (embolizace nebo stent)"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Povrchová rána: Lokální anestezie (lidokain 1–2 %); dezinfekce; debridement (vyčištění — odstranění devitalizovaných tkání a cizorodých těles); stehy nebo svorky; tetanusová profylaxe.",
+            "Rána s cizím tělesem: RTG nebo ultrazvuk lokalizuje těleso. Extrakce za přímé vizualizace; NIKDY naslepo — riziko poranění cév nebo nervů.",
+            "Antibiotická profylaxe: Amoxicilin-klavulanát (Augmentin) nebo cefalosporin u znečištěných ran, kousnutí nebo rán u imunokompromitovaných pacientů. Pokrytí anaerobů při hlubokých ranách."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Rána krku — zóna II: Urgentní explorace krku. Revize karotidy, jugulárního žilního systému, průdušnice a jícnu. Cévní poranění: primární sutura nebo bypass štěp.",
+            "Rána hrudníku: Hrudní drenáž jako první krok. Videoasistovaná torakoskopie (VATS) pro diagnostiku a zastavení krvácení < 1 500 ml. Urgentní thorakotomie při masivním hemothoraxu nebo poranění srdce.",
+            "Rána břicha — laparotomie: Diagnostická laparoskopie nebo rovnou laparotomie. Revize všech orgánů, zastavení krvácení, ošetření perforací střev. Poranění tlustého střeva: stomie vs. primární sutura dle kontaminace.",
+            "Poranění srdce — perikardiotomie: Okénko v perikardu chirurgicky; odsátí hemoperikardium; sutura srdce (1–2 stehy na přerušení dočasně přes pokrývající prst chirurga). Mortalita až 70 %, ale přeživší se zotavují dobře."
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "DAMAGE CONTROL SURGERY",
+          "text": "Při polytraumatizovaném nestabilním pacientovi se provádí Damage Control Surgery ve třech fázích: 1. Zastavit krvácení a kontaminaci (30–60 min); 2. JIP resuscitace 24–48 hod; 3. Definitivní chirurgická rekonstrukce. Nekombinovat všechno do jedné operace!"
+        }
+      ],
+      "summary": [
+        "Penetrující rána trupu nebo krku = diagnostická laparoskopie nebo laparotomie; CT určí rozsah.",
+        "Damage Control Surgery u nestabilního pacienta: zastavit krvácení a kontaminaci, pak JIP, pak rekonstrukce.",
+        "Rána srdce: perikardiotomie + sutura srdce — mortalita až 70 %, ale přeživší se zotavují dobře."
+      ]
+    },
+    {
+      "id": "11.5",
+      "title": "Střelné rány — nemocniční ošetření",
+      "abbrevs": [
+        { "a": "GSW", "f": "Gunshot Wound — střelná rána" },
+        { "a": "OR", "f": "Operating Room" },
+        { "a": "CT", "f": "Computed Tomography" },
+        { "a": "TXA", "f": "Tranexamic Acid — kyselina tranexamová — zastavuje krvácení" },
+        { "a": "pRBC", "f": "Packed Red Blood Cells — transfúze červených krvinek" },
+        { "a": "FFP", "f": "Fresh Frozen Plasma — čerstvě zmražená plazma" },
+        { "a": "MTP", "f": "Massive Transfusion Protocol — protokol masivní transfúze (poměr 1:1:1)" }
+      ],
+      "lead": "Střelné rány vyžadují specifický přístup — projektil může být kdekoliv, dráha není přímá (projektil se odráží od kostí) a poranění je vždy větší, než naznačuje vnější nález. U každé střelné rány platí: \"Nedůvěřujte vstupu, hledejte výstup a předpokládejte poranění mezilehlých struktur.\"",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            { "n": 1, "title": "Aktivace trauma týmu Level I", "text": "Každá penetrující rána trupu nebo krku = automatická aktivace. Trauma tým u lůžka ještě před příjezdem sanitky." },
+            { "n": 2, "title": "Masivní transfúzní protokol (MTP)", "text": "Při hemodynamické nestabilitě: okamžitá aktivace MTP. Poměr podávání: 1 díl červených krvinek (pRBC) : 1 díl plazmy (FFP) : 1 díl trombocytů. TXA 1 g do žíly do 3 hodin od zranění." },
+            { "n": 3, "title": "CT celého těla — pan-scan", "text": "U hemodynamicky stabilního pacienta: CT mozku, krku, hrudníku, břicha, pánve s kontrastní látkou. Trasování dráhy projektilu, odhalení poranění cév." },
+            { "n": 4, "title": "Chirurgická prioritizace", "text": "Zástava krvácení vždy před rekonstrukcí. Pořadí: 1. cévní poranění (krvácení); 2. poranění dutých orgánů (kontaminace); 3. rekonstrukce." },
+            { "n": 5, "title": "Pooperační JIP", "text": "Každý GSW trupu nebo hlavy → JIP minimálně 24 hodin. Monitoring vědomí, vitálních funkcí, výdeje moči." }
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "GSW hlavy — neurochirurgická péče",
+          "headers": ["Nález na CT", "Chirurgický postup", "Prognóza"],
+          "rows": [
+            ["Epidurální hematom s GCS > 8", "Kraniotomie + evakuace hematomu — elektivně do 4 hodin", "Výborná při rychlém zásahu"],
+            ["Epidurální hematom s GCS ≤ 8", "Urgentní kraniotomie — do 1 hodiny", "Závisí na době od vzniku"],
+            ["Akutní subdurální hematom", "Urgentní kraniotomie — do 4 hodin", "Mortalita 40–60 % i při chirurgii"],
+            ["Difúzní axonální poranění", "Konzervativní — monitorace ICP, JIP", "Variabilní; prognóza nejistá"],
+            ["Penetrující rána mozku (GSW)", "Debridement rány; extrakce dostupných fragmentů; sutura dury", "Mortalita 90 % při bitemporálním průniku; 30–50 % při hemisferálním"]
+          ]
+        }
+      ],
+      "summary": [
+        "Pan-scan CT u každé GSW trupu nebo krku — projektil se odráží od kostí; dráha není přímá.",
+        "Masivní transfúzní protokol: červené krvinky : plazma : destičky = 1:1:1 (simuluje plnou krev).",
+        "TXA 1 g IV do 3 hodin od zranění snižuje mortalitu z krvácení — podejte v terénu nebo při příjmu.",
+        "GSW hlavy: TK ≥ 90 mmHg, normoventilace; urgentní CT; neurochirurgie dle nálezu."
+      ]
+    },
+    {
+      "id": "11.6",
+      "title": "Dopravní nehody — nemocniční ošetření",
+      "lead": "Pacienti po dopravních nehodách mají typicky více poranění najednou. Nemocniční péče je koordinována traumatologem, který organizuje konzultace specialistů a určuje pořadí výkonů.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Specifické přídatné nemocniční diagnózy u MVA (dopravních nehod)",
+          "headers": ["Poranění", "Jak ho odhalíme", "Léčba"],
+          "rows": [
+            ["Kontuze myokardu (pohmnoždění srdce)", "EKG: nové arytmie, ST změny; troponin: vzestup za 6–12 hod; ECHO: hypokineze stěny", "Monitorace na kardiologické JIP 24–48 hod; léčba arytmií; ECHO kontrola"],
+            ["Traumatická disekce aorty", "CT angiografie: ztluštění stěny, intramurální hematom, kontrast mimo aortu", "Endovaskulární TEVAR (zavedení stentu do aorty); nebo otevřená chirurgie"],
+            ["Pneumothorax traumatický", "RTG nebo FAST: vzduch v pohrudnicové dutině", "Hrudní drenáž (thorakotomická trubice 28–32 French) — připojení na negativní tlak"],
+            ["Hemothorax", "RTG: zastínění; přes 1 500 ml krvácení", "Hrudní drenáž; při masivním hemothoraxu urgentní thorakotomie"],
+            ["Poranění bránice", "CT: herniace orgánů do hrudníku", "Urgentní chirurgická rekonstrukce bránice"],
+            ["Poranění ledvin (Renal trauma)", "CT s kontrastem: parenchymální léze; hematom perirenal", "Konzervativní Grade I–III; angioembolizace nebo nefrektomie Grade IV–V"],
+            ["Ruptura sleziny", "FAST + CT: volná tekutina", "Hemodynamicky stabilní: angioembolizace. Nestabilní: urgentní splenektomie"],
+            ["Poranění jater (hepatické trauma)", "CT: lacerace, hematom", "Konzervativně Grade I–II; angioembolizace Grade III; chirurgie Grade IV–V"]
+          ]
+        }
+      ],
+      "summary": [
+        "Kontuze myokardu: EKG + troponin; monitoring na kardiologické JIP 24–48 hodin.",
+        "Traumatická disekce aorty: CT angiografie; TEVAR stentgraft jako první volba (mortalita 3–5 % vs. 15–30 % otevřená chirurgie).",
+        "Ruptura sleziny: angioembolizace u stabilního pacienta; splenektomie u nestabilního.",
+        "Poranění jater Grade IV–V: chirurgie; Grade I–III: konzervativní nebo angioembolizace."
+      ]
+    },
+    {
+      "id": "11.7",
+      "title": "Poranění mozku (TBI) — nemocniční ošetření",
+      "abbrevs": [
+        { "a": "ICP", "f": "Intracranial Pressure — nitrolební tlak (normálně do 20 mmHg)" },
+        { "a": "CPP", "f": "Cerebral Perfusion Pressure — cerebrální perfúzní tlak (cíl > 60 mmHg)" },
+        { "a": "MAP", "f": "Mean Arterial Pressure — střední arteriální tlak" },
+        { "a": "GCS", "f": "Glasgow Coma Scale" },
+        { "a": "EVD", "f": "External Ventricular Drain — zevní komorová drenáž (měří a snižuje nitrolební tlak)" },
+        { "a": "ICU", "f": "Intensive Care Unit — jednotka intenzivní péče" },
+        { "a": "TXA", "f": "Tranexamic Acid" }
+      ],
+      "lead": "Nemocniční péče o poranění mozku se zaměřuje na prevenci sekundárního poranění — každé zvýšení nitrolebního tlaku, snížení krevního tlaku nebo pokles kyslíku dále ničí mozkové buňky, které jinak přežít mohly.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Monitorace nitrolebního tlaku (ICP monitoring): Při GCS ≤ 8 a patologickém nálezu na CT se zavádí monitorovací zařízení pro přímé měření nitrolebního tlaku."
+        },
+        {
+          "type": "table",
+          "caption": "Typy monitorů nitrolebního tlaku",
+          "headers": ["Typ monitoru", "Kde se zavede", "Výhoda"],
+          "rows": [
+            ["Intraventrikulární katetr (EVD)", "Do komory mozku přes vrták do lebky", "Měří ICP a může zároveň odvodňovat mozkomíšní mok — terapeutický"],
+            ["Parenchymový senzor (Camino, Licox)", "Do mozkové tkáně", "Přesné lokální měření; lze kombinovat s měřením pO2 mozku"],
+            ["Subarachnoidální šroub", "Do subarachnoidálního prostoru", "Jednodušší zavedení; méně přesný"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Cílové parametry při poranění mozku",
+          "headers": ["Parametr", "Cíl", "Proč"],
+          "rows": [
+            ["ICP", "Pod 20–22 mmHg", "Vyšší ICP stlačuje mozkovou tkáň a způsobuje ischemii"],
+            ["CPP (MAP − ICP)", "60–70 mmHg", "Tlak pohánějící krev mozkem; pod 50 = ischemie"],
+            ["MAP", "80–90 mmHg", "Závisí na ICP — optimalizace CPP"],
+            ["Saturace kyslíkem (SpO2)", "94–98 %", "Hypoxie devastuje poraněný mozek"],
+            ["PaCO2 (krevní plyny)", "35–45 mmHg", "Hyperventilace stáhne cévy a způsobí ischemii"],
+            ["Hladina cukru v krvi", "140–180 mg/dL", "Hypoglykémie i hyperglykémie zhoršují výsledky"],
+            ["Teplota", "36–37 °C", "Horečka zvyšuje ICP a spotřebu kyslíku"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Evakuace hematomu (kraniotomie): Urgentní při epidurálním hematomu nad 30 ml nebo při GCS < 8 z epidurálního hematomu. Subdurální hematom > 10 mm nebo posun mozku > 5 mm.",
+            "Dekompresní kraniektomie: Odebrání části kosti lebky (temporálně nebo bifrontálně) — mozek může dočasně expandovat bez fatálního tlaku. U refrakterní (nereagující) intrakraniální hypertenze.",
+            "Zevní komorová drenáž (EVD): Drénování mozkomíšního moku komor mozku snižuje ICP o 5–10 mmHg okamžitě.",
+            "Farmakologické snížení ICP: Hyperosmolární terapie: mannitol 0,25–1 g/kg nebo hypertonický fyziologický roztok (NaCl 3 %). Sedace + analgezie. Barbituráty (thiopental) jako poslední záchrana."
+          ]
+        }
+      ],
+      "summary": [
+        "Sekundární poranění mozku je cíl léčby: ICP pod 20 mmHg, CPP 60–70 mmHg, SpO2 94–98 %, ETCO2 35–45.",
+        "ICP monitor (EVD nebo parenchymový senzor) u GCS ≤ 8 s patologickým CT.",
+        "Dekompresní kraniektomie: odebrání části lební kosti pro snížení ICP refrakterního na léky.",
+        "Farmakologické snížení ICP: mannitol 0,25–1 g/kg nebo hypertonický roztok NaCl 3 %."
+      ]
+    },
+    {
+      "id": "11.8",
+      "title": "Poranění páteře — nemocniční ošetření",
+      "lead": "Poranění páteře je jedním z nejdramatičtějších poranění v traumatologii. Cílem chirurgické léčby je: stabilizovat páteř, uvolnit tlak na míchu (dekomprese) a umožnit co nejbrzčí rehabilitaci.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Klasifikace poranění páteře a míchy — stupnice ASIA",
+          "headers": ["Stupnice ASIA", "Popis", "Prognóza"],
+          "rows": [
+            ["ASIA A — Kompletní léze", "Žádná motorická ani citlivostní funkce pod místem poranění", "Šance na obnovu funkce minimální; koncentrace na kompenzační mechanismy"],
+            ["ASIA B — Nekompletní léze", "Zachována citlivost pod místem poranění, žádná motorika", "Až 30 % šance na obnovu určité motoriky"],
+            ["ASIA C — Nekompletní léze", "Motorika zachována pod lézí, ale více než polovina svalů nemá proti-gravitační sílu", "Dobrá prognóza pro obnovení chůze s výpomocí"],
+            ["ASIA D — Nekompletní léze", "Motorika zachována; více než polovina svalů má dobrou sílu", "Většina pacientů bude chodit samostatně"],
+            ["ASIA E — Normální", "Normální senzomotorika", "Kompletní obnova"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Urgentní dekomprese: Při nekompletní lézi s progresí poranění → chirurgická dekomprese do 24 hodin zlepšuje neurologický výsledek. Anterior (přední) nebo posterior (zadní) přístup dle lokalizace komprese.",
+            "Instrumentace a fúze páteře: Titanové šrouby, tyče nebo dlahy fixují poraněný segment páteře. Kostní štěp nebo syntetická náhrada zajistí biologické přemostění (spondylodéza).",
+            "Halo fixátor: Rigidní fixace krční páteře pomocí prstence přikotveného šrouby do lebky — pro poranění C1–C2 nebo C2 odontoideu."
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Péče na neurologické JIP po poranění míchy",
+          "headers": ["Komplikace", "Prevence a léčba"],
+          "rows": [
+            ["Neurogenní šok", "Noradrenalin; hydratace; MAP > 85–90 mmHg po dobu 7 dní (zlepšuje průtok míchou)"],
+            ["Autonomní dysreflexie", "Při podráždění pod lézí (zaklíněná cévka, plný měchýř): ihned sedět; uvolnit stimul; nifedipin nebo nitráty"],
+            ["Respirační selhání (při C4 a výše)", "Ventilátor nebo frenický stimulátor; nácvik pomocného dýchání"],
+            ["Proleženiny (dekubity)", "Otáčení každé 2 hodiny; speciální matrace; polohování; výživa"],
+            ["Trombóza hlubokých žil", "Nízkomolekulární heparin; kompresní punčochy; časná mobilizace"],
+            ["Urologické komplikace", "Intermitentní katetrizace; kontrola močové kultury; profylaktická antibiotika nevhodná"],
+            ["Střevní disfunkce", "Pravidelné klyzma; rektální stimulace; dieta bohatá na vlákninu"]
+          ]
+        }
+      ],
+      "summary": [
+        "ASIA škála A–E: ASIA A = kompletní léze (šance na obnovu minimální); ASIA D = většina bude chodit.",
+        "Urgentní dekomprese páteře do 24 hodin u nekompletní léze s progresí = lepší neurologický výsledek.",
+        "Autonomní dysreflexie: podráždění pod lézí (zaklíněná cévka) = hypertenzní krize; uvolnit stimul."
+      ]
+    },
+    {
+      "id": "11.9",
+      "title": "Popáleniny — nemocniční ošetření",
+      "abbrevs": [
+        { "a": "BSA", "f": "Body Surface Area — procento povrchu těla" },
+        { "a": "ICU", "f": "Intensive Care Unit — JIP" },
+        { "a": "TPN", "f": "Total Parenteral Nutrition — totální parenterální výživa" },
+        { "a": "ABA", "f": "American Burn Association — Americká asociace pro popáleniny (vydává kritéria pro přeložení do popáleninového centra)" }
+      ],
+      "lead": "Těžké popáleniny patří do specializovaného popáleninového centra (Burn Center). Americká asociace pro popáleniny (ABA) definuje kritéria, kdy pacienta přeložit. Péče v centru trvá týdny a zahrnuje operační i konzervativní metody.",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Hluboké částečné nebo plné popáleniny > 10 % BSA u dětí nebo > 20 % BSA u dospělých",
+            "Popáleniny obličeje, rukou, chodidel, genitálií, hráze nebo přes hlavní klouby",
+            "Elektrické nebo chemické popáleniny",
+            "Inhalační trauma (popálené dýchací cesty)",
+            "Popáleniny u dětí < 5 let nebo starších > 70 let",
+            "Popáleniny v kombinaci s poraněním (trauma + popáleniny)",
+            "Popáleniny u pacientů s chronickým onemocněním"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Resuscitace tekutinami (Parklandův vzorec): Viz Část I. V nemocnici se upravuje dávkování dle výdeje moči (cíl 0,5 ml/kg/hod u dospělých, 1 ml/kg/hod u dětí) a měření krevního tlaku.",
+            "Ošetření ran: 1. den: jemné čistění fyziologickým roztokem nebo chlorhexidinem; odstranění puchýřů (debridement); krytí antibiotickým krémem (Silvadene — stříbrný sulfadiazin) nebo moderními syntetickými kryty (Mepilex Ag, Biobrane). Převazy každých 24–48 hodin.",
+            "Chirurgická léčba — escharotomie: Při circumferenciálních (obepínajících) popáleninách: escharotomie = podélné naříznutí escharového příškvaru pro uvolnění tlaku. Nutná při popáleninách hrudníku (omezení dýchání) nebo končetin (syndrom kompartmentu).",
+            "Kožní štěpy (Skin Grafting): Pro hluboké popáleniny 2B a 3. stupně: autologní split-thickness skin graft (STSG) — tenká vrstva zdravé kůže z jiné části těla se nanáší na odebranou popálenou plochu. Dárné místo se hojí samo za 2 týdny.",
+            "Výživa: Popáleniny dramaticky zvyšují potřebu kalorií a bílkovin. Enterální výživa (sondou do žaludku) zahájena do 6 hodin od přijetí. Cíl: 25–30 kcal/kg/den; 1,5–2 g bílkovin/kg/den. Parenterální výživa jako záloha.",
+            "Infekce a antibiotika: Rutinní antibiotická profylaxe se NEDOPORUČUJE — vede k rezistenci. Antibiotika se nasazují až při klinických příznacích sepse nebo pozitivní kultivaci. Nejčastější patogeny: Pseudomonas aeruginosa, Staphylococcus aureus."
+          ]
+        }
+      ],
+      "summary": [
+        "Escharotomie: naříznutí tuhé příškvary u circumferenciálních popálenin uvolní tlak na hrudník nebo končetinu.",
+        "Kožní štěp STSG: tenká vrstva kůže z dárcovského místa; dárcovské místo se hojí samo za 2 týdny.",
+        "Enterální výživa zahájena do 6 hodin; cíl 25–30 kcal/kg/den; rutinní antibiotika se nedoporučují.",
+        "Rutinní antibiotická profylaxe u popálenin se nedoporučuje — vede k rezistenci patogenů."
+      ]
+    },
+    {
+      "id": "11.10",
+      "title": "Utonutí — nemocniční ošetření",
+      "lead": "Každý pacient po utonutí, i bez příznaků, musí být sledován minimálně 6–8 hodin v nemocnici kvůli riziku pozdní plicní komplikace. Aspirace studené nebo teplé vody způsobuje různé typy poranění plic.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Spektrum plicního poranění po utonutí",
+          "headers": ["Závažnost", "Příznaky", "Léčba"],
+          "rows": [
+            ["Asymptomatický", "Normální SpO2, normální dech, normální RTG", "Sledování 6–8 hod; propuštění při normálním nálezu"],
+            ["Mírná aspirace", "SpO2 92–94 %; kašel; jemné chrůpky na plicích", "Kyslík maskou; sledování 12–24 hod; RTG hrudníku"],
+            ["Střední aspirace", "SpO2 < 92 %; námahová dušnost; oboustranné chrůpky", "Hospitalizace; kyslík; nebulizace bronchodilatancii"],
+            ["Těžká aspirace (ARDS)", "SpO2 < 88 % i při kyslíku; masivní infiltrace na RTG", "JIP; mechanická ventilace s PEEP; prone positioning (poloha na břiše); ECMO"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "ARDS po utonutí (Acute Respiratory Distress Syndrome): Syndrom akutní respirační tísně — nejtěžší komplikace. Oboustranný edém plic z aspirace. Léčba: ventilace s PEEP, nízké dechové objemy (6 ml/kg), FiO2 co nejnižší. Poloha na břiše (prone positioning) 16 hodin denně zlepšuje oxygenaci.",
+            "Podchlazení — ohřívání v nemocnici: Aktivní ohřívání: teplé infúze (40 °C), ohřívací dekny (Bair Hugger), ohřátý zvlhčený vzduch pro ventilaci. Mimotělní ohřívání (ECMO) při zástavě srdce způsobené podchlazením.",
+            "Neurologické výsledky: Mozek snáší hypoxii od zástavy způsobené utonutím po dobu různou u různých pacientů. Cílená regulace teploty (TTM 33–36 °C po 24 hodin) po obnově oběhu zlepšuje neurologické výsledky — stejně jako u ostatních záchranných resuscitací."
+          ]
+        }
+      ],
+      "summary": [
+        "Každý utopený: minimálně 6–8 hodin observace kvůli sekundárnímu utonutí za 4–8 hodin.",
+        "ARDS po utonutí: mechanická ventilace s PEEP; prone positioning 16 hodin denně; ev. ECMO.",
+        "Cílená regulace teploty (TTM 33–36 °C po 24 h) po ROSC zlepšuje neurologické výsledky."
+      ]
+    }
+  ]
+}
