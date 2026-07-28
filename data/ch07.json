@@ -1,0 +1,132 @@
+{
+  "id": "ch07",
+  "number": "7",
+  "part": "I",
+  "title": "Psychologie záchranáře a komunikace s pacientem",
+  "icon": "brainpsych",
+  "sections": [
+    {
+      "id": "7.1",
+      "title": "Komunikace s různými typy pacientů",
+      "terms": [
+        {
+          "t": "Terapeutická komunikace",
+          "d": "záměrné používání verbálních a neverbálních technik pro navázání důvěry a snížení úzkosti pacienta; prokazatelně snižuje bolest a paniku"
+        },
+        {
+          "t": "Validace",
+          "d": "uznání pacientových pocitů jako pochopitelných a normálních; \"Chápu, že se bojíte\" → pacient se cítí slyšen → snížení úzkosti"
+        },
+        {
+          "t": "Proxémika",
+          "d": "vzdálenost mezi lidmi při komunikaci; záchranář kleknete na úroveň pacienta (ne stojí nad ním) → snížení napětí"
+        },
+        {
+          "t": "Aktivní naslouchání",
+          "d": "záchranář opakuje nebo parafrázuje co pacient říká; potvrzení porozumění; \"Říkáte, že bolest nastoupila náhle?\""
+        }
+      ],
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Komunikace podle typu pacienta",
+          "headers": [
+            "Typ pacienta",
+            "Co nedělat — a PROČ",
+            "Co dělat — a PROČ"
+          ],
+          "rows": [
+            [
+              "Panický pacient",
+              "Neříkejte \"Uklidněte se\" — nefunguje a zhoršuje; pacient to vnímá jako: \"tvoje emoce jsou neplatné\"",
+              "Jménem: \"Jmenuji se Pavel, jsem záchranář.\" Opakujte jednoduché instrukce: \"Dýchejte se mnou — nádech, výdech.\" PROČ: jméno záchranáře humanizuje kontakt; technika dýchání dá pacientovi kontrolu"
+            ],
+            [
+              "Agresivní pacient",
+              "Nestůjte přímo naproti (obranná pozice); neblokujte únikovou cestu; neprovokujte dotykem",
+              "Udržujte bezpečnou vzdálenost (2+ metry); klidný hlas; otevřené dlaně (bez zbraně); přivolejte policii. PROČ bezpečná vzdálenost: agresivní člověk zaútočí do 21 stop (~6 metrů) než záchranář může reagovat"
+            ],
+            [
+              "Dítě",
+              "Nestůjte nad ním; nepoužívejte jehly bez vysvětlení; nemluvte jako s miminkem (ponižující)",
+              "Kleknete na jeho úroveň; mluvte jednoduše; dejte pocit kontroly: \"Smíš mě držet za ruku?\". PROČ: děti se bojí ztráty kontroly; malý výběr = velká pomoc"
+            ],
+            [
+              "Starší pacient",
+              "Nepředpokládejte demenci nebo hluchotu; nemluvte hlasitěji automaticky",
+              "Mluvte pomalu a jasně; zachovejte důstojnost (zakryjte je); informujte rodinu. PROČ důstojnost: starší pacienti mají velkou ztrátu kontroly; respekt snižuje úzkost"
+            ],
+            [
+              "Pod vlivem látek",
+              "Nehádejte se; neopravujte; neprovokujte",
+              "Jednoduché věty; klidný tón; priorita: bezpečnost záchranáře i pacienta. PROČ: intoxikovaný pacient je neprediktabilní; záchranář nemůže \"zvítězit\" v logické diskusi s opilcem"
+            ],
+            [
+              "Trauma — oběť násilí",
+              "Neptejte se na detaily; nezpochybňujte; neprojevujte šok",
+              "Empatie; minimální nutný fyzický kontakt; souhlas před každým dotykem; ideálně záchranář stejného pohlaví. PROČ minimální kontakt: oběť násilí má narušenou hranici těla; cizí dotek = trauma"
+            ]
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "patient-comm-flashcards"
+        }
+      ],
+      "summary": [
+        "Terapeutická komunikace prokazatelně snižuje bolest a paniku — klidný hlas je léčebný prostředek.",
+        "Agresivní pacient: bezpečná vzdálenost 2+ metrů; otevřené dlaně; přivolat policii.",
+        "Dítě: kleknout na jeho úroveň; dát pocit kontroly; mluvit jednoduše.",
+        "Oběť násilí: minimální fyzický kontakt; souhlas před každým dotykem."
+      ]
+    },
+    {
+      "id": "7.2",
+      "title": "Duševní zdraví záchranáře",
+      "terms": [
+        {
+          "t": "PTSP",
+          "d": "Posttraumatická stresová porucha — vznik po traumatické události nebo opakovaném vystavení traumatu; příznaky: flashbacky, noční můry, vyhýbavé chování, hypervigilance"
+        },
+        {
+          "t": "CISD",
+          "d": "Critical Incident Stress Debriefing — strukturované skupinové psychologické sezení po mimořádně zatěžující události; dobrovolné; veřejné vyjádření emocí"
+        },
+        {
+          "t": "Vicarious trauma",
+          "d": "sekundární trauma — záchranář \"přejímá\" traumatické zkušenosti pacientů; kumulativní; nebezpečnější než jednorázový incident"
+        },
+        {
+          "t": "Burnout (Syndrom vyhoření)",
+          "d": "stav emocionálního a fyzického vyčerpání způsobený chronickým stresem v pomáhající profesi; projevuje se cynismem, depersonalizací (odpojením od pacientů) a sníženou efektivitou"
+        }
+      ],
+      "lead": "Záchranáři jsou vystaveni traumatickým situacím systematicky a opakovaně. PROČ je duševní zdraví součástí záchranářského manuálu: vyhořelý záchranář chybuje; záchranář s PTSP ohrožuje sebe i pacienty; péče o záchranáře = péče o systém.",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Týmový debriefing: Po každém náročném výjezdu — krátká skupinová diskuse posádky. PROČ pomáhá: normalizuje prožívání; \"nejsi jediný, koho to zasáhlo\"; pojmenování emoce ji snižuje.",
+            "Kritické incidenty (CISD): Smrt dítěte, neúspěšná resuscitace blízkého, hromadné oběti. CISD sezení do 24–72 hodin. PROČ tak brzy: paměť je ještě tvárná; zpracování událostí ihned zabrání \"zabetování\" traumatické stopy.",
+            "Příznaky PTSP — kdy vyhledat odborníka: Opakující se vzpomínky (flashbacky), noční můry, vyhýbání se místům nebo situacím připomínajícím incident, emocionální otupělost, podrážděnost, hypervigilance. PROČ vyhledat okamžitě: PTSP léčená časně reaguje výrazně lépe.",
+            "Fyzická kondice jako záchrana: Pravidelný pohyb, spánek 7–9 hodin, vyvážená strava. PROČ: fyzická kondice zvyšuje odolnost vůči stresu; endorfiny ze cvičení jsou přirozené anxiolytikum (lék na úzkost).",
+            "Alkohol jako nebezpečný coping: Pokud pijete po výjezdech \"abyste zapomněli\" — vyhledejte odbornou pomoc IHNED. PROČ urgentní: alkohol blokuje zpracování traumatu → maská problém → závislost nastupuje rychle u pomáhajících profesí."
+          ]
+        }
+      ],
+      "summary": [
+        "PTSP a burnout jsou profesionální rizika — záchranáři jsou systematicky vystaveni traumatu.",
+        "Debriefing po náročném výjezdu je investice, ne slabost — pojmenování emoce ji snižuje.",
+        "Alkohol jako coping = červená vlajka; blokuje zpracování traumatu a vede k závislosti.",
+        "Fyzická kondice, spánek 7–9 hodin a vyváženost stravy zvyšují odolnost vůči stresu."
+      ]
+    }
+  ],
+  "chapterSummary": [
+    "Terapeutická komunikace prokazatelně snižuje bolest a paniku pacienta; klidný hlas je léčebný prostředek.",
+    "Agresivní pacient: bezpečná vzdálenost 2+ metry; otevřené dlaně; přivolat policii — nehádejte se.",
+    "Oběti násilí: minimální fyzický kontakt; souhlas před každým dotykem; ideálně záchranář stejného pohlaví.",
+    "PTSP a burnout jsou profesionální rizika — aktivně pracujte na prevenci; alkohol jako coping = červená vlajka.",
+    "Debriefing po náročném výjezdu je investice do dalšího výkonu, ne slabost."
+  ]
+}

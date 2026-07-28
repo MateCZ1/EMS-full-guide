@@ -1,0 +1,283 @@
+{
+  "id": "ch13",
+  "number": "13",
+  "part": "II",
+  "title": "Speciální nemocniční situace",
+  "icon": "clipboard",
+  "sections": [
+    {
+      "id": "13.1",
+      "title": "Hromadné neštěstí — nemocniční příjem (Hospital Incident Command System — HICS)",
+      "lead": "Při hromadném neštěstí nemocnice aktivuje vlastní havarijní plán (Hospital Incident Command System — HICS). Nemocnice přejde do stavu zvýšené pohotovosti a masivně navýší kapacity.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Kroky aktivace HICS při hromadném neštěstí",
+          "headers": [
+            "Akce",
+            "Zodpovídá",
+            "Čas"
+          ],
+          "rows": [
+            [
+              "Aktivace HICS — velení přebírá Medical Director ED",
+              "Vedoucí urgentního příjmu",
+              "Do 5 minut"
+            ],
+            [
+              "Propuštění stabilních pacientů z ED a lůžkových oddělení (reverse triage)",
+              "Ošetřující lékaři + vedení nemocnice",
+              "Do 30 minut"
+            ],
+            [
+              "Přivolání zálohy — lékaři, sestry, technici",
+              "HR, vrchní sestry",
+              "Do 60 minut"
+            ],
+            [
+              "Příprava extra operačních sálů a JIP lůžek",
+              "OR koordinátor, ICU vedoucí",
+              "Do 60 minut"
+            ],
+            [
+              "Nastavení transfúzního zásobování — masivní odběr krevních produktů",
+              "Krevní banka",
+              "Průběžně"
+            ],
+            [
+              "Mediální koordinace — jedna mluvčí",
+              "PR oddělení nemocnice",
+              "Okamžitě"
+            ],
+            [
+              "Příjem a třídění příchozích obětí",
+              "Triažní tým u vstupu do ED",
+              "Průběžně"
+            ]
+          ]
+        }
+      ],
+      "summary": [
+        "Nemocnice aktivuje HICS: propuštění stabilních pacientů uvolní lůžka pro příchozí traumatizované.",
+        "Jedna mluvčí pro média od prvních minut — chaotické informace z různých zdrojů zvyšují paniku.",
+        "Krevní banka musí mít zásobu krevních produktů průběžně doplňovanou během MCI."
+      ]
+    },
+    {
+      "id": "13.2",
+      "title": "Novorozenec po porodu v nemocnici — neonatální resuscitace (NRP)",
+      "abbrevs": [
+        {
+          "a": "NRP",
+          "f": "Neonatal Resuscitation Program — americký standard resuscitace novorozence"
+        },
+        {
+          "a": "CPAP",
+          "f": "Continuous Positive Airway Pressure — kontinuální přetlak v dýchacích cestách"
+        },
+        {
+          "a": "NICU",
+          "f": "Neonatal Intensive Care Unit — novorozenecká JIP"
+        },
+        {
+          "a": "APGAR",
+          "f": "Appearance, Pulse, Grimace, Activity, Respiration — skóre novorozence"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "NRP (Neonatal Resuscitation Program) je americký standardizovaný protokol resuscitace novorozence. Každý porod v USA musí být kryt personálem schopným zahájit NRP. Protokol se výrazně liší od dospělé resuscitace."
+        },
+        {
+          "type": "paragraph",
+          "text": "Algoritmus NRP — pořadí kroků"
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Teplo + Sucho + Stimulace",
+              "text": "Suchý ručník; výměna za suchý po osušení; stimulace tření zad a chodidel. Teplota porodnice: 26 °C. Předčasní < 32 tt: do fóliového sáčku BEZ sušení."
+            },
+            {
+              "n": 2,
+              "title": "Zhodnocení: dýchá? Má svalový tonus?",
+              "text": "Dobrý pláč + dobrý tonus → přiložit k matce, pokračovat klinickým sledováním. Nedýchá nebo slabý tonus → pokračovat v NRP."
+            },
+            {
+              "n": 3,
+              "title": "Průchodnost dýchacích cest",
+              "text": "Poloha šíje mírně extendovaná (sniffing position). Jemné odsání ústní dutiny a nosu odsávačkou (maximum 5 cm, maximum 5 sekund). Přehnaná odsávání způsobuje bradykardii."
+            },
+            {
+              "n": 4,
+              "title": "Pozitivní tlaková ventilace (PPV) při apnoe nebo tepové frek. < 100/min",
+              "text": "Neonatální BVM (250 ml). Frekvence 40–60 vdechů/min. SpO2 cíle: 1. min 60–65 %; 5. min 80–85 %; 10. min 85–95 %. Kyslík: začít s 21 % (vzduch), zvyšovat dle SpO2."
+            },
+            {
+              "n": 5,
+              "title": "Srdeční masáž při tepové frekvenci < 60/min po 30 sekundách PPV",
+              "text": "Technika dvou palců (nejúčinnější): oba palce na dolní třetinu sternové kosti; prsty podpírají záda. Frekvence: 3:1 (3 stlačení : 1 vdech = 90 stlačení + 30 vdechů/min). Hloubka: 1/3 hrudníku."
+            },
+            {
+              "n": 6,
+              "title": "Epinefrin při tepové frek. < 60/min po 60 sekundách srdeční masáže",
+              "text": "Epinefrin 0,01–0,03 mg/kg IV nebo intraoseálně. Endotracheální podání vyžaduje vyšší dávku (0,05–0,1 mg/kg) — méně efektivní."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Novorozenecká JIP (NICU)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Předčasný novorozenec < 34 týdnů: NICU lůžko v inkubátoru (regulace teploty). Surfaktant endotracheálně při syndromu dechové tísně (RDS). CPAP nebo ventilace. Parenterální výživa.",
+            "Hypoxicko-ischemická encefalopatie (HIE): Porodní asfyxie → poškození mozku hypoxií. Léčba: cílená regulace tělesné teploty (TTM 33,5 °C po 72 hodin) — snižuje mortalitu a neurologické postižení."
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "nrp-flow"
+        }
+      ],
+      "summary": [
+        "NRP začíná ventilací — novorozenecká zástava je primárně z hypoxie, ne srdečního selhání.",
+        "Minutní pravidlo: za 60 sekund po porodu musí být novorozenec suchý, teplý a stimulovaný.",
+        "Srdeční masáž u novorozence: technika dvou palců na dolní třetinu sterna; poměr 3:1 (90 kompresí + 30 vdechů).",
+        "Hypoxicko-ischemická encefalopatie: cílená regulace teploty 33,5 °C po 72 hodin snižuje mortalitu."
+      ]
+    },
+    {
+      "id": "13.3",
+      "title": "Otravy — nemocniční ošetření",
+      "lead": "Nemocniční léčba otrav zahrnuje specifická antidota (léky, které zruší účinek toxinu), podpůrnou péči a v těžkých případech eliminaci toxinu z těla.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Metody eliminace toxinu z těla",
+          "headers": [
+            "Metoda",
+            "Jak funguje",
+            "Kdy ji použijeme"
+          ],
+          "rows": [
+            [
+              "Aktivní uhlí (Activated Charcoal)",
+              "Absorbuje toxin v žaludku a střevě; váže ho a brání vstřebání",
+              "Do 1–2 hodin od perorální otravy; spolupracující pacient bez rizika aspirace"
+            ],
+            [
+              "Výplach žaludku (Gastric Lavage)",
+              "Trubice do žaludku; proplach fyziologickým roztokem",
+              "Vzácně; při masivní otravě < 1 hodiny; pouze jestliže toxin neabsorbuje uhlí"
+            ],
+            [
+              "Celostřevní výplach (WBI)",
+              "Polyethylenglykol sondou; rychle proplachuje celé střevo",
+              "Řízené uvolňování drog (balíčky), lithium, železo, těžké kovy"
+            ],
+            [
+              "Dialýza (hemodialýza)",
+              "Krev prochází přes filtr mimo tělo — odstraní toxin dialyzovatelný",
+              "Metanol, ethylenglykol, lithium, salicyláty, valproát"
+            ],
+            [
+              "Hemoperfúze",
+              "Krev přes aktivní uhlíkovou patronu",
+              "Theofylin, fenobarbital, paraquat (herbicid)"
+            ],
+            [
+              "Opakované dávky aktivního uhlí (MDAC)",
+              "4-6× každé 4 hodiny; přerušuje enterohepatální recirkulaci",
+              "Karbamazepin, digoxin, fenobarbital, theofylin"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Klíčová antidota"
+        },
+        {
+          "type": "table",
+          "caption": "Klíčová antidota při otravách",
+          "headers": [
+            "Toxin",
+            "Antidotum",
+            "Dávka a poznámky"
+          ],
+          "rows": [
+            [
+              "Opioidy (heroin, morfin, fentanyl)",
+              "Naloxon (Narcan)",
+              "0,4–2 mg IV; opakovat každé 2 minuty; při fentanylu vyšší dávky; nutná observace (poločas kratší než opioid)"
+            ],
+            [
+              "Benzodiazepiny",
+              "Flumazenil (Romazicon)",
+              "0,2 mg IV; max 1 mg; OPATRNĚ — záchvat u závislých; krátkodobý účinek"
+            ],
+            [
+              "Warfarin (nadměrné předávkování)",
+              "Vitamín K + čerstvá zmražená plazma (FFP) nebo PCC (protrombinový komplex)",
+              "Vitamín K 10 mg IV pomalou infúzí; FFP pro okamžitou reverzi"
+            ],
+            [
+              "Přímá antikoagulancia — dabigatran",
+              "Idarucizumab (Praxbind)",
+              "5 g IV (2× 2,5 g) — okamžitá reverze"
+            ],
+            [
+              "Přímá antikoagulancia — rivaroxaban, apixaban",
+              "Andexanet alfa (Andexxa)",
+              "Dávka dle léku a dávkování; drahý"
+            ],
+            [
+              "Metanol nebo ethylenglykol",
+              "Fomepizol (4-MP) nebo ethanol",
+              "Fomepizol 15 mg/kg IV; blokuje alkoholdehydrogenázu; hemodialýza pro eliminaci"
+            ],
+            [
+              "Organofosforečné sloučeniny (pesticidy, Sarin)",
+              "Atropin + pralidoxim (2-PAM)",
+              "Atropin: titrovat do zaschnutí sekretů; 2-PAM 1–2 g IV do 24 hod"
+            ],
+            [
+              "Kyanid",
+              "Hydroxokobalamin (Cyanokit)",
+              "5 g IV za 15 minut; váže kyanid a tvoří netoxický kyanokobalamin"
+            ],
+            [
+              "Acetaminofen (Tylenol, paracetamol)",
+              "N-acetylcystein (NAC)",
+              "140 mg/kg PO nebo 150 mg/kg IV (Acetadote); zahájit do 8 hod od požití; chrání játra"
+            ],
+            [
+              "Tricyklická antidepresiva",
+              "Bikarbonát sodný",
+              "1–2 mEq/kg IV; zúží QRS na EKG; léčba arytmií"
+            ],
+            [
+              "Betablokátory",
+              "Glukagon + vysoké dávky inzulínu",
+              "Glukagon 3–10 mg IV; Hyperinzulinémie-euglykémie (HIE): inzulín 1 IU/kg/hod"
+            ],
+            [
+              "Digoxin",
+              "Digibind (digitalis-specifické fragmenty protilátky)",
+              "Počet flakonů = tělesná zátěž digoxinem / 0,5 mg"
+            ]
+          ]
+        }
+      ],
+      "summary": [
+        "Aktivní uhlí do 1–2 hodin od perorální otravy; NIKDY u bezvědomého bez zajištěných DC.",
+        "Hemodialýza: metanol, ethylenglykol, lithium, salicyláty — dialyzovatelné toxiny.",
+        "12 klíčových párů antidotum: Narcan (opioidy), Cyanokit (kyanid), NAC (paracetamol), atropin (organofosfáty)."
+      ]
+    }
+  ]
+}

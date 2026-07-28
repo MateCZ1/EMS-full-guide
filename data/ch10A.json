@@ -1,0 +1,1206 @@
+{
+  "id": "ch10A",
+  "number": "10A",
+  "part": "I",
+  "title": "Vybavení nemocničních místností",
+  "icon": "building",
+  "sections": [
+    {
+      "id": "10A.0",
+      "title": "Úvod",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Tato kapitola navazuje na Kapitolu 2 (Vybavení záchranáře EMS v Části I) a popisuje vybavení místností, do kterých pacient přichází po předání záchranářem. Znalost tohoto vybavení pomáhá záchranáři lépe spolupracovat s nemocničním personálem a pochopit, co pacienta po příjmu čeká."
+        },
+        {
+          "type": "paragraph",
+          "text": "ODKAZ NA ČÁST I: Vybavení záchranáře v terénu (záchranářský batoh, sanitka, rychlý výjezdový vůz, vrtulník) je popsáno v Kapitole 2 Části I. Tato kapitola popisuje nemocniční vybavení, které navazuje."
+        }
+      ]
+    },
+    {
+      "id": "10A.1",
+      "title": "Trauma Bay — Resuscitační místnost",
+      "abbrevs": [
+        {
+          "a": "ED",
+          "f": "Emergency Department — urgentní příjem"
+        },
+        {
+          "a": "ATLS",
+          "f": "Advanced Trauma Life Support — americký standard traumatologického příjmu"
+        },
+        {
+          "a": "FAST",
+          "f": "Focused Assessment with Sonography in Trauma — trauma ultrazvuk"
+        },
+        {
+          "a": "ETT",
+          "f": "Endotracheal Tube — endotracheální rourka"
+        },
+        {
+          "a": "RSI",
+          "f": "Rapid Sequence Intubation — rychlá sekvenční intubace"
+        },
+        {
+          "a": "CVP",
+          "f": "Central Venous Pressure — centrální žilní tlak"
+        },
+        {
+          "a": "NIBP",
+          "f": "Non-Invasive Blood Pressure — neinvazivní krevní tlak"
+        },
+        {
+          "a": "IBP",
+          "f": "Invasive Blood Pressure — invazivní krevní tlak"
+        },
+        {
+          "a": "SpO2",
+          "f": "Saturace kyslíkem"
+        },
+        {
+          "a": "ETCO2",
+          "f": "End-Tidal CO2 — kapnometrie"
+        },
+        {
+          "a": "IO",
+          "f": "Intraosseous — přístup do kosti"
+        },
+        {
+          "a": "TXA",
+          "f": "Tranexamic Acid — kyselina tranexamová"
+        }
+      ],
+      "lead": "Trauma Bay (resuscitační místnost) je specializovaná místnost urgentního příjmu určená pro příjem kriticky nemocných a zraněných pacientů. Je stále připravena a vybavena tak, aby tým mohl okamžitě začít pracovat bez ztráty jediné sekundy. Veškeré vybavení je rozmístěno standardně — každý člen týmu ví přesně, kde co najde.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Pevně zabudované vybavení místnosti",
+          "headers": [
+            "Zařízení",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Traumatologické lůžko (Trauma Stretcher)",
+              "Pevné, výškově nastavitelné lůžko na kolečkách s RTG průhlednou deskou; boční zábrany se skládají dolů",
+              "Příjem pacienta ze záchranářských nosítek; zobrazitelné RTG bez přesunu pacienta"
+            ],
+            [
+              "Stropní operační lampa (Overhead Surgical Light)",
+              "Výkonné studené LED světlo na rameně přichyceném ke stropu; plně polohovatelné",
+              "Osvětlení rány, vstupu do dýchacích cest nebo invazivního výkonu bez stínů"
+            ],
+            [
+              "Centrální monitor (Bedside Monitor)",
+              "Dotykový displej zobrazující EKG, SpO2, ETCO2, NIBP, IBP, teplotu najednou",
+              "Nepřetržitý přehled o všech vitálních funkcích; alarmuje při odchylkách"
+            ],
+            [
+              "Defibrilátor / kardiovertor (Zoll R Series nebo Lifepak 20)",
+              "Přístroj kombinující monitor srdečního rytmu s možností výboje; adhezivní elektrody se přiloží na hrudník",
+              "Defibrilace při fibrilaci komor; synchronizovaná kardioverze arytmií; transkutánní stimulace srdce"
+            ],
+            [
+              "Ventilátor (Hamilton C6 nebo Puritan Bennett 840)",
+              "Přístroj přebírající dýchání za pacienta; nastavují se objem, frekvence, tlak a PEEP",
+              "Řízenou ventilací u pacientů po zajištění dýchacích cest rourkou"
+            ],
+            [
+              "Elektrická odsávačka (elektrická, nástěnná)",
+              "Silná elektrická pumpa s nástěnnou zásuvkou a sběrnou nádobou; negativní tlak 600+ mmHg",
+              "Odsávání krve, zvratků a sekretů z dutiny ústní a horních dýchacích cest"
+            ],
+            [
+              "Infúzní pumpy ×4 (Alaris nebo B. Braun)",
+              "Elektrická pumpa programovatelná na přesný průtok v ml/hod; alarm při ucpání linky",
+              "Přesné podávání léků (vazopresorů, analgetik, sedativ) bez nutnosti ručního hlídání kapačky"
+            ],
+            [
+              "Zásobník kyslíku a medicinálních plynů (nástěnné zásuvky)",
+              "Stlačený O2 v centrálním rozvodu nemocnice; průtokoměr v každé zásuvce",
+              "Kyslík přes masku nebo napojení na ventilátor; podtlak pro elektrickou odsávačku"
+            ],
+            [
+              "Záchranné světlo (Emergency Lighting)",
+              "Bateriové záložní světlo automaticky spuštěné při výpadku proudu",
+              "Výpadek elektřiny nesmí zastavit resuscitaci"
+            ],
+            [
+              "RTG průhledná deska pod lůžkem",
+              "Lůžko konstruováno tak, aby přes ně prošly rentgenové paprsky",
+              "Mobilní RTG přístroj může snímat pacienta bez přesunu"
+            ],
+            [
+              "Teplá skříň na infúze a krvinky",
+              "Termostat udržující infúzní roztoky a krevní produkty na 40 °C",
+              "Prevence podchlazení při masivní transfúzní terapii; studená krev = hypotermie"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Přenosné a přistaveované vybavení",
+          "headers": [
+            "Zařízení",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Videolaryngoskop (C-MAC nebo GlideScope)",
+              "Laryngoskop s miniaturní kamerou na čepeli; obraz se zobrazí na malém monitoru; intubuje se pod přímou vizuální kontrolou",
+              "Zajištění dýchacích cest rourkou u obtížných pacientů (trauma obličeje, krvácení, otoky)"
+            ],
+            [
+              "Přímý laryngoskop (sada čepelí Macintosh + Miller)",
+              "Kovový nástroj s osvětlenou čepelí zavedený ústy; chirurg přímo vidí hlasivky",
+              "Standardní zajištění dýchacích cest rourkou; záloha za videolaryngoskop"
+            ],
+            [
+              "Supraglotické pomůcky (iGel, King LT, LMA)",
+              "Ohebná silikonová pomůcka zasouvající se do hltanu bez nutnosti vidění hlasivek; nafukovací manžeta těsní nad hlasivkami",
+              "Záloha při neúspěšné intubaci; rychlé dočasné zajištění dýchacích cest"
+            ],
+            [
+              "Souprava pro krikotomii (Melker nebo Portex)",
+              "Souprava pro chirurgické otevření průdušnice přes kůži a chrupavku cricoidea",
+              "Poslední záchrana (Cannot Intubate, Cannot Oxygenate — CICO): vzduch se přivede přímo do průdušnice"
+            ],
+            [
+              "FAST ultrazvuk (přenosný Mindray nebo Sonosite)",
+              "Přenosný ultrazvukový přístroj s lineární a konvexní sondou; přikládá se na kůži bez záření",
+              "Rychlá diagnostika krevního výpotku v dutině břišní, hrudní nebo kolem srdce"
+            ],
+            [
+              "Intraoseální vrtačka EZ-IO",
+              "Malá akumulátorová vrtačka s jehlovými kartridžemi různých délek; zavede jehlu do kosti za 5 sekund",
+              "Přístup do krevního oběhu přes kostní dřeň, pokud se nedaří zajistit žílu"
+            ],
+            [
+              "Centrální žilní katetr (CVC souprava)",
+              "Souprava sterilního katétru zaváděného pod ultrazvukovou kontrolou do velké žíly (podklíčková, jugulární, femorální)",
+              "Rychlý přísun velkých objemů tekutin; měření centrálního žilního tlaku; podání léků neslučitelných s periferní žilou"
+            ],
+            [
+              "Arteriální linka (Arterial Line souprava)",
+              "Tenká kanyla zavedená do tepny na zápěstí (a. radialis); spojená s tlakovým snímačem",
+              "Přesné nepřetržité měření krevního tlaku tepovou vlnou; odběry arteriální krve na krevní plyny"
+            ],
+            [
+              "Hrudní drenážní souprava (Thoracostomy Tray)",
+              "Sterilní souprava obsahující skalpel, kleště, drenážní trubici 28–32 French a sběrný systém (Water-Seal Chest Drain)",
+              "Drénování vzduchu nebo krve z pohrudnicové dutiny; připojení na podtlakový sběrný systém"
+            ],
+            [
+              "Mobilní RTG přístroj (C-rameno)",
+              "Pojízdný rentgenový přístroj ve tvaru C; zdroj záření + detektor na dvou ramenech kolem pacienta",
+              "Snímek hrudníku a pánve přímo u lůžka bez transportu pacienta na rentgenové oddělení"
+            ],
+            [
+              "Ohřívač krve a infúzí (Level 1 Hotline nebo Ranger)",
+              "Hadičkový ohřívač s elektronickou kontrolou teploty; ohřeje tekutinu na 37–42 °C za průchodu",
+              "Prevence podchlazení při rychlé infúzi nebo masivní transfúzi"
+            ],
+            [
+              "Ultrazvuková jehla (Ultrasound-Guided Access)",
+              "Lineární ultrazvuková sonda pro vizualizaci žíly nebo tepny při zavádění kanyly",
+              "Bezpečné a přesné zavedení CVC nebo arteriální linky pod přímou zrakovou kontrolou"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Lékový vozík Trauma Bay (Crash Cart / Code Cart) — u každé resuscitační místnosti stojí uzamčený lékový vozík (Crash Cart) se standardizovanou zásobou léků pro resuscitaci a urgentní stabilizaci. Po každém použití se vozík zkontroluje, doplní a znovu uzamkne pečetí."
+        },
+        {
+          "type": "table",
+          "caption": "Obsah lékového vozíku Trauma Bay (Crash Cart) po zásuvkách",
+          "headers": [
+            "Zásuvka",
+            "Obsah"
+          ],
+          "rows": [
+            [
+              "Zásuvka 1 — Resuscitace",
+              "Adrenalin 1:10 000 ×10 ampulek; Amiodaron 150 mg ×6; Atropin 1 mg ×6; Adenosin 6 mg; Bikarbonát sodný 50 mEq ×4; Vápník glukonát 10 % ×4; Hořčík sulfát 2 g ×4"
+            ],
+            [
+              "Zásuvka 2 — Airway (dýchací cesty)",
+              "Rourky ETT 6,0–8,5 mm ×1 každá; iGel vel. 3–5; vodič (Bougie); stříkačka 10 ml pro nafouknout manžetu; fixační páska; Capnometrická spojka"
+            ],
+            [
+              "Zásuvka 3 — Sedace a RSI",
+              "Ketamin 500 mg/10 ml; Midazolam 5 mg/ml; Propofol 200 mg/20 ml; Sukcinylcholin 200 mg; Rokuronium 50 mg; Fentanyl 100 mcg; Sugammadex 200 mg"
+            ],
+            [
+              "Zásuvka 4 — Vazoaktivní léky",
+              "Noradrenalin 4 mg/250 ml; Adrenalin 1 mg/250 ml; Dobutamin 250 mg/250 ml; Dopamin 400 mg/250 ml; Vasopressin 20 IU/ml; Nitroglycerin 50 mg/250 ml"
+            ],
+            [
+              "Zásuvka 5 — Analgetika a antikonvulziva",
+              "Morfin 10 mg/ml; Fentanyl 50 mcg/ml; Ketamin 50 mg/ml; Midazolam 5 mg/ml; Levetiracetam (Keppra) 500 mg; Fosphenytoin 150 mg PE/2 ml; Lorazepam 2 mg/ml"
+            ],
+            [
+              "Zásuvka 6 — Ostatní léky",
+              "Naloxon (Narcan) 0,4 mg/ml ×10; Flumazenil 0,1 mg/ml; Hydroxokobalamin (Cyanokit) 5 g; TXA (Tranexamic Acid) 1 g/10 ml ×4; Metylprednizolon 125 mg; Difenhydramin 50 mg"
+            ],
+            [
+              "Spodní šuplík — spotřební materiál",
+              "Souprava pro CVC; souprava pro arteriální linku; hrudní drenáž; intraoseální vrtačka EZ-IO + jehly; punkční souprava perikardu; minitracheotomická souprava"
+            ]
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "trauma-bay-hotspot"
+        }
+      ],
+      "summary": [
+        "Trauma Bay je vždy připravena a standardizovaná — každý člen týmu ví přesně kde co najde.",
+        "Crash Cart (lékový vozík): 6 zásuvek; po každém použití okamžitě doplnit a plombovat.",
+        "Videolaryngoskop jako první volba pro intubaci — krev nebo otoky zakryjí přímý pohled.",
+        "Ohřívač infúzí a krevních produktů na 40 °C — studená krev při masivní transfúzi = podchlazení."
+      ]
+    },
+    {
+      "id": "10A.2",
+      "title": "Diagnostické místnosti",
+      "abbrevs": [
+        {
+          "a": "CT",
+          "f": "Computed Tomography — výpočetní tomografie"
+        },
+        {
+          "a": "HU",
+          "f": "Hounsfield Units — jednotky hustoty tkáně na CT"
+        },
+        {
+          "a": "IV kontrast",
+          "f": "kontrastní látka podávaná do žíly pro lepší zobrazení cév a orgánů"
+        },
+        {
+          "a": "CTA",
+          "f": "CT Angiography — CT angiografie (zobrazení cév)"
+        },
+        {
+          "a": "pan-scan",
+          "f": "CT celého těla — mozek, krk, hrudník, břicho, pánev jedním průchodem"
+        },
+        {
+          "a": "RTG",
+          "f": "rentgenové záření — elektromagnetické záření procházející tkáněmi; kosti jsou husté a záření zastavují (bílé na snímku); vzduch záření propouští (černý na snímku)"
+        },
+        {
+          "a": "DXR",
+          "f": "Digital X-Ray — digitální rentgen"
+        },
+        {
+          "a": "C-rameno",
+          "f": "pojízdný RTG přístroj ve tvaru C — na urgentním příjmu nebo na operačním sále"
+        },
+        {
+          "a": "PACS",
+          "f": "Picture Archiving and Communication System — nemocniční síť pro ukládání a sdílení snímků"
+        },
+        {
+          "a": "MRI",
+          "f": "Magnetic Resonance Imaging — magnetická rezonance"
+        },
+        {
+          "a": "T",
+          "f": "Tesla — jednotka síly magnetického pole; nemocniční MRI: 1,5 T nebo 3 T"
+        },
+        {
+          "a": "BOLD",
+          "f": "Blood Oxygen Level Dependent — funkční MRI (fMRI)"
+        },
+        {
+          "a": "DWI",
+          "f": "Diffusion Weighted Imaging — difúzně vážené zobrazení (detekuje čerstvou ischemii mozku)"
+        },
+        {
+          "a": "FLAIR",
+          "f": "Fluid Attenuated Inversion Recovery — MRI sekvence pro detekci otoků a demyelinizace"
+        },
+        {
+          "a": "US",
+          "f": "Ultrazvuk — ultrasonografie"
+        },
+        {
+          "a": "FAST",
+          "f": "Focused Assessment with Sonography in Trauma"
+        },
+        {
+          "a": "ECHO",
+          "f": "Echokardiografie — ultrazvuk srdce"
+        },
+        {
+          "a": "MHz",
+          "f": "Megahertz — frekvence ultrazvuku; vyšší MHz = lepší rozlišení ale menší hloubka průniku"
+        },
+        {
+          "a": "B-Mode",
+          "f": "Brightness Mode — standardní 2D ultrazvukový obraz"
+        },
+        {
+          "a": "Doppler",
+          "f": "barevné zobrazení toku krve v cévách"
+        }
+      ],
+      "lead": "Diagnostické místnosti jsou centrem zobrazovací diagnostiky. Záchranář pacienta předává a může se zde pohybovat, musí ale znát základní pravidla bezpečnosti (zejm. magnetické pole u MRI) a vědět, co každé vyšetření odhaluje.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CT pracoviště — Výpočetní tomografie. CT (Computed Tomography — výpočetní tomografie) je rentgenová metoda, která pořídí stovky RTG snímků z různých úhlů a počítač je složí do 3D obrazu. Výsledkem jsou řezy tkání s přesností na milimetry. CT je nejdůležitější diagnostický přístroj v traumatologii a urgentní medicíně."
+        },
+        {
+          "type": "table",
+          "caption": "Součásti CT pracoviště",
+          "headers": [
+            "Součást CT pracoviště",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Gantry (prstenec)",
+              "Velký kruhový prstenec obsahující rentgenovou trubici a pole detektorů; rotuje kolem pacienta 360°",
+              "Zdroj záření i sběr dat v jednom zařízení; prstenec se při vyšetření točí"
+            ],
+            [
+              "Pohyblivý stůl (Patient Table)",
+              "Elektricky posuvný stůl z uhlíkových vláken (RTG průhledný); zasouvá pacienta do gantry",
+              "Přesné polohování pacienta; uhlíková vlákna neovlivňují obraz"
+            ],
+            [
+              "Pracovní stanice (Radiologická konzola)",
+              "Počítač s dvojicí velkých monitorů s vysokým rozlišením; software Sectra nebo Agfa PACS",
+              "Radiolog prohlíží a interpretuje snímky; ukládají se do nemocniční sítě (PACS)"
+            ],
+            [
+              "Injekční automat na kontrast (Power Injector)",
+              "Velká elektrická stříkačka naprogramovaná na přesný objem a rychlost; připojená na IV kanylu pacienta",
+              "Kontrast musí být vstříknut rychle (5–7 ml/s) a přesně pro správné zobrazení cév; ručně to nelze"
+            ],
+            [
+              "Monitorovací okénko a ovladovna",
+              "Místnost oddělená olověným sklem; technik zde obsluhu CT přístroje; mluví s pacientem přes interkom",
+              "Ochrana techniky před ozářením; pacient je při vyšetření v gantry sám"
+            ],
+            [
+              "Resuscitační vozík u dveří CT",
+              "Crash Cart + kyslíkový válec + defibrilátor",
+              "CT místnost je radiologické pracoviště, ne resuscitační sál — ale kritický pacient může zdekompenzovat uvnitř"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Co CT zobrazuje a proč",
+          "headers": [
+            "Typ CT vyšetření",
+            "Co se zobrazí",
+            "Typické indikace"
+          ],
+          "rows": [
+            [
+              "CT mozku bez kontrastu",
+              "Krvácení (bílá), otoky, zlomeniny kosti lebky, vzduch",
+              "Poranění mozku, mrtvice (vyloučení krvácení), záchvaty"
+            ],
+            [
+              "CT angiografie (CTA) mozku",
+              "Průchodnost tepen a žil mozku s kontrastní látkou",
+              "Ischemická mrtvice (uzávěr tepny?); aneuryzma; AV malformace"
+            ],
+            [
+              "CT hrudníku s kontrastem",
+              "Plíce, srdce, aorta, cévy, žebra, obratle",
+              "Plicní embolie, disekce aorty, pneumonie, hemo/pneumothorax"
+            ],
+            [
+              "CT břicha a pánve s kontrastem",
+              "Všechny břišní orgány, cévy, pánev",
+              "Krvácení do dutiny břišní, ruptura sleziny, poranění ledvin, apendicitis"
+            ],
+            [
+              "CT celého těla (pan-scan)",
+              "Celý trup a hlava jedním průchodem — 60–90 sekund",
+              "Polytrauma — rychlá inventura všech poranění"
+            ],
+            [
+              "CT páteře",
+              "Obratle, meziobratlovní ploténky, míšní kanál",
+              "Zlomeniny páteře, komprese míchy, výhřez ploténky"
+            ],
+            [
+              "CT angiografie aorty",
+              "Celá aorta od kořene po pánevní tepny",
+              "Aneuryzma, disekce, traumatické poranění aorty"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "title": "BEZPEČNOST NA CT",
+          "text": "Kontrastní látka může způsobit alergickou reakci (od kopřivky po anafylaxi) nebo poškodit ledviny při renální insuficienci. Před podáním kontrastu se vždy ptáme: alergie na kontrastní látku? Funkce ledvin (kreatinin)?"
+        },
+        {
+          "type": "paragraph",
+          "text": "RTG pracoviště — Rentgen. Rentgen (RTG) je nejstarší a nejdostupnější zobrazovací metoda. Rentgenové záření prochází tělem a podle hustoty tkáně se různě absorbuje. Kosti jsou husté a záření zastavují — na snímku jsou světlé (bílé). Vzduch záření propouští — na snímku je černý. Měkké tkáně jsou šedé."
+        },
+        {
+          "type": "table",
+          "caption": "Součásti RTG pracoviště",
+          "headers": [
+            "Součást RTG pracoviště",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "RTG trubice (X-ray Tube)",
+              "Wolframové vlákno se zahřeje a elektrony narážejí na wolframový anod; vzniká rentgenové záření",
+              "Zdroj záření; trubice je vždy za pacientem nebo nad ním; zaměřena na detektor"
+            ],
+            [
+              "Plochý digitální detektor (Flat Panel Detector)",
+              "Tenká deska s pixely citlivými na rentgenové záření; obraz se digitalizuje okamžitě",
+              "Nahradil filmové kazety; obraz je na monitoru do 3 sekund; lze zvětšovat a upravovat"
+            ],
+            [
+              "Pojízdný RTG (Mobilní C-rameno)",
+              "Rentgenová trubice a detektor na dvou ramenech tvaru C; celá sestava na kolečkách",
+              "Snímek přímo u lůžka pacienta bez nutnosti transportu; nutné na traumatologickém příjmu a na sálu"
+            ],
+            [
+              "Olověná ochrana (Lead Apron)",
+              "Olověná zástěra nebo rukavice absorbující záření",
+              "Ochrana personálu při opakovaném vystavení záření; pacient nechráněn (záření je nutné)"
+            ],
+            [
+              "Radiologická pracovní stanice",
+              "Monitor s PACS softwarem; tlačítka pro nastavení expozice",
+              "Technik nastavuje parametry; lékař posuzuje snímky"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Co RTG zobrazuje",
+          "headers": [
+            "Snímek",
+            "Typické indikace",
+            "Co hledáme"
+          ],
+          "rows": [
+            [
+              "RTG hrudníku (Chest X-Ray — CXR)",
+              "Úraz, dušnost, horečka, infarkt, po intubaci",
+              "Pneumothorax (vzduch v pleuru), hemothorax, pneumonie, plicní edém, poloha rourky"
+            ],
+            [
+              "RTG pánve",
+              "Úraz, bolest kyčle, pád u starších",
+              "Zlomeniny pánevního kruhu, krček femuru"
+            ],
+            [
+              "RTG končetiny",
+              "Podezření na zlomeninu",
+              "Typ a lokalizace zlomeniny, cizí těleso"
+            ],
+            [
+              "RTG páteře",
+              "Bolest zad po úrazu",
+              "Kompresní zlomeniny obratlů, spondylolistéza"
+            ],
+            [
+              "RTG břicha",
+              "Bolest břicha, ileus",
+              "Volný vzduch pod bránicí (perforace střeva), hladiny tekutin (ileus)"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "MRI pracoviště — Magnetická rezonance. MRI (magnetická rezonance) nevyužívá rentgenové záření — místo toho silné magnetické pole a rádiové vlny způsobují, že atomy vodíku v těle vydávají signál. Různé tkáně vydávají různý signál — výsledkem jsou snímky s mnohem větším kontrastem měkkých tkání než CT. MRI je naprosto bezpečná (bez záření), ale pomalá (20–60 minut) a má přísná bezpečnostní pravidla kvůli magnetu."
+        },
+        {
+          "type": "table",
+          "caption": "Součásti MRI pracoviště",
+          "headers": [
+            "Součást MRI pracoviště",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Magnet (supravodivá cívka)",
+              "Velký válec s cívkou chlazenou tekutým héliem na −269 °C; vytváří magnetické pole 1,5 nebo 3 Tesla (30 000× silnější než zemské magnetické pole)",
+              "Zarovná atomy vodíku v těle do jednoho směru — základ pro zobrazení"
+            ],
+            [
+              "Radiofrekvenční cívky (RF Coils)",
+              "Senzory různých tvarů přikládané na tělo (cívka na hlavu, na páteř, na koleno)",
+              "Vysílají rádiový pulz a přijímají odpověď tkáně; různé cívky pro různé části těla"
+            ],
+            [
+              "Pohyblivý stůl",
+              "Zasouvá pacienta do tunelu magnetu",
+              "Pacient musí ležet absolutně v klidu; pohyb vytváří artefakty (rozmazání obrazu)"
+            ],
+            [
+              "Stínění a chráněná místnost (Faraday Cage)",
+              "Místnost pokrytá mědí nebo hliníkem; zabraňuje pronikání vnějšího elektromagnetického záření dovnitř",
+              "Venkovní signály (telefon, WiFi) by rušily MRI obraz"
+            ],
+            [
+              "Komunikační systém",
+              "Mikrofon a sluchátka; hlasitý klepavý zvuk přístroje (95 dB) je normální",
+              "Pacient musí slyšet pokyny; dostane špunty do uší nebo sluchátka"
+            ],
+            [
+              "Monitorovací systém pro pacienty",
+              "MRI-kompatibilní monitor SpO2, EKG, NIBP — bez kovových částí",
+              "Příprava kritického pacienta i uvnitř magnetu; standardní elektronika by nefungovala"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Co MRI zobrazuje",
+          "headers": [
+            "MRI sekvence / vyšetření",
+            "Co detekuje",
+            "Typické indikace"
+          ],
+          "rows": [
+            [
+              "MRI mozku T1 + T2",
+              "Anatomie mozku; nádory; krvácení starší 24 hod",
+              "Nádor mozku, roztroušená skleróza, stará krvácení"
+            ],
+            [
+              "DWI (Diffusion Weighted Imaging)",
+              "Čerstvá ischemie mozku (do 6 hodin CT negativní)",
+              "Ischemická mrtvice — DWI zachytí ischemii do 30 minut od vzniku, CT až po 6–12 hodinách"
+            ],
+            [
+              "FLAIR sekvence",
+              "Edém (otok) mozku; chronická onemocnění bílé hmoty",
+              "Mrtvice, MS plaky, encefalitida"
+            ],
+            [
+              "MRI páteře",
+              "Výhřez meziobratlové ploténky; komprese míchy; nádory páteře",
+              "Bolest zad s neurologickým výpadem; poranění míchy bez kostní léze"
+            ],
+            [
+              "MRI srdce (Cardiac MRI)",
+              "Funkce komor; infarktové jizvy; zánět srdečního svalu",
+              "Myokarditida, kardiomyopatie, sarkoidóza srdce"
+            ],
+            [
+              "MRI kloubů (artrografie)",
+              "Chrupavka, menisky, vazy, šlachy",
+              "Poranění ACL (předního zkříženého vazu), poranění menisků, rotátorová manžeta ramene"
+            ],
+            [
+              "MRA (MR Angiography)",
+              "Cévy bez kontrastní látky nebo s gadoliniem",
+              "Stenóza krční tepny, aneuryzma mozkové tepny"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "BEZPEČNOST U MRI — MAGNETICKÉ POLE NIKDY NEVYPNE",
+          "text": "Silný magnet funguje nepřetržitě. Jakýkoli feromagnetický kovový předmět (nůžky, kyslíkový válec, stetoskop, telefon) se stane střelou namířenou do gantry. Pravidla: před vstupem do MRI místnosti sejmout vše kovové; nikdy nevnášet kovové pomůcky; u pacientů zkontrolovat kardiostimulátory, kovové implantáty, tetování inkoustem s kovy, kovové střepiny."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ultrazvukové pracoviště. Ultrazvuk (sonografie) využívá zvukové vlny o frekvenci nad 20 000 Hz. Sonda vysílá krátký zvukový pulz do tkáně; zvuk se odráží od rozhraní tkání a vrátí se zpět do sondy jako echo. Přístroj z časového zpoždění vypočítá hloubku a zobrazí tkáně jako body různé jasu. Nevyužívá žádné záření — je absolutně bezpečný i pro těhotné."
+        },
+        {
+          "type": "table",
+          "caption": "Součásti ultrazvukového pracoviště",
+          "headers": [
+            "Součást ultrazvukového pracoviště",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Ultrazvukový přístroj (Console)",
+              "Počítačová jednotka s dotykovým displejem; zpracovává signál z detektoru a zobrazuje snímky",
+              "Ovládání vyšetření; uložení snímků a videí; měření vzdáleností a rychlostí toku"
+            ],
+            [
+              "Sondy (Transducers) — sada",
+              "Různé sondy pro různé aplikace: lineární (povrch), konvexní (hluboko), sektorová (srdce), endokavitální (vagina, konečník)",
+              "Výběr sondy závisí na vyšetřované oblasti a potřebné hloubce"
+            ],
+            [
+              "Konvexní sonda (2–5 MHz)",
+              "Nízká frekvence = velká hloubka průniku; zobrazí orgány hluboko v břiše",
+              "Vyšetření břicha, pánve, FAST; hluboké struktury"
+            ],
+            [
+              "Lineární sonda (7–15 MHz)",
+              "Vysoká frekvence = výborné rozlišení; malá hloubka",
+              "Povrchní struktury: cévní přístupy, šlachy, nervy, mělké cizí těleso"
+            ],
+            [
+              "Sektorová (fázovaná) sonda (1–5 MHz)",
+              "Malá kontaktní plocha — vejde se mezi žebra",
+              "Echokardiografie — vyšetření srdce přes mezižeberní prostor"
+            ],
+            [
+              "Ultrazvukový gel",
+              "Vodivé medium mezi sondou a kůží; zvuk se šíří špatně vzduchem",
+              "Bez gelu by zvuk neprostoupil do tkáně; gel je na vodní bázi, bezpečný"
+            ],
+            [
+              "Přenosný POCUS přístroj (Point-of-Care US)",
+              "Malý přístroj (tablet nebo kapesní), přenosný ke každému lůžku",
+              "Okamžité vyšetření na urgentním příjmu, JIP, resuscitační místnosti nebo v terénu (FAST)"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Typy ultrazvukových vyšetření",
+          "headers": [
+            "Vyšetření",
+            "Co zobrazí",
+            "Typické indikace"
+          ],
+          "rows": [
+            [
+              "FAST (Focused Assessment with Sonography in Trauma)",
+              "4 pohledy: jaterní, slezinný, suprapubický, perikardium — detekce volné tekutiny",
+              "Polytrauma — rychlá detekce krvácení do dutiny břišní nebo kolem srdce"
+            ],
+            [
+              "Echokardiografie (ECHO)",
+              "Funkce srdečních komor, chlopní, perikardium, tok krve (Doppler)",
+              "Infarkt, srdeční selhání, tamponáda, endokarditida, embolie"
+            ],
+            [
+              "Ultrazvuk břicha",
+              "Játra, žlučník, slezina, ledviny, slinivka, velké cévy",
+              "Žlučové kameny, cysta, nádor, aneuryzma aorty"
+            ],
+            [
+              "Cévní ultrazvuk (Doppler)",
+              "Průtok krve v tepnách a žilách, tromby",
+              "Trombóza hlubokých žil, stenóza karotid, periferní ischemie"
+            ],
+            [
+              "Ultrazvuk pohybového aparátu",
+              "Šlachy, svaly, klouby, vazy, tekutina v kloubu",
+              "Ruptura šlachy, výpotek v kloubu, bursitida, cizí těleso"
+            ],
+            [
+              "Ultrazvukem řízené výkony",
+              "Vizualizace jehly nebo katétru při zákroku",
+              "Centrální žilní katetr pod kontrolou ultrazvuku; torakocentéza; punkce kloubu"
+            ]
+          ]
+        }
+      ],
+      "summary": [
+        "CT odhalí celý polytrauma v 60–90 sekundách; pan-scan (celé tělo) je standard u závažných traumat.",
+        "Kontrast do CT: vždy se ptát na alergii a funkci ledvin; injekční automat = 5–7 ml/s.",
+        "MRI: magnet nikdy nevypne; feromagnetický předmět se stane střelou — vždy sejmout vše kovové.",
+        "FAST ultrazvuk: žádné záření, opakujte kdykoli; detekuje volnou tekutinu v dutinách do 2 minut.",
+        "RTG: kosti zastaví záření (bílé); vzduch propouští (černý); měkké tkáně jsou šedé."
+      ]
+    },
+    {
+      "id": "10A.3",
+      "title": "Operační sál (Operating Room — OR)",
+      "abbrevs": [
+        {
+          "a": "OR",
+          "f": "Operating Room — operační sál"
+        },
+        {
+          "a": "PACU",
+          "f": "Post-Anesthesia Care Unit — pooperační jednotka (dospávání)"
+        },
+        {
+          "a": "HEPA",
+          "f": "High-Efficiency Particulate Air — filtr vzduchu zachycující 99,97 % částic včetně bakterií"
+        },
+        {
+          "a": "LAF",
+          "f": "Laminar Air Flow — laminární proud sterilního vzduchu nad operačním polem"
+        },
+        {
+          "a": "BIS",
+          "f": "Bispectral Index — elektroencefalografický monitor hloubky anestézie"
+        },
+        {
+          "a": "NMB",
+          "f": "Neuromuscular Blockade — svalová relaxace"
+        },
+        {
+          "a": "TOF",
+          "f": "Train-of-Four — test hloubky svalové relaxace"
+        }
+      ],
+      "lead": "Operační sál (OR) je nejpřísněji kontrolované sterilní prostředí v nemocnici. Design a vybavení jsou podřízeny jedinému cíli: umožnit chirurgovi provést výkon v absolutně sterilním prostředí bez rizika infekce. Každý vstup do OR se řídí přísnými pravidly — omezený personál, speciální oblečení, sterilní pole kolem pacienta.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Prostředí operačního sálu**"
+        },
+        {
+          "type": "table",
+          "caption": "Prostředí operačního sálu",
+          "headers": [
+            "Prvek OR",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Laminární proud vzduchu (LAF)",
+              "Stropní přívodní systém přivádí HEPA-filtrovaný vzduch shora dolů; unikající zpod dveří odváděn zpět",
+              "Eliminace bakterií ze vzduchu nad operačním polem; přetlak v OR zabraňuje vstupu kontaminovaného vzduchu"
+            ],
+            [
+              "Teplota a vlhkost",
+              "Teplota 18–22 °C; vlhkost 50–60 %; přesně regulováno",
+              "Pohodlí chirurga v silném oblečení; prevence množení bakterií; prevence podchlazení pacienta"
+            ],
+            [
+              "Podlaha z vodivého materiálu",
+              "Antistatická podlaha vodivě uzemněná",
+              "Prevence statické elektřiny, která by mohla zapálit hořlavé anestetické plyny"
+            ],
+            [
+              "Speciální osvětlení (Surgical Lights)",
+              "Několik LED světel na výškově nastavitelných ramenech; kombinace bodových a plošných světel",
+              "Osvětlení operačního pole bez stínů; intenzita až 160 000 luxů; chirurg manuálně nastavuje zaměření"
+            ],
+            [
+              "Elektrická instalace — IT systém",
+              "Izolovaná elektrická síť IT (Isolated Terra); alarm při poruše uzemnění",
+              "Zabezpečení proti macroshock — unikající proud by mohl vyvolat fibrilaci srdce u pacienta s otevřenou hrudní dutinou"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Anesteziologický stůl a vybavení** — Anesteziolog pracuje v čele pacienta. Celé anesteziologické pracoviště je komplex přístrojů zajišťujících dýchání, krevní oběh, hloubku anestézie a bezpečnost pacienta."
+        },
+        {
+          "type": "table",
+          "caption": "Anesteziologické vybavení",
+          "headers": [
+            "Zařízení",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Anesteziologický přístroj (Anesthesia Machine)",
+              "Komplex ventilátoru, zásobníků plynů (O2, N2O, vzduch), vaporéru (odpařovač inhalačního anestetika) a dýchacího okruhu s CO2 absorbérem",
+              "Řízená ventilace; přesné dávkování inhalačních anestetik (sevofluran, izofluran); monitorace výdechových plynů"
+            ],
+            [
+              "Vaporér (Vaporizer)",
+              "Termokompenzovaný zásobník kapalného inhalačního anestetika; odpařuje přesné procento anestetika do dýchacích plynů",
+              "Přesné a stabilní dávkování inhalačního anestetika; každý přípravek má svůj barevně označený vaporér"
+            ],
+            [
+              "Anesteziologický monitor",
+              "Sdružený monitor: SpO2, EKG, NIBP, IBP (arteriální linka), ETCO2, teplota, BIS (hloubka anestézie), TOF (svalová relaxace)",
+              "Kompletní přehled o stavu pacienta za anestézie; BIS udává hodnotu 0–100 (cíl 40–60 pro správnou hloubku)"
+            ],
+            [
+              "Infúzní pumpy ×4–6",
+              "Elektrické pumpy na přesné dávkování propofolu, opioidů, svalové relaxanty, vazopresory",
+              "TIVA (Totální Intravenózní Anestézie) — propofol infúze jako záloha za inhalační anestézii; vazopresorická podpora"
+            ],
+            [
+              "Ohřívací deka (Bair Hugger)",
+              "Elektrická přikrývka fouká teplý vzduch pod fólii kolem pacienta; teplota 32–43 °C",
+              "Aktivní ohřívání pacienta; prevence podchlazení (sál je chladný; pacient otevřen = ztrácí teplo rychle)"
+            ],
+            [
+              "Nervový stimulátor (TOF Watch)",
+              "Elektrody na zápěstí; vydává série 4 elektrických pulsů; hodnotí záškuby svalu",
+              "Měření hloubky svalové relaxace (NMB); zabraňuje buď nedostatečné nebo přílišné relaxaci"
+            ],
+            [
+              "Přímý laryngoskop + videolaryngoskop",
+              "Identické jako na urgentním příjmu; anesteziolog je používá při uvádění do anestézie",
+              "Zajištění dýchacích cest rourkou před zahájením operace"
+            ],
+            [
+              "Souprava pro obtížné dýchací cesty (Difficult Airway Cart)",
+              "Vozík se sadou alternativních pomůcek: flexibilní fibrobronchoskop, supraglotické pomůcky, souprava pro cricothyrotomii",
+              "Záloha při neúspěšné standardní intubaci; každý OR musí mít tento vozík"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Chirurgický stůl a nástroje**"
+        },
+        {
+          "type": "table",
+          "caption": "Chirurgický stůl a nástroje",
+          "headers": [
+            "Zařízení / nástroj",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Operační stůl (OR Table)",
+              "Elektricky nastavitelný stůl z uhlíkových vláken; naklonitelný do Trendelenburgu (nohy výše), reverse-Trendelenburgu, bočně; různé nástavce pro polohy",
+              "Přesné polohování pacienta dle operačního přístupu; uhlíková vlákna = průhledný pro C-rameno (RTG během operace)"
+            ],
+            [
+              "Elektrochirurgický přístroj (Electrosurgery / ESU — Bovie)",
+              "Vysokofrekvenční elektrický proud přes chirurgovu pinzetu nebo nůžky; teplo tkáň přeřízne nebo koaguluje",
+              "Řezání tkáně (cutting mode) nebo zastavení krvácení (coagulation mode) bez nože; tzv. elektrokauter"
+            ],
+            [
+              "Ultrasonický skalpel (Harmonic Scalpel)",
+              "Čepel vibruje 55 000× za sekundu; tření vytváří teplo koagulující a přerušující tkáň pod 100 °C",
+              "Šetrnější k okolní tkáni než ESU; méně kouře; ideální v laparoskopii"
+            ],
+            [
+              "Laparoskopická věž",
+              "Kamera + monitor + insuflátor CO2 + světelný zdroj; všechno na jednom vozíku",
+              "Minimálně invazivní chirurgie: 3–4 malé řezy místo otevření břicha; průhledné orgány na monitoru"
+            ],
+            [
+              "Robotický chirurgický systém (Da Vinci)",
+              "Chirurg sedí u konzole a ovládá robotická ramena uvnitř pacienta; 3D obraz a přesnost pohybu",
+              "Komplexní minimálně invazivní operace (prostata, gynekologie, střeva); třes chirurgovy ruky se neprojeví"
+            ],
+            [
+              "Diatermická deska (Grounding Pad)",
+              "Velká elektroda přilepená na stehno nebo záda pacienta",
+              "Uzemnění ESU elektrochirurgického přístroje — proud prochází přes tkáň a vrací se bezpečně do přístroje"
+            ],
+            [
+              "Operační mikroskop",
+              "Výkonný binokulární mikroskop na výškově nastavitelném rameni nad operačním polem",
+              "Neurochirurgie, oční chirurgie, cévní chirurgie — operace pod zvětšením 5–25×"
+            ],
+            [
+              "C-rameno RTG na operačním sále",
+              "Pojízdný RTG přístroj ve tvaru C; lékař sleduje obraz v reálném čase (fluoroskopie) na monitoru",
+              "Ortopedické operace (zavádění hřebu do kosti pod rentgenem); cévní výkony (stenting aorty); zavádění CVC pod kontrolou"
+            ],
+            [
+              "Cell Saver (autotransfúze)",
+              "Odsává krev z operačního pole; přečistí ji a centrifuguje; vrátí pacientovi jeho vlastní červené krvinky",
+              "Úspora cizí krve; ideální pro velké operace (srdce, aorta, páteř)"
+            ],
+            [
+              "Šicí materiál a svorky (Stapler)",
+              "Vstřebatelné nebo nevstřebatelné nitě; automatické svorkovací přístroje (GIA, TA, EEA) — prstenové nebo lineární staplers",
+              "Šití a spojování tkání; staplers jsou rychlejší a přesnější než ruční šití; použití v hrudníku, břichu, tlustém střevě"
+            ]
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "or-hotspot"
+        }
+      ],
+      "summary": [
+        "Laminární vzduch filtrovaný přes HEPA eliminuje bakterie nad operačním polem.",
+        "Anesteziologický přístroj = ventilátor + vaporér + monitor vše v jednom; BIS monitor hloubky anestézie.",
+        "ESU (elektrokauter): cutting mode = řeže tkáň; coagulation mode = zastavuje krvácení.",
+        "Cell Saver (autotransfúze): odsaje krev z operačního pole, přečistí a vrátí pacientovi jeho vlastní.",
+        "C-rameno na sále: RTG v reálném čase (fluoroskopie) pro ortopedii a cévní výkony."
+      ]
+    },
+    {
+      "id": "10A.4",
+      "title": "Pooperační pokoj — Dospávací místnost (PACU)",
+      "lead": "PACU (Post-Anesthesia Care Unit) je místnost přímo navazující na operační sál, kde pacient probírá z anestézie pod dohledem specializovaných sester. Průměrný pobyt trvá 1–3 hodiny. Kriticky nemocní pacienti přechází přímo na JIP.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Vybavení pooperačního pokoje (PACU)",
+          "headers": [
+            "Vybavení PACU",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "Monitor SpO2, EKG, NIBP každé lůžko",
+              "Kontinuální sledování životních funkcí během probouzení — riziko apnoe, arytmie a hypotenze"
+            ],
+            [
+              "Zdroj kyslíku + masky + nosní brýle",
+              "Suplementace kyslíku při provětrávání inhalačního anestetika — přechodná hypoxémie je běžná"
+            ],
+            [
+              "Elektrická odsávačka u každého lůžka",
+              "Aspirace při zvracení — největší riziko PACU; poloha na boku při probouzení"
+            ],
+            [
+              "Ohřívací deka (Bair Hugger) na každém lůžku",
+              "Hypotermie z operačního sálu; pacient přijde podchlazený a třese se — ohřívání zkracuje pobyt"
+            ],
+            [
+              "Infúzní pumpy × 2",
+              "Pokračování analgézie (morfin PCA — pacient si sám dávkuje); antiemetika"
+            ],
+            [
+              "Souprava pro záchrannou intubaci",
+              "Záloha při respiračním selhání po anestézii — vzácné, ale nutná připravenost"
+            ],
+            [
+              "Aldreteho skóre — hodnotící list",
+              "Skóre 0–10 hodnotí vědomí, dýchání, krevní tlak, SpO2 a pohyblivost; propuštění z PACU při skóre ≥ 9"
+            ]
+          ]
+        }
+      ],
+      "summary": [
+        "PACU: vždy monitor SpO2 + EKG + NIBP + odsávačka u každého lůžka.",
+        "Největší riziko PACU: aspirace při zvracení — poloha na boku při probouzení je standard.",
+        "Aldreteho skóre 9 nebo 10 = kritérium propuštění z PACU na standardní oddělení.",
+        "Hypotermie z operačního sálu: Bair Hugger (ohřívací přikrývka) zkracuje pobyt v PACU."
+      ]
+    },
+    {
+      "id": "10A.5",
+      "title": "Katetrizační sál (Cath Lab — Cardiac Catheterization Laboratory)",
+      "abbrevs": [
+        {
+          "a": "Cath Lab",
+          "f": "Cardiac Catheterization Laboratory — katetrizační sál"
+        },
+        {
+          "a": "PCI",
+          "f": "Percutaneous Coronary Intervention — perkutánní koronární intervence (stent)"
+        },
+        {
+          "a": "PTCA",
+          "f": "Percutaneous Transluminal Coronary Angioplasty — balonková dilatace věnčité tepny"
+        },
+        {
+          "a": "FFR",
+          "f": "Fractional Flow Reserve — tlakový vodič hodnotící hemodynamický význam zúžení tepny"
+        },
+        {
+          "a": "IVUS",
+          "f": "Intravascular Ultrasound — intravaskulární ultrazvuk uvnitř věnčité tepny"
+        },
+        {
+          "a": "ACT",
+          "f": "Activated Clotting Time — aktivovaná doba srážení; monitorace heparinu"
+        },
+        {
+          "a": "IABP",
+          "f": "Intra-Aortic Balloon Pump — intraaortální balonová pumpa"
+        }
+      ],
+      "lead": "Katetrizační sál je specializovaná místnost pro diagnostiku a léčbu srdečních a cévních onemocnění pomocí katetrů zavedených přes kůži. Jde o hybridní prostředí mezi operačním sálem (sterilita) a rentgenologií (C-rameno). Při infarktu s elevací ST (STEMI) zde probíhá záchrana srdečního svalu — každá minuta se počítá.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Vybavení katetrizačního sálu",
+          "headers": [
+            "Vybavení",
+            "Jak funguje",
+            "K čemu slouží"
+          ],
+          "rows": [
+            [
+              "C-rameno s plochým detektorem (Bi-plane nebo Single-plane)",
+              "Velký RTG systém na stropním ramenu; otáčí se kolem pacienta do libovolného úhlu; fluoroskopie = RTG v reálném čase",
+              "Zobrazení věnčitých nebo jiných tepen po vstříknutí kontrastní látky; sledování katetru v reálném čase"
+            ],
+            [
+              "Injekční automat na kontrast (Power Injector)",
+              "Elektrická stříkačka naprogramovaná na objem a rychlost kontrastní látky",
+              "Vstříknutí kontrastu do věnčitých tepen pro koronarografii; ručně to nelze — příliš rychlé a přesné"
+            ],
+            [
+              "Katetrizační stůl",
+              "RTG průhledný stůl s bočními pohyby; pacient leží, stůl se posunuje pod statickým C-ramenem",
+              "Nastavování polohy pacienta pod rentgenem bez pohybu těžkého C-ramena"
+            ],
+            [
+              "Hemostatický zavaděč (Introducer Sheath)",
+              "Plastová trubice 5–8 French (1,7–2,7 mm) zavedená do tepny na zápěstí nebo v třísle",
+              "Vstupní brána pro katetry a vodiče do arteriálního systému; odstraní se po výkonu"
+            ],
+            [
+              "Diagnostické katétry",
+              "Tenké ohebné trubičky různých tvarů (JL 4, JR 4 pro levou a pravou věnčitou tepnu)",
+              "Zavedení do ústí věnčitých tepen a vstříknutí kontrastu pro zobrazení zúžení (koronarografie)"
+            ],
+            [
+              "Vodič (Coronary Guidewire)",
+              "Tenký drátěný vodič 0,014\" (0,36 mm); prochází zúžením tepny",
+              "Vodič pro balonkový katetr a stent; přes vodič se zasouvají intervenční pomůcky"
+            ],
+            [
+              "Balonkový katetr (PTCA Balloon)",
+              "Dvojlumenový katetr s balónkem; nafouká se pod vysokým tlakem (6–20 atm)",
+              "Dilatace zúžení věnčité tepny; příprava pro stent"
+            ],
+            [
+              "Koronární stent",
+              "Kovová síťová trubička na balónku; rozepne se v tepně a udrží ji otevřenou",
+              "Prevence okamžitého opětovného uzávěru tepny po PTCA; drug-eluting stent uvolňuje léky bránící jizvení"
+            ],
+            [
+              "IVUS katetr (Intravascular Ultrasound)",
+              "Miniaturní ultrazvuková sonda uvnitř věnčité tepny; snímá průřez tepny",
+              "Přesné posouzení tíže zúžení; správné uložení a rozepnutí stentu"
+            ],
+            [
+              "FFR vodič (Fractional Flow Reserve)",
+              "Miniaturní tlakový senzor na konci vodiče; měří tlakový pokles přes zúžení",
+              "Funkční hodnocení zúžení tepny — je zúžení hemodynamicky významné? Pomáhá rozhodnutí o stentu"
+            ],
+            [
+              "Defibribilátor + pacemaker",
+              "Identické se OR; vždy přítomny",
+              "Fibrilace komor jako komplikace katetrizace nastane rychle — okamžitá defibrilace nutná"
+            ],
+            [
+              "IABP (Intraaortální balonová pumpa)",
+              "Balónek v hrudní aortě nafukující a vyfukující synchronně se srdcem",
+              "Mechanická podpora při kardiogenním šoku; zavedení přes tříslo"
+            ]
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "cathlab-hotspot"
+        }
+      ],
+      "summary": [
+        "\"Door-to-Balloon Time\" pod 90 minut: katetrizační sál je připraven díky avizaci z terénu.",
+        "IVUS (intravaskulární ultrazvuk): miniaturní sonda uvnitř věnčité tepny; kontroluje uložení stentu.",
+        "FFR (tlakový vodič): měří hemodynamický význam zúžení — pomáhá rozhodnout o stentu.",
+        "Defibrilátor a pacemaker jsou vždy přítomny — fibrilace komor jako komplikace katetrizace nastane rychle."
+      ]
+    },
+    {
+      "id": "10A.6",
+      "title": "Srovnání: Vybavení záchranáře (Část I) vs. Vybavení nemocnice",
+      "lead": "Tato tabulka přehledně ukazuje, jak záchranářské vybavení navazuje na nemocniční — co záchranář zahájí, nemocnice dokončí nebo rozšíří.",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Srovnání záchranářského a nemocničního vybavení",
+          "headers": [
+            "Záchranářská pomůcka (Část I)",
+            "Co záchranář provede v terénu",
+            "Nemocniční ekvivalent/pokračování (Část II)"
+          ],
+          "rows": [
+            [
+              "Dýchací vak s maskou (BVM)",
+              "Ruční ventilace dýchacím vakem",
+              "Anesteziologický přístroj — řízená mechanická ventilace s přesným nastavením objemu, frekvence, PEEP a inhalačního anestetika"
+            ],
+            [
+              "Nosní a ústní vzduchovod (NPA, OPA)",
+              "Dočasné udržení průchodnosti dýchacích cest",
+              "Endotracheální rourka (ETT) nebo supraglotická pomůcka — definitivní zajištění dýchacích cest v nemocnici"
+            ],
+            [
+              "Videolaryngoskop (C-MAC přenosný)",
+              "Intubace rourkou v sanitce nebo v terénu",
+              "OR videolaryngoskop + flexibilní fibrobronchoskop + vozík pro obtížné dýchací cesty pro komplexnější případy"
+            ],
+            [
+              "Pulzní oxymetr (SpO2 klipsa)",
+              "Saturace kyslíkem na prstu",
+              "Centrální monitor — SpO2 + EKG + kapnometrie + IBP + teplota + BIS vše na jednom zařízení"
+            ],
+            [
+              "Přenosný ultrazvuk FAST",
+              "4-bodové rychlé vyšetření na místě události",
+              "CT sken celého těla (pan-scan); specializovaná ECHO sonda; radiology-read snímky v PACS"
+            ],
+            [
+              "Kanyla do žíly (16G, 14G)",
+              "Periferní žilní přístup — podání léků a tekutin",
+              "Centrální žilní katetr (CVC) — větší objem; arteriální linka — přesný kontinuální tlak; IO → žilní přístup po stabilizaci"
+            ],
+            [
+              "Mobilní RTG — záchranáři nemají",
+              "CT mobilní jednotky výjimečně",
+              "Trauma Bay: mobilní C-rameno hned u lůžka; RTG pracoviště; CT pracoviště — od jednoduchého snímku po 3D rekonstrukci"
+            ],
+            [
+              "Trakční dlaha (Sager nebo Hare)",
+              "Dočasná trakce při zlomenině femuru",
+              "Ortopedická operační síň — nitrodřeňový hřeb pod kontrolou C-ramena"
+            ],
+            [
+              "Pánevní pás T-POD",
+              "Dočasná zevní komprese nestabilní pánve",
+              "Operační sál — ORIF pánve destičkami, šrouby, acetabulárními komponentami"
+            ],
+            [
+              "Intraoseální vrtačka EZ-IO",
+              "Záchranný přístup do kosti při selhání žíly",
+              "Nemocnice IO přístup nahradí standardní IV kanylou nebo CVC ihned po stabilizaci"
+            ],
+            [
+              "Záchranná deka (thermal blanket)",
+              "Pasivní prevence podchlazení",
+              "PACU a OR: aktivní ohřívací deka Bair Hugger; ohřívač infúzních roztoků Level 1; Core temperature sonda"
+            ],
+            [
+              "Defibrilátor (Zoll nebo Lifepak přenosný)",
+              "Defibrilace v terénu nebo v sanitce",
+              "Defibrilátor pevně nainstalovaný v Trauma Bay, OR i Cath Lab; přesnější synchronizovaná kardioverze"
+            ],
+            [
+              "Lékový váček záchranáře",
+              "Omezená sada léků — základní záchrana",
+              "Crash Cart / lékový vozík plně zásoben 6 zásuvkami; CVC pro vazopresorické léky nepodatelné do periferní žíly"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "KLÍČOVÝ PRINCIP KONTINUITY PÉČE",
+          "text": "Záchranář zahajuje léčbu v terénu nejjednodušší a nejrychlejší dostupnou metodou. Nemocnice tuto léčbu přebírá, upřesňuje a rozšiřuje o složitější technologie a diagnózy. Nic, co záchranář zahájí, nepřestane platit — navazuje se na to."
+        }
+      ],
+      "summary": [
+        "Záchranář zahájí léčbu nejjednodušší dostupnou metodou; nemocnice tuto léčbu přebírá a rozšíří.",
+        "BVM (terén) → transportní ventilátor (sanitka) → anesteziologický přístroj (OR): kontinuita péče.",
+        "Periferní kanyla (terén) → centrální žilní katetr + arteriální linka (nemocnice): přesnost roste.",
+        "Nic, co záchranář zahájil, nepřestane platit — vždy se navazuje na terénní péči."
+      ]
+    }
+  ],
+  "chapterSummary": [
+    "Trauma Bay je vždy připravena: lůžko s RTG deskou, centrální monitor, defibrilátor, ventilátor, videolaryngoskop — vše na standardním místě.",
+    "Crash Cart (lékový vozík): 6 zásuvek s léky; po každém použití okamžitě doplněn a plombován.",
+    "CT odhalí polytrauma za 60–90 sekund; kontrast může způsobit alergii nebo poranit ledviny; ptejte se před podáním.",
+    "MRI: magnet nikdy nevypne; feromagnetický kovový předmět se stane střelou — před vstupem sejmout vše kovové.",
+    "Operační sál: sterilita, laminární vzduch, C-rameno na sále, Cell Saver pro autotransfúzi.",
+    "Srovnání Část I vs. Část II: záchranář zahájí, nemocnice přebírá a rozšiřuje — kontinuita péče."
+  ]
+}

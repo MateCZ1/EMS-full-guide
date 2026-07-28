@@ -1,0 +1,2720 @@
+{
+  "id": "ch04",
+  "number": "4",
+  "part": "I",
+  "title": "Léčebné postupy — zranění a stavy",
+  "icon": "bandage",
+  "intro": "Každý postup je popsán krok za krokem. Ke každému kroku je vysvětleno PROČ se dělá — záchranář, který rozumí důvodu, udělá krok správně i v situaci, kdy přesně nepamatuje postup. V závorce nebo za pomlčkou jsou vždy česky vysvětleny odborné termíny.",
+  "sections": [
+    {
+      "id": "4.1",
+      "title": "Pohmoždění (Kontuze — poranění měkkých tkání bez porušení kůže)",
+      "abbrevs": [
+        {
+          "a": "RICE",
+          "f": "Rest, Ice, Compression, Elevation — standardní postup první pomoci při pohmoždění"
+        },
+        {
+          "a": "NSAID",
+          "f": "Nonsteroidal Anti-Inflammatory Drug — nesteroidní protizánětlivý lék (ibuprofen, naproxen)"
+        },
+        {
+          "a": "CK",
+          "f": "Creatine Kinase — kreatinkináza; enzym ze svalů; stoupá při rhabdomyolýze"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Kontuze",
+          "d": "pohmoždění — poranění tkáně tupým nárazem bez porušení kůže; přestanou fungovat drobné cévky a krev vytéká do tkáně"
+        },
+        {
+          "t": "Hematom",
+          "d": "ohraničená kapsa krve v tkáni; vzniká při pohmožděni nebo zlomenině; \"modřina\" je povrchový hematom"
+        },
+        {
+          "t": "Myoglobin",
+          "d": "červené barvivo svalových vláken; při rozsáhlém poranění svalu se uvolní do krve a poškozuje ledviny (rhabdomyolýza)"
+        },
+        {
+          "t": "Rhabdomyolýza",
+          "d": "rozpad svalové tkáně uvolňující myoglobin do krve; příznak: tmavě hnědá \"čajová\" moč; komplikace: selhání ledvin"
+        },
+        {
+          "t": "Compartment syndrom",
+          "d": "nebezpečné zvýšení tlaku uvnitř svalové fascie; sval a nervy přestávají dostávat krev; nutná chirurgická fasciotomie do 6 hodin"
+        },
+        {
+          "t": "Fascie",
+          "d": "tuhá vazivová blána obalující skupinu svalů; nepoddajná — při otoku svalů uvnitř roste tlak; při přetlaku = compartment syndrom"
+        },
+        {
+          "t": "Ischemie",
+          "d": "nedokrvení — tkáň nedostává kyslík; sval odumírá po 6 hodinách ischémie"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "ZÁKLADNÍ PRAVIDLO",
+          "text": "VŽDY nejdříve proveďte primární vyšetření XABCDE. Teprve pak ošetřujte konkrétní zranění. PROČ: tichá ruptura sleziny zabije rychleji než dramatická zlomenina femuru."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pohmoždění vzniká tupým nárazem bez porušení kůže. Drobné cévky v místě úderu prasknou a krev vytéká do tkáně — vznikne bolest, otok a modřina. Většina pohmoždění je banální. POZOR: pohmoždění hrudníku nebo břicha může skrývat závažné vnitřní poranění (rupturu sleziny, jater, kontuzi plic)."
+        },
+        {
+          "type": "table",
+          "caption": "Stupně pohmoždění a jejich rozlišení",
+          "headers": [
+            "Stupeň",
+            "Příznaky",
+            "Jak od sebe odlišit",
+            "Léčba"
+          ],
+          "rows": [
+            [
+              "Lehké (I. st.)",
+              "Mírná bolest, minimální otok, pohyb normální",
+              "Žádné omezení funkce; \"bolí ale jde to\"",
+              "RICE, ibuprofen nebo paracetamol, domů"
+            ],
+            [
+              "Střední (II. st.)",
+              "Výrazná bolest, znatelný otok a hematom, omezení pohybu",
+              "Pacient pohyb omezuje; nelze plně flektovat nebo extenovat",
+              "RICE, analgetika, sledování 24 hodin; RTG pro vyloučení zlomeniny"
+            ],
+            [
+              "Těžké (III. st.)",
+              "Silná bolest, masivní hematom, ztráta pohybu, tvrdý sval",
+              "Neschopnost pohybu; sval tuhý pod dotekem; neúměrná bolest",
+              "Vyloučit zlomeninu (RTG), rupturu svalu nebo compartment syndrom; ortoped"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Metoda RICE — postup ošetření, krok za krokem s vysvětlením."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "KLID (Rest — zastavení pohybu)",
+              "text": "Zastavte pohyb postižené oblasti IHNED. Horní končetina: závěs z trojcípého šátku. Dolní: nezatěžovat, doprovod nebo berle. PROČ: Pohyb zvyšuje krvácení do tkáně otevíráním dalších cévek. Každý krok prodlužuje hojení."
+            },
+            {
+              "n": 2,
+              "title": "CHLAZENÍ (Ice — kryoterapie)",
+              "text": "Led nebo chladný obklad ZABALENÝ DO RUČNÍKU (nikdy led přímo na kůži — omrzlina!) přiložte na 15–20 minut každé 2 hodiny po dobu prvních 48 hodin. PROČ chlazení: chlad způsobí cévní spazmus (stažení cév) → méně krve vytéká do tkáně → menší otok a menší bolest. PROČ ne přes 48 hodin: po 48 h je chlazení méně účinné; pak lze zahřívat pro urychlení hojení."
+            },
+            {
+              "n": 3,
+              "title": "KOMPRESE (Compression — tlakový obvaz)",
+              "text": "Přiložte elastické obinadlo (ACE wrap). Začněte od ruky nebo chodidla a bandážujte směrem k srdci (distál → proximál). Snug but not tight (přilehající ale ne škrtící). Každých 15 minut kontrolujte citlivost a barvu prstů. Brnění nebo bělení prstu = okamžitě rozvinout. PROČ od distálu: bandáž od periferie ke středu \"vypumpovává\" otoky zpět do krevního oběhu; obráceně by otok uvěznila."
+            },
+            {
+              "n": 4,
+              "title": "ELEVACE (Elevation — zvednutí nad úroveň srdce)",
+              "text": "Zvedněte postiženou končetinu nad úroveň srdce. Noha: polštáře nebo složené přikrývky pod lýtko. Paže: trojcípý šátek nebo opření o hranu stolu. PROČ nad srdce: gravitace působí na krev a tkáňovou tekutinu; nad srdcem: tekutina odtéká zpět; pod srdcem: tekutina stéká a hromadí se (otoky)."
+            },
+            {
+              "n": 5,
+              "title": "ANALGETIKA (léky proti bolesti)",
+              "text": "Ibuprofen 400–800 mg ústy každých 6–8 hodin (NSAID: působí i protizánětlivě). Alternativa: Paracetamol 500–1000 mg každé 4–6 hodin pro pacienty, kteří nemají ibuprofen. Silná bolest: Morfin 2–4 mg do žíly titrací. PROČ NSAID jako první volba: ibuprofen nejen tlumí bolest, ale také snižuje zánětlivou odpověď → méně otoku."
+            },
+            {
+              "n": 6,
+              "title": "ROZHODNUTÍ — transport nebo domů",
+              "text": "Transportujte do nemocnice pokud: narůstající otok po 24 hodinách, bolest neustupuje, podezření na zlomeninu (deformita, lokalizovaná bolest na pohmat). POVINNÝ TRANSPORT: pohmoždění hrudníku nebo břicha — pod pohmožděním může být ruptura sleziny, jater nebo kontuze plic (plicní pohmoždění), které se projeví až za hodiny."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "POHMOŽDĚNÍ HRUDNÍKU NEBO BŘICHA",
+          "text": "Tato poranění jsou zákeřná — zevní náraz je malý, ale vnitřní poranění může být masivní. Sledujte TK a puls každých 5 minut. Pokles TK + vzestup pulzu = vnitřní krvácení = transport OKAMŽITĚ. Nespoléhejte na to, že \"vypadá dobře\"."
+        },
+        {
+          "type": "paragraph",
+          "text": "Komplikace pohmoždění — co nesmíte přehlédnout."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Compartment syndrom — URGENTNÍ: Pohmoždění uzavřené ve svalové fascii → tlak stoupá → ischemie (nedokrvení) svalu a nervů. Příznaky: bolest nepřiměřeně silná k nálezu (neustupuje ani po analgetikách), bolest při pasivním protažení svalu (záchranář zatáhne za prst — pacient křičí), sval tuhý jako kámen, brnění nebo ztráta citlivosti. URGENTNÍ — chirurgická fasciotomie (rozříznutí fascie) do 6 hodin.",
+            "Rhabdomyolýza — pozdní komplikace: Masivní pohmoždění velkých svalů (stehno, záda) uvolní myoglobin (červené svalové barvivo) do krve → myoglobin ucpe ledvinové tubuly → selhání ledvin. Příznak: tmavě hnědá \"čajová\" moč za 12–24 hodin. Léčba: okamžitý transport; agresivní infúzní terapie (rozmýt myoglobin) v nemocnici."
+          ]
+        }
+      ],
+      "summary": [
+        "Pohmoždění hrudníku nebo břicha je zákeřné — ruptura sleziny nebo jater se projeví až s odstupem hodin.",
+        "RICE: Klid → Chlazení max. 15 min → Komprese od distálu → Elevace nad úroveň srdce.",
+        "Compartment syndrom: bolest nepřiměřená nálezu + tuhý sval + brnění = fasciotomie do 6 hodin.",
+        "Rhabdomyolýza: tmavá čajová moč po masivním pohmoždění = urgentní transport a agresivní infúze."
+      ]
+    },
+    {
+      "id": "4.2",
+      "title": "Zlomeniny (Fraktury — přerušení kontinuity kosti)",
+      "abbrevs": [
+        {
+          "a": "CRT",
+          "f": "Capillary Refill Time — čas návratu barvy pod nehet; normálně do 2 sekund"
+        },
+        {
+          "a": "NV status",
+          "f": "Neurovascular status — stav nervového zásobení a prokrvení distálně od zlomeniny"
+        },
+        {
+          "a": "OR",
+          "f": "Operating Room — operační sál"
+        },
+        {
+          "a": "ORIF",
+          "f": "Open Reduction Internal Fixation — otevřená repozice a vnitřní fixace (operace)"
+        },
+        {
+          "a": "TQ",
+          "f": "turniket — škrtidlo"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Repozice",
+          "d": "narovnání zlomených kostí zpět do anatomické polohy; V TERÉNU SE NEPROVÁDÍ kromě výjimek"
+        },
+        {
+          "t": "Periosteum",
+          "d": "okostice — tenká výživná blána přilepená na kost; velmi citlivá na bolest; při doteku nebo pohybu fragmentů = intenzivní bolest"
+        },
+        {
+          "t": "Vaskularizace",
+          "d": "zásobení tkáně krví přes tepny; \"distální vaskularizace\" = prokrvení části těla za (distálně od) zlomeniny"
+        },
+        {
+          "t": "Inervace",
+          "d": "zásobení tkáně nervy; \"distální inervace\" = citlivost a pohyblivost za zlomeninou; porucha = poranění nervu"
+        },
+        {
+          "t": "Krepitus",
+          "d": "skřípavý nebo drhnutý pocit při pohybu kostních fragmentů; NEVYVOLÁVEJTE záměrně — způsobuje bolest a posunuje fragmenty"
+        },
+        {
+          "t": "Komplikace (časné)",
+          "d": "poranění tepny nebo nervu v místě zlomeniny; syndrom kompartmentu; tukový trombus (tukové kapičky ze dřeně uvolněné do krve)"
+        },
+        {
+          "t": "Komplikace (pozdní)",
+          "d": "špatné zahojení (malheling), pseudoartróza (zlomenina se nezahojila), avaskulární nekróza (kost odumřela pro nedostatek krve), infekce"
+        },
+        {
+          "t": "Trakce",
+          "d": "tah za končetinu v ose kosti; narovná fragmenty a zmenší objem stehna → méně krve se vylije do tkáně"
+        },
+        {
+          "t": "Ischiadický výběžek (Ischial tuberosity)",
+          "d": "kostěný výběžek sedací kosti — tvrdý výčnělek pod hýžděmi; proximální opěrka trakční dlahy"
+        },
+        {
+          "t": "Maleoly (Malleoli)",
+          "d": "kotníkové výčnělky — vnitřní (tibia) a zevní (fibula); kotník se přiváže nad nimi"
+        },
+        {
+          "t": "Hemoragický šok",
+          "d": "šok způsobený krevní ztrátou; stehno pojme až 3 litry; trakce snižuje tuto ztrátu"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Zlomenina je přerušení kontinuity (celistvosti) kosti. Největší hrozby u zlomenin: krvácení do okolních tkání (femur = 1–3 litry!, pánev = 5 litrů!), poranění tepny nebo nervu, a infekce u otevřených zlomenin."
+        },
+        {
+          "type": "table",
+          "caption": "Typy zlomenin a jejich klinický význam",
+          "headers": [
+            "Typ",
+            "Popis",
+            "Proč je to klinicky důležité"
+          ],
+          "rows": [
+            [
+              "Zavřená",
+              "Kůže nad zlomeninou neporušena",
+              "Nižší riziko infekce; krvácení zadrženo v tkáni (ale může být masivní!)"
+            ],
+            [
+              "Otevřená I. st.",
+              "Malá rána do 1 cm, minimální znečištění",
+              "Spojení kosti s vnějším prostředím = riziko infekce; antibiotika + urgentní OR"
+            ],
+            [
+              "Otevřená II. st.",
+              "Rána 1–10 cm, střední znečištění",
+              "Vyšší infekční riziko; urgentní chirurgické čistění"
+            ],
+            [
+              "Otevřená III. st.",
+              "Rána nad 10 cm, masivní znečištění, ztráta měkkých tkání",
+              "Nejvyšší riziko infekce (Pseudomonas, Staphylococcus); plastická + ortopedie"
+            ],
+            [
+              "Drtivá (Comminuted)",
+              "Více kostních fragmentů",
+              "Vysokoenergetický mechanismus; operace vždy; vyšší riziko compartment syndromu"
+            ],
+            [
+              "Kompresní",
+              "Kost se \"drtí\" — obratle, pata",
+              "Charakteristická pro pád z výšky nebo osteoporózu"
+            ],
+            [
+              "Patologická",
+              "Zlomenina přes oslabené místo (nádor, osteoporóza)",
+              "Zlomenina z triviálního úrazu = vždy pátrat po příčině v kosti"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Jak zlomeninu rozpoznat — 5 příznaků."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Deformita: Viditelný nepřirozený tvar, zkrácení nebo rotace — nejspolehlivější terénní příznak. PROČ: kost se posune z osy; svaly kolem ztahují fragmenty různými směry → zkrácení a rotace.",
+            "Lokalizovaná bolest: Přesná bolest v místě zlomeniny při pohmatem — \"point tenderness\". PROČ spolehlivé: vazivové a svalové struktury nevykazují takto lokalizovanou bolest; pohmožděnina bolí difúzně.",
+            "Krepitus (skřípání): Pocit nebo zvuk praskání při pohybu. NEVYVOLÁVEJTE záměrně — způsobíte bolest a posunete fragmenty. Pokud uslyšíte nebo ucítíte: dokumentujte a imobilizujte.",
+            "Ztráta funkce: Pacient nemůže aktivně hýbat postiženou částí. PROČ: bolest + nestabilita kostní osy + svalový spazmus zabrání volnímu pohybu.",
+            "NV deficit — porucha cév nebo nervů distálně: Brnění, ztráta citlivosti, slabost, nebo chybějící puls za zlomeninou = poranění tepny nebo nervu = URGENTNÍ. PROČ: přeříznutá tepna → ischemie svalu a kůže → amputace; přeříznutý nerv → trvalé ochrnutí."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Postup ošetření zlomeniny — krok za krokem."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "XABCDE nejdříve",
+              "text": "Zlomenina může být součástí polytraumatu. PROČ: dramatická zlomenina \"odvádí pozornost\" — záchranář se soustředí na deformitu a přehlédne tichý hemothorax nebo rupturu sleziny, které zabijí první."
+            },
+            {
+              "n": 2,
+              "title": "Odkrytí a zhodnocení",
+              "text": "Záchranářskými nůžkami odřízněte oblečení. Zhodnoťte: otevřená nebo zavřená? Puls, citlivost a pohyblivost distálně (za zlomeninou)? Dokumentujte výchozí stav PŘED dlahováním. PROČ dokumentace: pokud se NV status zhorší po dlahování, víte, že dlaha je příliš těsná nebo způsobila kompresi cévy."
+            },
+            {
+              "n": 3,
+              "title": "NIKDY nekorigujte zlomeninu v terénu",
+              "text": "Fixujte v poloze, ve které ji najdete. PROČ nikdy: pokus o narovnání v terénu způsobuje: 1) intenzivní bolest → vasovagální synkopa (mdloba z bolesti); 2) přetržení okolních cév nebo nervů; 3) konvertuje zavřenou zlomeninu na otevřenou. Jediná výjimka: chybějící distální puls u zavřené zlomeniny → jeden šetrný pokus o jemnou podélnou trakci."
+            },
+            {
+              "n": 4,
+              "title": "Ošetření rány u otevřené zlomeniny",
+              "text": "Sterilní gáza navlhčená fyziologickým roztokem přes ránu a vyčnívající kost. NETLAČTE na vyčnívající kost — způsobíte poranění. Zastavte krvácení tlakem KOLEM kosti (ne přímo na ni). PROČ vlhká gáza: udržuje kost hydratovanou; suchá gáza přilne a při odstranění strhne tkáň."
+            },
+            {
+              "n": 5,
+              "title": "Znehybnění (Dlahování)",
+              "text": "Dlaha musí fixovat kloub NAD i POD zlomeninou. PROČ oba klouby: pohyb kloubu nad nebo pod zlomeninou hýbe fragmenty. Vakuová dlaha = preferovaná (tvaruje se kolem) nebo tuhé dlahy. Po přiložení: zkontrolujte NV status každých 15 minut. Dlaha nesmí být příliš těsná — brnění nebo bělení = ihned uvolnit."
+            },
+            {
+              "n": 6,
+              "title": "Analgetika před i po dlahování",
+              "text": "Morfin 2–5 mg do žíly titrací nebo Ketamin 0,3 mg/kg do žíly. PROČ povinně: léčba bolesti je standard péče. Bolest způsobuje stres (adrenalin), tachykardii, zvýšení TK = zvyšuje krvácení. Analgetika bolest sníží ale neodstraní diagnosticky důležité příznaky."
+            },
+            {
+              "n": 7,
+              "title": "Dokumentace a transport",
+              "text": "Zapište NV status před i po dlahování. Otevřená zlomenina = chirurgická pohotovost (nutná operace do 6–8 hodin). Avizujte nemocnici."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Specifické zlomeniny — přehled s odůvodněním postupu."
+        },
+        {
+          "type": "table",
+          "caption": "Specifické zlomeniny — dlahování, krevní ztráta a urgence",
+          "headers": [
+            "Lokalizace",
+            "Dlaha a fixace",
+            "Krevní ztráta",
+            "Urgentní? A proč"
+          ],
+          "rows": [
+            [
+              "Prsty",
+              "Přilepení k sousednímu prstu (buddy taping)",
+              "Minimální",
+              "Ne — ale zkontrolovat MRI nebo RTG pro vyloučení poranění šlachy"
+            ],
+            [
+              "Zápěstí (kost vřetenní, radius)",
+              "Dlahy hřbetní + dlaňová; trojcípý šátek",
+              "Minimální",
+              "Ano — RTG; pozor na n. medianus (citlivost palce = příznak poranění nervu)"
+            ],
+            [
+              "Loket",
+              "Dlaha zadní pod úhlem 90°; trojcípý šátek; BEZ cirkulárního obvazu",
+              "Střední — tepna v podloktí!",
+              "URGENTNĚ — a. brachialis (tepna paže) prochází přímo přes loket; bez pulzu na zápěstí = chirurg do 2 hodin"
+            ],
+            [
+              "Žebra 1–3",
+              "Pouze analgetika; sledujte SpO2",
+              "Nízká",
+              "Ano — horní žebra chrání aortu a podklíčkové cévy; jejich zlomenina = podezření na poranění těchto cév"
+            ],
+            [
+              "3+ sousední žebra (flail segment)",
+              "Intubace + mechanická ventilace s PEEP",
+              "Střední + kontuze plic",
+              "URGENTNĚ — paradoxní dýchání → hypoventilace → hypoxie; kontuze plic se rozvine za 6–12 h"
+            ],
+            [
+              "Stehenní kost (Femur)",
+              "TRAKČNÍ DLAHA Sager nebo Hare — POVINNĚ",
+              "VYSOKÉ: 1–3 litry!",
+              "URGENTNĚ — bez trakce se do stehna vylije až 3 litry krve; turniket pokud otevřená s krvácením"
+            ],
+            [
+              "Holenní a lýtková kost",
+              "Vakuová dlaha nebo dvě tuhé dlahy",
+              "Střední",
+              "Ano — zkontrolovat distální pulzy; compartment syndrom bérce"
+            ],
+            [
+              "Kotník",
+              "Dlaha v neutrální poloze (90°); nezatěžovat",
+              "Nízká–střední",
+              "Ano — zkontrolovat puls na nártu; RTG"
+            ],
+            [
+              "Pánev",
+              "Pánevní pás (T-POD) nebo stočené prostěradlo pevně kolem pánve",
+              "EXTRÉMNÍ: 3–5 litrů!",
+              "IHNED — největší krevní ztráta z jakékoli zlomeniny; jedna jemná komprese z boků; pokud nestabilní → pás ihned"
+            ],
+            [
+              "Krční páteř (C-spine)",
+              "Krční límec + vakuová matrace nebo páteřní deska",
+              "Minimální (ale riziko ochrnutí!)",
+              "URGENTNĚ — poranění míchy = doživotní ochrnutí; každý pohyb bez fixace riziko"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Trakční dlaha — aplikace při zlomenině femuru (stehenní kosti). PROČ trakční dlaha povinně: trakce narovná osu femuru → stehno se \"stáhne\" → objem stehna se zmenší → méně místa pro krev → ztráta krve se sníží o 30–50 %."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Analgetika PRVNÍ",
+              "text": "Morfin 4–6 mg do žíly nebo Ketamin 0,3 mg/kg. PROČ před dlahou: aplikace trakce bez analgezie je nesnesitelná; bolest způsobí involuntární pohyb → posunutí fragmentů."
+            },
+            {
+              "n": 2,
+              "title": "Změřte délku dlahy",
+              "text": "Přiložte Sager dlahu podél zdravé nohy a nastavte délku od ischiadického výběžku (kostěný výběžek pod hýžděmi) po patu. PROČ zdravá noha: poraněná noha je zkrácená; zdravá udává správnou délku."
+            },
+            {
+              "n": 3,
+              "title": "Kotníkový popruh",
+              "text": "Přiložte kotníkový popruh těsně nad maleoly (kotníkovými kostičkami). PROČ nad maleoly: samotné maleoly jsou kostěné výčnělky → popruh přes ně by je zlomil."
+            },
+            {
+              "n": 4,
+              "title": "Trakce a fixace",
+              "text": "Jeden záchranář drží nohu v mírné podélné trakci. Druhý přiloží proximální opěrku na ischiadický výběžek a propojí kotníkový popruh s trakčním mechanismem. Utahujte dokud pacient nereportuje úlevu od bolesti — přibližně 10 % tělesné hmotnosti (7–15 kg)."
+            },
+            {
+              "n": 5,
+              "title": "Kontrola NV statusu",
+              "text": "Distální puls na nártu a vnitřním kotníku; citlivost; pohyblivost prstů nohy. Každých 15 minut."
+            }
+          ]
+        }
+      ],
+      "summary": [
+        "Fixovat v poloze jak najdete — nikdy nevyrovnávat zlomeninu v terénu; výjimka: chybějící distální puls.",
+        "Pánev: jedna jemná komprese; nestabilní → pás T-POD ihned; ztráta krve až 5 litrů!",
+        "Femur: trakční dlaha povinně — bez trakce do stehna vteče 1–3 litry krve.",
+        "Po dlahování: distální puls, citlivost a pohyb každých 15 minut — příliš těsná dlaha = ischemie.",
+        "Otevřená zlomenina: sterilní vlhká gáza na ránu; netlačit na kost; chirurgie do 6–8 hodin."
+      ]
+    },
+    {
+      "id": "4.3",
+      "title": "Pád z výšky (Polytrauma — vícečetné poranění)",
+      "abbrevs": [
+        {
+          "a": "MOI",
+          "f": "Mechanism of Injury — mechanismus poranění; předpovídá typ zranění ještě před vyšetřením"
+        },
+        {
+          "a": "FAST",
+          "f": "Focused Assessment with Sonography in Trauma — rychlé trauma ultrazvukové vyšetření"
+        },
+        {
+          "a": "GCS",
+          "f": "Glasgow Coma Scale — skóre vědomí"
+        },
+        {
+          "a": "TBI",
+          "f": "Traumatic Brain Injury — traumatické poranění mozku"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Kinetická energie",
+          "d": "energie pohybu; roste s druhou mocninou rychlosti a lineárně s hmotností; vyšší výška = vyšší kinetická energie nárazu"
+        },
+        {
+          "t": "Axální zatížení",
+          "d": "síla působící podél osy páteře; typická pro dopad na chodidla nebo hlavu; způsobuje kompresní zlomeniny obratlů"
+        },
+        {
+          "t": "Polytrauma",
+          "d": "vícečetné poranění — poranění dvou nebo více tělesných oblastí; navzájem se komplikují a zvyšují mortalitu"
+        },
+        {
+          "t": "Lucidní interval",
+          "d": "krátká perioda zdánlivého zotavení mezi dvěma epizodami zhoršení vědomí; typický pro epidurální hematom — pacient vypadá dobře a pak se rychle zhorší"
+        },
+        {
+          "t": "Hemoperitoneum",
+          "d": "krev volně rozlitá v dutině břišní; způsobená rupturou sleziny, jater nebo cév; FAST ultrazvuk ji odhalí"
+        },
+        {
+          "t": "ATLS",
+          "d": "Advanced Trauma Life Support — americký standard traumatologické péče vydávaný American College of Surgeons"
+        },
+        {
+          "t": "Don Juan Syndrome",
+          "d": "vzorec poranění při dopadu na chodidla; pojmenován po donjuánech skákajících z balkónů; vzestupné přenášení energie: pata → holení → stehno → bederní páteř → základna lebky"
+        },
+        {
+          "t": "Waddellova triáda",
+          "d": "poranění dítěte sraženého vozidlem: holení kost (nárazník), trup (kapota), hlava (zem); tři různá místa v jednom úrazu"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pád z výšky je jedno z nejzávažnějších traumatologických poranění. PROČ: kinetická energie roste s druhou mocninou rychlosti pádu — pád ze 4 metrů je 4× nebezpečnější než ze 2 metrů. Vždy aplikujte protokol polytraumatu."
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "PRAVIDLO 3 METRŮ (10 STOP)",
+          "text": "Pád z výšky ≥ 3 metrů (= přibližně výška patra) = protokol polytraumatu + podezření na poranění krční páteře + podezření na vnitřní krvácení dokud CT vyšetření neprokáže opak. PROČ toto číslo: statisticky při pádu z 3 metrů vznikají závažná poranění u více než 50 % pacientů."
+        },
+        {
+          "type": "paragraph",
+          "text": "Vzorce poranění dle způsobu dopadu."
+        },
+        {
+          "type": "table",
+          "caption": "Vzorce poranění dle způsobu dopadu",
+          "headers": [
+            "Způsob dopadu",
+            "Typické poranění — PROČ právě tato poranění",
+            "Na co se zaměřit"
+          ],
+          "rows": [
+            [
+              "Dopad na chodidla (stoj)",
+              "Don Juan Syndrome: pata → holení → stehno → bederní páteř → baze lební. PROČ vzestupné: energie putuje osou těla od nejnižšího bodu nahoru",
+              "Bolest paty = sken celé páteře; vědomí"
+            ],
+            [
+              "Dopad na záda",
+              "Hrudní a bederní páteř; záhlaví. PROČ: záda absorbují energii podél celé délky páteře",
+              "Bolest zad; neurologický výpad dolních končetin"
+            ],
+            [
+              "Dopad na hlavu",
+              "Lebka; mozek; krční páteř. PROČ: hlava je těžká = velká kinetická energie při dopadu",
+              "Vědomí (GCS); zornice; C-spine precautions"
+            ],
+            [
+              "Dopad na natažené ruce (zachytávání se)",
+              "Klíční kost; zápěstí (distální radius); loket; rameno. PROČ: natažená ruka přenáší sílu do ramene a klíční kosti",
+              "Deformity; puls na zápěstí"
+            ],
+            [
+              "Přímý dopad na hrudník",
+              "Zlomená žebra; vzduch v pohrudnicové dutině (pneumothorax); kontuze srdce; poranění hrudní aorty. PROČ aorta: aorta je fixovaná; při deceleraci srdce a aorta pokračují pohybem dopředu — strhne se",
+              "SpO2; dechové šelesty; TK na obou pažích (rozdíl > 20 = disekce aorty)"
+            ],
+            [
+              "Přímý dopad na břicho",
+              "Ruptura sleziny (vlevo); poranění jater (vpravo); ledviny; střeva. PROČ slezina první: slezina je nejkřehčí orgán; poranění jater se projeví krvácením do peritonea",
+              "Tuhé nebo bolestivé břicho; šok bez viditelného krvácení"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Postup — protokol polytraumatu."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Bezpečnost místa a informace",
+              "text": "Ověřte stabilitu konstrukce (balkón, lešení, strom). Sbírejte informace: jak vysoko, jak dopadl, byl při vědomí na místě? PROČ sběr informací: \"byl při vědomí a pak omdlel\" = lucidní interval epidurálního hematomu → urgentní neurochirurgie."
+            },
+            {
+              "n": 2,
+              "title": "Okamžitá stabilizace krční páteře",
+              "text": "Záchranář přidrží hlavu oběma rukama ihned při přístupu k pacientovi a NEpustí ji dokud není krční límec nasazen a pacient znehybněn. PROČ okamžitě: každý pohyb nestabilní krční páteří = riziko přeříznutí míchy."
+            },
+            {
+              "n": 3,
+              "title": "Primární XABCDE",
+              "text": "Rychle projděte celé XABCDE. Klíčová místa: X — krvácení; B — symetrie dechových šelestů; C — puls a TK; D — vědomí a zornice; E — pánev jednou jemnou kompresí."
+            },
+            {
+              "n": 4,
+              "title": "FAST ultrazvuk",
+              "text": "Rychlé vyšetření 4 míst: játra (Morrison pouch), slezina, kolem srdce (perikard), nad stydkou kostí (pánev). PROČ na místě: volná tekutina v dutinách = krev = urgentní operace. Pozitivní FAST = přímá aktivace trauma týmu."
+            },
+            {
+              "n": 5,
+              "title": "Log-roll — vyšetření zad",
+              "text": "Minimálně 3 záchranáři: vedoucí za hlavou drží C-spine; \"na tři otáčíme\". Všichni otáčí pacienta jako jeden celek — nulová rotace páteře. Zkontrolujte celá záda na rány, hematomy a step-off deformitu páteře. PROČ jeden kus: rotace krční nebo hrudní páteře u zlomeniny = přeříznutí míchy → doživotní ochrnutí."
+            },
+            {
+              "n": 6,
+              "title": "Vakuová matrace nebo páteřní deska",
+              "text": "Vakuová matrace je preferovaná (tvaruje se kolem těla, rovnoměrný tlak). Páteřní deska pro krátkou extrakci. Fixovat minimálně 3 pásy + fixátor hlavy. PROČ ne páteřní deska delší dobu: tvrdá deska způsobuje tlakové léze kůže nad kostěnými výčnělky za 30+ minut."
+            },
+            {
+              "n": 7,
+              "title": "Dvě velké kanyly",
+              "text": "Kanyly 16G nebo 18G do obou rukou. Ringerův laktát 500 ml pokud TK pod 90. PROČ dvě kanyly: jedna může selhat (vypadnout, ucpat se); dvě paralelně zdvojnásobí rychlost infúze."
+            },
+            {
+              "n": 8,
+              "title": "LOAD AND GO — minimalizujte čas na místě",
+              "text": "Nestabilní polytrauma: maximum 10 minut na místě. Zbývající vyšetření a léčba probíhají ZA JÍZDY. PROČ: \"Zlatá hodina\" — v prvních 60 minutách od poranění je šance na přežití nejvyšší; každá minuta na místě = méně času na operačním sálu."
+            }
+          ]
+        }
+      ],
+      "summary": [
+        "Pád z 3 metrů a výše = protokol polytraumatu + podezření na C-spine + vnitřní krvácení.",
+        "Don Juan Syndrome při dopadu na chodidla: pata → bérec → femur → bederní páteř → baze lební.",
+        "FAST ultrazvuk na místě odhalí hemoperitoneum (krev v dutině břišní) dříve než CT v nemocnici.",
+        "Maximálně 10 minut na místě — zbytek ošetření za jízdy do traumacentra Level I."
+      ]
+    },
+    {
+      "id": "4.4",
+      "title": "Bodné a řezné rány (Penetrující rány)",
+      "abbrevs": [
+        {
+          "a": "ICS",
+          "f": "Intercostal Space — mezižeberní prostor (mezera mezi dvěma žebry)"
+        },
+        {
+          "a": "PTX",
+          "f": "Pneumothorax — vzduch v pohrudnicové dutině"
+        },
+        {
+          "a": "TnPTX",
+          "f": "Tenzní pneumothorax — vzduch pod tlakem stlačující srdce"
+        },
+        {
+          "a": "FAST",
+          "f": "Focused Assessment with Sonography in Trauma"
+        },
+        {
+          "a": "OR",
+          "f": "Operating Room — operační sál"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Penetrující rána",
+          "d": "rána pronikající přes kůži do hluboké tkáně nebo tělní dutiny"
+        },
+        {
+          "t": "Tamponáda (mechanická)",
+          "d": "zaražený předmět drží ucpanou cévu jako \"zátka\"; vytažení = masivní krvácení"
+        },
+        {
+          "t": "Eventerace",
+          "d": "vypadnuté orgány (typicky střeva) přes ránu na povrch břicha; NEvrátit zpátky"
+        },
+        {
+          "t": "Mediastinum",
+          "d": "centrální prostor v hrudníku mezi oběma plícemi; obsahuje srdce, aortu, průdušnici, jícen; poranění zde = kritické"
+        },
+        {
+          "t": "Zástavní linie (tamponáda srdce)",
+          "d": "krev v osrdečníkovém vaku stlačuje srdce; Beck'ova triáda: nízký TK + napjaté krční žíly + tlumené srdeční ozvy"
+        },
+        {
+          "t": "Zóny krku",
+          "d": "anatomické oblasti krku I-III; zóna II (střední krk) = nejkritičtější — krkavice, průdušnice, jícen"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Bodné rány jsou záludné — vstupní otvor může být malý, ale vnitřní poranění rozsáhlé. Nůž s čepelí 20 cm zanechá vstupní otvor 2 cm, ale může proniknout do srdce. PROČ nikdy nehodnoťte závažnost podle velikosti rány: průniku přes kůži koresponduje s průřezem čepele; hloubka průniku nikoli."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nebezpečné anatomické oblasti — kde bodná rána zabíjí nejrychleji."
+        },
+        {
+          "type": "table",
+          "caption": "Nebezpečné anatomické oblasti u bodných ran",
+          "headers": [
+            "Oblast",
+            "Co je poraněno",
+            "Čas do smrti bez léčby",
+            "Terénní priorita"
+          ],
+          "rows": [
+            [
+              "Přední krk — střední zóna",
+              "Krkavicová tepna (karotida), hrdelní žíla (jugulár), průdušnice, jícen",
+              "Pod 2 minuty (karotida)",
+              "Přímý tlak KOLEM rány; nikdy cirkulárně celý krk (dušení)"
+            ],
+            [
+              "Hrudník",
+              "Srdce, hrudní aorta, plíce, mezižeberní tepna",
+              "2–10 minut",
+              "Větrací záplata; dekomprese PTX; transport"
+            ],
+            [
+              "Nadbřišek (epigastrium)",
+              "Játra, žaludek, slinivka, břišní aorta",
+              "5–30 minut",
+              "IV ×2; FAST; transport; do rány nic nevkládejte"
+            ],
+            [
+              "Tříslo (třísní trojúhelník)",
+              "Stehenní tepna (a. femoralis)",
+              "Pod 3 minuty",
+              "Turniket nebo JETT IHNED — nic nečeká"
+            ],
+            [
+              "Podpaží (axilla)",
+              "Podpažní tepna (a. axillaris)",
+              "3–5 minut",
+              "Hemostatická gáza; ev. turniket vysoký na paži"
+            ],
+            [
+              "Záda",
+              "Ledviny, mícha, hrudní aorta",
+              "Různé",
+              "IV přístupy; transport; log-roll pro vyšetření"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Postup ošetření penetrujících ran."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "NIKDY nevytahujte zaraženou věc",
+              "text": "Zaražený nůž, tyč nebo skleněný střep drží ucpanou cévu jako zátka. Vytažení = okamžité masivní krvácení. Stabilizujte předmět bulky (objemnými) obvazy kolem — zabraňují pohybu. Zkraťte pouze pokud fyzicky překáží transportu. PROČ toto pravidlo: tepna v místě průniku je přimáčknuta čepelí; bez čepele tlakem krvácí volně."
+            },
+            {
+              "n": 2,
+              "title": "Zastavení krvácení (krok X)",
+              "text": "Turniket pro krvácení z končetin. Hemostatická gáza + přímý tlak pro tříslo, podpaží, krk. Rána na krku: pevný tlak KOLEM rány (palec a prsty). NIKDY cirkulárně celý obvaz kolem krku — způsobí kompresi obou krkavic (dušení). PROČ sem a ne jinam: krční žíly jsou pod nízkým tlakem; rána na krku může nasávat vzduch (vzduchová embolie) = aspirace vzduchu do oběhu → okamžitá smrt."
+            },
+            {
+              "n": 3,
+              "title": "Rány hrudníku — záplata s ventilkem",
+              "text": "Jakákoli penetrující rána hrudníku = větrací záplata OKAMŽITĚ. Zakryjte VSTUPNÍ i VÝSTUPNÍ ránu (pokud obě existují). PROČ větrací záplata: hrudní dutina je normálně pod lehkým podtlakem; otvor v hrudní stěně narušuje toto vakuum a plíce se zhroutí; záplata vakuum obnoví."
+            },
+            {
+              "n": 4,
+              "title": "Eventerace — vypadlé orgány",
+              "text": "Vypadlá střeva nebo jiné orgány NEVRACEJTE zpátky. Přikryjte sterilní gázou navlhčenou fyziologickým roztokem, pak plastovou fólií nebo fóliovou záchrannou dekou. Udržujte vlhké a teplé. PROČ nevracet: zavlečení bakterií z povrchu střeva do dutiny břišní = těžká peritonitida (zánět pobřišnice)."
+            },
+            {
+              "n": 5,
+              "title": "Monitoring a IV přístupy",
+              "text": "Saturace kyslíkem, TK každé 3 minuty. Dvě kanyly. Ringerův laktát při TK pod 90 — cíl permissivní hypotenze 80–90. Avizujte trauma centrum. PROČ rychlé avizování: chirurg se musí připravit; \"STAB THORAX, ETA 8 MINUT\" = trauma tým u lůžka při vašem příjezdu."
+            },
+            {
+              "n": 6,
+              "title": "Poloha dle místa rány",
+              "text": "Rána hrudníku + dušnost: polosed 45° (Fowlerova poloha). PROČ: bránice se nadzvedne vlastní vahou → plíce mají více prostoru. Rána břicha: leh s pokrčenými koleny (snižuje napětí břišní stěny). Šok: leh + nohy mírně výše (Trendelenburgova poloha — zvyšuje venózní návrat)."
+            },
+            {
+              "n": 7,
+              "title": "Transport do chirurgie do 30 minut",
+              "text": "Penetrující rána hrudníku nebo břicha = urgentní operace. PROČ 30 minut: při arterálním krvácení do uzavřené dutiny se krev hromadí; při překročení kompenzační kapacity nastoupí nevratný šok."
+            }
+          ]
+        }
+      ],
+      "summary": [
+        "Nikdy nevytahovat zaraženou věc — drží ucpanou cévu jako zátka; vytažení = okamžité masivní krvácení.",
+        "Rána na krku: pevný tlak kolem rány — nikdy cirkulárně celý obvaz; způsobí kompresi obou krkavic.",
+        "Každá penetrující rána hrudníku = větrací záplata s ventilkem ihned na vstupní i výstupní otvor.",
+        "Eventerace (vypadlá střeva): nepotlačovat zpět; vlhká sterilní gáza + fólie.",
+        "Penetrující rána hrudníku nebo břicha = chirurgická urgence do 30 minut."
+      ]
+    },
+    {
+      "id": "4.5",
+      "title": "Střelné rány (GSW — Gunshot Wounds)",
+      "abbrevs": [
+        {
+          "a": "GSW",
+          "f": "Gunshot Wound — střelná rána"
+        },
+        {
+          "a": "MARCH",
+          "f": "Massive hemorrhage, Airway, Respiration, Circulation, Hypothermia/Head — taktický algoritmus"
+        },
+        {
+          "a": "TQ",
+          "f": "Turniket"
+        },
+        {
+          "a": "CPP",
+          "f": "Cerebral Perfusion Pressure — cerebrální perfúzní tlak; nutný pro zásobení mozku"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Dočasná kavitace (Temporary Cavity)",
+          "d": "dočasná dutina v tkáni způsobená tlakovou vlnou za projektilem; poškozuje tkáně daleko od přímé dráhy projektilu; výrazná u vysokorychlosního střeliva z pušek"
+        },
+        {
+          "t": "Permanentní kavitace",
+          "d": "trvalá dráha průniku projektilu skrze tkáň; toto poranění vidíme při operaci"
+        },
+        {
+          "t": "Vstupní otvor",
+          "d": "malá rána kde projektil vstoupil do těla; obvykle menší a kulatá"
+        },
+        {
+          "t": "Výstupní otvor",
+          "d": "rána kde projektil opustil tělo; obvykle větší, trhlinové a s více okraji; může krvácet více než vstupní"
+        },
+        {
+          "t": "Ballistika",
+          "d": "nauka o pohybu projektilů; záchranář musí znát: pistole = malá rychlost = lokální poranění; puška = velká rychlost = rozsáhlá tkáňová destrukce"
+        },
+        {
+          "t": "Karotida (a. carotis)",
+          "d": "krkavicová tepna na krku; pár (jedna na každé straně); zásobuje mozek; přetržení = smrt do 2 minut"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Střelné rány kombinují přímé mechanické poranění s tlakovým poraněním okolní tkáně. Výsledek závisí na kinetické energii projektilu (½ × hmotnost × rychlost²). Pistolový projektil poškodí hlavně přímou dráhu; puškový projektil způsobí dočasnou kavitaci poškozující tkáně centimetry od dráhy."
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "BEZPEČNOST",
+          "text": "EMS nevstupuje na místo aktivní střelby. Čekáte za krytem (pevná zeď, motor auta — ne dveře nebo karton) na potvrzení policie. PROČ motor a ne dveře: pistolový projektil prochází autodveřmi; motorový blok ho zastaví."
+        },
+        {
+          "type": "paragraph",
+          "text": "Postup — Algoritmus MARCH pro střelné rány."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "M — Masivní krvácení",
+              "text": "Střelná rána na končetině s krvácením: TURNIKET IHNED — vysoko a těsně nad ránou. Zapište čas. Střelná rána trupu nebo krku: hemostatická gáza + maximální přímý tlak na VSTUPNÍ i VÝSTUPNÍ ránu. PROČ obě rány: výstupní rána může krvácet intenzivněji než vstupní (je větší a s více okraji)."
+            },
+            {
+              "n": 2,
+              "title": "A — Dýchací cesty",
+              "text": "Rána do obličeje nebo krku: okamžitě odsajte krev, zajistěte dýchací cesty rourkou ČASNĚ (otoky progredují a zúží průchod). Výtah čelisti POUZE při podezření na poranění krční páteře. PROČ časně: otok od střepiny nebo hematom roste; rourka zavedená za hodinu nemusí projít."
+            },
+            {
+              "n": 3,
+              "title": "R — Hrudník",
+              "text": "Větrací záplata na VSTUPNÍ i VÝSTUPNÍ ránu hrudníku. Poslechněte plíce. Tenzní PTX: dekompresní jehla 2. ICS, medioklavikulární čára. PROČ oba otvory: vzduch vstupu do pohrudnicové dutiny přes KAŽDÝ otvor; neuzavřená výstupní rána tenzní PTX udrží."
+            },
+            {
+              "n": 4,
+              "title": "C — Oběh",
+              "text": "Dvě kanyly 14–16G. Ringerův laktát. Permissivní hypotenze: systolický TK 80–90 mmHg (nevymyjeme sraženiny). VÝJIMKA: střelná rána do hlavy — TK ≥ 90 mmHg (mozek potřebuje zásobení — CPP musí být dostatečný)."
+            },
+            {
+              "n": 5,
+              "title": "H — Podchlazení a hlava",
+              "text": "Záchranná deka IHNED — krvácející pacient rychle ztrácí teplo (krev je teplá, odtéká). Střelná rána do hlavy: vědomí každé 2 minuty, zornice, TK ≥ 90. PROČ TK ≥ 90 u hlavy: nižší TK = nižší CPP = mozek dostane méně kyslíku = větší ložisko poranění."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Lokalizace střelné rány a prioritní postup."
+        },
+        {
+          "type": "table",
+          "caption": "Lokalizace střelné rány a prioritní postup",
+          "headers": [
+            "Lokalizace",
+            "Okamžitá rizika",
+            "Terénní postup",
+            "Cílová nemocnice"
+          ],
+          "rows": [
+            [
+              "Hlava",
+              "Krvácení do mozku (hematom), edém mozku, herniace mozkového kmene",
+              "Vědomí každé 2 min; zornice; TK ≥ 90; normoventilace (ETCO2 35–45); NEdávat sedaci pokud možno",
+              "Neurochirurgické centrum"
+            ],
+            [
+              "Obličej",
+              "Ucpané dýchací cesty (krev, otoky, fragmenty kostí)",
+              "Agresivní odsávání; časná intubace rourkou; krikotomie (chirurgické otevření průdušnice přes kůži) jako záloha",
+              "Maxilofaciální + trauma"
+            ],
+            [
+              "Střední krk (Zóna II)",
+              "Krkavice, jugulár, průdušnice — přímé ohrožení",
+              "Přímý tlak KOLEM rány; NIKDY cirkulárně; urgentně na sál",
+              "Trauma centrum — OR do 15 min"
+            ],
+            [
+              "Hrudník",
+              "Vzduch nebo krev v pohrudnici; tamponáda srdce; poranění aorty",
+              "Větrací záplata; dekomprese; FAST (tamponáda)",
+              "Hrudní chirurgie/trauma"
+            ],
+            [
+              "Břicho",
+              "Zánět pobřišnice z perforace střeva; masivní krvácení (játra, slezina, pánevní cévy)",
+              "IV ×2; FAST; do rány nic; transport",
+              "Trauma centrum — urgentní operace"
+            ],
+            [
+              "Tříslo",
+              "Stehenní tepna — smrt do 3 minut",
+              "Turniket nebo JETT IHNED",
+              "Cévní/trauma chirurgie"
+            ]
+          ]
+        }
+      ],
+      "summary": [
+        "Vstupní otvor malý, výstupní větší — obě rány mohou krvácet; větrací záplata na obě.",
+        "Algoritmus MARCH: turniket při krvácení z končetiny jako absolutní první priorita.",
+        "Puška vs. pistole: puška způsobuje dočasnou kavitaci (poranění tkání daleko od dráhy projektilu).",
+        "Rána hlavy: TK min. 90 mmHg, normoventilace ETCO2 35–45, vědomí každé 2 minuty.",
+        "Každá GSW trupu nebo hlavy = urgentní aktivace trauma týmu ještě z terénu."
+      ]
+    },
+    {
+      "id": "4.6",
+      "title": "Dopravní nehody (MVA — Motor Vehicle Accident)",
+      "abbrevs": [
+        {
+          "a": "MVA",
+          "f": "Motor Vehicle Accident — dopravní nehoda; také MVC (Motor Vehicle Collision)"
+        },
+        {
+          "a": "MOI",
+          "f": "Mechanism of Injury — mechanismus poranění"
+        },
+        {
+          "a": "KED",
+          "f": "Kendrick Extrication Device — Kendrickova extrakční vesta pro znehybnění páteře při extrakci z vozidla"
+        },
+        {
+          "a": "TBI",
+          "f": "Traumatic Brain Injury — poranění mozku"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Waddellova triáda",
+          "d": "poranění dítěte sraženého vozidlem: 1) nárazník → holení kost; 2) kapota → trup; 3) nápad na zem → hlava"
+        },
+        {
+          "t": "Příznak pásu (Seat-belt sign)",
+          "d": "modřina v linii bezpečnostního pásu; ukazuje na vnitřní poranění pod místem pásu (střeva, mezenterium)"
+        },
+        {
+          "t": "Dekelerace",
+          "d": "rychlé zpomalení; při dekeleraci tělo pokračuje pohybem dopředu zatímco auto se zastaví → trauma z nárazu na volant nebo palubní desku; aorta se \"strhne\""
+        },
+        {
+          "t": "Whiplash (šlehnutí bičem)",
+          "d": "prudký pohyb hlavy dozadu a dopředu při zadním nárazu; způsobuje poranění ligament (vazů) krční páteře"
+        },
+        {
+          "t": "Airbag",
+          "d": "nafukovací vak; chrání před nárazem na volant; může způsobit popáleniny obličeje a zhmoždění hrudníku"
+        },
+        {
+          "t": "Extrication",
+          "d": "extrakce pacienta z vozidla; provádí záchranáři EMS a hasiči při uvíznutí"
+        },
+        {
+          "t": "Trakční stabilizace (Inline Stabilization)",
+          "d": "záchranář drží hlavu pacienta oběma rukama v neutrální poloze — nulový pohyb hlavy; provádí se IHNED při přístupu k pacientovi"
+        },
+        {
+          "t": "KED vesta",
+          "d": "pevná vesta objímající trup a krk; znehybní hrudní a krční páteř; umožňuje bezpečné otočení pacienta ven z vozidla"
+        },
+        {
+          "t": "Rapidní extrakce",
+          "d": "rychlé vytažení z vozidla třemi záchranáři bez KED; provádí se při bezprostředním nebezpečí (oheň, propadající vozidlo, zástava srdce)"
+        },
+        {
+          "t": "Chock (klíny)",
+          "d": "klíny pod kola vozidla; stabilizují vozidlo abychom zabránili pohybu; hasiči přidají stabilizační podpěry"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dopravní nehody jsou nejčastější příčinou polytraumatu. Mechanismus nehody předpovídá poranění ještě PŘED vyšetřením. PROČ znát mechanismus: záchranář přijíždí s hypotézou — \"čelní náraz bez pásu = poranění mozku + aorta\" — a cíleně hledá."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mechanismus a předpovídaná poranění — proč jsou to právě tato poranění."
+        },
+        {
+          "type": "table",
+          "caption": "Mechanismus nehody a předpovídaná poranění",
+          "headers": [
+            "Mechanismus",
+            "Typické poranění — mechanismus vzniku",
+            "Zaměřit se na"
+          ],
+          "rows": [
+            [
+              "Čelní náraz — s pásem",
+              "Hrudní kost (volant + pás); hrudní aorta (dekelerace strhne aortu); břicho (příznak pásu = střeva přimáčknutá pásem)",
+              "EKG (kontuze srdce); TK na obou pažích (disekce aorty → rozdíl > 20 mmHg); příznak pásu"
+            ],
+            [
+              "Čelní náraz — bez pásu",
+              "Hlava/čelní sklo → TBI + zlomeniny obličejových kostí; kolena/palubní deska → femur, kyčel; volant → hrudník, aorta",
+              "Kompletní XABCDE; aorta; kolena"
+            ],
+            [
+              "Boční náraz (T-bone)",
+              "Blíže: žebra, játra (vpravo) nebo slezina (vlevo), pánev, femur. PROČ: náraz je focusen na bok hrudníku a trupu",
+              "FAST (krev v dutinách); stabilita pánve"
+            ],
+            [
+              "Zadní náraz (whiplash)",
+              "Krční ligamenta a obratle — hlava se šlehne dozadu. PROČ: hlava je těžká; při zadním nárazu setrvačností pokračuje dozadu; šíjové vazy se přetáhnou",
+              "C-spine clearance; bolest šíje; neurologické příznaky"
+            ],
+            [
+              "Převrácení vozidla",
+              "Polytrauma — veškeré vzorce najednou; zejm. páteř a TBI. PROČ: při převrácení pacient naráží do různých míst kabiny",
+              "VŽDY protokol polytraumatu"
+            ],
+            [
+              "Motocyklista — pád",
+              "Oděrky povrchní (road rash); klíční kost, zápěstí; TBI bez přilby; kotník. PROČ TBI: poškozená přilba = energie přenesena na lebku",
+              "Vyšetřit všechny povrchy těla; přilba"
+            ],
+            [
+              "Chodec sražen — dospělý",
+              "Femur (výška nárazníku); trup (výška kapoty); hlava (dopad na zem). PROČ tři různá místa: výška nárazníku, kapoty a výška pádu odpovídají třem různým kontaktním bodům",
+              "Zraněná místa odpovídají výšce vozidla vs. výšce pacienta"
+            ],
+            [
+              "Chodec sražen — dítě",
+              "Waddellova triáda: bérec + trup + hlava. PROČ jiné: dítě je nízké; nárazník zasáhne stehno nebo bérec; kapota trup; dopad hlava",
+              "Přepokládejte všechna tři poranění vždy"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Extrakce pacienta z vozidla."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Stabilizace vozidla",
+              "text": "Klíny pod kola; hasiči stabilizují vozidlo podpěrami. Záchranáři NEVSTUPUJÍ do nestabilního vozidla. PROČ: vozidlo na boku nebo s hrozícím pádem se může pohnout a záchranáře zranit."
+            },
+            {
+              "n": 2,
+              "title": "Přístup k pacientovi",
+              "text": "Nejdříve zkuste otevřít dveře rukou. Rozbití okna: úder do rohu (ne středu) skleněnými nůžkami nebo bezpečnostním kladívkem. PROČ roh: střed je napjatý; roh praskne celé sklo bezpečně."
+            },
+            {
+              "n": 3,
+              "title": "Okamžitá stabilizace krční páteře",
+              "text": "Záchranář vstoupí a IHNED přidrží hlavu v neutrální poloze — bez pohybu. Druhý záchranář nasadí krční límec. PROČ dříve než cokoliv jiného: každý pohyb nestabilní krční páteří = riziko přeříznutí míchy."
+            },
+            {
+              "n": 4,
+              "title": "Rychlé vyšetření ve vozidle",
+              "text": "Rychlé XABCDE. Indikace pro okamžitou rapidní extrakci (bez KED): zástava srdce, hrozící oheň, deformující prostor (palubní deska se pohybuje k pacientovi), zhoršující se vědomí. PROČ rapidní bez KED: KED trvá 3–5 minut; při zástavě srdce každá vteřina bez KPR = nižší šance na přežití."
+            },
+            {
+              "n": 5,
+              "title": "KED vesta pro standardní extrakci",
+              "text": "KED (Kendrickova extrakční vesta) se přiváže kolem trupu a krku — znehybní hrudní a krční páteř. Pacient se otočí ven na páteřní desku. PROČ KED: hrudní páteř se při sedícím pacientovi nedá jinak fixovat; KED ji obemkne ze všech stran."
+            }
+          ]
+        }
+      ],
+      "summary": [
+        "Mechanismus predikuje poranění: čelní náraz bez pásu = TBI + aorta; boční náraz = slezina nebo játra.",
+        "Waddellova triáda u dítěte sraženého autem: bérec + trup + hlava — předpokládejte všechna tři.",
+        "KED vesta pro standardní extrakci; rapidní (bez KED) pouze při zástavě srdce nebo hrozícím ohni.",
+        "Příznak pásu na břiše = vnitřní poranění pod místem pásu; transport vždy.",
+        "Airbag chrání před nárazem, ale může způsobit popáleniny obličeje a kontuzi hrudníku."
+      ]
+    },
+    {
+      "id": "4.7",
+      "title": "Zástava srdce a resuscitace (KPR)",
+      "abbrevs": [
+        {
+          "a": "KPR",
+          "f": "Kardiopulmonální resuscitace — srdeční masáž + umělé dýchání"
+        },
+        {
+          "a": "ALS",
+          "f": "Advanced Life Support — pokročilá záchranná péče"
+        },
+        {
+          "a": "VF",
+          "f": "Ventricular Fibrillation — fibrilace komor (chaotický smrtelný srdeční rytmus)"
+        },
+        {
+          "a": "pVT",
+          "f": "Pulseless Ventricular Tachycardia — bezpulsová komorová tachykardie"
+        },
+        {
+          "a": "PEA",
+          "f": "Pulseless Electrical Activity — bezpulsová elektrická aktivita (EKG vypadá normálně ale srdce nepumpuje)"
+        },
+        {
+          "a": "ROSC",
+          "f": "Return of Spontaneous Circulation — obnova spontánní cirkulace (srdce začalo pumpovat samo)"
+        },
+        {
+          "a": "ETCO2",
+          "f": "End-Tidal CO2 — hodnota CO2 na konci výdechu; při dobré KPR stoupá; skok nad 40 mmHg = ROSC"
+        },
+        {
+          "a": "TTM",
+          "f": "Targeted Temperature Management — cílená regulace teploty těla po zástavě"
+        },
+        {
+          "a": "IO",
+          "f": "Intraosseous — do kosti; záchranný přístup k cévnímu oběhu"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Fibrilace komor (VF)",
+          "d": "chaotická elektrická aktivita; srdce se nekontrahuje ale \"chvěje\"; letální ale léčitelná elektrickým výbojem (defibrilací)"
+        },
+        {
+          "t": "Bezpulsová elektrická aktivita (PEA)",
+          "d": "EKG zobrazuje rytmus ale srdce fyzicky nevytlačuje krev; příčina vždy strukturální (6H a 6T)"
+        },
+        {
+          "t": "Asystolie",
+          "d": "nulová elektrická aktivita; \"plochá čára\"; nejhorší prognóza ze zástavních rytmů"
+        },
+        {
+          "t": "Kompenzace — CPR",
+          "d": "srdeční masáž mechanicky nahrazuje čerpání srdce; 30 % normálního srdečního výdeje; dostačuje pro minimální zásobení mozku"
+        },
+        {
+          "t": "Agonal breathing (lapavé dechy)",
+          "d": "reflexní brainstemové gasps po zástavě; nejsou normálním dýcháním; přítomnost lapavých dechů = zahájit KPR"
+        },
+        {
+          "t": "No-flow time",
+          "d": "čas bez srdeční masáže; každá sekunda zhoršuje prognózu; minimalizace přerušení je priorita"
+        },
+        {
+          "t": "ETCO2 jako marker KPR",
+          "d": "CO2 ve vydechovaném vzduchu při KPR odráží srdeční výdej; vyšší ETCO2 = lepší masáž = více krve prochází plícemi"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Zástava srdce je okamžitě letální stav. PROČ rychlost rozhoduje: mozková buňka přežije bez kyslíku 4–6 minut; po 6 minutách začínají nevratná poškození. Každá minuta bez KPR snižuje šanci přežití o 10 %. Zahájení KPR do 1 minuty = 5× vyšší přežití."
+        },
+        {
+          "type": "table",
+          "caption": "Jak zástavu srdce rozpoznat",
+          "headers": [
+            "Příznak",
+            "Jak zjistíme a za jak dlouho",
+            "PROČ tento konkrétní způsob"
+          ],
+          "rows": [
+            [
+              "Nereaguje",
+              "Zavolejte hlasitě, třeste za ramena — 5 sekund",
+              "Nereagování eliminuje spánek nebo synkopu (krátkodobou ztrátu vědomí)"
+            ],
+            [
+              "Nedýchá nebo lapá",
+              "Pohled na hrudník (pohybuje se?); ruku nad ústa (cítím vzduch?) — 10 sekund",
+              "Lapavé dechy = agonal breathing = KPR zahájena; normální dýchání = bez zástavy"
+            ],
+            [
+              "Žádný puls na karotidě",
+              "Prsty na krční tepně vedle průdušnice — max. 10 sekund",
+              "Radial puls (zápěstí) mizí při TK pod ~80 mmHg; karotida funguje do ~60 mmHg; spolehlivější"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "title": "LAPAVÉ DECHY — NEJČASTĚJŠÍ CHYBA",
+          "text": "Agonal breathing (lapavé, chrčivé dechy) jsou reflexní brainstemové gasps po zástavě — NEJSOU normálním dýcháním. Mnoho svědků i záchranářů je zaměnila za dýchání a nezahájila KPR. Pravidlo: pokud není normální pravidelné dýchání → KPR IHNED."
+        },
+        {
+          "type": "paragraph",
+          "text": "Algoritmus pokročilé resuscitace (ALS) — krok za krokem s vysvětlením."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Přivolání pomoci + automatický defibrilátor",
+              "text": "Okamžitě přivolejte posily. Pošlete kolegu pro defibrilátor. Sami zahájíte srdeční masáž — PROČ vy masírujete a partner pro defibrilátor: defibrilace VF je jedinou prokázanou intervencí zvyšující přežití; musí přijít co nejdříve."
+            },
+            {
+              "n": 2,
+              "title": "Srdeční masáž (komprese) — NEJDŮLEŽITĚJŠÍ krok",
+              "text": "Základna dlaně na střed hrudní kosti (dolní polovina). Paže rovné. Hloubka: 5–6 cm (= 2–2,4 palce). Frekvence: 100–120/min (tempo písně \"Staying Alive\"). Plné uvolnění hrudníku mezi stlačeními (nepřehnijte se — recoil je nutný pro plnění srdce). Přerušení: MAXIMÁLNĚ 10 sekund. PROČ 10 sekund: krevní tlak vytvořený masáží klesne na 0 do 5 sekund po přerušení; obnovení trvá 15–20 stlačení."
+            },
+            {
+              "n": 3,
+              "title": "Umělé dýchání (30:2 nebo kontinuální)",
+              "text": "30 stlačení → 2 vdechy dýchacím vakem. Každý vdech: 1 sekunda, viditelné zvednutí hrudníku. Po zajištění rourkou: nepřerušujte masáž — 1 vdech každých 6 sekund (10/min) asynchronně. PROČ 1 sekunda a ne 2: delší vdech přetlakuje plíce a brání venóznímu návratu → méně krve k srdci → horší masáž."
+            },
+            {
+              "n": 4,
+              "title": "Elektrody a analýza rytmu",
+              "text": "Nalepte adhezivní elektrody: pravá pod pravou klíční kostí; levá na 5. mezižeberní prostor přední axilární linie (čára dolů z podpaží). Analýza každé 2 minuty. Při analýze a výboji: NIKDO se nesmí dotýkat pacienta. PROČ pravá poloha elektrod: proud musí procházet co největší oblastí srdce; tato pozice maximalizuje \"vektorem procházení\" přes obě komory."
+            },
+            {
+              "n": 5,
+              "title": "Elektrický výboj (defibrilace) pro VF nebo pVT",
+              "text": "Bifazický výboj 200 J. IHNED po výboji: pokračujte v masáži bez analýzy. PROČ bez analýzy: srdce po výboji je \"ohromené\" (stunned) a může trvat 30–60 sekund než se obnoví rytmus; analýza by přerušila masáž v nejcennějším okamžiku. Příští analýza: za 2 minuty."
+            },
+            {
+              "n": 6,
+              "title": "Léky — adrenalín a amiodaron",
+              "text": "Adrenalín (epinefrin) 1 mg do žíly nebo kosti každé 3–5 minut (= každé druhé kolo). PROČ adrenalin: vazokonstrikce zvyšuje diastolický TK a tím tlak v koronárních tepnách → více krve k myokardu. Amiodaron 300 mg do žíly po 3. výboji. PROČ amiodaron: stabilizuje elektrickou aktivitu buněčných membrán srdce; zvyšuje šanci na úspěšnou defibrilaci."
+            },
+            {
+              "n": 7,
+              "title": "Zajištění dýchacích cest",
+              "text": "Supraglotická pomůcka (iGel nebo King LT): rychlejší, méně přerušení masáže. Intubace rourkou: zlatý standard pro paramedika s videolaryngoskopem. ETCO2: potvrzení polohy rourky (křivka kapnometrie) + monitoring kvality KPR + detekce ROSC (hodnota ETCO2 náhle skočí nad 40 mmHg = obnova oběhu)."
+            },
+            {
+              "n": 8,
+              "title": "6H a 6T — hledejte reversibilní příčiny",
+              "text": "KAŽDÉ kolo přemýšlejte: Hypoxie, Hypovolémie, Hyperkalémie, Hypoglykémie, Hypotermie, Acidóza | Tenzní PTX, Tamponáda srdce, Toxiny, Plicní trombóza (embolie), Srdeční trombóza (infarkt), Trauma. PROČ povinně: zástava s neléčenou příčinou (= PEA asystolie) nereaguje na žádné léky; jen léčba příčiny přinese ROSC."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Reversibilní příčiny zástavy — 6H a 6T",
+          "headers": [
+            "Příčina",
+            "Jak ji rozpoznáme",
+            "Léčba v terénu — PROČ právě takto"
+          ],
+          "rows": [
+            [
+              "Hypoxie (nedostatek O2)",
+              "Nízká SpO2 před zástavou; nesprávná ventilace",
+              "100 % O2; intubace rourkou. PROČ: bez kyslíku žádná resuscitace neuspěje"
+            ],
+            [
+              "Hypovolémie (krevní ztráta)",
+              "Viditelné krvácení nebo anamnéza (zvracení krve, úraz)",
+              "Agresivní infúze; TQ na krvácení. PROČ: prázdné srdce nelze resuscitovat"
+            ],
+            [
+              "Hyperkalémie/Hypokalémie (draslík)",
+              "Dialyzovaný pacient; EKG změny",
+              "Kalcium glukonát při vysokém K+. PROČ: extrémní K+ způsobuje srdeční zástavu přímo"
+            ],
+            [
+              "Hypoglykémie (nízký cukr)",
+              "Diabetik; glukometr",
+              "Dextróza 50% do žíly. PROČ: mozek bez glukózy nemůže koordinovat srdeční činnost"
+            ],
+            [
+              "Hypotermie (podchlazení)",
+              "Teplota jádra pod 30 °C; studené prostředí",
+              "KPR; aktivní ohřívání; ECMO pokud dostupné. PROČ pokračovat: \"nikdo není mrtvý dokud není teplý a mrtvý\""
+            ],
+            [
+              "Acidóza (překyselení)",
+              "Diabetik, selhání ledvin, dlouhá zástava",
+              "Bikarbonát sodný 1 mEq/kg. PROČ: acidóza inhibuje enzymy a srdeční buňky"
+            ],
+            [
+              "Tenzní pneumothorax",
+              "Asymetrické dechové zvuky; JVD; špatná odezva na KPR",
+              "Dekompresní jehla. PROČ: přetlak zabrání plnění pravého srdce; bez dekomprese KPR nezafunguje"
+            ],
+            [
+              "Tamponáda srdce",
+              "Beckova triáda; FAST; trauma v anamnéze",
+              "Perikardiocentéza (lékař). PROČ: krev v osrdečníku brání plnění; bez drénování KPR selže"
+            ],
+            [
+              "Toxiny",
+              "Prázdné lahvičky na místě; pupilární abnormality",
+              "Naloxon (opioidy); specifická antidota. PROČ: lék může způsobit zástavu přímou toxicitou na srdce"
+            ],
+            [
+              "Plicní embolie",
+              "Náhlá zástava u jinak zdravého; S1Q3T3 na EKG",
+              "Systémová trombolýza (lékař). PROČ: ucpaná plicní tepna brání průtoku krve plícemi; trombolýza může cévu otevřít"
+            ],
+            [
+              "Srdeční infarkt",
+              "Elevace ST na EKG před zástavou",
+              "KPR + okamžitá aktivace katetrizačního sálu po ROSC. PROČ po ROSC a ne dřív: katetrizace probíhá u spontánně cirkulujícího pacienta"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Po obnově oběhu (ROSC) — cílená péče. Příznaky ROSC: puls se vrátí; ETCO2 náhle stoupne nad 40 mmHg; pacient se začne pohybovat nebo dýchat; SpO2 se zobrazí na monitoru. PROČ ETCO2 jako nejspolehlivější: vzestup CO2 se projeví okamžitě při obnovení srdečního výdeje — dříve než hmatatelný puls."
+        },
+        {
+          "type": "table",
+          "caption": "Cílená péče po ROSC",
+          "headers": [
+            "Parametr",
+            "Cíl a PROČ",
+            "Co dělat pokud mimo cíl"
+          ],
+          "rows": [
+            [
+              "SpO2 (saturace O2)",
+              "94–99 % — NE 100 %! PROČ ne 100 %: hyperoxie po ROSC způsobuje oxidativní stres → horší neurologické výsledky",
+              "Pod 94 %: zvýšit O2 nebo upravit ventilaci. PROČ ne ihned 100 % O2 kontinuálně: reperfúzní poranění"
+            ],
+            [
+              "Systolický TK (SBP)",
+              "≥ 90 mmHg (ideálně 100–120). PROČ: mozek potřebuje tlak pro zásobení (CPP)",
+              "Pod 90: Noradrenalin nebo Dopamin infúze. PROČ ne jen tekutiny: kardiogenní šok po zástavě → tekutiny přetíží srdce"
+            ],
+            [
+              "ETCO2 (kapnometrie)",
+              "35–45 mmHg (normální ventilace). PROČ: hyperventilace stáhne mozkové cévy → ischémie mozku",
+              "Pod 30: snížit frekvenci ventilace. Nad 50: zvýšit frekvenci. PROČ přesné: i 5 mmHg odchylky ovlivňuje mozkový průtok"
+            ],
+            [
+              "12-svodové EKG",
+              "Je přítomen infarkt (elevace ST)? PROČ okamžitě: STEMI + ROSC = aktivace katetrizačního sálu",
+              "Elevace ST: aktivace katetrizace ještě v sanitce. PROČ tak rychle: minuty rozhodují o množství mrtvého srdečního svalu"
+            ],
+            [
+              "Hladina cukru v krvi",
+              "70–180 mg/dL. PROČ: hypoglykémie i hyperglykémie po zástavě zhoršují neurologické výsledky",
+              "Pod 70: Dextróza 25 g IV. Nad 200: inzulín v nemocnici (ne v terénu)"
+            ],
+            [
+              "Tělesná teplota",
+              "33–36 °C (cílená regulace — TTM). PROČ: mírné ochlazení zpomalí metabolismus a chrání mozek po globální ischémii",
+              "Zahájit chlazení: studené infúze; chladné deklíky. Definitivní TTM v nemocnici (chladicí vesta 24 hodin)"
+            ]
+          ]
+        }
+      ],
+      "summary": [
+        "Lapavé dechy po zástavě nejsou normální dýchání — KPR zahajte okamžitě.",
+        "Srdeční masáž: hloubka 5–6 cm, frekvence 100–120/min, maximálně 10 sekund přerušení.",
+        "Po výboji ihned pokračovat v masáži bez analýzy — srdce je \"ohromené\" a potřebuje 30–60 sekund.",
+        "Adrenalin 1 mg IV každé 3–5 min; amiodaron 300 mg po 3. výboji.",
+        "6H a 6T: vždy hledat reversibilní příčiny — bez jejich léčby žádné léky nepomůžou.",
+        "Po ROSC: SpO2 94–99 %, TK ≥ 90, ETCO2 35–45, 12-svodové EKG, TTM 33–36 °C."
+      ]
+    },
+    {
+      "id": "4.8",
+      "title": "Poranění mozku (TBI — Traumatic Brain Injury)",
+      "abbrevs": [
+        {
+          "a": "TBI",
+          "f": "Traumatic Brain Injury — traumatické poranění mozku způsobené vnější silou"
+        },
+        {
+          "a": "GCS",
+          "f": "Glasgow Coma Scale — skóre vědomí 3–15; ≤ 8 = intubace"
+        },
+        {
+          "a": "ICP",
+          "f": "Intracranial Pressure — nitrolební tlak; normálně pod 20 mmHg"
+        },
+        {
+          "a": "CPP",
+          "f": "Cerebral Perfusion Pressure — cerebrální perfúzní tlak = MAP − ICP; minimum 60 mmHg"
+        },
+        {
+          "a": "MAP",
+          "f": "Mean Arterial Pressure — střední arteriální tlak"
+        },
+        {
+          "a": "SpO2",
+          "f": "saturace kyslíkem"
+        },
+        {
+          "a": "ETCO2",
+          "f": "hodnota CO2 na konci výdechu; ovlivňuje průměr mozkových cév"
+        },
+        {
+          "a": "RSI",
+          "f": "Rapid Sequence Intubation — rychlá sekvenční intubace: sedace + paralýza + rourka"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Primární poranění mozku",
+          "d": "přímé mechanické poškození při úrazu; nelze léčit v terénu; nelze vrátit zpět"
+        },
+        {
+          "t": "Sekundární poranění mozku",
+          "d": "poškození způsobené hypoxií, nízkým tlakem, horečkou, záchvatem, vysokým ICP; každé z nich zdvojnásobí postižení primárním poraněním; TOTO záchranář léčí"
+        },
+        {
+          "t": "Penumbra",
+          "d": "záchranná tkáň kolem ložiska poranění; dostává méně kyslíku ale stále žije; záchranné intervence ji mohou zachránit"
+        },
+        {
+          "t": "Herniace mozku",
+          "d": "mozek se vtlačí skrz vnitřní přepážky nebo velký týlní otvor; způsobena vysokým ICP; příznak: Cushingova triáda"
+        },
+        {
+          "t": "Cushingova triáda",
+          "d": "extrémně pozdní příznak herniace: 1) hypertenze (vysoký TK), 2) bradykardie (pomalý puls), 3) nepravidelné dýchání; pokud vidíte toto = mozek se herniuje = minuty do smrti bez chirurgie"
+        },
+        {
+          "t": "Epidurální hematom",
+          "d": "krev mezi lebkou a tvrdou plenou; klasicky po zlomenině spánkové kosti + lucidní interval; urgentní kraniotomie"
+        },
+        {
+          "t": "Lucidní interval",
+          "d": "krátká perioda zdánlivého zotavení po ztrátě vědomí; pacient hovoří normálně → pak se rychle zhorší; typický pro epidurální hematom"
+        },
+        {
+          "t": "Difúzní axonální poranění (DAI)",
+          "d": "roztříštění axonů (nervových výběžků) při deceleraci; CT může být normální; prognóza nejistá"
+        },
+        {
+          "t": "Dekortikace",
+          "d": "abnormální postoj: paže ohnuté, nohy natažené; příznak těžkého TBI (GCS 3–4)"
+        },
+        {
+          "t": "Decerebrace",
+          "d": "abnormální postoj: vše natažené; horší prognóza než dekortikace"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "TBI je hlavní příčinou smrti a trvalého postižení mladých trauma pacientů. Primární poranění (přímé mechanické poškození) v terénu léčit nelze. Váš cíl: PREVENCE SEKUNDÁRNÍHO PORANĚNÍ — hypoxie, hypotenze, horečka, záchvaty. Každý z těchto faktorů zdvojnásobí rozsah poškození."
+        },
+        {
+          "type": "table",
+          "caption": "Klasifikace TBI dle GCS a klinické příznaky",
+          "headers": [
+            "Typ",
+            "GCS skóre",
+            "Typické příznaky",
+            "Terénní postup"
+          ],
+          "rows": [
+            [
+              "Lehké TBI (otřes mozku)",
+              "14–15",
+              "Krátká ztráta vědomí (do 30 min), amnézie na událost, bolest hlavy, nevolnost, normální zornice",
+              "Sledovat; transport; NEdávat sedativa (maskuje zhoršení)"
+            ],
+            [
+              "Střední TBI",
+              "9–13",
+              "Ztráta vědomí 30 min – 6 hod, zmatenost, fokální výpad (ochrnutí jedné strany)",
+              "Kyslík; monitoring TK; zvažit intubaci při GCS < 12 nebo zhoršení"
+            ],
+            [
+              "Těžké TBI",
+              "≤ 8",
+              "Prodloužená ztráta vědomí, abnormální postoj (dekortikace nebo decerebrace), anizokorie",
+              "RSI intubace; kyslík; TK ≥ 90; normoventilace; urgentní neurochirurgie"
+            ],
+            [
+              "Epidurální hematom",
+              "Různé — LUCIDNÍ INTERVAL",
+              "Krátká ztráta vědomí → pacient vypadá normálně → RYCHLÁ deteriorace (zhoršení)",
+              "URGENTNĚ — minuty do fatálního konce; transport okamžitě"
+            ],
+            [
+              "Subdurální hematom",
+              "Postupný pokles",
+              "Narůstající bolest hlavy, postupná zmatenost, hemiparéza (ochrnutí jedné strany)",
+              "Urgentní CT + neurochirurgie; sledovat vědomí každé 2 minuty"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "CUSHINGOVA TRIÁDA",
+          "text": "Hypertenze + Bradykardie + Nepravidelné dýchání. Toto je VELMI POZDNÍ příznak herniace (protlačení) mozku skrz vnitřní přepážky lebky. Pacient je minuty od mozkové smrti bez chirurgie. Při Cushingově triádě: krátkodobá HYPERVENTILACE na ETCO2 30–35 mmHg jako přemostění k OR — stáhne mozkové cévy a sníží ICP."
+        },
+        {
+          "type": "paragraph",
+          "text": "Postup ošetření TBI — krok za krokem s vysvětlením PROČ."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "C-spine znehybněte jako první",
+              "text": "Každé TBI = podezření na poranění krční páteře. Krční límec; výtah čelisti pro otevření DC; žádný záklon hlavy. PROČ: 5–8 % pacientů s TBI má současné poranění krční páteře; pohyb bez fixace → přeříznutí míchy."
+            },
+            {
+              "n": 2,
+              "title": "Dýchací cesty a kyslík",
+              "text": "GCS ≤ 8 = RSI intubace. Kyslík rezervoárovou maskou pokud GCS > 8. Cílová SpO2: 94–99 %. PROČ ne 100 %: jedna epizoda SpO2 pod 90 % zdvojnásobí mortalitu TBI; ale hyperoxie poškozuje mozek oxidativním stresem. PROČ intubace při GCS ≤ 8: pacient bez obranných reflexů vdechne zvratky."
+            },
+            {
+              "n": 3,
+              "title": "Krevní tlak — KLÍČOVÝ PARAMETR",
+              "text": "Systolický TK minimálně 90 mmHg (ideálně 100–110). PROČ: hypotenze (TK < 90) u TBI způsobí cerebrální ischémii — mozek nedostane dostatek krve. Každá epizoda TK < 90 zdvojnásobí mortalitu. Infúze NS nebo RL — NIKDY hypoosmotické (D5W, 0,45% NaCl) — způsobí mozkový edém."
+            },
+            {
+              "n": 4,
+              "title": "Ventilace — NORMÁLNÍ frekvence",
+              "text": "ETCO2 cíl 35–45 mmHg (normální ventilace). NEPŘEVENTILUJTE — rychlé dýchání sníží CO2 → mozkové cévy se stáhnou → ischémie. VÝJIMKA: Cushingova triáda nebo nové rozšíření zornic = krátkodobá hyperventilace ETCO2 30–35 jako přemostění (ne déle než 30 min)."
+            },
+            {
+              "n": 5,
+              "title": "Zornice a vědomí každé 2 minuty",
+              "text": "Sledujte trend. Nová anizokorie (nestejné zornice) nebo pokles GCS o 2 body = volejte neurochirurgické centrum. PROČ trend: absolutní číslo GCS je méně důležité; změna za krátký čas ukazuje rychlost progrese."
+            },
+            {
+              "n": 6,
+              "title": "Prevence sekundárního poranění",
+              "text": "Sedace + analgezie u intubovaných (záchvaty a neklid zvedají ICP). Hlava 30° (neutrální osa — ne otočená; otočení stlačuje jugulární žíly a brání odtoku krve z mozku). Teplota: 37 °C. Cukr: 70–180 mg/dL."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "gcs-calculator"
+        }
+      ],
+      "summary": [
+        "Primární poranění v terénu léčit nelze — váš cíl je prevence sekundárního poranění.",
+        "Sekundární poranění způsobují: hypoxie, TK pod 90, hyperventilace, horečka. Každé z nich zdvojnásobí poškození.",
+        "SpO2 cíl: 94–99 % — ne 100 %; hyperoxie poškozuje mozek oxidativním stresem.",
+        "TK minimum 90 mmHg — jedna epizoda hypotenze zdvojnásobí mortalitu TBI.",
+        "GCS ≤ 8 = intubace; vědomí a zornice sledujte každé 2 minuty; pokles o 2 body = neurochirurgie.",
+        "Cushingova triáda (hypertenze + bradykardie + nepravidelné dýchání) = herniace mozku = minuty."
+      ]
+    },
+    {
+      "id": "4.9",
+      "title": "Poranění páteře a míchy",
+      "terms": [
+        {
+          "t": "Krční páteř (C-spine)",
+          "d": "7 obratlů C1–C7; poranění zde = potenciální ochrnutí všech čtyř končetin (tetraplegie) + poruch dýchání"
+        },
+        {
+          "t": "Hrudní páteř (Th-spine)",
+          "d": "12 obratlů Th1–Th12; poranění = paraplegie (ochrnutí dolních končetin)"
+        },
+        {
+          "t": "Bederní páteř (L-spine)",
+          "d": "5 obratlů L1–L5; poranění = různý stupeň ochrnutí dolních končetin"
+        },
+        {
+          "t": "Neurogenní šok",
+          "d": "šok způsobený přerušením sympatiku (nervů zvyšujících TK a puls); výsledek: hypotenze + BRADYKARDIE (pomalý puls!) + teplá kůže; odlišný od hemoragického šoku (tam je tachykardie)"
+        },
+        {
+          "t": "Spinální šok",
+          "d": "dočasné přerušení funkce míchy po poranění; reflexy se vrátí za hodiny až dny"
+        },
+        {
+          "t": "ASIA škála",
+          "d": "American Spinal Injury Association; hodnotí stupeň poranění A–E: A=kompletní ochrnutí, E=normální funkce"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Poranění míchy je jedním z nejničivějších traumatologických poranění — může způsobit doživotní ochrnutí. Váš cíl: NEZHORŠIT poranění špatnou manipulací. Každý pohyb nestabilní páteře = potenciální přeříznutí míchy záchranářem."
+        },
+        {
+          "type": "table",
+          "caption": "Indikace pro znehybnění páteře — kdy MUSÍME imobilizovat",
+          "headers": [
+            "Indikace",
+            "Proč zrovna tato kritéria"
+          ],
+          "rows": [
+            [
+              "Pád z výšky ≥ 3 metrů nebo 5+ schodů",
+              "Energie pády z takové výšky je dostatečná pro kompresní nebo výbuchovou zlomeninu obratle"
+            ],
+            [
+              "MVA při rychlosti nad 60 km/h nebo s převrácením",
+              "Dekelerace a rotace vozidla způsobí stejné síly jako pád z výšky"
+            ],
+            [
+              "Přímý úder do hlavy nebo zkroucení krku",
+              "Axální zatížení nebo hyperflexe — nejčastější mechanismus zlomeniny C5–C6"
+            ],
+            [
+              "Skok do vody (zvláště mělčina)",
+              "Dopad na dno axálním zatížením hlavy; tato poranění jsou nejčastěji C4–C6"
+            ],
+            [
+              "Jakákoli bolest páteře nebo brnění po traumatu",
+              "Pacient sám hlásí neurologický příznak = mícha nebo nervový kořen je postižen"
+            ],
+            [
+              "Střelná nebo bodná rána do zad nebo krku",
+              "Přímé poranění míchy nebo obratle"
+            ],
+            [
+              "Věk > 65 let (osteoporóza) + jakékoli trauma",
+              "Osteoporotická kost se zlomí při mnohem menší síle než u mladého člověka"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Postup znehybnění páteře."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Rozhodnutí o imobilizaci (Canadian C-Spine Rule)",
+              "text": "Pokud věk nad 65, nebezpečný mechanismus (viz výše), bolest při pohmatech střední linie krku, brnění, nebo neschopnost bezpečně otočit hlavou → IMOBILIZOVAT. PROČ tato kritéria: validována na tisících pacientech; 100% sensitivita pro poranění vyžadující stabilizaci."
+            },
+            {
+              "n": 2,
+              "title": "Krční límec — správná velikost",
+              "text": "Záchranář 1 drží hlavu v neutrální poloze oběma rukama — bez pohybu. Záchranář 2: čtyřmi prsty změří vzdálenost od klíční kosti k bradě = velikost límce. Přiloží pod bradu a zarovná suchý zip. PROČ měřit: malý límec způsobí hyperextenzi (ohnutí dozadu); velký flexí (ohnutí dopředu) — obojí může zhoršit poranění."
+            },
+            {
+              "n": 3,
+              "title": "Log-Roll — vyšetření zad a přesun na desku",
+              "text": "Minimálně 3 záchranáři: vedoucí za hlavou drží hlavu a koordinuje pokyny. \"Připraveni? Na tři — 1, 2, 3, ROLL.\" Všichni otáčí pacienta jako jeden celek — nulová rotace páteře. Prohlédněte záda, zasuňte páteřní desku nebo vakuovou matraci. PROČ vedoucí za hlavou dává pokyny: hlava je nejtěžší a nejcitlivější; vedoucí synchronizuje pohyb."
+            },
+            {
+              "n": 4,
+              "title": "Fixace — vakuová matrace nebo páteřní deska",
+              "text": "Vakuová matrace: zasunutá pod pacienta; odsajte vzduch → ztuhne kolem těla; fixujte minimálně 3 pásy + fixátor hlavy. PROČ vakuová matrace lepší: rovnoměrný tlak po celém těle; snižuje bolest a riziko tlakových lézí. Páteřní deska: maximálně 30 minut (tvrdost způsobuje tlakové léze kůže)."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "NEUROGENNÍ vs. HEMORAGICKÝ ŠOK — KRITICKÝ ROZDÍL",
+          "text": "Neurogenní šok (poranění Th páteře nebo vyšší): hypotenze + POMALÝ PULS + teplá zarudlá kůže. Hemoragický šok: hypotenze + RYCHLÝ PULS + studená bledá potivá kůže. PROČ důležité: agresivní tekutinová terapie je správná pro hemoragický šok; u neurogenního způsobí plicní edém (přetížení cévního systému bez správného tonu). Léčba neurogenního: opatrná infúze + vazopresorické léky (noradrenalin)."
+        }
+      ],
+      "summary": [
+        "Každý pohyb nestabilní páteří může přeříznout míchu — záchranář musí znehybnit a pak přestat pohybovat.",
+        "Indikace pro imobilizaci: pád z 3+ metrů, MVA nad 60 km/h, přímý úder do hlavy nebo krku, bolest páteře po traumatu.",
+        "Neurogenní šok: hypotenze + POMALÝ PULS + teplá kůže — zcela odlišný od hemoragického šoku (tam tachykardie).",
+        "Log-roll povinně minimálně 3 záchranáři; vedoucí za hlavou synchronizuje a drží C-spine."
+      ]
+    },
+    {
+      "id": "4.10",
+      "title": "Popáleniny",
+      "abbrevs": [
+        {
+          "a": "BSA",
+          "f": "Body Surface Area — procento povrchu těla"
+        },
+        {
+          "a": "RL",
+          "f": "Ringerův laktát"
+        },
+        {
+          "a": "NS",
+          "f": "fyziologický roztok 0,9%"
+        },
+        {
+          "a": "ETT",
+          "f": "endotracheální rourka"
+        },
+        {
+          "a": "SpO2",
+          "f": "saturace kyslíkem"
+        },
+        {
+          "a": "NRB",
+          "f": "Non-Rebreather Mask — rezervoárová maska"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Inhalační trauma",
+          "d": "popálení nebo poranění dýchacích cest vdechnutím horkého vzduchu nebo toxických plynů; způsobuje otoky DC; nejnebezpečnější komplikace popálenin"
+        },
+        {
+          "t": "Pravidlo devítek",
+          "d": "metoda rychlého výpočtu BSA; tělo je rozděleno do oblastí po 9 %"
+        },
+        {
+          "t": "Eschar",
+          "d": "pevná suchá příškvara vznikající u hlubokých popálenin III. stupně; nepružná; při popálení celého obvodu končetiny nebo hrudníku způsobuje přetlak"
+        },
+        {
+          "t": "Escharotomie",
+          "d": "chirurgické naříznutí escharové příškvary pro uvolnění přetlaku; provádí se v nemocnici"
+        },
+        {
+          "t": "Parklandův vzorec",
+          "d": "standardní americký výpočet množství infúzní tekutiny pro první 24 hodin po popálenině; vzorec: 4 ml × hmotnost v kg × % BSA; polovina za prvních 8 hodin od poranění (ne od příjezdu)"
+        },
+        {
+          "t": "Carboxyhemoglobin (COHb)",
+          "d": "hemoglobin vázající oxid uhelnatý místo kyslíku; pulzní oxymetr tuto záměnu NEODHALÍ — čte 98 % i když pacient umírá na otravu CO"
+        },
+        {
+          "t": "Split-thickness graft (STSG)",
+          "d": "kožní štěp — tenká vrstva kůže odebraná z jiné části těla; používán pro krytí hlubokých popálenin II–III. stupně"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Popáleniny jsou komplexní poranění postihující kůži, dýchací cesty i celkový metabolismus. Závažnost závisí na hloubce a rozsahu (% BSA). Nejnebezpečnější komplikace NENÍ rozsah popálení na kůži — ale inhalační trauma (poranění dýchacích cest)."
+        },
+        {
+          "type": "table",
+          "caption": "Klasifikace stupňů popálenin",
+          "headers": [
+            "Stupeň",
+            "Postižená vrstva",
+            "Vzhled",
+            "Bolestivost",
+            "Hojení a PROČ takto"
+          ],
+          "rows": [
+            [
+              "Povrchová (I. st.)",
+              "Pouze pokožka (epidermis)",
+              "Zarudnutí, suchá, žádné puchýře",
+              "Silná (nervová zakončení nepoškozena)",
+              "3–5 dní; PROČ rychle: pokožka se obnovuje z bazálních buněk které nebyly zasaženy"
+            ],
+            [
+              "Povrchová II. stupně (2A)",
+              "Pokožka + povrchní škára",
+              "Puchýře; mokrá; růžovo-červená spodina",
+              "Silná (nervy zachovány)",
+              "10–14 dní; PROČ bez štěpu: regenerace z folikulů (vlasových váčků) zachovaných v povrchní škáře"
+            ],
+            [
+              "Hluboká II. stupně (2B)",
+              "Pokožka + hluboká škára",
+              "Bílá nebo bez puchýřů",
+              "Slabá (nervy částečně poškozeny)",
+              "3–8 týdnů; PROČ štěp nutný: folikuly zničeny; kůže se sama neobnoví s dobrým výsledkem"
+            ],
+            [
+              "Celá tloušťka (III. st.)",
+              "Celá kůže",
+              "Bílá, čajová nebo černá; suchá; \"koženatá\"",
+              "Žádná (nervy zničeny)",
+              "Sama nezahojí; PROČ štěp povinně: bez folikulů ani bazálních buněk není odkud regenerovat"
+            ],
+            [
+              "Podkožní (IV. st.)",
+              "Kůže + svaly, šlachy, kosti",
+              "Černá; charred (zuhelnatělá)",
+              "Žádná",
+              "Amputace nebo smrt; PROČ devastující: teplo proniklo přes kůži do hluboké tkáně"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Pravidlo devítek — výpočet % BSA. PROČ znát % BSA: přesně určuje kolik infúzí podat (Parklandův vzorec) a zda splňuje kritéria pro přeložení do popáleninového centra."
+        },
+        {
+          "type": "table",
+          "caption": "Pravidlo devítek (Rule of Nines) — procenta tělesného povrchu (% BSA)",
+          "headers": [
+            "Část těla",
+            "Dospělý",
+            "Dítě pod 5 let",
+            "PROČ rozdíl"
+          ],
+          "rows": [
+            [
+              "Hlava + krk",
+              "9 %",
+              "18 %",
+              "Hlava dítěte je proporčně větší"
+            ],
+            [
+              "Přední část trupu",
+              "18 %",
+              "18 %",
+              "Shodné"
+            ],
+            [
+              "Zadní část trupu",
+              "18 %",
+              "18 %",
+              "Shodné"
+            ],
+            [
+              "Pravá paže (celá)",
+              "9 %",
+              "9 %",
+              "Shodné"
+            ],
+            [
+              "Levá paže (celá)",
+              "9 %",
+              "9 %",
+              "Shodné"
+            ],
+            [
+              "Pravá noha (celá)",
+              "18 %",
+              "14 %",
+              "Nohy dítěte jsou proporčně kratší"
+            ],
+            [
+              "Levá noha (celá)",
+              "18 %",
+              "14 %",
+              "Nohy dítěte jsou proporčně kratší"
+            ],
+            [
+              "Genitálie",
+              "1 %",
+              "1 %",
+              "Shodné"
+            ],
+            [
+              "Dlaň pacienta = 1 % BSA",
+              "—",
+              "—",
+              "Pomůcka pro odhad nepravidelných nebo skvrnitých popálenin — PROČ: rychlý odhad bez výpočtu"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "info",
+          "title": "PARKLANDŮV VZOREC",
+          "text": "Ringerův laktát = 4 ml × hmotnost v kg × % BSA (jen II. a III. stupeň). Polovina za prvních 8 hodin OD DOBY PORANĚNÍ (ne od příjezdu!). Zbývající polovina za dalších 16 hodin. Příklad: 80 kg, 25 % BSA = 4 × 80 × 25 = 8 000 ml celkem; první 4 000 ml za prvních 8 hodin. PROČ přesně takto: velké popáleniny způsobují masivní únik plazmy do tkání; bez kompenzace vznikne šok."
+        },
+        {
+          "type": "paragraph",
+          "text": "Inhalační trauma — nejvyšší priorita. PROČ inhalační trauma > rozsah povrchového poranění: otok hrtanu a průdušnic roste 12–24 hodin. Dýchací cesty, které jsou průchodné v terénu, mohou být za 1 hodinu úplně uzavřeny. Rourku zavedenou pozdě nelze zavést vůbec."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Příznaky inhalačního traumatu: Sazové (černo-šedé) výkaly při kašli nebo v nose; spálené chlupy v nose nebo obočí; chrapot nebo pískání při dýchání; otoky rtů nebo ústní sliznice; anamnéza uzavřeného prostoru (sklep, kabina, místnost). PROČ uzavřený prostor: v uzavřeném prostoru se koncentrace CO a toxických plynů mnohonásobně zvyšuje.",
+            "Léčba: INTUBUJTE ČASNĚ — dříve než otoky DC znemožní zavedení. Kyslík 100 % rezervoárovou maskou zatím. Videolaryngoskop jako první volba (otoky deformují anatomii). PROČ časně: edém DC roste; rourka 7,5 mm dnes = nemožná rourka 6,0 mm za hodinu."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Postup ošetření popálenin."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Zastavte hoření — přerušte kontakt",
+              "text": "Chemické: velké množství vody 20–30 minut (odstraňte šperky — akumulují teplo). Elektrické: odpojte proud — NEODTAHUJTE postiženého holou rukou (proud je stále aktivní). Tepelné: sundejte hořící oblečení a šperky. PROČ šperky: kov akumuluje teplo a dál hoří i po odstranění v kontaktu s plamenem."
+            },
+            {
+              "n": 2,
+              "title": "Chlazení popáleniny",
+              "text": "Vlažná tekoucí voda (15–20 °C) na 20 minut — POUZE pro popáleniny do 1 hodiny od vzniku a BSA pod 20 %. NIKDY: led (omrzlina), máslo nebo krémy (uzavírají teplo), propíchávání puchýřů. PROČ ne velká plocha vodou: BSA nad 20 % chlazená vodou = těžká systémová hypotermie."
+            },
+            {
+              "n": 3,
+              "title": "Inhalační trauma — intubujte ČASNĚ",
+              "text": "Viz výše. Každý pacient z uzavřeného prostoru s ohněm má podezření na inhalační trauma bez ohledu na zevní vzhled. PROČ i bez příznaků: CO a kyanovodík způsobí bezvědomí bez zevních příznaků."
+            },
+            {
+              "n": 4,
+              "title": "Sterilní krytí",
+              "text": "Malé plochy: sterilní gázy navlhčené fyziologickým roztokem. Velké plochy: čisté prostěradlo nebo sterilní fólie. NIKDY: vata (přilne), adhezivní náplasti, domácí masti. PROČ navlhčené: suché krytí přilne k ráně a při odstraňování strhne tenkou vrstvu regenerující kůže."
+            },
+            {
+              "n": 5,
+              "title": "Infúzní terapie dle Parklandova vzorce",
+              "text": "Spusťte infúzi co nejdříve — velké popáleniny způsobují masivní ztrátu objemu do tkání. PROČ povinně při > 20 % BSA: bez infúze vznikne distributivní šok (plazma \"přeteče\" z cév do tkání kolem popáleniny)."
+            },
+            {
+              "n": 6,
+              "title": "Prevence podchlazení — KRITICKÉ",
+              "text": "Záchranná deka, ohřátá kabina sanitky, teplé infúze. PROČ kritické: popálená kůže ztratila ochrannou tepelnou funkci; tělo ztrácí teplo rychlostí jako \"holý člověk ve studeném větru\"; podchlazení + popáleniny = smrtelná kombinace."
+            },
+            {
+              "n": 7,
+              "title": "Analgetika — nesnižujte bolest",
+              "text": "Morfin 2–5 mg do žíly titrací nebo Ketamin 0,5 mg/kg. PROČ povinně: popáleniny jsou extrémně bolestivé; bolest způsobuje stres = katecholaminy = vazokonstrikce = horší prokrvení okrajů popáleniny."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "burn-rule-of-nines"
+        }
+      ],
+      "summary": [
+        "Inhalační trauma je nebezpečnější než rozsah povrchového popálení — intubujte časně, otoky DC rostou 12–24 hodin.",
+        "Parklandův vzorec: 4 ml × kg × % BSA; polovina za prvních 8 hodin od poranění, ne od příjezdu.",
+        "Nikdy: led, máslo nebo krémy; BSA nad 20 % nechlazovat vodou — systémová hypotermie.",
+        "Záchranná deka ihned po odkrytí — popálená kůže ztrácí ochrannou tepelnou funkci.",
+        "Kritéria pro popáleninové centrum: BSA > 10 % dítě nebo > 20 % dospělý; obličej, ruce, genitálie; inhalační trauma."
+      ]
+    },
+    {
+      "id": "4.11",
+      "title": "Utonutí",
+      "terms": [
+        {
+          "t": "Utonutí (Drowning)",
+          "d": "porucha dýchání způsobená ponořením nebo přelitím tekutinou; termín zahrnuje i \"suché utonutí\" (laryngospasmus bez aspirace)"
+        },
+        {
+          "t": "Laryngospasmus",
+          "d": "reflexní křeč hlasivek; uzavře DC bez aspirace vody; přítomen u ~15 % utonutých"
+        },
+        {
+          "t": "Aspirace",
+          "d": "vdechnutí vody nebo jiné tekutiny do průdušek; způsobuje surfaktantový defekt a ARDS"
+        },
+        {
+          "t": "Diving reflex",
+          "d": "reflexní bradykardie a periferní vazokonstrikce při ponoření do studené vody; chrání mozek; proto studená voda = lepší prognóza"
+        },
+        {
+          "t": "ARDS",
+          "d": "Acute Respiratory Distress Syndrome — syndrom akutní respirační tísně; těžká komplikace po utonutí; oboustranný plicní edém z aspirace"
+        },
+        {
+          "t": "Hypovolemie",
+          "d": "snížený objem krve v cévách; voda z aspirace způsobuje přesun elektrolytů přes alveolární stěnu"
+        },
+        {
+          "t": "Sekundární utonutí",
+          "d": "zpožděná plicní komplikace 4–8 hodin po utonutí; pacient zpočátku vypadá dobře → pak plicní edém"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Utonutí je procesem — nikoli okamžitou událostí. PROČ záchranář musí znát fáze: v různých fázích jsou různé intervence. Studená voda má paradoxně lepší prognózu — diving reflex a hypotermie chrání mozek."
+        },
+        {
+          "type": "paragraph",
+          "text": "Bezpečnost záchranáře při záchraně z vody."
+        },
+        {
+          "type": "list",
+          "items": [
+            "NIKDY neskákejte za tonoucím holou rukou — tonoucí v panice může záchranáře potopit (stane se z vás druhá oběť)",
+            "Použijte: lano, tyč, plovák, záchranný kruh, kayak nebo jakýkoli plovoucí předmět",
+            "Pokud nutný vstup do vody: vycvičený záchranář z vody; přibližte se ZEZADU a uchopte za vlasy nebo záchrannou vestu",
+            "HEMS (záchranný vrtulník) pro záchranné operace v nepřístupném místě na vodě"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Postup po záchraně — krok za krokem s vysvětlením."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Ventilace jako PRVNÍ (odlišné od standardní KPR!)",
+              "text": "U tonoucích začněte VENTILACÍ jako prvním krokem: 5 záchranných vdechů přes dýchací vak, pak standardní KPR 30:2. PROČ jinak než u srdečního záchvatu: utonutí způsobí PRIMÁRNĚ hypoxii (nedostatek O2) → záchrana dýchacích cest je ještě důležitější než srdeční masáž."
+            },
+            {
+              "n": 2,
+              "title": "NEVYLÍVEJTE vodu — je to mýtus",
+              "text": "\"Vylévání vody z plic\" je nebezpečný mýtus. Zabrzdí nebo zastaví KPR a způsobuje aspiraci žaludečního obsahu. Zahajte ventilaci dýchacím vakem IHNED. PROČ: plíce pojmou jen malé množství vody; vylití trvá čas; mozek mezitím umírá."
+            },
+            {
+              "n": 3,
+              "title": "Studená voda — \"Nikdo není mrtvý dokud není teplý a mrtvý\"",
+              "text": "Resuscitujte VŠECHNY podchladnuté tonoucí dokud: teplota jádra nedosáhne 95 °F (35 °C), nebo ROSC, nebo 45 minut pokročilé ALS resuscitace s aktivním ohříváním. PROČ: hypotermie chrání mozek; popsáno přežití bez neurologického deficitu po > 30 minutách pod vodou v chladné vodě."
+            },
+            {
+              "n": 4,
+              "title": "C-spine precautions — jen při traumatickém mechanismu",
+              "text": "Imobilizace krční páteře je indikována POUZE při: skok nebo skok do vody, kolize s objektem, pád. U běžného utonutí (bez traumatu) krční límec NEZPOMALUJTE KPR nasazováním. PROČ: u utonutí bez traumatu je incidence poranění C-spine < 0,5 %; zpomalení KPR o 30 sekund výrazně horší prognózu."
+            },
+            {
+              "n": 5,
+              "title": "100% kyslík a povinný transport do nemocnice",
+              "text": "Každý utopený pacient — i bez příznaků — se MUSÍ transportovat do nemocnice. PROČ: sekundární utonutí nastane u ~5 % pacientů za 4–8 hodin; zápal plic z aspirace za 12–24 hodin. Propuštění ze sanitky = potenciální odpovědnost záchranáře."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "warning",
+          "title": "SEKUNDÁRNÍ UTONUTÍ",
+          "text": "Pacient po utonutí, který se na místě \"cítí dobře\", může vyvinout plicní edém nebo zápal plic za 4–8 hodin. KAŽDÝ utopený = minimálně 6–8 hodin observace v nemocnici. Příznaky: narůstající dušnost, kašel, zhoršení vědomí. Varujte pacienta i rodinu."
+        }
+      ],
+      "summary": [
+        "Zahájit ventilaci jako první krok — utonutí způsobí primárně hypoxii, ne srdeční selhání.",
+        "Nikdy nevylívejte vodu z plic — je to mýtus; každá sekunda BVM zachraňuje mozkovou tkáň.",
+        "Studená voda = lepší prognóza; resuscitujte dokud teplota jádra nedosáhne 35 °C.",
+        "C-spine imobilizace pouze při traumatickém mechanismu (skok, kolize) — ne u každého utonutí.",
+        "Každý utopený musí být transportován do nemocnice — sekundární utonutí nastane za 4–8 hodin."
+      ]
+    },
+    {
+      "id": "4.12",
+      "title": "Infarkt myokardu (Srdeční záchvat — AMI)",
+      "abbrevs": [
+        {
+          "a": "AMI",
+          "f": "Acute Myocardial Infarction — akutní infarkt myokardu (srdeční záchvat)"
+        },
+        {
+          "a": "STEMI",
+          "f": "ST-Elevation MI — infarkt s elevací ST úseku = nejzávažnější typ; artérie zcela ucpána"
+        },
+        {
+          "a": "NSTEMI",
+          "f": "Non-ST-Elevation MI — artérie částečně nebo přechodně ucpána"
+        },
+        {
+          "a": "PCI",
+          "f": "Percutaneous Coronary Intervention — srdeční katetrizace s balonkovou dilatací a stentem"
+        },
+        {
+          "a": "ECG",
+          "f": "Elektrokardiogram — záznam elektrické aktivity srdce"
+        },
+        {
+          "a": "NTG",
+          "f": "Nitroglycerin — lék rozšiřující koronární tepny"
+        },
+        {
+          "a": "ASA",
+          "f": "Aspirin — kyselina acetylsalicylová; protidestičkový lék"
+        },
+        {
+          "a": "RV",
+          "f": "Right Ventricle — pravá komora srdce"
+        },
+        {
+          "a": "MONA",
+          "f": "M=Morfin, O=Kyslík, N=Nitroglycerin, A=Aspirin — základní léčba infarktu"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Koronární tepna",
+          "d": "věnčitá tepna — zásobuje srdeční sval kyslíkem a živinami; ucpání → infarkt"
+        },
+        {
+          "t": "Elevace ST",
+          "d": "změna na EKG; ST segment (část křivky) se zdvihne nad izolinii → příznak akutního uzávěru koronární tepny → STEMI"
+        },
+        {
+          "t": "Troponin",
+          "d": "bílkovina srdečního svalu uvolňovaná při poranění; stoupá za 2–4 hodiny od začátku infarktu; normální při příjezdu neznamená bez infarktu"
+        },
+        {
+          "t": "Ateroskleróza",
+          "d": "ukládání cholesterolu a kalcia do stěn tepen; postupně zužují průsvit; při prasknutí plaku vznikne trombus (sraženina) a akutní uzávěr"
+        },
+        {
+          "t": "Trombus",
+          "d": "krevní sraženina; při uzávěru koronární tepny způsobuje infarkt; aspirin zabraňuje dalšímu narůstání"
+        },
+        {
+          "t": "Door-to-Balloon time",
+          "d": "čas od příjezdu do nemocnice po nafouknutí balonku v koronární tepně; standard: max. 90 minut; EMS aktivuje katetrizaci ještě v terénu"
+        },
+        {
+          "t": "Kardiogenní šok",
+          "d": "šok způsobený selháním srdce jako pumpy; příznaky: nízký TK + SUCHÁ kůže (ne potivá) + plicní edém; PROČ suchá: srdce selhalo, ne cévy; léčba: vazopresorické léky, NE tekutiny"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "\"Čas jsou svaly.\" Každá minuta uzávěru koronární tepny ničí část srdečního svalu permanentně. Záchranář musí aktivovat katetrizační sál JEŠTĚ Z TERÉNU — tím ušetří 20–30 minut oproti aktivaci v nemocnici."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "12-svodové EKG do 10 minut od kontaktu",
+              "text": "EKG je PRVNÍ intervencí — ne aspirin, ne morfin. Přeneste EKG elektronicky do přijímající nemocnice. PROČ jako první: EKG potvrdí nebo vyloučí STEMI; bez EKG nelze aktivovat katetrizaci; katetrizační tým se připravuje během vašeho transportu."
+            },
+            {
+              "n": 2,
+              "title": "Aspirin — 324 mg ŽVÝKAT",
+              "text": "4 tablety po 81 mg (dětský aspirin) žvýkat — NE polykat celé! PROČ žvýkat: žvýkáním se uvolní účinná látka (ASA) rychleji než z tablety spolknuté; rychlejší vstřebávání ze sliznice = rychlejší protidestičkový účinek. PROČ 324 mg: dávka dostatečná pro inhibici COX-1 destičky."
+            },
+            {
+              "n": 3,
+              "title": "Nitroglycerin (NTG) — 0,4 mg pod jazyk",
+              "text": "Sprej nebo tableta pod jazyk. Opakovat každých 5 minut pokud TK ≥ 90 a přetrvává bolest. PROČ: NTG rozšíří koronární tepny a sníží zátěž srdce (snižuje preload i afterload). ABSOLUTNÍ KONTRAINDIKACE: TK pod 90 mmHg (způsobí kolaps); infarkt pravé komory (viz níže); PDE5 inhibitory (Viagra, Cialis) do 24 hodin."
+            },
+            {
+              "n": 4,
+              "title": "Kyslík — POUZE při SpO2 pod 94 %",
+              "text": "Nosní brýle 2–4 litry. PROČ ne vždy: hyperoxie (příliš mnoho O2) u normální saturace zhoršuje ischemii způsobením vasokonstrikce koronárních tepen a volnými radikály. PROČ při SpO2 pod 94 %: samozřejmě hypoxie je horší než hyperoxie; pod 94 % podáme kyslík."
+            },
+            {
+              "n": 5,
+              "title": "Morfin — 2–4 mg IV při silné bolesti",
+              "text": "Podat pokud bolest neustupuje po NTG. PROČ opatrně: morfin zpomaluje vstřebávání aspirinu (žaludeční motilita); kontroverzní; podáváme při silné bolesti porovnávané s \"nožem v hrudi\"."
+            },
+            {
+              "n": 6,
+              "title": "Aktivace katetrizačního sálu před příjezdem",
+              "text": "Volejte: \"Aktivace katetrizace: muž 55 let, elevace ST ve V2–V4, TK 130/80, puls 90, ETA 8 minut.\" PROČ takto detailně: katetrizační tým se připraví (sál, kontrastní látka, stenty) dříve než přijedete."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "INFARKT PRAVÉ KOMORY (RV Infarct)",
+          "text": "Při infarktu spodní stěny (elevace ST v svodech II, III, aVF): NIKDY nitroglycerin! PROČ: pravá komora závisí na dostatečném plnění (preload); NTG snižuje venózní návrat → pravá komora kolabuje → TK prudce klesne. Pokud hypotenze při spodním infarktu: infúzní bolus Ringerova laktátu 250–500 ml."
+        }
+      ],
+      "summary": [
+        "\"Čas jsou svaly\" — každá minuta uzávěru věnčité tepny ničí část srdce permanentně.",
+        "12-svodové EKG do 10 minut je první intervence — ne aspirin ani morfin, ale EKG.",
+        "MONA: Morfin (bolest) → Kyslík (jen při SpO2 pod 94 %) → Nitroglycerin → Aspirin 324 mg žvýkat.",
+        "Nitroglycerin absolutně zakázán při TK pod 90, infarktu pravé komory nebo Viagra/Cialis do 48 h.",
+        "Aktivace katetrizace z terénu ušetří 20–30 minut oproti aktivaci v nemocnici."
+      ]
+    },
+    {
+      "id": "4.13",
+      "title": "Cévní mozková příhoda (Mrtvice — CVA)",
+      "terms": [
+        {
+          "t": "Ischemická CMP",
+          "d": "mrtvice způsobená ucpáním mozkové tepny (80 % všech CMP); léčitelná trombolýzou nebo mechanickým odstraněním sraženiny"
+        },
+        {
+          "t": "Hemoragická CMP",
+          "d": "mrtvice způsobená krvácením do nebo kolem mozku (20 % CMP); KONTRAINDIKACE trombolýzy!"
+        },
+        {
+          "t": "TIA",
+          "d": "Transient Ischemic Attack — přechodný ischemický záchvat; příznaky CMP trvající pod 24 hodin; \"mini-mrtvice\"; předpovídá plnou CMP v dalších 48 hodinách"
+        },
+        {
+          "t": "tPA",
+          "d": "tissue Plasminogen Activator — tkáňový aktivátor plazminogenu; lék rozpouštějící sraženinu v mozku; podává se do žíly; okno 4,5 hodiny od LKW"
+        },
+        {
+          "t": "LKW",
+          "d": "Last Known Well — čas kdy byl pacient naposledy zcela v normálu; od tohoto okamžiku počítáme 4,5 hodin pro tPA"
+        },
+        {
+          "t": "Penumbra",
+          "d": "záchranná mozková tkáň kolem ložiska mrtvice; dostává méně krve ale stále žije; léčba tPA nebo EVT ji může zachránit"
+        },
+        {
+          "t": "EVT",
+          "d": "Endovascular Thrombectomy — mechanické odstranění sraženiny z mozkové tepny katetrem; okno 24 hodin při vhodném CT nálezu"
+        },
+        {
+          "t": "Hypoglykémie jako napodobenina CMP",
+          "d": "nízký cukr v krvi způsobí TOTOŽNÉ příznaky jako mrtvice; první krok = glukometr; vyloučení hypoglykémie je povinné"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "\"Čas jsou neurony.\" Za každou minutu bez léčby ischemické mrtvice odumírá 1,9 milionu mozkových buněk. PROČ záchranář aktivuje iktové centrum z terénu: nemocnice se připraví; CT mozku je naplánováno; neurologický tým u dveří."
+        },
+        {
+          "type": "table",
+          "caption": "Škála FAST+ — rozpoznání mrtvice",
+          "headers": [
+            "Písmeno",
+            "Test — jak přesně testujeme",
+            "Pozitivní výsledek a PROČ právě tento test"
+          ],
+          "rows": [
+            [
+              "F — Obličej",
+              "Požádejte: \"Usmějte se\" nebo \"Ukažte zuby\"",
+              "Asymetrie — jeden koutek povislý nebo nespojitelný. PROČ: n. facialis (nerv lícní) řídí mimiku; při kortikálním poranění kontralaterálně (na opačné straně než léze)"
+            ],
+            [
+              "A — Paže",
+              "Zvedněte obě paže na 90°; zavřete oči; podržte 10 sekund",
+              "Jedna paže klesá nebo nelze zvednout. PROČ: motorická kůra řídí opačnou stranu těla; oslabení jedné paže = kontralaterální léze (mrtvice)"
+            ],
+            [
+              "S — Řeč",
+              "Opakujte: \"Dnes je krásný slunečný den\"",
+              "Nesrozumitelná řeč, špatná slova, afázie (neschopnost mluvit). PROČ tato věta: obsahuje různé souhlásky a syntaktické struktury; afázie nebo dysartrie se projeví"
+            ],
+            [
+              "T — Čas",
+              "\"Kdy jste byl naposledy úplně v normálu?\" (= LKW)",
+              "Zapište přesný čas — od tohoto okamžiku počítáme 4,5 hodiny. PROČ přesně: tPA okno je fixní; \"přibližně\" nestačí"
+            ],
+            [
+              "+B — Rovnováha",
+              "Náhlá nestabilita, ataxie, nevysvětlené pády",
+              "Cerebelární (mozečkový) syndrom; PROČ přidat: cerebelární CMP se bez B přehlédne — F, A, S jsou normální"
+            ],
+            [
+              "+E — Oči",
+              "Pohyb prstu přes zorné pole; sledujte deviaci pohledu",
+              "Horizontální devíace pohledu ke straně léze; hemianopsie (výpadek poloviny zorného pole). PROČ: okulomotorická centra jsou v mozkovém kmeni a frontálním laloku"
+            ],
+            [
+              "+H — Bolest hlavy",
+              "Náhlá \"nejsilnější bolest hlavy v životě\"",
+              "Thunderclap onset (hrom z čistého nebe) = subarachnoidální krvácení dokud není prokázán opak — urgentní CT. PROČ urgentní: SAK = prasknuté aneuryzma; 30 % mortalita do 1 měsíce"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "LKW — čas posledního normálního stavu",
+              "text": "KRITICKÁ INFORMACE. Ptejte se rodiny, pacient, svědků: \"Kdy byl naposledy úplně v normálu?\" PROČ ne čas nálezu: pacient mohl mít CMP při spánku a \"byl nalezen\" ráno; LKW = večer předtím → okno pravděpodobně uzavřeno."
+            },
+            {
+              "n": 2,
+              "title": "Hladina cukru — povinně jako první",
+              "text": "VŽDY glukometr. Pod 60 mg/dL → Dextróza 50% 25 ml do žíly → pokud příznaky odezní → to byla hypoglykémie, ne CMP. PROČ povinně: hypoglykémie napodobuje CMP dokonale (jednostranné ochrnutí, porucha řeči); přehlédnutá hypoglykémie = trvalé poškození mozku."
+            },
+            {
+              "n": 3,
+              "title": "ABCDE — vědomí, TK, saturace",
+              "text": "Vědomí (GCS); zornice; SpO2; TK. PROČ TK nesnižovat: hypertenze u CMP je kompenzační — mozek zvýší TK aby protlačil krev přes uzavřenou tepnu do penumbry. Snížení TK v terénu = větší ložisko mrtvice. VÝJIMKA: TK nad 220/120 nebo kombinace s infarktem."
+            },
+            {
+              "n": 4,
+              "title": "Poloha a transport",
+              "text": "Při vědomí: polosed 30–45°. Bezvědomí nebo zvracení: laterální dekubitus (na boku). ŽÁDNÝ aspirin, nitroglycerin ani antikoagulancia — u hemoragické CMP by toto zhoršilo krvácení. Transport do iktového centra — ne do nejbližší nemocnice bez neurologie!"
+            },
+            {
+              "n": 5,
+              "title": "Aktivace iktového centra před příjezdem",
+              "text": "Volejte: \"Iktová aktivace: žena 70 let, LKW v 8:00, pozitivní FAST (poklesá levý koutek, slabá levá paže), GCS 14, TK 180/95, BSG 110, příjezd za 6 minut.\" PROČ takto: CT skener je naplánován; neurolog je u dveří; ušetříte 20–30 minut."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "key": "fast-stroke-flow"
+        }
+      ],
+      "summary": [
+        "\"Čas jsou neurony\" — za každou minutu bez léčby odumírá 1,9 milionu mozkových buněk.",
+        "LKW (čas posledního normálního stavu) = záchranář musí zjistit hned při příjezdu; od tohoto momentu počítá 4,5 hodin.",
+        "Vždy jako první glukometr — hypoglykémie způsobí totožné příznaky jako mrtvice.",
+        "TK u mrtvice nesnižujte — hypertenze je kompenzační; snížení = větší ložisko.",
+        "Transport do iktového centra, ne do nejbližší nemocnice; aktivujte centrum před příjezdem."
+      ]
+    },
+    {
+      "id": "4.14",
+      "title": "Záchvaty a stav epilepticus (Status Epilepticus)",
+      "abbrevs": [
+        {
+          "a": "SE",
+          "f": "Status Epilepticus — záchvat trvající déle než 5 minut nebo opakující se záchvaty bez návratu vědomí"
+        },
+        {
+          "a": "GCS",
+          "f": "Glasgow Coma Scale"
+        },
+        {
+          "a": "BSG",
+          "f": "Blood Sugar / Glucose — hladina cukru v krvi"
+        },
+        {
+          "a": "BZD",
+          "f": "Benzodiazepiny — třída sedativních léků (midazolam, diazepam)"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Záchvat (Seizure)",
+          "d": "epizoda abnormální synchronní elektrické aktivity v mozku; projevuje se motorickými záškuby, ztrátou vědomí, abnormálním chováním nebo smyslovými příznaky"
+        },
+        {
+          "t": "Status epilepticus (SE)",
+          "d": "záchvat trvající déle než 5 minut nebo opakující se záchvaty bez návratu vědomí mezi nimi; mortalita 10–30 %"
+        },
+        {
+          "t": "Postiktální stav",
+          "d": "stav po záchvatu; pacient je zmatenou, ospalý, dezorientovaný; může trvat minut až hodiny; NENÍ pokračující záchvat"
+        },
+        {
+          "t": "Tonicko-klonický záchvat",
+          "d": "nejznámější typ: nejdříve tuhnutí celého těla (tonus), pak rytmické záškuby (klonus); bezvědomí; může trvat 1–3 minuty"
+        },
+        {
+          "t": "Absence",
+          "d": "krátký výpadek vědomí bez pádu; pacient \"zamrzne\" na 5–30 sekund; pak pokračuje jako by se nic nestalo; nemá záškuby"
+        },
+        {
+          "t": "Vagová záchrana (Vagal maneuver)",
+          "d": "pro záchvaty to NEPLATÍ — benzodiazepiny jsou léčbou prvé volby"
+        },
+        {
+          "t": "Refraktérní SE",
+          "d": "status epilepticus nereagující na benzodiazepiny a druhou linii léků; vyžaduje anestézii a JIP"
+        },
+        {
+          "t": "Febrilní záchvat",
+          "d": "záchvat u dítěte do 6 let vyvolaný horečkou; většinou benigní; transport vždy"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Záchvat je nekontrolovatelná elektrická \"bouře\" v mozku. Většina záchvatů trvá 1–3 minuty a sama odezní. Status epilepticus (záchvat nad 5 minut) je urgentní stav — mortalita 10–30 %. Nejčastější a nejsnáze léčitelná příčina záchvatu: HYPOGLYKÉMIE."
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "Chraňte, ale nedržte",
+              "text": "Odstraňte ostré předměty z okolí. Podložte hlavu (složená bunda). NEDRŽTE pacienta silou — způsobíte zlomeniny. NIKDY nevkládejte nic do úst — \"spolknutí jazyka\" je mýtus; záchranář přijde o prst. PROČ nelze vložit nic do úst: stažená čelist silou 50–100 kg zhryže cokoli."
+            },
+            {
+              "n": 2,
+              "title": "Zaznamenejte čas začátku záchvatu",
+              "text": "Záchvat nad 5 minut = status epilepticus = okamžité léky. PROČ přesný čas: 5minutová hranice je absolutní; \"přibližně 5 minut\" nestačí pro rozhodnutí."
+            },
+            {
+              "n": 3,
+              "title": "Poloha po záchvatu — laterální dekubitus (na boku)",
+              "text": "Po odeznění záchvatu: otočte na bok. Nosní vzduchovod pokud v bezvědomí. Kyslík 4–6 litrů/min. PROČ na bok: po záchvatu pacient hypersaliví (tvoří hodně slin) a nemá ochranné reflexy DC → aspirace."
+            },
+            {
+              "n": 4,
+              "title": "Glukometr — PRVNÍ PRIORITA",
+              "text": "Hladina cukru ihned. Nízký cukr = nejčastější a nejsnáze léčitelná příčina záchvatu u dospělých. Pod 60 mg/dL → Dextróza 50 % 25 ml do žíly → záchvat se nemusí opakovat."
+            },
+            {
+              "n": 5,
+              "title": "Léky při status epilepticus nebo recidivě",
+              "text": "Midazolam 10 mg do svalu nebo nosem (přes atomizér); nebo 5–10 mg do žíly. Alternativa: Diazepam 10 mg do žíly pomalu; nebo 10 mg rektálně (Diastat). Opakovat po 5 minutách pokud záchvat trvá. PROČ BZD jako první: benzodiazepiny zesilují GABA-ergní inhibici = zastaví elektrickou bouři; nejrychlejší cesta do mozku."
+            },
+            {
+              "n": 6,
+              "title": "Pátrejte po příčině",
+              "text": "Nízký cukr, nízký sodík, alkohol (abstinence), vynechané antiepileptické léky, horečka, TBI, otrava, mrtvice, nádor mozku. PROČ povinně: záchvat je příznak, ne diagnóza; příčina může vyžadovat specifickou léčbu (glukóza, antibiotika, operace)."
+            }
+          ]
+        }
+      ],
+      "summary": [
+        "Záchvat nad 5 minut = status epilepticus = okamžité léky; zaznamenejte přesný čas začátku.",
+        "Nikdy nedržte pacienta silou a nikdy nevkládejte nic do úst — \"spolknutí jazyka\" je mýtus.",
+        "Glukometr jako první krok — nízký cukr je nejčastější a nejsnáze léčitelná příčina záchvatu u dospělých.",
+        "Midazolam 10 mg nosem nebo 5 mg IV; opakovat po 5 minutách pokud záchvat trvá.",
+        "Po záchvatu: laterální dekubitus, nosní vzduchovod, kyslík — postiktální stav není pokračující záchvat."
+      ]
+    },
+    {
+      "id": "4.15",
+      "title": "Anafylaxe — Těžká alergická reakce",
+      "terms": [
+        {
+          "t": "Anafylaxe",
+          "d": "systémová (celotělová) život ohrožující alergická reakce; způsobena uvolněním histaminu a dalších mediátorů ze žírných buněk imunitního systému"
+        },
+        {
+          "t": "Histamin",
+          "d": "chemický mediátor uvolněný při alergické reakci; způsobuje vazodilataci (rozšíření cév), otoky a bronchospasmus (zúžení průdušek)"
+        },
+        {
+          "t": "Bronchospasmus",
+          "d": "křeč hladkého svalstva průdušek; průdušky se zúží → pískání při výdechu (wheezing)"
+        },
+        {
+          "t": "Angioedém",
+          "d": "otok hlubokých vrstev kůže a sliznic; nebezpečný při postižení hrtanu → ucpání DC"
+        },
+        {
+          "t": "Distributivní šok",
+          "d": "šok způsobený masivní vazodilatací (rozšíření cév); krev \"staguje\" v periférii; srdce nemůže čerpat bez žilního návratu"
+        },
+        {
+          "t": "Bifazická reakce",
+          "d": "druhá vlna anafylaxe nastupující 4–24 hodin po první; proto každý pacient po anafylaxi musí být sledován 6–8 hodin v nemocnici"
+        },
+        {
+          "t": "PDE5 inhibitory",
+          "d": "Viagra (sildenafil), Cialis (tadalafil) — léky na erektilní dysfunkci; jejich kombinace s nitroglycerinem způsobí závažnou hypotenzi"
+        },
+        {
+          "t": "Epinefrin / adrenalin",
+          "d": "identické látky — \"adrenalin\" je historický název; \"epinefrin\" je chemický; obě jsou správné"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Anafylaxe je systémová alergická reakce, která může zabít za 15–30 minut. Nejčastější spouštěče: potraviny (arašídy, korýši), léky (antibiotika, NSAID), bodnutí hmyzem. PROČ adrenalin jako první a ne antihistaminika: antihistaminika blokují jen histamin a působí za 15–30 minut; adrenalin blokuje vše (histamin, leukotrieny, bradykinin) a působí za 5–10 minut. Antihistaminika NEZASTAVÍ anafylaxi."
+        },
+        {
+          "type": "table",
+          "caption": "Příznaky anafylaxe dle postižených systémů",
+          "headers": [
+            "Systém",
+            "Příznaky — a PROČ vznikají",
+            "Závažnost pro záchranáře"
+          ],
+          "rows": [
+            [
+              "Kůže",
+              "Kopřivka (pupeny), otoky rtů, jazyka nebo hrdla, zarudnutí. PROČ: histamin způsobí lokální vasodilataci a únik tekutiny z kapilár do tkáně",
+              "Otoky hrtanu = bezprostřední ucpání DC"
+            ],
+            [
+              "Dýchání",
+              "Pískání (bronchospasmus), stridor (pískání PŘI NÁDECHU = otoky hrtanu!), dušnost, chrapot",
+              "Stridor = dýchací cesty se uzavírají → intubujte IHNED"
+            ],
+            [
+              "Krevní oběh",
+              "Nízký TK (distributivní šok z vasodilatace), rychlý puls, arytmie. PROČ nízký TK: histamin způsobí masivní vasodilataci → krev se \"rozlije\" do periférie → srdce nemá odkud čerpat",
+              "Systolický TK pod 90 = těžká anafylaxe"
+            ],
+            [
+              "Trávicí trakt",
+              "Nevolnost, zvracení, křeče, průjem. PROČ: histamin stimuluje hladké svalstvo střev",
+              "Časný příznak; může předcházet kardiorespiratornímu kolapsu o 5–10 minut"
+            ],
+            [
+              "Nervová soustava",
+              "Zmatenost, strach (pacient \"ví\" že umírá), synkopa, záchvaty. PROČ: hypoxie a hypotenze; příznaky z nedostatku O2 v mozku",
+              "Zmatenost = těžký stav; mozek nedostává kyslík"
+            ]
+          ]
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "n": 1,
+              "title": "ADRENALIN DO SVALU — OKAMŽITĚ — ABSOLUTNÍ PRIORITA",
+              "text": "Epinefrin (adrenalin) 0,3–0,5 mg silného roztoku (1:1 000) do svalu na ZEVNÍ STRANĚ STEHNA. NEČEKÁME NA IV PŘÍSTUP! EpiPen: přes oblečení. Děti: 0,01 mg/kg IM, max. 0,5 mg. PROČ do stehna: m. vastus lateralis má největší perfúzi (prokrvení) ze všech svalů vhodných pro IM injekci → nejrychlejší vstřebání. PROČ ne do ramene: menší perfúze."
+            },
+            {
+              "n": 2,
+              "title": "Poloha dle dominujícího příznaku",
+              "text": "Nízký TK bez dušnosti: leh + nohy nahoru (Trendelenburgova poloha — zvyšuje venózní návrat). Dušnost bez nízkého TK: polosed 45°. Těhotenství: levý bok (uvolní v. cava inferior). PROČ záleží na poloze: u distributivního šoku je poloha těla zásadní pro venózní návrat k srdci."
+            },
+            {
+              "n": 3,
+              "title": "Kyslík 15 litrů/min rezervoárovou maskou",
+              "text": "Pískání: albuterol 2,5 mg nebulizací (souběžně s adrenalinem — ne místo!). Stridor (pískání při nádechu = otoky hrtanu): intubujte IHNED před úplnou obstrukcí. PROČ albuterol souběžně: adrenalín řeší systémovou vazodilataci; albuterol je \"místní\" bronchodilatátor pro průdušky."
+            },
+            {
+              "n": 4,
+              "title": "IV přístup + infúze",
+              "text": "Kanyla 16G. Fyziologický roztok nebo Ringerův laktát 500–1 000 ml rychle při TK pod 90. PROČ velký objem: vasodilatace způsobila efektivní \"prázdné cévy\"; tekutiny je naplní. Nereagující hypotenze: noradrenalinová infúze."
+            },
+            {
+              "n": 5,
+              "title": "Opakovat adrenalin + doplňující léky",
+              "text": "Druhá dávka adrenalinu 0,5 mg IM za 5–15 minut pokud nereaguje. Antihistaminikum (difenhydramin) 25–50 mg IV — PROČ: blokuje H1 receptory pro histamin; ale sám nestačí. Hydrokortizón 200 mg IV — PROČ: brání bifazické reakci (opožděné) za 6–24 hodin; nástup za 4–6 hodin → nepomůže akutně."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "style": "critical",
+          "title": "BIFAZICKÁ ANAFYLAXE",
+          "text": "U ~20 % pacientů se anafylaxe vrátí za 6–24 hodin od první epizody — i bez dalšího kontaktu s alergenem. PROČ: histamin se uvolní ve druhé vlně z jiného zásobníku. KAŽDÝ pacient po anafylaxi = nemocnice, minimálně 6–8 hodin observace. Propuštění ze záchranné sanitky na místě = hrubá chyba."
+        }
+      ],
+      "summary": [
+        "Adrenalin 0,3–0,5 mg do svalu na stehně je absolutní priorita — antihistaminika anafylaxi nezastaví.",
+        "Stridor (pískání při nádechu) = otoky hrtanu = intubujte ihned dříve než DC se zcela uzavřou.",
+        "Bifazická reakce nastane u 20 % pacientů za 6–24 hodin — každý pacient po anafylaxi = nemocnice.",
+        "Poloha dle příznaků: nízký TK bez dušnosti = Trendelenburg; dušnost bez nízkého TK = polosed 45°."
+      ]
+    },
+    {
+      "id": "4.16",
+      "title": "Šok — Rozpoznání a léčba",
+      "abbrevs": [
+        {
+          "a": "ATLS",
+          "f": "Advanced Trauma Life Support — americký standard traumatologické péče"
+        }
+      ],
+      "terms": [
+        {
+          "t": "Šok",
+          "d": "stav kdy tkáně těla nedostávají dostatečné množství kyslíku; projevuje se hypotenzí, tachykardií a poruchou vědomí"
+        },
+        {
+          "t": "Distribuce kyslíku",
+          "d": "závisí na: množství hemoglobinu × saturaci × srdečním výdeji; šok naruší jeden nebo více z těchto faktorů"
+        },
+        {
+          "t": "Preload",
+          "d": "náplň srdce před kontrakcí — venózní návrat; snižuje se při hypovolémii"
+        },
+        {
+          "t": "Afterload",
+          "d": "odpor, proti kterému srdce pumpuje; zvyšuje se při vazokonstrikci"
+        },
+        {
+          "t": "Srdeční výdej (CO)",
+          "d": "množství krve vypumpované srdcem za minutu; normálně 4–8 litrů/min"
+        },
+        {
+          "t": "Laktát",
+          "d": "odpadní produkt anaerobního metabolismu; stoupá při tkáňové hypoxii = ukazatel závažnosti šoku"
+        },
+        {
+          "t": "SIRS",
+          "d": "Systemic Inflammatory Response Syndrome — systémová zánětlivá reakce; předchůdce sepse"
+        },
+        {
+          "t": "Mapy tepelné distribuce šoku",
+          "d": "Hemoragický: Chladná, bledá, potivá periférie; Distributivní (sepse, anafylaxe, neurogenní): teplá zarudlá periférie; Obstruktivní: chladná bledá + napjaté krční žíly"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Šok je stav nedostatečné dodávky kyslíku tkáním — ne vždy nízký krevní tlak! Nízký TK je POZDNÍ příznak šoku (tělo kompenzuje tachykardií). PROČ záleží na správném typu: tekutiny zachrání hemoragický šok a zabijí kardiogenní."
+        },
+        {
+          "type": "table",
+          "caption": "Typy šoku a jejich odlišení",
+          "headers": [
+            "Typ šoku",
+            "Příčina a mechanismus",
+            "Puls",
+            "TK",
+            "Kůže",
+            "Krční žíly",
+            "Léčba — PROČ takto"
+          ],
+          "rows": [
+            [
+              "Hemoragický",
+              "Krvácení → méně krve v cévách → srdce nemá co čerpat",
+              "Rychlý (kompenzace)",
+              "Nízký",
+              "Chladná, bledá, potivá (vazokonstrikce)",
+              "Ploché (prázdné)",
+              "Infúze (naplnit cévy); zastavit krvácení; krevní produkty. PROČ ne jen infúze: tekutiny vymyjí sraženiny → více krvácení"
+            ],
+            [
+              "Distributivní — septický",
+              "Infekce → zánětlivé mediátory → masivní vazodilatace → \"prázdné cévy\" přes normální objem",
+              "Rychlý",
+              "Nízký",
+              "Teplá, zarudlá (vasodilatace)",
+              "Ploché",
+              "Agresivní infúze + vazopresorické léky + antibiotika. PROČ vazopresorické léky: infúze sama nestačí; vasodilatace musí být reverzována noradrenalinem"
+            ],
+            [
+              "Distributivní — anafylaktický",
+              "Histamin → vasodilatace → bronchospasmus",
+              "Rychlý",
+              "Nízký",
+              "Zarudlá, kopřivka",
+              "Ploché",
+              "Adrenalin do svalu (PRVNÍ) + infúze + kyslík. PROČ adrenalin: reverzuje vasodilataci i bronchospasmus"
+            ],
+            [
+              "Kardiogenní",
+              "Infarkt nebo arytmie → srdce selhalo jako pumpa",
+              "Různý (může být pomalý)",
+              "Nízký",
+              "Chladná, bledá, cyanóza periférie",
+              "Napjaté a viditelné (srdce nečerpá → krev se hromadí)",
+              "Vazopresorické léky (dobutamin, noradrenalin). PROČ NE tekutiny: srdce selhalo; tekutiny přetíží → plicní edém"
+            ],
+            [
+              "Obstruktivní — TnPTX",
+              "Vzduch pod tlakem stlačí srdce → venózní návrat nemožný",
+              "Rychlý",
+              "Nízký",
+              "Chladná, bledá, cyanóza",
+              "Napjaté!",
+              "Dekompresní jehla IHNED. PROČ: jedná se o fyzickou překážku; žádné léky nepomůžou"
+            ],
+            [
+              "Obstruktivní — tamponáda srdce",
+              "Krev v osrdečníku stlačí srdce",
+              "Rychlý",
+              "Nízký (malý tlakový rozdíl)",
+              "Chladná, bledá",
+              "Napjaté!",
+              "Perikardiocentéza (propíchnutí osrdečníkového vaku) — pouze lékař. PROČ: fyzická překážka"
+            ],
+            [
+              "Neurogenní",
+              "Poranění míchy → ztráta sympatiku → vasodilatace + bez tachykardie",
+              "POMALÝ (klíčový rozdíl!)",
+              "Nízký",
+              "Teplá, zarudlá",
+              "Ploché",
+              "Opatrná infúze + noradrenalin. PROČ opatrná: přetížení cévního řečiště způsobí plicní edém"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Stupně hemoragického šoku (ATLS standard)",
+          "headers": [
+            "Stupeň",
+            "Krevní ztráta (dospělý 70 kg)",
+            "Puls",
+            "TK",
+            "Dechy/min",
+            "Vědomí",
+            "Postup v terénu — PROČ takto"
+          ],
+          "rows": [
+            [
+              "I.",
+              "Do 750 ml (do 15 %)",
+              "Do 100",
+              "Normální",
+              "Normální",
+              "Normální, mírná úzkost",
+              "Zastavit krvácení; sledovat. PROČ ne infúze: tělo kompenzuje samo; agresivní infúze vymyje sraženiny"
+            ],
+            [
+              "II.",
+              "750–1500 ml (15–30 %)",
+              "100–120",
+              "Normální",
+              "20–30/min",
+              "Mírná úzkost",
+              "TQ nebo gáza; dvě kanyly; Ringerův laktát bolus. PROČ Ringerův laktát: balancovaný krystaloid se chová jako plazma"
+            ],
+            [
+              "III.",
+              "1500–2000 ml (30–40 %)",
+              "Nad 120",
+              "Nízký",
+              "30–40/min",
+              "Zmatenost, neklid",
+              "Urgentní infúze; aktivace trauma centra; Massive Transfusion Protocol. PROČ MTP: tímto objemem ztráty je potřeba krev, ne jen krystaloid"
+            ],
+            [
+              "IV.",
+              "Nad 2000 ml (nad 40 %)",
+              "Nad 140",
+              "Kriticky nízký",
+              "Nad 35/min",
+              "Sopor, nereaguje",
+              "Okamžitě chirurgie; hromadná transfúze; \"Load and Go\". PROČ okamžitě: bez chirurgické zástavy krvácení umírá pacient i přes resuscitaci"
+            ]
+          ]
+        }
+      ],
+      "summary": [
+        "Šok není vždy nízký TK — tachykardie je první příznak; nízký TK = kompenzace selhala.",
+        "Kardiogenní šok: suchá kůže + napjaté krční žíly + plicní edém = nepodávat tekutiny.",
+        "Neurogenní šok: POMALÝ puls + teplá kůže — zcela odlišný od hemoragického (tam tachykardie).",
+        "Hemoragický šok stupeň III a IV: okamžitá chirurgie, ne jen infúze; krev nestačí zastavit.",
+        "Permissivní hypotenze TK 80–90 u traumatu zabraňuje vymytí sraženin agresivní infúzí."
+      ]
+    }
+  ],
+  "chapterSummary": [
+    "\"Čas jsou svaly\" (infarkt) a \"čas jsou neurony\" (mrtvice) — každá minuta bez léčby ničí tkáň permanentně.",
+    "Infarkt: MONA protokol (Morfin, Kyslík jen pod 94 % SpO2, Nitroglycerin, Aspirin 324 mg), EKG do 10 minut jako první krok, aktivace katetrizace z terénu.",
+    "Mrtvice: škála FAST+ (Face, Arm, Speech, Time + Balance, Eyes, Headache), LKW jako kritický údaj, glukometr povinně jako první, TK nesnižovat, transport do iktového centra.",
+    "Záchvaty: glukometr jako první priorita, nikdy nedržet ani nevkládat nic do úst, status epilepticus nad 5 minut = midazolam/diazepam.",
+    "Anafylaxe: adrenalin IM do stehna okamžitě je absolutní priorita, antihistaminika ji nezastaví; riziko bifazické reakce vyžaduje observaci v nemocnici.",
+    "Šok: nízký TK je pozdní příznak; typ šoku (hemoragický, distributivní, kardiogenní, obstruktivní, neurogenní) určuje odlišnou léčbu — tekutiny mohou zachránit i zabít podle typu."
+  ]
+}
