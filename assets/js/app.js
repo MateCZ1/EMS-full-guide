@@ -39,7 +39,14 @@ function buildSidebarSkeleton() {
   const parts = {};
   EMS_MANIFEST.forEach(m => { (parts[m.part] = parts[m.part] || []).push(m); });
 
-  let html = "";
+  let html = `
+    <div class="nav-part">
+      <div class="nav-part-label">Nástroje</div>
+      <a href="#/vyjezd" class="nav-item nav-item-tool" data-chapter-link="vyjezd">
+        ${emsIcon("siren", "icon-sm")}
+        <span class="nav-item-title">Pomocník pro výjezd</span>
+      </a>
+    </div>`;
   Object.keys(parts).sort().forEach(partKey => {
     html += `<div class="nav-part"><div class="nav-part-label">Část ${partKey} · ${EMS_PARTS[partKey] || ""}</div>`;
     parts[partKey].forEach(m => {
@@ -137,6 +144,13 @@ function router() {
     return;
   }
 
+  if (chapterId === "vyjezd") {
+    renderWizardPage();
+    highlightActiveNav();
+    closeMobileSidebar();
+    return;
+  }
+
   renderLoading();
   loadChapter(chapterId).then(ch => {
     if (!ch) { renderMissing(chapterId); return; }
@@ -144,6 +158,7 @@ function router() {
     const prevMeta = idx > 0 ? EMS_MANIFEST[idx - 1] : null;
     const nextMeta = idx >= 0 && idx < EMS_MANIFEST.length - 1 ? EMS_MANIFEST[idx + 1] : null;
     $content.innerHTML = renderChapterPage(ch, prevMeta, nextMeta);
+    highlightGlossaryTerms($content);
     mountDiagrams($content);
     highlightActiveNav();
     if (sectionId) {
@@ -175,7 +190,8 @@ function renderHome() {
       <h1>EMS Operační Manuál<br>v2.0</h1>
       <p class="lead">Interaktivní vzdělávací portál pro záchranáře. Protokoly, vybavení, diagnostické algoritmy a nemocniční péče na jednom místě — s vyhledáváním a interaktivními diagramy k pochopení, ne jen memorování.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#/ch01">${emsIcon("compass","icon-sm")} Začít číst od kapitoly 1</a>
+        <a class="btn btn-primary" href="#/vyjezd">${emsIcon("siren","icon-sm")} Pomocník pro výjezd</a>
+        <a class="btn" href="#/ch01">${emsIcon("compass","icon-sm")} Začít číst od kapitoly 1</a>
         <a class="btn" href="#/ch09">${emsIcon("cheatsheet","icon-sm")} Rychlý tahák</a>
       </div>
       <div class="stat-row">
@@ -323,6 +339,7 @@ $scrollTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "
 buildSidebarSkeleton();
 renderLoading();
 loadAllChapters().then(() => {
+  GlossaryIndex = buildGlossaryIndex();
   window.addEventListener("hashchange", router);
   router();
 });

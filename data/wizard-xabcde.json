@@ -1,0 +1,957 @@
+{
+  "id": "wizard-xabcde",
+  "title": "Pomocník pro výjezd — XABCDE",
+  "subtitle": "Klikací algoritmus primárního vyšetření pacienta. Odpovídej na otázky, postup se řídí sám.",
+  "start": "intro",
+  "letters": [
+    { "key": "X", "label": "Krvácení" },
+    { "key": "A", "label": "Dýchací cesty" },
+    { "key": "B", "label": "Dýchání" },
+    { "key": "C", "label": "Oběh" },
+    { "key": "D", "label": "Vědomí" },
+    { "key": "E", "label": "Odkrytí" }
+  ],
+  "nodes": {
+
+    "intro": {
+      "code": "START",
+      "letter": null,
+      "title": "Přijíždíš na místo výjezdu",
+      "intro": ["Vozidlo zaparkováno, PPE nasazeno, místo je bezpečné. Jsi připraven přistoupit k pacientovi."],
+      "options": [
+        { "label": "Přistoupit k pacientovi", "next": "X0", "tone": "primary" }
+      ]
+    },
+
+    "X0": {
+      "code": "X.0", "letter": "X",
+      "title": "Prvotní pohled na pacienta",
+      "intro": ["Přistoupil jsi k pacientovi. Než uděláš cokoliv jiného, **jedním pohledem zkontroluj celé tělo** — hledáš masivní krvácení, které by ho mohlo zabít dřív než stihneš cokoli dalšího."],
+      "question": "Vidíš masivní krvácení?",
+      "options": [
+        { "label": "ANO — vidím krvácení", "next": "X1", "tone": "danger" },
+        { "label": "NE — žádné masivní krvácení", "next": "A0", "tone": "success" }
+      ]
+    },
+
+    "X1": {
+      "code": "X.1", "letter": "X",
+      "title": "Kde krvácení je?",
+      "intro": ["Krvácení je viditelné. Urči kde — to rozhoduje jaký nástroj použiješ."],
+      "question": "Kde pacient krvácí?",
+      "options": [
+        { "label": "Paže nebo ruka", "next": "X2a", "tone": "neutral" },
+        { "label": "Noha nebo stehno", "next": "X2b", "tone": "neutral" },
+        { "label": "Tříslo nebo podpaží", "next": "X2c", "tone": "neutral" },
+        { "label": "Krk nebo hlava", "next": "X2d", "tone": "neutral" },
+        { "label": "Hrudník nebo břicho", "next": "X2e", "tone": "neutral" },
+        { "label": "Krvácení z více míst", "next": "X2f", "tone": "neutral" }
+      ]
+    },
+
+    "X2a": {
+      "code": "X.2a", "letter": "X",
+      "title": "Krvácení z paže nebo ruky",
+      "intro": ["Turniket je správná volba — na končetinách ho vždy můžeš přiložit."],
+      "steps": [
+        { "n": 1, "title": "Turniket", "text": "Vezmi turniket CAT nebo SOFTT-W." },
+        { "n": 2, "title": "Přiložení", "text": "Přilož ho **5–8 cm NAD ránou** — ne přes samotnou ránu, tam by netěsnil." },
+        { "n": 3, "title": "Utažení", "text": "Utahuj otáčením páčky (CAT) nebo navíjením pásku (SOFTT-W) **dokud krvácení vizuálně nezastaví** — ne dřív, ne míň." },
+        { "n": 4, "title": "Čas", "text": "Zapiš čas přiložení permanentním fixem **přímo na turniket i na kůži pacienta** — chirurg to při sejmutí potřebuje vědět." },
+        { "n": 5, "title": "Kontrola", "text": "Odkryj ránu a **vizuálně ověř**, že krvácení opravdu zastavilo — nestačí „vypadá ošetřeně“." }
+      ],
+      "warnings": [{ "tone": "warning", "text": "Pokud krvácení stále pokračuje: druhý turniket 5 cm výše nad prvním. Nikdy nepovoluj první." }],
+      "question": "Zastavilo se krvácení?",
+      "options": [
+        { "label": "ANO — krvácení zastaveno", "next": "A0", "tone": "success" },
+        { "label": "NE — stále krvácí", "next": "X2a", "tone": "danger", "hint": "Přilož druhý turniket 5 cm nad prvním a zkontroluj znovu." }
+      ]
+    },
+
+    "X2b": {
+      "code": "X.2b", "letter": "X",
+      "title": "Krvácení z nohy nebo stehna",
+      "intro": ["Turniket funguje i zde — a při zlomenině stehenní kosti je navíc povinný (viz krok C)."],
+      "steps": [
+        { "n": 1, "title": "Umístění", "text": "Turniket přilož **vysoko na stehno** — co nejvýše to jde, i kdyby rána byla níž." },
+        { "n": 2, "title": "Utažení", "text": "Utahuj dokud krvácení vizuálně nezastaví." },
+        { "n": 3, "title": "Čas", "text": "Zapiš čas na turniket i na kůži." },
+        { "n": 4, "title": "Kontrola", "text": "Vizuálně ověř zastavení krvácení." }
+      ],
+      "warnings": [{ "tone": "warning", "text": "Noha pod kolenem: přilož turniket nad koleno (ne přes kloub). Pokud tam nejde, použij hemostatickou gázu + přímý tlak." }],
+      "question": "Zastavilo se krvácení?",
+      "options": [
+        { "label": "ANO — krvácení zastaveno", "next": "A0", "tone": "success" },
+        { "label": "NE — stále krvácí", "next": "X2b", "tone": "danger", "hint": "Zkontroluj utažení, případně přidej druhý turniket výše." }
+      ]
+    },
+
+    "X2c": {
+      "code": "X.2c", "letter": "X",
+      "title": "Krvácení z třísla nebo podpaží",
+      "intro": ["Tato místa jsou záludná — turniket sem nedáš, protože tam není dostatek těla nad ránou. Musíš použít jiný postup."],
+      "steps": [
+        { "n": 1, "title": "Gáza", "text": "Vezmi hemostatickou gázu (QuikClot nebo obdobnou)." },
+        { "n": 2, "title": "Zabalení", "text": "**Zabal gázu těsně přímo do rány** — ne přiložit na povrch, ale opravdu zanořit do rány." },
+        { "n": 3, "title": "Tlak", "text": "Tlakem obou rukou drž **maximální nepřerušený tlak minimálně 3 minuty** bez jakéhokoliv uvolnění — každé uvolnění narušuje vznikající sraženinu a musíš začínat znovu." },
+        { "n": 4, "title": "Kontrola", "text": "Po 3 minutách opatrně zkontroluj — pokud stále krvácí, přidej další gázu na vrchní vrstvu a drž dalších 3 minut." }
+      ],
+      "warnings": [
+        { "tone": "info", "text": "Alternativa pro tříslo: JETT pomůcka (nafukovací tlakový polštář) — přiloží mechanický tlak bez nutnosti záchranářovy ruky." },
+        { "tone": "critical", "text": "Na krvácení z třísla nikdy nepřikládej turniket přes celý pas — stiskl bys i zdravou nohu." }
+      ],
+      "question": "Krvácení zastaveno nebo pod kontrolou?",
+      "options": [
+        { "label": "ANO — pod kontrolou", "next": "A0", "tone": "success" },
+        { "label": "NE — stále krvácí", "next": "X2c", "tone": "danger", "hint": "Přidej další vrstvu gázy a drž tlak dalších 3 minuty." }
+      ]
+    },
+
+    "X2d": {
+      "code": "X.2d", "letter": "X",
+      "title": "Krvácení z krku nebo hlavy",
+      "intro": ["Tato místa jsou extrémně nebezpečná — tepny zásobující mozek jsou blízko povrchu."],
+      "question": "Odkud přesně krvácí?",
+      "options": [
+        { "label": "Z krku", "next": "X2d_neck", "tone": "neutral" },
+        { "label": "Z hlavy nebo obličeje", "next": "X2d_head", "tone": "neutral" }
+      ]
+    },
+    "X2d_neck": {
+      "code": "X.2d", "letter": "X",
+      "title": "Krvácení z krku",
+      "steps": [
+        { "n": 1, "title": "Přímý tlak", "text": "Přímý tlak **prsty nebo dlaní přímo na ránu**." },
+        { "n": 2, "title": "Gáza", "text": "Hemostatická gáza do rány pokud krvácení neustupuje prostému tlaku." },
+        { "n": 3, "title": "Drž tlak", "text": "Drž tlak celou dobu transportu — ruku nepouštěj." }
+      ],
+      "warnings": [
+        { "tone": "critical", "text": "NIKDY nepřikládej obvaz cirkulárně kolem celého krku — stiskl bys obě krkavice a pacient by se udusil." },
+        { "tone": "warning", "text": "Krvácení z krku vždy potenciálně ohrožuje dýchací cesty — sleduj zda pacient dýchá a nemá narůstající otoky na krku." }
+      ],
+      "options": [
+        { "label": "Krvácení pod kontrolou — pokračovat na Dýchací cesty", "next": "A0", "tone": "success" }
+      ]
+    },
+    "X2d_head": {
+      "code": "X.2d", "letter": "X",
+      "title": "Krvácení z hlavy nebo obličeje",
+      "steps": [
+        { "n": 1, "title": "Gáza a tlak", "text": "Sterilní gáza + přímý tlak na ránu." },
+        { "n": 2, "title": "Podezření na zlomeninu lebky", "text": "Pokud je podezření na zlomeninu lebky (prohlubeň, zlomená kost pod kůží) — netlačit přímo do rány, ale kolem ní." }
+      ],
+      "warnings": [{ "tone": "info", "text": "Krevní ztráty z hlavy vypadají dramaticky, ale jsou zpravidla méně nebezpečné než krvácení z trupu." }],
+      "options": [
+        { "label": "Krvácení pod kontrolou — pokračovat na Dýchací cesty", "next": "A0", "tone": "success" }
+      ]
+    },
+
+    "X2e": {
+      "code": "X.2e", "letter": "X",
+      "title": "Krvácení z hrudníku nebo břicha",
+      "intro": ["Toto je nejtěžší situace — do těchto míst turniket ani hemostatická gáza nestačí. Jde o vnitřní krvácení, které nemůžeš zastavit v terénu."],
+      "steps": [
+        { "n": 1, "title": "Viditelná rána", "text": "Pokud je viditelná rána: sterilní gáza na povrch + přímý tlak." },
+        { "n": 2, "title": "Kanyly", "text": "**Dvě velké kanyly do žil** (obě paže) — začni infúzi Ringerova laktátu." },
+        { "n": 3, "title": "Cíl tlaku", "text": "Cíl krevního tlaku: **80–90 mmHg** — ne více; příliš agresivní infúze vymyje sraženiny a krvácení se zhorší." },
+        { "n": 4, "title": "Deka", "text": "Záchranná deka — krvácení způsobuje rychlé ochlazení těla." },
+        { "n": 5, "title": "Transport", "text": "**Okamžitý transport** — toto krvácení zastaví pouze chirurg na operačním sále." }
+      ],
+      "warnings": [{ "tone": "critical", "text": "Neztrácej čas na místě — každá minuta, kdy pacient krvácí do dutiny hrudní nebo břišní, snižuje jeho šanci na přežití." }],
+      "options": [
+        { "label": "Infúze zahájena, transport aktivován — pokračovat na Dýchací cesty (za jízdy)", "next": "A0", "tone": "success" }
+      ]
+    },
+
+    "X2f": {
+      "code": "X.2f", "letter": "X",
+      "title": "Krvácení z více míst",
+      "intro": ["Více krvácejících míst najednou vyžaduje rychlé rozhodnutí o prioritách."],
+      "steps": [
+        { "n": 1, "title": "Priorita", "text": "**Nejprve to co krvácí nejvíce** — největší rána nebo nejsilnější krvácení jako první." },
+        { "n": 2, "title": "Turnikety", "text": "Turnikety na všechny končetiny kde to jde — klidně dva najednou na dvě různé rány." },
+        { "n": 3, "title": "Gáza", "text": "Hemostatická gáza na třísla a podpaží." },
+        { "n": 4, "title": "Tlak", "text": "Přímý tlak na všechno ostatní." }
+      ],
+      "warnings": [{ "tone": "warning", "text": "Při více krvácení zůstaneš sám? Volej zálohu ihned — jeden záchranář nedokáže bezpečně ošetřit více masivních krvácení najednou." }],
+      "options": [
+        { "label": "Krvácení zastavena nebo pod kontrolou — pokračovat na Dýchací cesty", "next": "A0", "tone": "success" }
+      ]
+    },
+
+    "A0": {
+      "code": "A.0", "letter": "A",
+      "title": "Zhodnocení dýchacích cest",
+      "intro": ["Masivní krvácení je pod kontrolou. Teď zkontroluj zda pacient může dýchat — bez průchodných dýchacích cest mozek odumírá za 4–6 minut.", "**Nejrychlejší test:** Polož otázku nebo zavolej jménem."],
+      "question": "Pacient odpovídá normálně a mluví v celých větách?",
+      "options": [
+        { "label": "ANO — mluví normálně", "next": "B0", "tone": "success", "hint": "Dýchací cesty jsou průchodné." },
+        { "label": "Vydává chrčivé, bublající nebo pískavé zvuky", "next": "A1", "tone": "warn", "hint": "Částečná obstrukce" },
+        { "label": "Nedýchá nebo nedává žádné zvuky, ale pohybuje hrudníkem", "next": "A2", "tone": "danger", "hint": "Úplná obstrukce" },
+        { "label": "Je při vědomí, ale má poranění krku nebo páteře", "next": "A3", "tone": "neutral" },
+        { "label": "Je v bezvědomí a nereaguje", "next": "A4", "tone": "danger" }
+      ]
+    },
+
+    "A1": {
+      "code": "A.1", "letter": "A",
+      "title": "Částečná obstrukce dýchacích cest",
+      "intro": ["Pacient dýchá, ale s obtížemi — v dýchacích cestách je překážka (krev, zvratky, uvolněný zub, otok)."],
+      "steps": [
+        { "n": 1, "title": "Odsátí", "text": "**Odsaj dýchací cesty** odsávačkou pokud je krev nebo zvratky — silná odsávačka, krev je hustá." },
+        { "n": 2, "title": "Záklon + brada", "text": "Zkus **záklon hlavy + zvednutí brady** — jedna ruka na čelo, prsty druhé ruky pod bradu, zakloníš hlavu a zvedneš bradu; posune kořen jazyka vpřed." },
+        { "n": 3, "title": "Nosní vzduchovod", "text": "Pokud nepomáhá: vlož **nosní vzduchovod (NPA)** — změkčená gumová trubička zasunutá nosem; funguje i u pacienta s polykacím reflexem; namazat gelem před zasunutím." },
+        { "n": 4, "title": "Ústní vzduchovod", "text": "Pokud má pacient hluboké bezvědomí bez polykacího reflexu: **ústní vzduchovod (Guedel)** — zahnutá plastová trubička, zasunout ústy; velikost změříš od koutu úst k ušnímu lalůčku." }
+      ],
+      "question": "Dýchá po zákroku tiše a rovnoměrně?",
+      "options": [
+        { "label": "ANO — dýchání se zlepšilo", "next": "B0", "tone": "success" },
+        { "label": "NE — stále obtížné dýchání", "next": "A2", "tone": "danger" }
+      ]
+    },
+
+    "A2": {
+      "code": "A.2", "letter": "A",
+      "title": "Úplná obstrukce nebo zastavené dýchání",
+      "intro": ["Pacient nedýchá nebo se vzduch nedostává do plic i přes viditelný pohyb hrudníku. Každá sekunda počítá."],
+      "question": "Vidíš nebo tušíš cizí těleso (jídlo, zub, předmět)?",
+      "options": [
+        { "label": "ANO — cizí těleso", "next": "A2_fb", "tone": "warn" },
+        { "label": "NE — žádné cizí těleso, jen nefungující dýchání", "next": "A2_tube", "tone": "danger" }
+      ]
+    },
+    "A2_fb": {
+      "code": "A.2", "letter": "A",
+      "title": "Odstranění cizího tělesa",
+      "intro": ["Heimlichův manévr (bdělý pacient) nebo prstem z úst (bezvědomý)."],
+      "warnings": [{ "tone": "warning", "text": "Nikdy nezasunuj slepě prstem, pokud nic nevidíš." }],
+      "options": [
+        { "label": "Dýchání obnoveno", "next": "B0", "tone": "success" },
+        { "label": "Stále neprůchodné — přejít na zajištění rourkou", "next": "A2_tube", "tone": "danger" }
+      ]
+    },
+    "A2_tube": {
+      "code": "A.2", "letter": "A",
+      "title": "Intubace (zajištění dýchacích cest rourkou)",
+      "steps": [
+        { "n": 1, "title": "BVM a kyslík", "text": "Připrav dýchací vak s maskou (BVM) a kyslík — začni ventilovat ihned, intubace je až druhá." },
+        { "n": 2, "title": "Videolaryngoskop", "text": "Videolaryngoskop jako první volba — kamera na čepeli zobrazí hrdlo na monitoru." },
+        { "n": 3, "title": "Zavedení rourky", "text": "Rourka přes hlasivky do průdušnice — ověř polohu třemi způsoby: CO₂ na konci výdechu (kapnometrie), poslech plic na obou stranách, pohled na zvedání hrudníku." },
+        { "n": 4, "title": "Fixace", "text": "Fixuj rourku — nenechávej déle než 30 minut bez fixace." }
+      ],
+      "options": [
+        { "label": "Dýchací cesty zajištěny — pokračovat na Dýchání", "next": "B0", "tone": "success" }
+      ]
+    },
+
+    "A3": {
+      "code": "A.3", "letter": "A",
+      "title": "Podezření na poranění krční páteře",
+      "intro": ["Úraz hlavy, krku nebo trupu, bolest šíje, brnění nebo slabost v rukách nebo nohou — to vše je důvodem k opatrnosti."],
+      "steps": [
+        { "n": 1, "title": "Jaw thrust", "text": "**POUZE výtah čelisti (Jaw Thrust)** — klekni za hlavu pacienta, prsty pod rohy dolní čelisti, posuň čelist dopředu; dýchací cesty se otevřou BEZ záklonu hlavy." },
+        { "n": 2, "title": "Krční límec", "text": "Nasaď **krční límec správné velikosti** — změříš čtyřmi prsty vzdálenost od klíční kosti k bradě." },
+        { "n": 3, "title": "Nosní vzduchovod", "text": "Nosní vzduchovod pokud je potřeba — kompatibilní s krčním límcem." }
+      ],
+      "warnings": [
+        { "tone": "critical", "text": "Záklon hlavy je ZAKÁZÁN — u nestabilní zlomeniny krčního obratle by záklon mohl přeříznout míchu." },
+        { "tone": "info", "text": "Hlídej: i pacient s límcem může ztratit průchodnost dýchacích cest — sleduj dýchání průběžně." }
+      ],
+      "options": [
+        { "label": "Dýchací cesty zajištěny, páteř fixována — pokračovat na Dýchání", "next": "B0", "tone": "success" }
+      ]
+    },
+
+    "A4": {
+      "code": "A.4", "letter": "A",
+      "title": "Pacient v bezvědomí",
+      "intro": ["Bezvědomý pacient ztratil schopnost udržet vlastní dýchací cesty otevřené — jazyk padá dozadu a ucpává hltan."],
+      "question": "Jak hluboké je bezvědomí?",
+      "options": [
+        { "label": "Reaguje na bolest (štípnutí do svalu na krku)", "next": "A1", "tone": "warn", "hint": "Použij NPA — nosní vzduchovod" },
+        { "label": "Nereaguje vůbec na žádný podnět", "next": "A2_tube", "tone": "danger", "hint": "Ihned dýchací vak + maska, zvaž intubaci" }
+      ],
+      "warnings": [{ "tone": "warning", "text": "GCS (skóre vědomí) 8 a méně = intubace povinná — pacient nemůže sám chránit dýchací cesty před zvratky." }]
+    },
+
+    "B0": {
+      "code": "B.0", "letter": "B",
+      "title": "Zhodnocení dýchání",
+      "intro": ["Dýchací cesty jsou průchodné. Teď zkontroluj zda vzduch skutečně proudí do plic a zda plíce fungují správně.", "**Sleduj 10 sekund:** pohyb hrudníku, barvu rtů a nehtů, dechovou frekvenci. **Nasaď oxymetr** na prst — zobrazí nasycení krve kyslíkem."],
+      "question": "Dýchá normálně a nasycení kyslíku je 94 % nebo více?",
+      "options": [
+        { "label": "ANO — normální dýchání, saturace v normě", "next": "C0", "tone": "success" },
+        { "label": "Dýchá příliš pomalu nebo mělce (pod 10 dechů/min)", "next": "B1", "tone": "warn" },
+        { "label": "Dýchá příliš rychle (nad 25 dechů/min)", "next": "B2", "tone": "warn" },
+        { "label": "Nasycení kyslíku pod 94 %", "next": "B3", "tone": "danger" },
+        { "label": "Nedýchá vůbec — apnoe", "next": "B4", "tone": "danger" },
+        { "label": "Hrudník se pohybuje nesymetricky", "next": "B5", "tone": "danger" },
+        { "label": "Má ránu na hrudníku", "next": "B6", "tone": "danger" }
+      ]
+    },
+
+    "B1": {
+      "code": "B.1", "letter": "B",
+      "title": "Příliš pomalé nebo mělké dýchání",
+      "intro": ["Pod 10 dechů za minutu nestačí vyměnit dostatek kyslíku. Mozek a orgány začnou chybět kyslík."],
+      "question": "Jaká je pravděpodobná příčina?",
+      "options": [
+        { "label": "Předávkování opioidy (morfin, fentanyl, uživatel drog)", "next": "B1_opioid", "tone": "neutral" },
+        { "label": "Bezvědomí, poranění mozku", "next": "B1_tbi", "tone": "neutral" },
+        { "label": "Podchlazení", "next": "B1_cold", "tone": "neutral" }
+      ]
+    },
+    "B1_opioid": {
+      "code": "B.1", "letter": "B",
+      "title": "Podezření na předávkování opioidy",
+      "intro": ["Naloxon 0,4–2 mg do žíly nebo nosem; opakuj každé 2 minuty pokud bez efektu; připrav dýchací vak.", "Vždy: kyslík maskou, asistuj dýchání vakem dokud se frekvence nevrátí do normy."],
+      "options": [{ "label": "Dýchání obnoveno nebo asistováno — pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+    "B1_tbi": {
+      "code": "B.1", "letter": "B",
+      "title": "Bezvědomí / poranění mozku",
+      "intro": ["Asistuj dýchání dýchacím vakem s kyslíkem 10–12 dechů za minutu; zvažuj intubaci.", "Vždy: kyslík maskou, asistuj dýchání vakem dokud se frekvence nevrátí do normy."],
+      "options": [{ "label": "Dýchání asistováno — pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+    "B1_cold": {
+      "code": "B.1", "letter": "B",
+      "title": "Podchlazení",
+      "intro": ["Dýchání se zpomaluje s klesající teplotou; ohřívání + asistence vakem.", "Vždy: kyslík maskou, asistuj dýchání vakem dokud se frekvence nevrátí do normy."],
+      "options": [{ "label": "Dýchání obnoveno nebo asistováno — pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+
+    "B2": {
+      "code": "B.2", "letter": "B",
+      "title": "Příliš rychlé dýchání",
+      "intro": ["Nad 25 dechů za minutu je příznak — tělo se s něčím vyrovnává. Rychlé dýchání samo zabít nejde, ale to co ho způsobuje, ano."],
+      "question": "Co může způsobovat rychlé dýchání?",
+      "options": [
+        { "label": "Bolest", "next": "B2_pain", "tone": "neutral" },
+        { "label": "Strach nebo panika", "next": "B2_fear", "tone": "neutral" },
+        { "label": "Šok nebo krvácení", "next": "C0", "tone": "danger", "hint": "Tělo kompenzuje nedostatek kyslíku — řeš příčinu v kroku C" },
+        { "label": "Nesymetrické dechové zvuky", "next": "B5", "tone": "danger" }
+      ]
+    },
+    "B2_pain": {
+      "code": "B.2", "letter": "B",
+      "title": "Rychlé dýchání z bolesti",
+      "intro": ["Analgetika (morfin 2–5 mg IV); rychlé dýchání z bolesti samo ustoupí po tlumení bolesti."],
+      "options": [{ "label": "Pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+    "B2_fear": {
+      "code": "B.2", "letter": "B",
+      "title": "Rychlé dýchání ze strachu nebo paniky",
+      "intro": ["Klidná komunikace, technika dýchání; kontrolované pomalé nádechy."],
+      "options": [{ "label": "Pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+
+    "B3": {
+      "code": "B.3", "letter": "B",
+      "title": "Nasycení kyslíku pod 94 %",
+      "intro": ["Krev přenáší méně kyslíku než by měla. Pod 90 % nastupují příznaky: zmatení, cyanóza (modré rty a nehty), ztráta vědomí."],
+      "steps": [
+        { "n": 1, "title": "Kyslík", "text": "**Kyslík maskou** — rezervoárová maska s průtokem 15 litrů za minutu dodá až 90–100 % kyslíku." },
+        { "n": 2, "title": "Příčina", "text": "Zkontroluj příčinu: špatně položená rourka? Vzduch v pohrudnicové dutině? Šok?" }
+      ],
+      "warnings": [
+        { "tone": "warning", "text": "Výjimka po zástavě srdce: po obnovení oběhu cíl 94–98 %, NE 100 % — přebytek kyslíku poškozuje buňky poraněného mozku." },
+        { "tone": "critical", "text": "Otravy CO (oxid uhelnatý): oxymetr zobrazí 98–99 % i když pacient umírá — nedůvěřuj mu v uzavřeném prostoru s generátorem nebo autem!" }
+      ],
+      "options": [{ "label": "Saturace stoupá nebo příčina řešena — pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+
+    "B4": {
+      "code": "B.4", "letter": "B",
+      "title": "Pacient nedýchá vůbec (apnoe)",
+      "intro": ["Dýchání se zastavilo. Toto je zástava dechu — mozek začíná odumírat."],
+      "steps": [
+        { "n": 1, "title": "Ventilace", "text": "Dýchací vak s maskou — 1 vdech každých 5 sekund (12 dechů za minutu)." },
+        { "n": 2, "title": "Kontrola vdechu", "text": "Každý vdech trvá 1 sekundu — vidíš zvedání hrudníku?" },
+        { "n": 3, "title": "Puls", "text": "Zkontroluj puls na krční tepně — zastavilo se i srdce?" }
+      ],
+      "question": "Je puls na krční tepně přítomen?",
+      "options": [
+        { "label": "Puls je přítomen — srdce bije", "next": "B4_vent", "tone": "warn" },
+        { "label": "Puls není — srdce se zastavilo", "next": "kpr", "tone": "danger", "hint": "Zástava srdce — protokol KPR" }
+      ]
+    },
+    "B4_vent": {
+      "code": "B.4", "letter": "B",
+      "title": "Pokračuj ve ventilaci",
+      "intro": ["Pokračuj ve ventilaci dýchacím vakem; zajisti rourkou."],
+      "options": [{ "label": "Dýchání obnoveno nebo asistováno — pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+
+    "B5": {
+      "code": "B.5", "letter": "B",
+      "title": "Hrudník se pohybuje nesymetricky",
+      "intro": ["Jedna strana hrudníku se pohybuje jinak než druhá — to je vždy abnormální."],
+      "question": "Co přesně pozoruješ?",
+      "options": [
+        { "label": "Jedna strana se téměř nehýbe + zhoršující saturace + pokles tlaku + napjaté žíly na krku", "next": "B6c", "tone": "danger", "hint": "Přetlak vzduchu v pohrudnicové dutině" },
+        { "label": "Část hrudníku se při nádechu propadá dovnitř (paradoxní pohyb)", "next": "B5_flail", "tone": "danger", "hint": "Volný segment žeber" },
+        { "label": "Dechové zvuky slyšíš jen na jedné straně", "next": "B6", "tone": "warn", "hint": "Vzduch nebo krev v pohrudnicové dutině" }
+      ]
+    },
+    "B5_flail": {
+      "code": "B.5", "letter": "B",
+      "title": "Volný segment žeber",
+      "intro": ["Tři nebo více sousedních žeber zlomených na dvou místech způsobí paradoxní pohyb hrudníku."],
+      "steps": [
+        { "n": 1, "title": "Léčba", "text": "Kyslík, analgetika, u těžkých případů intubace s ventilací." }
+      ],
+      "options": [{ "label": "Pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+
+    "B6": {
+      "code": "B.6", "letter": "B",
+      "title": "Rána na hrudníku",
+      "intro": ["Každá penetrující rána hrudníku je potenciálně smrtelná — vzduch může proudit otvorem dovnitř pohrudnicové dutiny a způsobit kolaps plíce."],
+      "question": "Má rána sací charakter? (slyšíš nebo cítíš vzduch pohybující se ránou?)",
+      "options": [
+        { "label": "ANO — sávající rána", "next": "B6a", "tone": "danger", "hint": "Otevřený pneumotorax" },
+        { "label": "NE — uzavřená rána nebo bodná rána bez sávání", "next": "B6b", "tone": "warn", "hint": "Možný hemotorax" },
+        { "label": "Stav se rychle zhoršuje (příznaky přetlaku)", "next": "B6c", "tone": "danger", "hint": "Tenzní pneumotorax" }
+      ]
+    },
+    "B6a": {
+      "code": "B.6a", "letter": "B",
+      "title": "Otevřený pneumotorax (sávající rána hrudníku)",
+      "intro": ["Vzduch vstupuje otvorem v hrudní stěně do pohrudnicové dutiny. Plíce se zhroutí."],
+      "steps": [
+        { "n": 1, "title": "Záplata", "text": "Větrací záplata s ventilkem (Hyfin Chest Seal nebo obdobná) na **vstupní ránu**." },
+        { "n": 2, "title": "Oba otvory", "text": "Pokud má rána i výstup — větrací záplata na **oba otvory**." },
+        { "n": 3, "title": "Princip ventilku", "text": "Ventilek záplaty umožňuje vzduchu vytékat ven, ale nenechá ho znovu vstoupit." }
+      ],
+      "warnings": [{ "tone": "critical", "text": "Nikdy nepoužívej záplatu bez ventilku — uzavřel bys vzduch uvnitř a způsobil přetlak." }],
+      "options": [{ "label": "Záplata přiložena — pokračovat na Oběh", "next": "C0", "tone": "success", "hint": "Sleduj zda se stav nezhoršuje (přetlak)" }]
+    },
+    "B6b": {
+      "code": "B.6b", "letter": "B",
+      "title": "Krev v pohrudnicové dutině (hemotorax)",
+      "intro": ["Krvácení do pohrudnicové dutiny stlačuje plíci."],
+      "steps": [
+        { "n": 1, "title": "Kyslík", "text": "Kyslík maskou." },
+        { "n": 2, "title": "Poloha", "text": "Poloha pacienta: polosed 30–45° (Fowlerova) — bránice se nadzvedne a plíce mají více místa." },
+        { "n": 3, "title": "Kanyly", "text": "Dvě kanyly, infúze." },
+        { "n": 4, "title": "Transport", "text": "Urgentní transport — krev v pohrudnicové dutině odstraní hrudní drenáž v nemocnici." }
+      ],
+      "options": [{ "label": "Pacient stabilizován — pokračovat na Oběh", "next": "C0", "tone": "success" }]
+    },
+    "B6c": {
+      "code": "B.6c", "letter": "B",
+      "title": "Přetlak vzduchu v pohrudnicové dutině (tenzní pneumotorax)",
+      "intro": ["Vzduch se hromadí v pohrudnicové dutině pod tlakem, stlačuje plíci a posouvá srdce. Srdce nemůže přijímat krev."],
+      "warnings": [{ "tone": "critical", "text": "URGENTNÍ STAV — smrt za 3–5 minut bez intervence." }],
+      "list": ["Nasycení kyslíku klesá i přes kyslík", "Krevní tlak klesá", "Žíly na krku jsou nápadně napjaté a viditelné", "Dechové zvuky na jedné straně chybí nebo jsou oslabené"],
+      "listTitle": "Příznaky všechny najednou",
+      "steps": [
+        { "n": 1, "title": "Jehla", "text": "Velká jehla (14 G, délka alespoň 8 cm) do **2. mezižeberního prostoru** (mezera mezi 2. a 3. žebrem)." },
+        { "n": 2, "title": "Místo vpichu", "text": "Ve svislé čáře dolů od středu klíční kosti." },
+        { "n": 3, "title": "Nad žebro", "text": "Jdi **nad horní okraj žebra** — pod každým žebrem vede tepna, žíla a nerv; přes ně bys je poranil." },
+        { "n": 4, "title": "Zavedení", "text": "Zasunout jehlu, uslyšíš nebo ucítíš únik vzduchu pod tlakem — to je správně." },
+        { "n": 5, "title": "Katetr", "text": "Ponechej plastikový katetr v místě a jehlu vytáhni." }
+      ],
+      "options": [{ "label": "Vzduch unikl, stav se zlepšuje — pokračovat na Oběh", "next": "C0", "tone": "success", "hint": "V nemocnici hrudní drenáž" }]
+    },
+
+    "C0": {
+      "code": "C.0", "letter": "C",
+      "title": "Zhodnocení krevního oběhu",
+      "intro": ["Dýchání je zajištěno. Teď zkontroluj zda krev správně cirkuluje a zásobuje orgány kyslíkem.", "**Nahmatej puls na zápěstí (na straně palce).**"],
+      "options": [
+        { "label": "Puls silný a pravidelný", "next": "C1", "tone": "success" },
+        { "label": "Puls slabý, nitkovitý nebo nepravidelný", "next": "C2", "tone": "warn" },
+        { "label": "Puls na zápěstí není", "next": "C3", "tone": "danger" },
+        { "label": "Žádný puls nikde", "next": "kpr", "tone": "danger", "hint": "Zástava srdce — protokol KPR" }
+      ]
+    },
+
+    "C1": {
+      "code": "C.1", "letter": "C",
+      "title": "Měření krevního tlaku a zhodnocení oběhu",
+      "intro": ["Puls přítomen, změříš krevní tlak."],
+      "question": "Jak vysoký je krevní tlak (horní číslo)?",
+      "options": [
+        { "label": "100–139 mmHg — normální", "next": "D0", "tone": "success", "hint": "Zkontroluj barvu/teplotu kůže a kapilární návrat (norma do 2 s)" },
+        { "label": "90–99 mmHg — lehký pokles", "next": "C4", "tone": "warn", "hint": "Sleduj trend, připrav infúzi" },
+        { "label": "Pod 90 mmHg — šok", "next": "C4", "tone": "danger" },
+        { "label": "Nad 160 mmHg — zvýšený", "next": "C5", "tone": "warn" }
+      ]
+    },
+
+    "C2": {
+      "code": "C.2", "letter": "C",
+      "title": "Slabý nebo nitkovitý puls",
+      "intro": ["Slabý puls znamená že srdce čerpá, ale buď pumpa selhává, nebo nemá co čerpat (krevní ztráta)."],
+      "list": ["Kůže bledá, studená, potivá", "Pacient úzkostný nebo zmatený", "Čas návratu barvy pod nehtem nad 4 sekundy"],
+      "listTitle": "Zkontroluj příznaky šoku",
+      "options": [{ "label": "Příznaky šoku přítomny", "next": "C4", "tone": "danger" }]
+    },
+
+    "C3": {
+      "code": "C.3", "letter": "C",
+      "title": "Puls na zápěstí chybí",
+      "intro": ["Puls na zápěstí mizí když krevní tlak klesne pod přibližně 80 mmHg.", "**Nahmatej puls na krční tepně (po stranách průdušnice).**"],
+      "options": [
+        { "label": "Puls na krku je přítomen", "next": "C4", "tone": "warn", "hint": "Tlak je velmi nízký — okamžitě řeš šok" },
+        { "label": "Puls na krku není", "next": "kpr", "tone": "danger", "hint": "Zástava srdce — protokol KPR" }
+      ]
+    },
+
+    "C4": {
+      "code": "C.4", "letter": "C",
+      "title": "Šok — rozpoznání a léčba",
+      "intro": ["Šok je stav kdy orgány nedostávají dostatek kyslíku. Existuje více typů — léčba se liší!"],
+      "question": "Jaký typ šoku vidíš?",
+      "options": [
+        { "label": "Kůže bledá, studená, potivá + rychlý puls + krvácení nebo úraz", "next": "C4_hypovolemic", "tone": "danger", "hint": "Krvácivý (hypovolemický) šok" },
+        { "label": "Kůže teplá a zarudlá + rychlý puls + bez krvácení + možná infekce/alergie", "next": "C4_distributive", "tone": "warn", "hint": "Distributivní šok" },
+        { "label": "Napjaté žíly na krku + pokles tlaku + rychlý puls + bez krvácení", "next": "C4_obstructive", "tone": "danger", "hint": "Přetlak v pohrudnici nebo tamponáda" },
+        { "label": "POMALÝ puls + teplá zarudlá kůže + poranění páteře", "next": "C4_neurogenic", "tone": "warn", "hint": "Neurogenní šok" },
+        { "label": "Slabý puls + suché plicní zvuky + napjaté žíly na krku + bez úrazu", "next": "C4_cardiogenic", "tone": "danger", "hint": "Kardiogenní šok" }
+      ]
+    },
+    "C4_hypovolemic": {
+      "code": "C.4", "letter": "C",
+      "title": "Krvácivý (hypovolemický) šok",
+      "intro": ["Tělo ztratilo krev."],
+      "list": ["Zastavit krvácení (viz krok X — pokud stále krvácí, vrať se k ošetření zdroje)", "Ringerův laktát 500 ml IV", "Cíl tlaku 80–90 mmHg", "Záchranná deka"],
+      "options": [
+        { "label": "Léčba zahájena — pokračovat na Vědomí", "next": "D0", "tone": "success" },
+        { "label": "↺ Krvácení stále pokračuje — zpět na X", "next": "X1", "tone": "ghost" }
+      ]
+    },
+    "C4_distributive": {
+      "code": "C.4", "letter": "C",
+      "title": "Distributivní šok",
+      "intro": ["Cévy jsou příliš rozšířené."],
+      "list": ["Alergie: adrenalin 0,3 mg do svalu stehna IHNED · infúze · kyslík", "Sepse: agresivní infúze · transport"],
+      "options": [{ "label": "Léčba zahájena — pokračovat na Vědomí", "next": "D0", "tone": "success" }]
+    },
+    "C4_obstructive": {
+      "code": "C.4", "letter": "C",
+      "title": "Přetlak v pohrudnici nebo tamponáda srdce",
+      "intro": ["Napjaté žíly na krku + pokles tlaku bez krvácení — dvě možné příčiny."],
+      "list": ["Přetlak vzduchu v pohrudnici: velká jehla ihned (postup jehlové dekomprese — viz B.6c)", "Tamponáda srdce: perikardiocentéza — pouze lékař; urgentní transport"],
+      "options": [{ "label": "Léčba zahájena — pokračovat na Vědomí", "next": "D0", "tone": "success" }]
+    },
+    "C4_neurogenic": {
+      "code": "C.4", "letter": "C",
+      "title": "Neurogenní šok",
+      "intro": ["Poranění páteře přerušilo sympatické nervy."],
+      "list": ["Opatrná infúze", "Vazopresorické léky v nemocnici", "Nestřádat tekutiny"],
+      "options": [{ "label": "Léčba zahájena — pokračovat na Vědomí", "next": "D0", "tone": "success" }]
+    },
+    "C4_cardiogenic": {
+      "code": "C.4", "letter": "C",
+      "title": "Kardiogenní šok",
+      "intro": ["Srdce selhalo jako pumpa."],
+      "list": ["Tekutiny NE (přetíží srdce)", "Kyslík", "Transport na kardiologii", "Vazopresorické léky"],
+      "options": [{ "label": "Léčba zahájena — pokračovat na Vědomí", "next": "D0", "tone": "success" }]
+    },
+
+    "C5": {
+      "code": "C.5", "letter": "C",
+      "title": "Zvýšený krevní tlak",
+      "intro": ["Nad 160 mmHg — samo o sobě není vždy urgentní, záleží na klinickém stavu."],
+      "question": "Má pacient příznaky?",
+      "options": [
+        { "label": "Silná bolest hlavy + zrakové poruchy + nevolnost", "next": "C5_crisis", "tone": "danger", "hint": "Hypertenzní krize" },
+        { "label": "Příznaky mozkové mrtvice", "next": "C5_stroke", "tone": "danger" },
+        { "label": "Bez příznaků", "next": "D0", "tone": "success", "hint": "Sleduj, transport" }
+      ]
+    },
+    "C5_crisis": {
+      "code": "C.5", "letter": "C",
+      "title": "Hypertenzní krize",
+      "intro": ["Urgentní transport; **v terénu tlak nesnižovat** — rychlý pokles je nebezpečný."],
+      "options": [{ "label": "Pokračovat na Vědomí", "next": "D0", "tone": "success" }]
+    },
+    "C5_stroke": {
+      "code": "C.5", "letter": "C",
+      "title": "Příznaky mozkové mrtvice",
+      "intro": ["U mrtvice je hypertenze záměrná kompenzace; **NESNIŽOVAT**; transport do iktového centra."],
+      "options": [{ "label": "Pokračovat na Vědomí", "next": "D0", "tone": "success" }]
+    },
+
+    "D0": {
+      "code": "D.0", "letter": "D",
+      "title": "Zhodnocení vědomí",
+      "intro": ["Krevní oběh je pod kontrolou. Teď zhodnoť stav mozku — jak dobře pacient reaguje na okolí?"],
+      "question": "Rychlý test vědomí",
+      "options": [
+        { "label": "Je bdělý, orientovaný, odpovídá přesně na otázky", "next": "D2", "tone": "success", "hint": "Plné vědomí" },
+        { "label": "Reaguje na oslovení nebo dotek, ale je zmatený nebo ospalý", "next": "D1", "tone": "warn", "hint": "Snížené vědomí" },
+        { "label": "Reaguje jen na bolest (štípnutí)", "next": "D1", "tone": "danger", "hint": "Hluboké bezvědomí" },
+        { "label": "Nereaguje vůbec", "next": "D1", "tone": "danger", "hint": "Nejhlubší bezvědomí" }
+      ]
+    },
+
+    "D1": {
+      "code": "D.1", "letter": "D",
+      "title": "Snížené nebo žádné vědomí",
+      "intro": ["Pacient nereaguje normálně — mozek nedostává dostatek kyslíku, nebo je přímo poraněn, nebo je pod vlivem látky."],
+      "steps": [
+        { "n": 1, "title": "Glukometr", "text": "**Glukometr IHNED** — hladina cukru pod 60 mg/dL; podej silný cukrový roztok (50 ml 50% glukózy) do žíly; nízký cukr způsobí totožné příznaky jako mozková mrtvice nebo poranění mozku." },
+        { "n": 2, "title": "Dýchací cesty", "text": "Zkontroluj dýchací cesty — bezvědomý pacient je nemůže udržet sám." },
+        { "n": 3, "title": "GCS", "text": "Pokud GCS (skóre vědomí) 8 a méně → intubace (viz A.4)." },
+        { "n": 4, "title": "Kyslík", "text": "Kyslík maskou nebo rourkou." }
+      ],
+      "options": [{ "label": "Po stabilizaci — pokračovat na Zornice", "next": "D2", "tone": "success" }]
+    },
+
+    "D2": {
+      "code": "D.2", "letter": "D",
+      "title": "Zornice a neurologické vyšetření",
+      "intro": ["Svítilnou svítíš do každého oka zvlášť — zornice musí reagovat (stáhnout se) a obě musí být stejně velké."],
+      "question": "Co vidíš?",
+      "options": [
+        { "label": "Obě zornice stejně velké, obě reagují na světlo", "next": "D3", "tone": "success", "hint": "Normální neurologický nález" },
+        { "label": "Jedna zornice větší než druhá (anizokorie)", "next": "D3a", "tone": "danger" },
+        { "label": "Obě zornice velmi malé, tečkovité", "next": "D3b", "tone": "warn" },
+        { "label": "Obě zornice velmi velké, nereagují", "next": "D3c", "tone": "danger" }
+      ]
+    },
+
+    "D3": {
+      "code": "D.3", "letter": "D",
+      "title": "Normální neurologický nález",
+      "intro": ["Zornice v pořádku, vědomí dobré nebo jen lehce snížené."],
+      "list": ["Pohybuje všemi čtyřmi končetinami aktivně?", "Cítí dotyk na všech čtyřech?", "Jsou přítomny zvláštní pohyby (záškuby, trhání)?"],
+      "listTitle": "Zkontroluj celkově",
+      "options": [
+        { "label": "Vše v pořádku", "next": "E0", "tone": "success" },
+        { "label": "Slabost jedné strany těla nebo jedné končetiny", "next": "D4", "tone": "danger" },
+        { "label": "Záškuby nebo křeče", "next": "D5", "tone": "danger" }
+      ]
+    },
+
+    "D3a": {
+      "code": "D.3a", "letter": "D",
+      "title": "Různě velké zornice (anizokorie)",
+      "intro": ["Různě velké zornice jsou alarmující nález — zpravidla znamenají jednostranné poranění mozku nebo rostoucí krvácení uvnitř lebky."],
+      "steps": [
+        { "n": 1, "title": "Transport", "text": "Toto je neurologická urgence — urychli transport na neurochirurgii." },
+        { "n": 2, "title": "Tlak", "text": "Udržuj krevní tlak minimálně 90 mmHg — mozek potřebuje zásobení krví." },
+        { "n": 3, "title": "Saturace", "text": "Nasycení kyslíkem 94–99 %." },
+        { "n": 4, "title": "Ventilace", "text": "CO₂ na konci výdechu 35–45 mmHg — normální ventilace (nepřeventilovat!)." },
+        { "n": 5, "title": "Sledování", "text": "Sleduj vědomí každé 2 minuty — pokles o 2 body = neurochirurgie telefonicky ihned." }
+      ],
+      "warnings": [{ "tone": "warning", "text": "Lucidní interval: pacient po úrazu hovoří normálně, pak se rychle zhorší — to je klasický průběh epidurálního krvácení. Nenech se zmást — stav se zhorší." }],
+      "options": [{ "label": "Pokračovat na Odkrytí (urgentní transport paralelně)", "next": "E0", "tone": "success" }]
+    },
+
+    "D3b": {
+      "code": "D.3b", "letter": "D",
+      "title": "Velmi malé tečkovité zornice",
+      "intro": ["Tečkovité zornice jsou charakteristickým příznakem předávkování opioidy (morfin, heroin, fentanyl, tramadol)."],
+      "steps": [
+        { "n": 1, "title": "Dýchání", "text": "Zkontroluj dýchání — opioidy ho tlumí; připrav dýchací vak." },
+        { "n": 2, "title": "Naloxon", "text": "**Naloxon 0,4–2 mg** do žíly nebo nosem — opakuj každé 2–3 minuty pokud bez efektu." },
+        { "n": 3, "title": "Opatrnost", "text": "Opatrně u závislých pacientů — příliš rychlé podání způsobí abstinenční záchvat." }
+      ],
+      "warnings": [{ "tone": "info", "text": "Účinek naloxonu trvá kratší dobu než účinek opioidů — klidně se vrátí; sleduj a opakuj." }],
+      "options": [{ "label": "Pacient se probouzí nebo je dýchání asistováno — pokračovat na Odkrytí", "next": "E0", "tone": "success" }]
+    },
+
+    "D3c": {
+      "code": "D.3c", "letter": "D",
+      "title": "Velké nereagující zornice",
+      "intro": ["Velké zornice nereagující na světlo mohou znamenat víc věcí."],
+      "options": [
+        { "label": "Stimulancia nebo kokain v anamnéze + agitace + rychlý puls", "next": "E0", "tone": "danger", "hint": "Sympatomimetická otrava — benzodiazepiny na agitaci; chlazení při přehřátí" },
+        { "label": "Hluboké bezvědomí bez jiné příčiny + poranění hlavy", "next": "E0", "tone": "danger", "hint": "Těžké poranění mozku nebo herniace — urgentní neurochirurgie" },
+        { "label": "Poranění oka samotného", "next": "E0", "tone": "neutral", "hint": "Lokální příčina — zkontroluj druhé oko" }
+      ]
+    },
+
+    "D4": {
+      "code": "D.4", "letter": "D",
+      "title": "Slabost jedné strany těla",
+      "intro": ["Jednostranná slabost nebo ochrnutí — mozek nebo mícha jsou poraněny na jedné straně."],
+      "question": "Předcházel úraz?",
+      "options": [
+        { "label": "ANO — úraz hlavy nebo páteře", "next": "D4_trauma", "tone": "danger" },
+        { "label": "NE — bez úrazu, náhlý začátek", "next": "D4_stroke", "tone": "danger", "hint": "Podezření na mozkovou mrtvici" }
+      ]
+    },
+    "D4_trauma": {
+      "code": "D.4", "letter": "D",
+      "title": "Poranění mozku nebo míchy",
+      "intro": ["Znehybnit páteř; urgentní transport na neurochirurgii."],
+      "options": [{ "label": "Pokračovat na Odkrytí", "next": "E0", "tone": "success" }]
+    },
+    "D4_stroke": {
+      "code": "D.4", "letter": "D",
+      "title": "Mozková mrtvice",
+      "intro": ["Zkontroluj čas začátku příznaků (naposledy v normálu?); glukometr."],
+      "options": [{ "label": "Pokračovat na Odkrytí s aktivací iktového centra", "next": "E0", "tone": "success" }]
+    },
+
+    "D5": {
+      "code": "D.5", "letter": "D",
+      "title": "Záchvat nebo křeče",
+      "intro": ["Pacient má záchvat nebo právě záchvat skončil."],
+      "question": "Záchvat právě probíhá?",
+      "options": [
+        { "label": "ANO — záchvat trvá", "next": "D5_active", "tone": "danger" },
+        { "label": "NE — záchvat skončil, postiktální stav", "next": "D5_post", "tone": "warn" }
+      ]
+    },
+    "D5_active": {
+      "code": "D.5", "letter": "D",
+      "title": "Probíhající záchvat",
+      "list": ["Glukometr ihned — nízký cukr je nejčastější příčina; silný cukrový roztok IV", "Záchvat nad 5 minut: Midazolam 10 mg nosem nebo 5 mg do žíly; opakovat po 5 minutách", "Chraň hlavu, odstraň okolní předměty; nedržet silou; nevkládat nic do úst"],
+      "options": [{ "label": "Pokračovat na Odkrytí", "next": "E0", "tone": "success" }]
+    },
+    "D5_post": {
+      "code": "D.5", "letter": "D",
+      "title": "Postiktální stav (po záchvatu)",
+      "list": ["Otočit na bok — pacient po záchvatu nemá reflexy a může vdechnout zvratky", "Nosní vzduchovod, kyslík", "Glukometr; hledat příčinu záchvatu"],
+      "options": [{ "label": "Pokračovat na Odkrytí", "next": "E0", "tone": "success" }]
+    },
+
+    "E0": {
+      "code": "E.0", "letter": "E",
+      "title": "Systematické odkrytí a vyšetření celého těla",
+      "intro": ["Krvácení je pod kontrolou, dýchání zajištěno, oběh stabilizován, vědomí zhodnoceno. Teď musíš odkrýt celé tělo a hledat zranění, která mohla uniknout prvnímu pohledu — 30 % závažných zranění se přehlédne přes oblečení."],
+      "steps": [
+        { "n": 1, "title": "Odstřižení", "text": "Záchranářskými nůžkami odstřihni oblečení od středu ven." },
+        { "n": 2, "title": "Postup", "text": "Postupuj systematicky: **hlava → uši → krk → hrudník → břicho → pánev → záda → končetiny**." },
+        { "n": 3, "title": "Deka", "text": "Po prohlídce ihned přikryj záchrannou dekou — podchlazení je součást smrtelné trojice." }
+      ],
+      "options": [{ "label": "Zahájit vyšetření od hlavy", "next": "E1", "tone": "primary" }]
+    },
+
+    "E1": {
+      "code": "E.1", "letter": "E",
+      "title": "Hlava",
+      "list": ["Rány, prohlubně nebo nestabilita klenby lebky", "Krev nebo průhledná tekutina z uší nebo nosu", "Brýlový hematom — modré zabarvení kolem obou očí", "Hematom za uchem (Battle sign)"],
+      "listTitle": "Co kontroluješ",
+      "question": "Co vidíš?",
+      "options": [
+        { "label": "Krev/tekutina z uší nebo nosu / brýlový hematom / Battle sign", "next": "E1_base", "tone": "danger", "hint": "Zlomenina spodiny lební" },
+        { "label": "Viditelná rána na hlavě", "next": "E1_wound", "tone": "warn" },
+        { "label": "Nic nenalezeno", "next": "E2", "tone": "success" }
+      ]
+    },
+    "E1_base": {
+      "code": "E.1", "letter": "E",
+      "title": "Zlomenina spodiny lební",
+      "warnings": [{ "tone": "critical", "text": "Nosní vzduchovod NEZASOUVAT nosem pokud je krev z nosu — hrozí průnik do mozku." }],
+      "options": [{ "label": "Urgentní transport na neurochirurgii — pokračovat na Krk", "next": "E2", "tone": "success" }]
+    },
+    "E1_wound": {
+      "code": "E.1", "letter": "E",
+      "title": "Viditelná rána na hlavě",
+      "intro": ["Hlavové rány výrazně krvácí ale zpravidla nejsou primárně život ohrožující."],
+      "options": [{ "label": "Sterilní gáza + lehký tlak — pokračovat na Krk", "next": "E2", "tone": "success" }]
+    },
+
+    "E2": {
+      "code": "E.2", "letter": "E",
+      "title": "Krk",
+      "list": ["Polohu průdušnice — je uprostřed nebo odchyluje se na stranu?", "Žíly na krku — jsou nápadně napjaté a viditelné?", "Bolest při pohmatu podél celé páteře od hlavy dolů", "Rány nebo hematomy"],
+      "listTitle": "Co kontroluješ",
+      "question": "Co vidíš?",
+      "options": [
+        { "label": "Průdušnice se odchyluje na stranu", "next": "B6c", "tone": "danger", "hint": "Přetlak vzduchu v pohrudnici — zpět na B.6c" },
+        { "label": "Žíly na krku nápadně napjaté a viditelné", "next": "C4_obstructive", "tone": "danger", "hint": "Přetlak nebo tamponáda srdce" },
+        { "label": "Bolest podél páteře nebo nestabilita", "next": "E2_spine", "tone": "warn" },
+        { "label": "Nic nenalezeno", "next": "E3", "tone": "success" }
+      ]
+    },
+    "E2_spine": {
+      "code": "E.2", "letter": "E",
+      "title": "Podezření na poranění páteře",
+      "intro": ["Krční límec pokud není nasazen; log-roll pro záda; vakuová matrace nebo páteřní deska."],
+      "options": [{ "label": "Pokračovat na Hrudník", "next": "E3", "tone": "success" }]
+    },
+
+    "E3": {
+      "code": "E.3", "letter": "E",
+      "title": "Hrudník",
+      "list": ["Pohybuje se hrudník symetricky na obou stranách?", "Jsou přítomny rány (vstup nebo výstup)?", "Bolestivé nebo nestabilní žebra?", "Dechové zvuky stetoskopem na obou stranách?"],
+      "listTitle": "Co kontroluješ",
+      "question": "Co vidíš?",
+      "options": [
+        { "label": "Část hrudníku se pohybuje paradoxně", "next": "B5_flail", "tone": "danger", "hint": "Volný segment žeber" },
+        { "label": "Rána na hrudníku", "next": "B6", "tone": "danger" },
+        { "label": "Na jedné straně neslyšíš dechové zvuky", "next": "B6", "tone": "warn" },
+        { "label": "Bolestivá žebra bez jiných příznaků", "next": "E3_ribs", "tone": "warn" },
+        { "label": "Nic nenalezeno", "next": "E4", "tone": "success" }
+      ]
+    },
+    "E3_ribs": {
+      "code": "E.3", "letter": "E",
+      "title": "Bolestivá žebra bez jiných příznaků",
+      "intro": ["Analgetika; sleduj nasycení kyslíku."],
+      "options": [{ "label": "Pokračovat na Břicho", "next": "E4", "tone": "success" }]
+    },
+
+    "E4": {
+      "code": "E.4", "letter": "E",
+      "title": "Břicho",
+      "list": ["Je břicho tuhé nebo bolestivé při pohmatech?", "Jsou viditelné modřiny v linii bezpečnostního pásu?", "Je břicho nápadně nadmuté?", "Jsou viditelné rány?"],
+      "listTitle": "Co kontroluješ",
+      "question": "Co vidíš?",
+      "options": [
+        { "label": "Tuhé nebo bolestivé břicho", "next": "E4_rigid", "tone": "danger", "hint": "Zánět pobřišnice nebo vnitřní krvácení" },
+        { "label": "Modřiny v linii bezpečnostního pásu", "next": "E4_belt", "tone": "warn" },
+        { "label": "Rána na břiše / vypadlé střevo nebo orgán", "next": "E4_evisc", "tone": "danger" },
+        { "label": "Nic nenalezeno", "next": "E5", "tone": "success" }
+      ]
+    },
+    "E4_rigid": {
+      "code": "E.4", "letter": "E",
+      "title": "Tuhé nebo bolestivé břicho",
+      "intro": ["Příznak zánětu pobřišnice nebo vnitřního krvácení (ruptura sleziny, jater nebo jiného orgánu)."],
+      "list": ["Dvě kanyly, infúze", "Záchranná deka", "Okamžitý transport — vnitřní krvácení zastaví pouze chirurg"],
+      "options": [{ "label": "Pokračovat na Pánev", "next": "E5", "tone": "success" }]
+    },
+    "E4_belt": {
+      "code": "E.4", "letter": "E",
+      "title": "Modřiny v linii bezpečnostního pásu",
+      "intro": ["Příznak vnitřního poranění pod místem pásu (střeva, mezenterium). Transport — i bez bolesti může být poranění skryté."],
+      "options": [{ "label": "Pokračovat na Pánev", "next": "E5", "tone": "success" }]
+    },
+    "E4_evisc": {
+      "code": "E.4", "letter": "E",
+      "title": "Rána na břiše / vypadlé střevo nebo orgán",
+      "intro": ["Sterilní vlhká gáza na orgány — **nepotlačovat zpět**. Plastová fólie nebo záchranná deka na vlhkou gázu — udržet vlhko a teplo."],
+      "options": [{ "label": "Pokračovat na Pánev", "next": "E5", "tone": "success" }]
+    },
+
+    "E5": {
+      "code": "E.5", "letter": "E",
+      "title": "Pánev",
+      "warnings": [{ "tone": "critical", "text": "Pánev vyšetřuješ JEDNOU jedinou jemnou kompresí z obou stran — neopakovat! Opakovaná komprese narušuje sraženiny a zhoršuje krvácení." }],
+      "list": ["Jemná komprese pánve z obou stran zároveň — cítíš pohyb nebo slyšíš skřípání?", "Je přítomna bolest?"],
+      "listTitle": "Co kontroluješ",
+      "question": "Co vidíš?",
+      "options": [
+        { "label": "Nestabilní pánev — pohyb, skřípání nebo silná bolest", "next": "E5_unstable", "tone": "danger" },
+        { "label": "Nic nenalezeno", "next": "E6", "tone": "success" }
+      ]
+    },
+    "E5_unstable": {
+      "code": "E.5", "letter": "E",
+      "title": "Zlomenina pánve",
+      "intro": ["Nejnebezpečnější zlomenina — ztráta krve až 5 litrů!"],
+      "list": ["Pánevní pás T-POD nebo improvizované stočené prostěradlo pevně kolem pánve ihned", "Dvě velké kanyly, agresivní infúze", "Záchranná deka; urgentní transport"],
+      "options": [{ "label": "Pokračovat na Záda", "next": "E6", "tone": "success" }]
+    },
+
+    "E6": {
+      "code": "E.6", "letter": "E",
+      "title": "Záda (Log-Roll)",
+      "intro": ["Záda vyšetřuješ tak, že otočíš pacienta — **log-roll technikou** (jako jeden celek bez rotace páteře).", "**Co potřebuješ:** minimálně 3 záchranáři — vedoucí drží hlavu a koordinuje, druhý drží trup, třetí pánev a nohy. Na pokyn „jedna, dvě, tři — otáčíme“ se otočí jako jeden celek."],
+      "list": ["Rány nebo hematomy na zádech", "Bolest při pohmatech podél celé páteře", "Hmatatelný „schod“ v ose páteře"],
+      "listTitle": "Co kontroluješ",
+      "question": "Co vidíš?",
+      "options": [
+        { "label": "Rána na zádech", "next": "E6_wound", "tone": "warn" },
+        { "label": "Bolest páteře nebo hmatatelný schod", "next": "E6_spine", "tone": "danger" },
+        { "label": "Nic nenalezeno", "next": "E7", "tone": "success" }
+      ]
+    },
+    "E6_wound": {
+      "code": "E.6", "letter": "E",
+      "title": "Rána na zádech",
+      "intro": ["Zkontroluj zda je vstupní nebo výstupní otvor střelné rány; sterilní gáza."],
+      "options": [{ "label": "Pokračovat na Končetiny", "next": "E7", "tone": "success" }]
+    },
+    "E6_spine": {
+      "code": "E.6", "letter": "E",
+      "title": "Poranění páteře",
+      "intro": ["Vakuová matrace nebo páteřní deska."],
+      "options": [{ "label": "Pokračovat na Končetiny", "next": "E7", "tone": "success" }]
+    },
+
+    "E7": {
+      "code": "E.7", "letter": "E",
+      "title": "Končetiny",
+      "list": ["Viditelná deformita, zkrácení nebo nepřirozená rotace?", "Hmatatelné skřípání nebo pohyb kostních úlomků?", "Puls na konci končetiny (zápěstí / nárt)?", "Citlivost a schopnost pohybu prstů?"],
+      "listTitle": "Co kontroluješ pro každou ze čtyř končetin",
+      "question": "Co vidíš?",
+      "options": [
+        { "label": "Deformita nebo nestabilita — zlomenina", "next": "E7_fracture", "tone": "warn" },
+        { "label": "Chybějící puls na konci končetiny", "next": "E7_ischemia", "tone": "danger" },
+        { "label": "Deformita nebo zkrácení stehna (femur)", "next": "E7_femur", "tone": "danger" },
+        { "label": "Nic nenalezeno na žádné končetině", "next": "E8", "tone": "success" }
+      ]
+    },
+    "E7_fracture": {
+      "code": "E.7", "letter": "E",
+      "title": "Zlomenina končetiny",
+      "list": ["Zafixovat v poloze jak je — nikdy nevyrovnávat", "Vakuová dlaha nebo tuhé dlahy; fixovat kloub nad a pod zlomeninou", "Zkontrolovat puls, citlivost a pohyb po dlahování"],
+      "options": [{ "label": "Pokračovat na Závěr", "next": "E8", "tone": "success" }]
+    },
+    "E7_ischemia": {
+      "code": "E.7", "letter": "E",
+      "title": "Cévní poranění (chybějící puls)",
+      "intro": ["Ischemie (nedokrvení) tkáně nastupuje do 6 hodin."],
+      "list": ["Jeden šetrný pokus o jemnou podélnou trakci", "Urgentní chirurgie"],
+      "options": [{ "label": "Pokračovat na Závěr", "next": "E8", "tone": "success" }]
+    },
+    "E7_femur": {
+      "code": "E.7", "letter": "E",
+      "title": "Zlomenina stehenní kosti (femur)",
+      "intro": ["Bez trakční dlahy vteče 1–3 litry krve do stehna."],
+      "list": ["Trakční dlaha POVINNĚ", "Analgetika PŘED přiložením trakce", "Trakce dokud pacient nehlásí úlevu od bolesti"],
+      "options": [{ "label": "Pokračovat na Závěr", "next": "E8", "tone": "success" }]
+    },
+
+    "E8": {
+      "code": "E.8", "letter": "E",
+      "title": "Záchranná deka a závěr primárního vyšetření",
+      "intro": ["Bezprostředně po odkrytí zakryj pacienta záchrannou dekou — odráží 90 % tělesného tepla zpět k pacientovi. Prohlídka kompletní."],
+      "warnings": [{ "tone": "warning", "text": "Proč záchranná deka ihned: odkrytý pacient při vyšetření rychle ztrácí teplo. Podchlazení + překyselení krve + porucha srážení tvoří smrtelnou trojici, která exponenciálně zvyšuje riziko úmrtí — a je preventabilní." }],
+      "options": [{ "label": "Pokračovat na Závěr", "next": "E9", "tone": "primary" }]
+    },
+
+    "E9": {
+      "code": "E.9", "letter": "E",
+      "title": "Primární vyšetření dokončeno",
+      "intro": ["Prošel jsi celé XABCDE. Máš přehled o stavu pacienta."],
+      "question": "Jak rozhodneš?",
+      "options": [
+        { "label": "Stav je kritický — nestabilní vitální funkce nebo poranění vyžadující urgentní chirurgii", "next": "E9_load", "tone": "danger" },
+        { "label": "Stav je stabilní — vitální funkce v normě, žádná bezprostřední hrozba", "next": "E9_stay", "tone": "success" },
+        { "label": "Pacient odmítá transport (AMA)", "next": "E9_ama", "tone": "warn" }
+      ]
+    },
+    "E9_load": {
+      "code": "E.9", "letter": "E",
+      "title": "Load and Go",
+      "final": true,
+      "list": ["Maximálně 10 minut na místě celkem", "Zbytek vyšetření a léčby probíhá za jízdy do traumacentra", "Avizuj nemocnici: typ poranění, věk, pohlaví, vitální funkce, čas příjezdu"],
+      "endNote": "Primární vyšetření dokončeno — pacient směřuje do traumacentra."
+    },
+    "E9_stay": {
+      "code": "E.9", "letter": "E",
+      "title": "Stay and Play",
+      "final": true,
+      "list": ["Proveď sekundární vyšetření (od hlavy k patě v klidu) ještě na místě", "Transport bez sirén a světel pokud stav dovoluje"],
+      "endNote": "Primární vyšetření dokončeno — pacient je stabilní."
+    },
+    "E9_ama": {
+      "code": "E.9", "letter": "E",
+      "title": "Pacient odmítá transport (AMA)",
+      "final": true,
+      "list": ["Informuj o rizicích", "Zdokumentuj odmítnutí", "Zajisti podpis pacienta nebo svědka"],
+      "warnings": [{ "tone": "info", "text": "Záchranář odchází — toto právo pacienta je absolutní." }],
+      "endNote": "Primární vyšetření dokončeno — pacient odmítl transport."
+    },
+
+    "kpr": {
+      "code": "KPR", "letter": null,
+      "title": "Zástava srdce",
+      "final": true,
+      "intro": ["Puls nenalezen — jde o zástavu srdce."],
+      "warnings": [{ "tone": "critical", "text": "Tento nástroj pokrývá primární vyšetření XABCDE. Protokol KPR (kardiopulmonální resuscitace) je samostatný postup mimo tento algoritmus." }],
+      "endNote": "Přejdi na protokol KPR."
+    }
+  }
+}

@@ -12,23 +12,6 @@ function inlineMd(str) {
   return escapeHtml(str).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
 }
 
-function renderGlossary(abbrevs, terms) {
-  if ((!abbrevs || !abbrevs.length) && (!terms || !terms.length)) return "";
-  let html = '<div class="glossary-row">';
-  if (abbrevs && abbrevs.length) {
-    html += `<div class="glossary-box abbr"><div class="glossary-label">${emsIcon("book", "icon-sm")} Použité zkratky</div><div class="glossary-list">`;
-    html += abbrevs.map(x => `<span class="glossary-item"><b>${escapeHtml(x.a)}</b> = ${escapeHtml(x.f)}</span>`).join('<span class="glossary-item">·</span>');
-    html += "</div></div>";
-  }
-  if (terms && terms.length) {
-    html += `<div class="glossary-box term"><div class="glossary-label">${emsIcon("clipboard", "icon-sm")} Odborné pojmy</div><div class="glossary-list">`;
-    html += terms.map(x => `<span class="glossary-item"><b>${escapeHtml(x.t)}</b> = ${escapeHtml(x.d)}</span>`).join('<span class="glossary-item">·</span>');
-    html += "</div></div>";
-  }
-  html += "</div>";
-  return html;
-}
-
 function renderTable(block) {
   const caption = block.caption ? `<div class="table-caption">${escapeHtml(block.caption)}</div>` : "";
   const thead = `<thead><tr>${block.headers.map(h => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead>`;
@@ -91,7 +74,6 @@ function renderSummaryBox(summary, sectionId) {
 
 function renderSection(section) {
   const lead = section.lead ? `<p class="section-lead">${inlineMd(section.lead)}</p>` : "";
-  const glossary = renderGlossary(section.abbrevs, section.terms);
   const blocks = (section.blocks || []).map(renderBlock).join("");
   const summary = renderSummaryBox(section.summary, section.id);
   const anchor = "sec-" + section.id.replace(/\./g, "-");
@@ -101,7 +83,6 @@ function renderSection(section) {
   return `<section class="section-block" id="${anchor}" data-sec-id="${escapeHtml(section.id)}">
     ${heading}
     ${lead}
-    ${glossary}
     ${blocks}
     ${summary}
   </section>`;
@@ -127,7 +108,6 @@ function renderTOC(chapter) {
 
 function renderChapterPage(chapter, prevMeta, nextMeta) {
   const partLabel = EMS_PARTS[chapter.part] || "";
-  const glossary = renderGlossary(chapter.abbrevs, chapter.terms);
   const intro = chapter.intro ? `<p class="ch-intro">${inlineMd(chapter.intro)}</p>` : "";
   const sectionsHtml = (chapter.sections || []).map(renderSection).join("");
   const pager = `<div class="ch-pager">
@@ -141,7 +121,6 @@ function renderChapterPage(chapter, prevMeta, nextMeta) {
     <div class="ch-eyebrow"><span class="ch-icon-wrap">${emsIcon(chapter.icon, "icon-sm")}</span> Kapitola ${escapeHtml(chapter.number)}</div>
     <h1 class="ch-title">${escapeHtml(chapter.title)}</h1>
     ${intro}
-    ${glossary}
     ${chapter.sections && chapter.sections.length > 1 ? renderTOC(chapter) : ""}
     ${sectionsHtml}
     ${renderChapterSummary(chapter)}
