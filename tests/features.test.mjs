@@ -41,6 +41,10 @@ test("a call records choices and produces a copyable injury report", async () =>
   assert.match(pageSource, /Vygenerovat záznam o zraněné osobě/);
   assert.match(toolsSource, /\*\*PRŮBĚH VYŠETŘENÍ A OŠETŘENÍ\*\*/);
   assert.match(toolsSource, /Zkopírovat záznam/);
+  assert.match(toolsSource, /Jméno ošetřujícího EMS/);
+  assert.match(toolsSource, /\*\*Ošetřující EMS:\*\*/);
+  assert.match(toolsSource, /Odeslat na Discord/);
+  assert.match(toolsSource, /Odesláno ✓/);
   assert.match(toolsSource, /formatClock\(record\.at\)/);
   assert.match(toolsSource, /Zapsáno ✓/);
 });
@@ -76,6 +80,8 @@ test("GitHub Pages builds and deploys the static export from Actions", async () 
   assert.match(workflow, /actions\/upload-pages-artifact@v4/);
   assert.match(workflow, /actions\/deploy-pages@v4/);
   assert.match(workflow, /NEXT_PUBLIC_BASE_PATH/);
+  assert.match(workflow, /NEXT_PUBLIC_SITE_URL/);
+  assert.match(workflow, /vars\.DISCORD_BRIDGE_URL/);
   assert.match(workflow, /npm run build:pages/);
   assert.match(workflow, /path: \.\/out/);
 });

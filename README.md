@@ -19,6 +19,7 @@ revidován proti aktuálním doporučením uvedeným v
 - samostatný dospělý resuscitační režim s dvouminutovým cyklem, výboji a 4H/4T,
 - kontexty pro těhotenství, vyšší věk/křehkost, antikoagulaci a popáleniny,
 - závěrečný záznam se jménem, pohlavím, místem převzetí a úplnou chronologií,
+- povinné uvedení ošetřujícího a odeslání přes skrytý serverový most na Discord,
 - výstup připravený ke zkopírování,
 - offline PWA režim a volitelný režim pro rukavice,
 - návrat na předchozí krok a zahájení nového výjezdu odkudkoli,
@@ -33,6 +34,8 @@ revidován proti aktuálním doporučením uvedeným v
 - `app/globals.css` — vzhled, responzivita a animace,
 - `public/manifest.webmanifest` a `public/sw.js` — instalace a offline provoz,
 - `MEDICAL_REVIEW.md` — medicínská revize a odůvodnění hlavních korekcí,
+- `DISCORD_SETUP.md` — bezpečné propojení Discord webhooku krok za krokem,
+- `discord-bridge/` — serverový most, který chrání tajnou URL webhooku,
 - `tests/` — kontrola grafu, funkcí a produkčního renderu.
 
 ## Nasazení na GitHub Pages
@@ -51,6 +54,11 @@ repozitáře (`uzivatel.github.io/nazev-repozitare/`).
 Název repozitáře není potřeba zapisovat do zdrojového kódu. Workflow jej zjistí
 automaticky a při sestavení nastaví správnou cestu k JavaScriptu, manifestu,
 ikoně i offline režimu.
+
+Pro odesílání záznamů nastavte v GitHub Actions veřejnou proměnnou
+`DISCORD_BRIDGE_URL`. Discord webhook patří výhradně do Cloudflare secrets.
+Kompletní postup je v
+[`DISCORD_SETUP.md`](./DISCORD_SETUP.md).
 
 Statický výstup lze vytvořit také lokálně:
 

@@ -33,6 +33,6 @@ test("server renders the FIELD XABCDE guide", async () => {
   assert.match(html, /Jedna osoba\. Jeden krok\./);
   assert.match(html, /Začít nový výjezd/);
   assert.match(html, /XABCDE/);
-  assert.doesNotMatch(html, /\bRP\b|EMS|OOC/i);
+  assert.doesNotMatch(html, /\bRP\b|OOC/i);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });

@@ -109,6 +109,16 @@ const pickupLocations = [
   "Mount Chiliad",
 ];
 
+const discordBridgeUrl =
+  process.env.NEXT_PUBLIC_DISCORD_BRIDGE_URL?.trim() ?? "";
+
+function getDiscordReportsEndpoint(baseUrl: string) {
+  const normalized = baseUrl.replace(/\/+$/, "");
+  return normalized.endsWith("/reports")
+    ? normalized
+    : `${normalized}/reports`;
+}
+
 export function formatClock(timestamp: number) {
   return new Intl.DateTimeFormat("cs-CZ", {
     hour: "2-digit",
@@ -717,16 +727,23 @@ export function InjuryReportPanel({
   startedAt: number | null;
 }) {
   const [name, setName] = useState("");
+  const [responderName, setResponderName] = useState("");
   const [sex, setSex] = useState("");
   const [location, setLocation] = useState("");
   const [generatedAt, setGeneratedAt] = useState<number | null>(null);
   const [copied, setCopied] = useState(false);
+  const [sendStatus, setSendStatus] = useState<
+    "idle" | "sending" | "sent" | "error"
+  >("idle");
+  const [sendError, setSendError] = useState("");
 
   useEffect(() => {
     if (!open) return;
     const resetGenerated = window.setTimeout(() => {
       setGeneratedAt(null);
       setCopied(false);
+      setSendStatus("idle");
+      setSendError("");
     }, 0);
     return () => window.clearTimeout(resetGenerated);
   }, [open]);
@@ -762,6 +779,7 @@ export function InjuryReportPanel({
       "**ZÁZNAM O ZRANĚNÉ OSOBĚ**",
       "",
       `**Jméno:** ${name.trim() || "Nezjištěno"}`,
+      `**Ošetřující EMS:** ${responderName.trim()}`,
       `**Pohlaví:** ${sex}`,
       `**Místo převzetí:** ${location}`,
       `**Zahájení výjezdu:** ${
@@ -782,7 +800,16 @@ export function InjuryReportPanel({
       "",
       `**Záznam vytvořen:** ${formatReportDate(generatedAt)}`,
     ].join("\n");
-  }, [generatedAt, location, name, records, riskFlags, sex, startedAt]);
+  }, [
+    generatedAt,
+    location,
+    name,
+    records,
+    responderName,
+    riskFlags,
+    sex,
+    startedAt,
+  ]);
 
   const copyReport = async () => {
     try {
@@ -791,6 +818,51 @@ export function InjuryReportPanel({
       window.setTimeout(() => setCopied(false), 1800);
     } catch {
       setCopied(false);
+    }
+  };
+
+  const sendToDiscord = async () => {
+    if (!report || !generatedAt || !discordBridgeUrl) return;
+
+    setSendStatus("sending");
+    setSendError("");
+
+    try {
+      const response = await fetch(getDiscordReportsEndpoint(discordBridgeUrl), {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          report,
+          patientName: name.trim() || "Nezjištěno",
+          responderName: responderName.trim(),
+          sex,
+          location,
+          generatedAt,
+        }),
+      });
+
+      const payload = (await response.json().catch(() => null)) as {
+        error?: string;
+      } | null;
+
+      if (!response.ok) {
+        const fallback =
+          response.status === 403
+            ? "Odesílání z této adresy webu není povolené."
+            : "Discord záznam nepřijal. Zkuste to znovu.";
+        throw new Error(payload?.error || fallback);
+      }
+
+      setSendStatus("sent");
+    } catch (error) {
+      setSendStatus("error");
+      setSendError(
+        error instanceof Error && !(error instanceof TypeError)
+          ? error.message
+          : "Nepodařilo se spojit s Discord mostem. Zkontrolujte jeho adresu a povolenou doménu.",
+      );
     }
   };
 
@@ -805,8 +877,8 @@ export function InjuryReportPanel({
       {!generatedAt ? (
         <div className="report-form">
           <p className="tool-intro">
-            Jméno je volitelné. Pohlaví a místo převzetí jsou pro vytvoření
-            záznamu povinné.
+            Jméno osoby je volitelné. Jméno ošetřujícího, pohlaví a místo
+            převzetí jsou pro vytvoření záznamu povinné.
           </p>
           <label>
             Jméno osoby — volitelné
@@ -814,6 +886,15 @@ export function InjuryReportPanel({
               value={name}
               onChange={(event) => setName(event.target.value)}
               placeholder="Při neznámé totožnosti ponechte prázdné"
+            />
+          </label>
+          <label>
+            Jméno ošetřujícího EMS
+            <input
+              value={responderName}
+              onChange={(event) => setResponderName(event.target.value)}
+              placeholder="Jméno osoby, která záznam vytváří"
+              autoComplete="name"
             />
           </label>
           <fieldset>
@@ -849,8 +930,12 @@ export function InjuryReportPanel({
           <button
             type="button"
             className="primary-tool-button full-width generate-report-button"
-            disabled={!sex || !location}
-            onClick={() => setGeneratedAt(Date.now())}
+            disabled={!responderName.trim() || !sex || !location}
+            onClick={() => {
+              setSendStatus("idle");
+              setSendError("");
+              setGeneratedAt(Date.now());
+            }}
           >
             Vygenerovat záznam
           </button>
@@ -866,10 +951,64 @@ export function InjuryReportPanel({
             >
               {copied ? "Zkopírováno" : "Zkopírovat záznam"}
             </button>
-            <button type="button" onClick={() => setGeneratedAt(null)}>
+            <button
+              type="button"
+              onClick={() => {
+                setGeneratedAt(null);
+                setSendStatus("idle");
+                setSendError("");
+              }}
+            >
               Upravit údaje
             </button>
           </div>
+          <section className="discord-send-card" aria-label="Odeslání na Discord">
+            <div className="discord-send-heading">
+              <span aria-hidden="true">↗</span>
+              <div>
+                <strong>Odeslat do místnosti se záznamy</strong>
+                <small>
+                  Na Discord se odešle přehled i úplný textový soubor.
+                </small>
+              </div>
+            </div>
+            {discordBridgeUrl ? (
+              <>
+                <button
+                  type="button"
+                  className={`discord-send-button ${
+                    sendStatus === "sent" ? "is-sent" : ""
+                  }`}
+                  disabled={
+                    sendStatus === "sending" ||
+                    sendStatus === "sent"
+                  }
+                  onClick={sendToDiscord}
+                >
+                  {sendStatus === "sending"
+                    ? "Odesílám…"
+                    : sendStatus === "sent"
+                      ? "Odesláno ✓"
+                      : "Odeslat na Discord"}
+                </button>
+                {sendStatus === "sent" && (
+                  <p className="discord-send-success" role="status">
+                    Záznam byl uložen do Discord místnosti.
+                  </p>
+                )}
+                {sendStatus === "error" && (
+                  <p className="discord-send-error" role="alert">
+                    {sendError}
+                  </p>
+                )}
+              </>
+            ) : (
+              <p className="discord-not-configured">
+                Discord zatím není propojený. Záznam lze stále zkopírovat;
+                postup propojení je v souboru DISCORD_SETUP.md.
+              </p>
+            )}
+          </section>
         </div>
       )}
     </ModalShell>

@@ -3,11 +3,18 @@ import "./globals.css";
 
 const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const publicAsset = (path: string) => `${publicBasePath}${path}`;
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://field-ems-guide.matasekov.chatgpt.site";
+const socialImageUrl = `${siteUrl.replace(/\/+$/, "")}/og.png`;
+const title = "FIELD — Průvodce XABCDE";
+const description =
+  "Offline průvodce primárním vyšetřením dospělé osoby podle XABCDE s časovou osou, automatickým návrhem léčiv a závěrečným záznamem.";
 
 export const metadata: Metadata = {
-  title: "FIELD — Průvodce XABCDE",
-  description:
-    "Offline průvodce primárním vyšetřením dospělé osoby podle XABCDE s časovou osou, automatickým návrhem léčiv a závěrečným záznamem.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
   manifest: publicAsset("/manifest.webmanifest"),
   appleWebApp: {
     capable: true,
@@ -17,6 +24,26 @@ export const metadata: Metadata = {
   icons: {
     icon: publicAsset("/favicon.svg"),
     shortcut: publicAsset("/favicon.svg"),
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title,
+    description,
+    images: [
+      {
+        url: socialImageUrl,
+        width: 1732,
+        height: 908,
+        alt: "FIELD — Průvodce XABCDE",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [socialImageUrl],
   },
 };
 

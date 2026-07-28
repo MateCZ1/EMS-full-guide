@@ -36,6 +36,7 @@ jobs:
         shell: bash
         run: |
           repository_name="${GITHUB_REPOSITORY#*/}"
+          owner_name="${GITHUB_REPOSITORY_OWNER,,}"
           if [[ "$repository_name" == *.github.io ]]; then
             base_path=""
           else
@@ -43,12 +44,15 @@ jobs:
           fi
           echo "GITHUB_PAGES=true" >> "$GITHUB_ENV"
           echo "NEXT_PUBLIC_BASE_PATH=$base_path" >> "$GITHUB_ENV"
+          echo "NEXT_PUBLIC_SITE_URL=https://${owner_name}.github.io${base_path}" >> "$GITHUB_ENV"
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build static site
         run: npm run build:pages
+        env:
+          NEXT_PUBLIC_DISCORD_BRIDGE_URL: ${{ vars.DISCORD_BRIDGE_URL }}
 
       - name: Disable Jekyll processing
         run: touch out/.nojekyll
