@@ -2,15 +2,15 @@
   "name": "FIELD — Průvodce XABCDE",
   "short_name": "FIELD",
   "description": "Offline průvodce primárním vyšetřením dospělé osoby podle XABCDE.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#071517",
   "theme_color": "#071517",
   "lang": "cs",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"

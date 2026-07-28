@@ -11,6 +11,8 @@
   --warning: #ffcd72;
   --background: #071517;
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
+  --font-geist-sans: Arial, Helvetica, sans-serif;
+  --font-geist-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 * {

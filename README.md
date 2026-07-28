@@ -35,6 +35,32 @@ revidován proti aktuálním doporučením uvedeným v
 - `MEDICAL_REVIEW.md` — medicínská revize a odůvodnění hlavních korekcí,
 - `tests/` — kontrola grafu, funkcí a produkčního renderu.
 
+## Nasazení na GitHub Pages
+
+Projekt obsahuje automatické nasazení přes GitHub Actions a funguje jak na
+adrese uživatelského webu (`uzivatel.github.io`), tak v podsložce běžného
+repozitáře (`uzivatel.github.io/nazev-repozitare/`).
+
+1. Nahrajte do repozitáře celý obsah projektu včetně skryté složky `.github`.
+2. Na GitHubu otevřete `Settings` → `Pages`.
+3. U `Build and deployment` nastavte `Source` na `GitHub Actions`.
+4. Odešlete změny do větve `main`, případně workflow spusťte ručně na kartě
+   `Actions` → `Deploy GitHub Pages`.
+5. Po dokončení se adresa webu zobrazí v přehledu nasazení a v nastavení Pages.
+
+Název repozitáře není potřeba zapisovat do zdrojového kódu. Workflow jej zjistí
+automaticky a při sestavení nastaví správnou cestu k JavaScriptu, manifestu,
+ikoně i offline režimu.
+
+Statický výstup lze vytvořit také lokálně:
+
+```bash
+GITHUB_PAGES=true NEXT_PUBLIC_BASE_PATH=/nazev-repozitare npm run build:pages
+```
+
+Hotové soubory budou ve složce `out`. Pro repozitář pojmenovaný
+`uzivatel.github.io` ponechte `NEXT_PUBLIC_BASE_PATH` prázdnou.
+
 ## Lokální spuštění
 
 Projekt vyžaduje Node.js 22.13 nebo novější.

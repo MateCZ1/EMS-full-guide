@@ -53,7 +53,29 @@ test("offline manifest and service worker contain the app shell", async () => {
   const manifest = JSON.parse(manifestText);
 
   assert.equal(manifest.display, "standalone");
-  assert.equal(manifest.start_url, "/");
+  assert.equal(manifest.start_url, ".");
+  assert.equal(manifest.scope, ".");
   assert.match(serviceWorker, /manifest\.webmanifest/);
+  assert.match(serviceWorker, /self\.registration\.scope/);
+  assert.match(serviceWorker, /scopedPath\("\/"\)/);
   assert.match(serviceWorker, /caches\.open/);
+});
+
+test("GitHub Pages builds and deploys the static export from Actions", async () => {
+  const [nextConfig, workflow] = await Promise.all([
+    readFile(new URL("../next.config.ts", import.meta.url), "utf8"),
+    readFile(
+      new URL("../.github/workflows/deploy-pages.yml", import.meta.url),
+      "utf8",
+    ),
+  ]);
+
+  assert.match(nextConfig, /output: "export"/);
+  assert.match(nextConfig, /basePath: githubPagesBasePath/);
+  assert.match(workflow, /actions\/configure-pages@v5/);
+  assert.match(workflow, /actions\/upload-pages-artifact@v4/);
+  assert.match(workflow, /actions\/deploy-pages@v4/);
+  assert.match(workflow, /NEXT_PUBLIC_BASE_PATH/);
+  assert.match(workflow, /npm run build:pages/);
+  assert.match(workflow, /path: \.\/out/);
 });

@@ -18,6 +18,8 @@ import {
 } from "./guide-data";
 import { medications } from "./medication-data";
 
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 type HistoryEntry = {
   nodeId: string;
   recordId?: string;
@@ -140,9 +142,11 @@ export default function Home() {
     }, 0);
 
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch(() => {
-        // Offline support is progressive and must not block the guide.
-      });
+      navigator.serviceWorker
+        .register(`${publicBasePath}/sw.js`)
+        .catch(() => {
+          // Offline support is progressive and must not block the guide.
+        });
     }
 
     return () => {

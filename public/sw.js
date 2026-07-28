@@ -1,5 +1,12 @@
-const CACHE_NAME = "field-guide-v3";
-const APP_SHELL = ["/", "/manifest.webmanifest", "/favicon.svg"];
+const SCOPE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
+const CACHE_NAMESPACE = `field-guide:${SCOPE_PATH || "/"}`;
+const CACHE_NAME = `${CACHE_NAMESPACE}:v4`;
+const scopedPath = (path) => `${SCOPE_PATH}${path}`;
+const APP_SHELL = [
+  scopedPath("/"),
+  scopedPath("/manifest.webmanifest"),
+  scopedPath("/favicon.svg"),
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -17,7 +24,12 @@ self.addEventListener("activate", (event) => {
       .then((names) =>
         Promise.all(
           names
-            .filter((name) => name !== CACHE_NAME)
+            .filter(
+              (name) =>
+                name !== CACHE_NAME &&
+                (name.startsWith(`${CACHE_NAMESPACE}:`) ||
+                  (SCOPE_PATH === "" && name.startsWith("field-guide-v"))),
+            )
             .map((name) => caches.delete(name)),
         ),
       )
@@ -37,14 +49,16 @@ self.addEventListener("fetch", (event) => {
         .then((response) => {
           if (response.ok) {
             const copy = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put("/", copy));
+            caches
+              .open(CACHE_NAME)
+              .then((cache) => cache.put(scopedPath("/"), copy));
           }
           return response;
         })
         .catch(async () => {
           return (
             (await caches.match(request)) ??
-            (await caches.match("/")) ??
+            (await caches.match(scopedPath("/"))) ??
             Response.error()
           );
         }),
