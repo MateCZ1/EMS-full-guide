@@ -75,6 +75,10 @@
               "140–180 mg/dL na JIP"
             ]
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "icu-monitor-hotspot"
         }
       ],
       "summary": [

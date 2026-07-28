@@ -14,12 +14,32 @@
         {
           "type": "table",
           "caption": "Diagnostika v nemocnici",
-          "headers": ["Vyšetření", "Kdy ho ordinujeme", "Co hledáme"],
+          "headers": [
+            "Vyšetření",
+            "Kdy ho ordinujeme",
+            "Co hledáme"
+          ],
           "rows": [
-            ["RTG (rentgen)", "Každé pohmoždění, kde nelze vyloučit zlomeninu", "Zlomeniny, cizí tělesa, vzduch v kloubní dutině"],
-            ["Ultrazvuk pohybového aparátu", "Suspektní ruptura svalu, šlachy nebo vazu", "Přerušení kontinuity tkáně, hematom"],
-            ["MRI (magnetická rezonance)", "Nejasný nález, podezření na poranění chrupavky nebo menisků", "Detailní zobrazení měkkých tkání, chrupavky, vazů"],
-            ["Scintigrafie skeletu", "Opakované nebo přetrvávající příznaky", "Stresové zlomeniny, kostní poranění nezobrazitelná na RTG"]
+            [
+              "RTG (rentgen)",
+              "Každé pohmoždění, kde nelze vyloučit zlomeninu",
+              "Zlomeniny, cizí tělesa, vzduch v kloubní dutině"
+            ],
+            [
+              "Ultrazvuk pohybového aparátu",
+              "Suspektní ruptura svalu, šlachy nebo vazu",
+              "Přerušení kontinuity tkáně, hematom"
+            ],
+            [
+              "MRI (magnetická rezonance)",
+              "Nejasný nález, podezření na poranění chrupavky nebo menisků",
+              "Detailní zobrazení měkkých tkání, chrupavky, vazů"
+            ],
+            [
+              "Scintigrafie skeletu",
+              "Opakované nebo přetrvávající příznaky",
+              "Stresové zlomeniny, kostní poranění nezobrazitelná na RTG"
+            ]
           ]
         },
         {
@@ -42,25 +62,61 @@
       "id": "11.2",
       "title": "Zlomeniny — nemocniční ošetření",
       "abbrevs": [
-        { "a": "OR", "f": "Operating Room — operační sál" },
-        { "a": "ORIF", "f": "Open Reduction Internal Fixation — otevřená repozice a vnitřní fixace — chirurgická metoda ošetření zlomenin" },
-        { "a": "IM", "f": "Intramedullary — nitrodřeňový (hřeb zavedený do kosti)" },
-        { "a": "DVT", "f": "Deep Vein Thrombosis — trombóza hlubokých žil — krevní sraženina v žíle" },
-        { "a": "PE", "f": "Pulmonary Embolism — plicní embolie" },
-        { "a": "VTE", "f": "Venous Thromboembolism — žilní tromboembolismus" },
-        { "a": "LMWH", "f": "Low Molecular Weight Heparin — nízkomolekulární heparin — prevence trombózy" }
+        {
+          "a": "OR",
+          "f": "Operating Room — operační sál"
+        },
+        {
+          "a": "ORIF",
+          "f": "Open Reduction Internal Fixation — otevřená repozice a vnitřní fixace — chirurgická metoda ošetření zlomenin"
+        },
+        {
+          "a": "IM",
+          "f": "Intramedullary — nitrodřeňový (hřeb zavedený do kosti)"
+        },
+        {
+          "a": "DVT",
+          "f": "Deep Vein Thrombosis — trombóza hlubokých žil — krevní sraženina v žíle"
+        },
+        {
+          "a": "PE",
+          "f": "Pulmonary Embolism — plicní embolie"
+        },
+        {
+          "a": "VTE",
+          "f": "Venous Thromboembolism — žilní tromboembolismus"
+        },
+        {
+          "a": "LMWH",
+          "f": "Low Molecular Weight Heparin — nízkomolekulární heparin — prevence trombózy"
+        }
       ],
       "lead": "V nemocnici se zlomeniny ošetřují konzervativně (sádrová fixace, ortéza, klid) nebo chirurgicky (vnitřní fixace dlahou nebo hřebem, zevní fixace). Volba závisí na typu zlomeniny, přítomnosti cévního nebo nervového poranění a celkovém stavu pacienta.",
       "blocks": [
         {
           "type": "table",
           "caption": "Diagnostika zlomenin",
-          "headers": ["Vyšetření", "Informace"],
+          "headers": [
+            "Vyšetření",
+            "Informace"
+          ],
           "rows": [
-            ["RTG ve 2 projekcích", "Základní zobrazení: typ, posun, angulace, kloubní postižení"],
-            ["CT se 3D rekonstrukcí", "Komplexní kloubní zlomeniny (pánev, kyčel, kotník), zlomeniny páteře — přesná operační plánování"],
-            ["Angiografie nebo CT angiografie", "Suspektní poranění tepny distálně (chybějící puls, bledost, ischemie)"],
-            ["Dopplerův ultrazvuk cév", "Posouzení průtoku krve distálně od zlomeniny"]
+            [
+              "RTG ve 2 projekcích",
+              "Základní zobrazení: typ, posun, angulace, kloubní postižení"
+            ],
+            [
+              "CT se 3D rekonstrukcí",
+              "Komplexní kloubní zlomeniny (pánev, kyčel, kotník), zlomeniny páteře — přesná operační plánování"
+            ],
+            [
+              "Angiografie nebo CT angiografie",
+              "Suspektní poranění tepny distálně (chybějící puls, bledost, ischemie)"
+            ],
+            [
+              "Dopplerův ultrazvuk cév",
+              "Posouzení průtoku krve distálně od zlomeniny"
+            ]
           ]
         },
         {
@@ -74,12 +130,32 @@
         {
           "type": "table",
           "caption": "Chirurgická léčba zlomenin",
-          "headers": ["Metoda", "Kdy ji volíme", "Specifika"],
+          "headers": [
+            "Metoda",
+            "Kdy ji volíme",
+            "Specifika"
+          ],
           "rows": [
-            ["Nitrodřeňový hřeb (IM Nail)", "Zlomeniny diafýzy (středu) dlouhých kostí — femur, tibia, humerus", "Minimálně invazivní; umožňuje brzkou zátěž; nízká infekční komplikace"],
-            ["Destička a šrouby (Plate & Screws, ORIF)", "Periarticulární zlomeniny, zlomeniny dolního konce kosti vřetenní, kotníku", "Otevřená repozice — přesná; riziko infekce vyšší než u hřebu"],
-            ["Zevní fixátor (External Fixator)", "Otevřené zlomeniny, masivní znečištění, nestabilní pacient", "Dočasná stabilizace; definitivní chirurgie později; ranná infekce dostupná k ošetření"],
-            ["Kloubní náhrada (Arthroplasty)", "Zlomeniny hlavice femuru, těžká kloubní drcení u starších pacientů", "Přímá mobilizace pooperačně"]
+            [
+              "Nitrodřeňový hřeb (IM Nail)",
+              "Zlomeniny diafýzy (středu) dlouhých kostí — femur, tibia, humerus",
+              "Minimálně invazivní; umožňuje brzkou zátěž; nízká infekční komplikace"
+            ],
+            [
+              "Destička a šrouby (Plate & Screws, ORIF)",
+              "Periarticulární zlomeniny, zlomeniny dolního konce kosti vřetenní, kotníku",
+              "Otevřená repozice — přesná; riziko infekce vyšší než u hřebu"
+            ],
+            [
+              "Zevní fixátor (External Fixator)",
+              "Otevřené zlomeniny, masivní znečištění, nestabilní pacient",
+              "Dočasná stabilizace; definitivní chirurgie později; ranná infekce dostupná k ošetření"
+            ],
+            [
+              "Kloubní náhrada (Arthroplasty)",
+              "Zlomeniny hlavice femuru, těžká kloubní drcení u starších pacientů",
+              "Přímá mobilizace pooperačně"
+            ]
           ]
         },
         {
@@ -112,14 +188,42 @@
         {
           "type": "table",
           "caption": "Standardní diagnostický protokol při přijetí",
-          "headers": ["Vyšetření", "Čas od příjmu", "Co hledáme"],
+          "headers": [
+            "Vyšetření",
+            "Čas od příjmu",
+            "Co hledáme"
+          ],
           "rows": [
-            ["FAST ultrazvuk", "Do 2 minut", "Krev v břiše, hemoperikard (krev kolem srdce), hemothorax"],
-            ["RTG hrudníku + pánve (mobilní)", "Do 3 minut", "Pneumothorax, hemothorax, zlomenina pánve"],
-            ["CT celého těla (pan-scan)", "Do 10–15 minut po stabilizaci", "Kompletní traumatologická diagnostika: mozek, krk, hrudník, břicho, pánev, páteř"],
-            ["CT angiografie aorty", "Při podezření na poranění aorty (mechanismus, RTG nález)", "Disekce nebo ruptura aorty"],
-            ["EKG", "Při příjmu a opakovaně", "Myokardiální kontuze (pohmnoždění srdce), arytmie"],
-            ["Odběr krve — trauma panel", "Ihned", "Krevní obraz, koagulace, laktát, troponin, krevní skupina, kříž"]
+            [
+              "FAST ultrazvuk",
+              "Do 2 minut",
+              "Krev v břiše, hemoperikard (krev kolem srdce), hemothorax"
+            ],
+            [
+              "RTG hrudníku + pánve (mobilní)",
+              "Do 3 minut",
+              "Pneumothorax, hemothorax, zlomenina pánve"
+            ],
+            [
+              "CT celého těla (pan-scan)",
+              "Do 10–15 minut po stabilizaci",
+              "Kompletní traumatologická diagnostika: mozek, krk, hrudník, břicho, pánev, páteř"
+            ],
+            [
+              "CT angiografie aorty",
+              "Při podezření na poranění aorty (mechanismus, RTG nález)",
+              "Disekce nebo ruptura aorty"
+            ],
+            [
+              "EKG",
+              "Při příjmu a opakovaně",
+              "Myokardiální kontuze (pohmnoždění srdce), arytmie"
+            ],
+            [
+              "Odběr krve — trauma panel",
+              "Ihned",
+              "Krevní obraz, koagulace, laktát, troponin, krevní skupina, kříž"
+            ]
           ]
         },
         {
@@ -129,13 +233,43 @@
         {
           "type": "table",
           "caption": "Don Juan Syndrome — vzestupný vzorec poranění při pádu na chodidla",
-          "headers": ["Pořadí", "Kost", "Typické poranění", "Léčba"],
+          "headers": [
+            "Pořadí",
+            "Kost",
+            "Typické poranění",
+            "Léčba"
+          ],
           "rows": [
-            ["1.", "Patní kost (calcaneus)", "Drtivá zlomenina s destrukcí subtalarního kloubu", "CT paty; rekonstrukce dlahou nebo kloubní náhrada"],
-            ["2.", "Holenní kost (tibia) — distální", "Pilon fraktura (drcení kloubní plochy kotníku)", "Zevní fixace → ORIF destičkami"],
-            ["3.", "Stehenní kost (femur)", "Zlomenina krčku nebo hlavy femuru", "Nitrodřeňový hřeb nebo kloubní náhrada"],
-            ["4.", "Bederní obratle (L1–L3)", "Kompresní nebo výbuchová zlomenina obratle", "CT páteře; konzervativně nebo fixace šrouby"],
-            ["5.", "Základna lební", "Zlomenina přední jámy lební", "CT mozku; konzervativně nebo neurochirurgie"]
+            [
+              "1.",
+              "Patní kost (calcaneus)",
+              "Drtivá zlomenina s destrukcí subtalarního kloubu",
+              "CT paty; rekonstrukce dlahou nebo kloubní náhrada"
+            ],
+            [
+              "2.",
+              "Holenní kost (tibia) — distální",
+              "Pilon fraktura (drcení kloubní plochy kotníku)",
+              "Zevní fixace → ORIF destičkami"
+            ],
+            [
+              "3.",
+              "Stehenní kost (femur)",
+              "Zlomenina krčku nebo hlavy femuru",
+              "Nitrodřeňový hřeb nebo kloubní náhrada"
+            ],
+            [
+              "4.",
+              "Bederní obratle (L1–L3)",
+              "Kompresní nebo výbuchová zlomenina obratle",
+              "CT páteře; konzervativně nebo fixace šrouby"
+            ],
+            [
+              "5.",
+              "Základna lební",
+              "Zlomenina přední jámy lební",
+              "CT mozku; konzervativně nebo neurochirurgie"
+            ]
           ]
         },
         {
@@ -163,13 +297,31 @@
         {
           "type": "table",
           "caption": "Diagnostika bodných a řezných ran",
-          "headers": ["Vyšetření", "Indikace"],
+          "headers": [
+            "Vyšetření",
+            "Indikace"
+          ],
           "rows": [
-            ["RTG", "Cizí těleso (střep, nůž, kulka), vzduch v tělní dutině (pneumoperitoneum)"],
-            ["CT s kontrastem", "Penetrující rány trupu, krku nebo hlavy; podezření na poranění vnitřních orgánů nebo cév"],
-            ["Diagnostická laparoskopie", "Bodná rána břicha s nejasným nálezem na CT — vizuální kontrola vnitřních orgánů"],
-            ["Kontrastní polykací zkouška", "Podezření na perforaci jícnu nebo žaludku"],
-            ["Angiografie", "Poranění tepny — diagnóza i intervence (embolizace nebo stent)"]
+            [
+              "RTG",
+              "Cizí těleso (střep, nůž, kulka), vzduch v tělní dutině (pneumoperitoneum)"
+            ],
+            [
+              "CT s kontrastem",
+              "Penetrující rány trupu, krku nebo hlavy; podezření na poranění vnitřních orgánů nebo cév"
+            ],
+            [
+              "Diagnostická laparoskopie",
+              "Bodná rána břicha s nejasným nálezem na CT — vizuální kontrola vnitřních orgánů"
+            ],
+            [
+              "Kontrastní polykací zkouška",
+              "Podezření na perforaci jícnu nebo žaludku"
+            ],
+            [
+              "Angiografie",
+              "Poranění tepny — diagnóza i intervence (embolizace nebo stent)"
+            ]
           ]
         },
         {
@@ -206,36 +358,101 @@
       "id": "11.5",
       "title": "Střelné rány — nemocniční ošetření",
       "abbrevs": [
-        { "a": "GSW", "f": "Gunshot Wound — střelná rána" },
-        { "a": "OR", "f": "Operating Room" },
-        { "a": "CT", "f": "Computed Tomography" },
-        { "a": "TXA", "f": "Tranexamic Acid — kyselina tranexamová — zastavuje krvácení" },
-        { "a": "pRBC", "f": "Packed Red Blood Cells — transfúze červených krvinek" },
-        { "a": "FFP", "f": "Fresh Frozen Plasma — čerstvě zmražená plazma" },
-        { "a": "MTP", "f": "Massive Transfusion Protocol — protokol masivní transfúze (poměr 1:1:1)" }
+        {
+          "a": "GSW",
+          "f": "Gunshot Wound — střelná rána"
+        },
+        {
+          "a": "OR",
+          "f": "Operating Room"
+        },
+        {
+          "a": "CT",
+          "f": "Computed Tomography"
+        },
+        {
+          "a": "TXA",
+          "f": "Tranexamic Acid — kyselina tranexamová — zastavuje krvácení"
+        },
+        {
+          "a": "pRBC",
+          "f": "Packed Red Blood Cells — transfúze červených krvinek"
+        },
+        {
+          "a": "FFP",
+          "f": "Fresh Frozen Plasma — čerstvě zmražená plazma"
+        },
+        {
+          "a": "MTP",
+          "f": "Massive Transfusion Protocol — protokol masivní transfúze (poměr 1:1:1)"
+        }
       ],
       "lead": "Střelné rány vyžadují specifický přístup — projektil může být kdekoliv, dráha není přímá (projektil se odráží od kostí) a poranění je vždy větší, než naznačuje vnější nález. U každé střelné rány platí: \"Nedůvěřujte vstupu, hledejte výstup a předpokládejte poranění mezilehlých struktur.\"",
       "blocks": [
         {
           "type": "steps",
           "items": [
-            { "n": 1, "title": "Aktivace trauma týmu Level I", "text": "Každá penetrující rána trupu nebo krku = automatická aktivace. Trauma tým u lůžka ještě před příjezdem sanitky." },
-            { "n": 2, "title": "Masivní transfúzní protokol (MTP)", "text": "Při hemodynamické nestabilitě: okamžitá aktivace MTP. Poměr podávání: 1 díl červených krvinek (pRBC) : 1 díl plazmy (FFP) : 1 díl trombocytů. TXA 1 g do žíly do 3 hodin od zranění." },
-            { "n": 3, "title": "CT celého těla — pan-scan", "text": "U hemodynamicky stabilního pacienta: CT mozku, krku, hrudníku, břicha, pánve s kontrastní látkou. Trasování dráhy projektilu, odhalení poranění cév." },
-            { "n": 4, "title": "Chirurgická prioritizace", "text": "Zástava krvácení vždy před rekonstrukcí. Pořadí: 1. cévní poranění (krvácení); 2. poranění dutých orgánů (kontaminace); 3. rekonstrukce." },
-            { "n": 5, "title": "Pooperační JIP", "text": "Každý GSW trupu nebo hlavy → JIP minimálně 24 hodin. Monitoring vědomí, vitálních funkcí, výdeje moči." }
+            {
+              "n": 1,
+              "title": "Aktivace trauma týmu Level I",
+              "text": "Každá penetrující rána trupu nebo krku = automatická aktivace. Trauma tým u lůžka ještě před příjezdem sanitky."
+            },
+            {
+              "n": 2,
+              "title": "Masivní transfúzní protokol (MTP)",
+              "text": "Při hemodynamické nestabilitě: okamžitá aktivace MTP. Poměr podávání: 1 díl červených krvinek (pRBC) : 1 díl plazmy (FFP) : 1 díl trombocytů. TXA 1 g do žíly do 3 hodin od zranění."
+            },
+            {
+              "n": 3,
+              "title": "CT celého těla — pan-scan",
+              "text": "U hemodynamicky stabilního pacienta: CT mozku, krku, hrudníku, břicha, pánve s kontrastní látkou. Trasování dráhy projektilu, odhalení poranění cév."
+            },
+            {
+              "n": 4,
+              "title": "Chirurgická prioritizace",
+              "text": "Zástava krvácení vždy před rekonstrukcí. Pořadí: 1. cévní poranění (krvácení); 2. poranění dutých orgánů (kontaminace); 3. rekonstrukce."
+            },
+            {
+              "n": 5,
+              "title": "Pooperační JIP",
+              "text": "Každý GSW trupu nebo hlavy → JIP minimálně 24 hodin. Monitoring vědomí, vitálních funkcí, výdeje moči."
+            }
           ]
         },
         {
           "type": "table",
           "caption": "GSW hlavy — neurochirurgická péče",
-          "headers": ["Nález na CT", "Chirurgický postup", "Prognóza"],
+          "headers": [
+            "Nález na CT",
+            "Chirurgický postup",
+            "Prognóza"
+          ],
           "rows": [
-            ["Epidurální hematom s GCS > 8", "Kraniotomie + evakuace hematomu — elektivně do 4 hodin", "Výborná při rychlém zásahu"],
-            ["Epidurální hematom s GCS ≤ 8", "Urgentní kraniotomie — do 1 hodiny", "Závisí na době od vzniku"],
-            ["Akutní subdurální hematom", "Urgentní kraniotomie — do 4 hodin", "Mortalita 40–60 % i při chirurgii"],
-            ["Difúzní axonální poranění", "Konzervativní — monitorace ICP, JIP", "Variabilní; prognóza nejistá"],
-            ["Penetrující rána mozku (GSW)", "Debridement rány; extrakce dostupných fragmentů; sutura dury", "Mortalita 90 % při bitemporálním průniku; 30–50 % při hemisferálním"]
+            [
+              "Epidurální hematom s GCS > 8",
+              "Kraniotomie + evakuace hematomu — elektivně do 4 hodin",
+              "Výborná při rychlém zásahu"
+            ],
+            [
+              "Epidurální hematom s GCS ≤ 8",
+              "Urgentní kraniotomie — do 1 hodiny",
+              "Závisí na době od vzniku"
+            ],
+            [
+              "Akutní subdurální hematom",
+              "Urgentní kraniotomie — do 4 hodin",
+              "Mortalita 40–60 % i při chirurgii"
+            ],
+            [
+              "Difúzní axonální poranění",
+              "Konzervativní — monitorace ICP, JIP",
+              "Variabilní; prognóza nejistá"
+            ],
+            [
+              "Penetrující rána mozku (GSW)",
+              "Debridement rány; extrakce dostupných fragmentů; sutura dury",
+              "Mortalita 90 % při bitemporálním průniku; 30–50 % při hemisferálním"
+            ]
           ]
         }
       ],
@@ -254,17 +471,57 @@
         {
           "type": "table",
           "caption": "Specifické přídatné nemocniční diagnózy u MVA (dopravních nehod)",
-          "headers": ["Poranění", "Jak ho odhalíme", "Léčba"],
+          "headers": [
+            "Poranění",
+            "Jak ho odhalíme",
+            "Léčba"
+          ],
           "rows": [
-            ["Kontuze myokardu (pohmnoždění srdce)", "EKG: nové arytmie, ST změny; troponin: vzestup za 6–12 hod; ECHO: hypokineze stěny", "Monitorace na kardiologické JIP 24–48 hod; léčba arytmií; ECHO kontrola"],
-            ["Traumatická disekce aorty", "CT angiografie: ztluštění stěny, intramurální hematom, kontrast mimo aortu", "Endovaskulární TEVAR (zavedení stentu do aorty); nebo otevřená chirurgie"],
-            ["Pneumothorax traumatický", "RTG nebo FAST: vzduch v pohrudnicové dutině", "Hrudní drenáž (thorakotomická trubice 28–32 French) — připojení na negativní tlak"],
-            ["Hemothorax", "RTG: zastínění; přes 1 500 ml krvácení", "Hrudní drenáž; při masivním hemothoraxu urgentní thorakotomie"],
-            ["Poranění bránice", "CT: herniace orgánů do hrudníku", "Urgentní chirurgická rekonstrukce bránice"],
-            ["Poranění ledvin (Renal trauma)", "CT s kontrastem: parenchymální léze; hematom perirenal", "Konzervativní Grade I–III; angioembolizace nebo nefrektomie Grade IV–V"],
-            ["Ruptura sleziny", "FAST + CT: volná tekutina", "Hemodynamicky stabilní: angioembolizace. Nestabilní: urgentní splenektomie"],
-            ["Poranění jater (hepatické trauma)", "CT: lacerace, hematom", "Konzervativně Grade I–II; angioembolizace Grade III; chirurgie Grade IV–V"]
+            [
+              "Kontuze myokardu (pohmnoždění srdce)",
+              "EKG: nové arytmie, ST změny; troponin: vzestup za 6–12 hod; ECHO: hypokineze stěny",
+              "Monitorace na kardiologické JIP 24–48 hod; léčba arytmií; ECHO kontrola"
+            ],
+            [
+              "Traumatická disekce aorty",
+              "CT angiografie: ztluštění stěny, intramurální hematom, kontrast mimo aortu",
+              "Endovaskulární TEVAR (zavedení stentu do aorty); nebo otevřená chirurgie"
+            ],
+            [
+              "Pneumothorax traumatický",
+              "RTG nebo FAST: vzduch v pohrudnicové dutině",
+              "Hrudní drenáž (thorakotomická trubice 28–32 French) — připojení na negativní tlak"
+            ],
+            [
+              "Hemothorax",
+              "RTG: zastínění; přes 1 500 ml krvácení",
+              "Hrudní drenáž; při masivním hemothoraxu urgentní thorakotomie"
+            ],
+            [
+              "Poranění bránice",
+              "CT: herniace orgánů do hrudníku",
+              "Urgentní chirurgická rekonstrukce bránice"
+            ],
+            [
+              "Poranění ledvin (Renal trauma)",
+              "CT s kontrastem: parenchymální léze; hematom perirenal",
+              "Konzervativní Grade I–III; angioembolizace nebo nefrektomie Grade IV–V"
+            ],
+            [
+              "Ruptura sleziny",
+              "FAST + CT: volná tekutina",
+              "Hemodynamicky stabilní: angioembolizace. Nestabilní: urgentní splenektomie"
+            ],
+            [
+              "Poranění jater (hepatické trauma)",
+              "CT: lacerace, hematom",
+              "Konzervativně Grade I–II; angioembolizace Grade III; chirurgie Grade IV–V"
+            ]
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "mva-injury-flashcards"
         }
       ],
       "summary": [
@@ -278,13 +535,34 @@
       "id": "11.7",
       "title": "Poranění mozku (TBI) — nemocniční ošetření",
       "abbrevs": [
-        { "a": "ICP", "f": "Intracranial Pressure — nitrolební tlak (normálně do 20 mmHg)" },
-        { "a": "CPP", "f": "Cerebral Perfusion Pressure — cerebrální perfúzní tlak (cíl > 60 mmHg)" },
-        { "a": "MAP", "f": "Mean Arterial Pressure — střední arteriální tlak" },
-        { "a": "GCS", "f": "Glasgow Coma Scale" },
-        { "a": "EVD", "f": "External Ventricular Drain — zevní komorová drenáž (měří a snižuje nitrolební tlak)" },
-        { "a": "ICU", "f": "Intensive Care Unit — jednotka intenzivní péče" },
-        { "a": "TXA", "f": "Tranexamic Acid" }
+        {
+          "a": "ICP",
+          "f": "Intracranial Pressure — nitrolební tlak (normálně do 20 mmHg)"
+        },
+        {
+          "a": "CPP",
+          "f": "Cerebral Perfusion Pressure — cerebrální perfúzní tlak (cíl > 60 mmHg)"
+        },
+        {
+          "a": "MAP",
+          "f": "Mean Arterial Pressure — střední arteriální tlak"
+        },
+        {
+          "a": "GCS",
+          "f": "Glasgow Coma Scale"
+        },
+        {
+          "a": "EVD",
+          "f": "External Ventricular Drain — zevní komorová drenáž (měří a snižuje nitrolební tlak)"
+        },
+        {
+          "a": "ICU",
+          "f": "Intensive Care Unit — jednotka intenzivní péče"
+        },
+        {
+          "a": "TXA",
+          "f": "Tranexamic Acid"
+        }
       ],
       "lead": "Nemocniční péče o poranění mozku se zaměřuje na prevenci sekundárního poranění — každé zvýšení nitrolebního tlaku, snížení krevního tlaku nebo pokles kyslíku dále ničí mozkové buňky, které jinak přežít mohly.",
       "blocks": [
@@ -295,25 +573,73 @@
         {
           "type": "table",
           "caption": "Typy monitorů nitrolebního tlaku",
-          "headers": ["Typ monitoru", "Kde se zavede", "Výhoda"],
+          "headers": [
+            "Typ monitoru",
+            "Kde se zavede",
+            "Výhoda"
+          ],
           "rows": [
-            ["Intraventrikulární katetr (EVD)", "Do komory mozku přes vrták do lebky", "Měří ICP a může zároveň odvodňovat mozkomíšní mok — terapeutický"],
-            ["Parenchymový senzor (Camino, Licox)", "Do mozkové tkáně", "Přesné lokální měření; lze kombinovat s měřením pO2 mozku"],
-            ["Subarachnoidální šroub", "Do subarachnoidálního prostoru", "Jednodušší zavedení; méně přesný"]
+            [
+              "Intraventrikulární katetr (EVD)",
+              "Do komory mozku přes vrták do lebky",
+              "Měří ICP a může zároveň odvodňovat mozkomíšní mok — terapeutický"
+            ],
+            [
+              "Parenchymový senzor (Camino, Licox)",
+              "Do mozkové tkáně",
+              "Přesné lokální měření; lze kombinovat s měřením pO2 mozku"
+            ],
+            [
+              "Subarachnoidální šroub",
+              "Do subarachnoidálního prostoru",
+              "Jednodušší zavedení; méně přesný"
+            ]
           ]
         },
         {
           "type": "table",
           "caption": "Cílové parametry při poranění mozku",
-          "headers": ["Parametr", "Cíl", "Proč"],
+          "headers": [
+            "Parametr",
+            "Cíl",
+            "Proč"
+          ],
           "rows": [
-            ["ICP", "Pod 20–22 mmHg", "Vyšší ICP stlačuje mozkovou tkáň a způsobuje ischemii"],
-            ["CPP (MAP − ICP)", "60–70 mmHg", "Tlak pohánějící krev mozkem; pod 50 = ischemie"],
-            ["MAP", "80–90 mmHg", "Závisí na ICP — optimalizace CPP"],
-            ["Saturace kyslíkem (SpO2)", "94–98 %", "Hypoxie devastuje poraněný mozek"],
-            ["PaCO2 (krevní plyny)", "35–45 mmHg", "Hyperventilace stáhne cévy a způsobí ischemii"],
-            ["Hladina cukru v krvi", "140–180 mg/dL", "Hypoglykémie i hyperglykémie zhoršují výsledky"],
-            ["Teplota", "36–37 °C", "Horečka zvyšuje ICP a spotřebu kyslíku"]
+            [
+              "ICP",
+              "Pod 20–22 mmHg",
+              "Vyšší ICP stlačuje mozkovou tkáň a způsobuje ischemii"
+            ],
+            [
+              "CPP (MAP − ICP)",
+              "60–70 mmHg",
+              "Tlak pohánějící krev mozkem; pod 50 = ischemie"
+            ],
+            [
+              "MAP",
+              "80–90 mmHg",
+              "Závisí na ICP — optimalizace CPP"
+            ],
+            [
+              "Saturace kyslíkem (SpO2)",
+              "94–98 %",
+              "Hypoxie devastuje poraněný mozek"
+            ],
+            [
+              "PaCO2 (krevní plyny)",
+              "35–45 mmHg",
+              "Hyperventilace stáhne cévy a způsobí ischemii"
+            ],
+            [
+              "Hladina cukru v krvi",
+              "140–180 mg/dL",
+              "Hypoglykémie i hyperglykémie zhoršují výsledky"
+            ],
+            [
+              "Teplota",
+              "36–37 °C",
+              "Horečka zvyšuje ICP a spotřebu kyslíku"
+            ]
           ]
         },
         {
@@ -341,13 +667,37 @@
         {
           "type": "table",
           "caption": "Klasifikace poranění páteře a míchy — stupnice ASIA",
-          "headers": ["Stupnice ASIA", "Popis", "Prognóza"],
+          "headers": [
+            "Stupnice ASIA",
+            "Popis",
+            "Prognóza"
+          ],
           "rows": [
-            ["ASIA A — Kompletní léze", "Žádná motorická ani citlivostní funkce pod místem poranění", "Šance na obnovu funkce minimální; koncentrace na kompenzační mechanismy"],
-            ["ASIA B — Nekompletní léze", "Zachována citlivost pod místem poranění, žádná motorika", "Až 30 % šance na obnovu určité motoriky"],
-            ["ASIA C — Nekompletní léze", "Motorika zachována pod lézí, ale více než polovina svalů nemá proti-gravitační sílu", "Dobrá prognóza pro obnovení chůze s výpomocí"],
-            ["ASIA D — Nekompletní léze", "Motorika zachována; více než polovina svalů má dobrou sílu", "Většina pacientů bude chodit samostatně"],
-            ["ASIA E — Normální", "Normální senzomotorika", "Kompletní obnova"]
+            [
+              "ASIA A — Kompletní léze",
+              "Žádná motorická ani citlivostní funkce pod místem poranění",
+              "Šance na obnovu funkce minimální; koncentrace na kompenzační mechanismy"
+            ],
+            [
+              "ASIA B — Nekompletní léze",
+              "Zachována citlivost pod místem poranění, žádná motorika",
+              "Až 30 % šance na obnovu určité motoriky"
+            ],
+            [
+              "ASIA C — Nekompletní léze",
+              "Motorika zachována pod lézí, ale více než polovina svalů nemá proti-gravitační sílu",
+              "Dobrá prognóza pro obnovení chůze s výpomocí"
+            ],
+            [
+              "ASIA D — Nekompletní léze",
+              "Motorika zachována; více než polovina svalů má dobrou sílu",
+              "Většina pacientů bude chodit samostatně"
+            ],
+            [
+              "ASIA E — Normální",
+              "Normální senzomotorika",
+              "Kompletní obnova"
+            ]
           ]
         },
         {
@@ -361,15 +711,39 @@
         {
           "type": "table",
           "caption": "Péče na neurologické JIP po poranění míchy",
-          "headers": ["Komplikace", "Prevence a léčba"],
+          "headers": [
+            "Komplikace",
+            "Prevence a léčba"
+          ],
           "rows": [
-            ["Neurogenní šok", "Noradrenalin; hydratace; MAP > 85–90 mmHg po dobu 7 dní (zlepšuje průtok míchou)"],
-            ["Autonomní dysreflexie", "Při podráždění pod lézí (zaklíněná cévka, plný měchýř): ihned sedět; uvolnit stimul; nifedipin nebo nitráty"],
-            ["Respirační selhání (při C4 a výše)", "Ventilátor nebo frenický stimulátor; nácvik pomocného dýchání"],
-            ["Proleženiny (dekubity)", "Otáčení každé 2 hodiny; speciální matrace; polohování; výživa"],
-            ["Trombóza hlubokých žil", "Nízkomolekulární heparin; kompresní punčochy; časná mobilizace"],
-            ["Urologické komplikace", "Intermitentní katetrizace; kontrola močové kultury; profylaktická antibiotika nevhodná"],
-            ["Střevní disfunkce", "Pravidelné klyzma; rektální stimulace; dieta bohatá na vlákninu"]
+            [
+              "Neurogenní šok",
+              "Noradrenalin; hydratace; MAP > 85–90 mmHg po dobu 7 dní (zlepšuje průtok míchou)"
+            ],
+            [
+              "Autonomní dysreflexie",
+              "Při podráždění pod lézí (zaklíněná cévka, plný měchýř): ihned sedět; uvolnit stimul; nifedipin nebo nitráty"
+            ],
+            [
+              "Respirační selhání (při C4 a výše)",
+              "Ventilátor nebo frenický stimulátor; nácvik pomocného dýchání"
+            ],
+            [
+              "Proleženiny (dekubity)",
+              "Otáčení každé 2 hodiny; speciální matrace; polohování; výživa"
+            ],
+            [
+              "Trombóza hlubokých žil",
+              "Nízkomolekulární heparin; kompresní punčochy; časná mobilizace"
+            ],
+            [
+              "Urologické komplikace",
+              "Intermitentní katetrizace; kontrola močové kultury; profylaktická antibiotika nevhodná"
+            ],
+            [
+              "Střevní disfunkce",
+              "Pravidelné klyzma; rektální stimulace; dieta bohatá na vlákninu"
+            ]
           ]
         }
       ],
@@ -383,10 +757,22 @@
       "id": "11.9",
       "title": "Popáleniny — nemocniční ošetření",
       "abbrevs": [
-        { "a": "BSA", "f": "Body Surface Area — procento povrchu těla" },
-        { "a": "ICU", "f": "Intensive Care Unit — JIP" },
-        { "a": "TPN", "f": "Total Parenteral Nutrition — totální parenterální výživa" },
-        { "a": "ABA", "f": "American Burn Association — Americká asociace pro popáleniny (vydává kritéria pro přeložení do popáleninového centra)" }
+        {
+          "a": "BSA",
+          "f": "Body Surface Area — procento povrchu těla"
+        },
+        {
+          "a": "ICU",
+          "f": "Intensive Care Unit — JIP"
+        },
+        {
+          "a": "TPN",
+          "f": "Total Parenteral Nutrition — totální parenterální výživa"
+        },
+        {
+          "a": "ABA",
+          "f": "American Burn Association — Americká asociace pro popáleniny (vydává kritéria pro přeložení do popáleninového centra)"
+        }
       ],
       "lead": "Těžké popáleniny patří do specializovaného popáleninového centra (Burn Center). Americká asociace pro popáleniny (ABA) definuje kritéria, kdy pacienta přeložit. Péče v centru trvá týdny a zahrnuje operační i konzervativní metody.",
       "blocks": [
@@ -429,12 +815,32 @@
         {
           "type": "table",
           "caption": "Spektrum plicního poranění po utonutí",
-          "headers": ["Závažnost", "Příznaky", "Léčba"],
+          "headers": [
+            "Závažnost",
+            "Příznaky",
+            "Léčba"
+          ],
           "rows": [
-            ["Asymptomatický", "Normální SpO2, normální dech, normální RTG", "Sledování 6–8 hod; propuštění při normálním nálezu"],
-            ["Mírná aspirace", "SpO2 92–94 %; kašel; jemné chrůpky na plicích", "Kyslík maskou; sledování 12–24 hod; RTG hrudníku"],
-            ["Střední aspirace", "SpO2 < 92 %; námahová dušnost; oboustranné chrůpky", "Hospitalizace; kyslík; nebulizace bronchodilatancii"],
-            ["Těžká aspirace (ARDS)", "SpO2 < 88 % i při kyslíku; masivní infiltrace na RTG", "JIP; mechanická ventilace s PEEP; prone positioning (poloha na břiše); ECMO"]
+            [
+              "Asymptomatický",
+              "Normální SpO2, normální dech, normální RTG",
+              "Sledování 6–8 hod; propuštění při normálním nálezu"
+            ],
+            [
+              "Mírná aspirace",
+              "SpO2 92–94 %; kašel; jemné chrůpky na plicích",
+              "Kyslík maskou; sledování 12–24 hod; RTG hrudníku"
+            ],
+            [
+              "Střední aspirace",
+              "SpO2 < 92 %; námahová dušnost; oboustranné chrůpky",
+              "Hospitalizace; kyslík; nebulizace bronchodilatancii"
+            ],
+            [
+              "Těžká aspirace (ARDS)",
+              "SpO2 < 88 % i při kyslíku; masivní infiltrace na RTG",
+              "JIP; mechanická ventilace s PEEP; prone positioning (poloha na břiše); ECMO"
+            ]
           ]
         },
         {

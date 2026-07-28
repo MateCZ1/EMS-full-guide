@@ -2282,6 +2282,10 @@
               "text": "Volejte: \"Iktová aktivace: žena 70 let, LKW v 8:00, pozitivní FAST (poklesá levý koutek, slabá levá paže), GCS 14, TK 180/95, BSG 110, příjezd za 6 minut.\" PROČ takto: CT skener je naplánován; neurolog je u dveří; ušetříte 20–30 minut."
             }
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "fast-stroke-flow"
         }
       ],
       "summary": [

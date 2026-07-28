@@ -252,6 +252,10 @@
               "Souprava pro CVC; souprava pro arteriální linku; hrudní drenáž; intraoseální vrtačka EZ-IO + jehly; punkční souprava perikardu; minitracheotomická souprava"
             ]
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "trauma-bay-hotspot"
         }
       ],
       "summary": [
@@ -912,6 +916,10 @@
               "Šití a spojování tkání; staplers jsou rychlejší a přesnější než ruční šití; použití v hrudníku, břichu, tlustém střevě"
             ]
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "or-hotspot"
         }
       ],
       "summary": [
@@ -1078,6 +1086,10 @@
               "Mechanická podpora při kardiogenním šoku; zavedení přes tříslo"
             ]
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "cathlab-hotspot"
         }
       ],
       "summary": [

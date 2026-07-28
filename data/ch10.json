@@ -141,6 +141,10 @@
               "2–4 hodiny nebo odeslání"
             ]
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "esi-scale"
         }
       ],
       "summary": [

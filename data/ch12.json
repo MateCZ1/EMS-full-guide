@@ -9,13 +9,34 @@
       "id": "12.1",
       "title": "Infarkt myokardu — nemocniční ošetření",
       "abbrevs": [
-        { "a": "STEMI", "f": "ST-Elevation Myocardial Infarction — infarkt s elevací ST úseku" },
-        { "a": "PCI", "f": "Percutaneous Coronary Intervention — srdeční katetrizace se stentem" },
-        { "a": "CABG", "f": "Coronary Artery Bypass Grafting — chirurgický bypass věnčitých tepen" },
-        { "a": "ECG", "f": "Electrocardiogram — elektrokardiogram" },
-        { "a": "ECHO", "f": "Echokardiografie — ultrazvuk srdce" },
-        { "a": "CCU", "f": "Cardiac Care Unit — koronární JIP" },
-        { "a": "DAPT", "f": "Dual Antiplatelet Therapy — dvojitá protidestičková léčba (aspirin + klopidogrel/ticagrelor)" }
+        {
+          "a": "STEMI",
+          "f": "ST-Elevation Myocardial Infarction — infarkt s elevací ST úseku"
+        },
+        {
+          "a": "PCI",
+          "f": "Percutaneous Coronary Intervention — srdeční katetrizace se stentem"
+        },
+        {
+          "a": "CABG",
+          "f": "Coronary Artery Bypass Grafting — chirurgický bypass věnčitých tepen"
+        },
+        {
+          "a": "ECG",
+          "f": "Electrocardiogram — elektrokardiogram"
+        },
+        {
+          "a": "ECHO",
+          "f": "Echokardiografie — ultrazvuk srdce"
+        },
+        {
+          "a": "CCU",
+          "f": "Cardiac Care Unit — koronární JIP"
+        },
+        {
+          "a": "DAPT",
+          "f": "Dual Antiplatelet Therapy — dvojitá protidestičková léčba (aspirin + klopidogrel/ticagrelor)"
+        }
       ],
       "blocks": [
         {
@@ -29,11 +50,31 @@
         {
           "type": "steps",
           "items": [
-            { "n": 1, "title": "Přístup do tepny", "text": "Katetrizace se zahajuje vpichem jehly do stehenní tepny (femorální přístup) nebo do tepny na zápěstí (radiální přístup — dnes preferovaný; méně krvácení)." },
-            { "n": 2, "title": "Vodič do věnčité tepny", "text": "Po tepně se zavedou katétry a drátěný vodič do příslušné věnčité tepny (koronární arterie) k místu uzávěru." },
-            { "n": 3, "title": "Balónková dilatace (PTCA)", "text": "Balónek na katetru se nafoukne v místě uzávěru a mechanicky rozevře tepnu. Krátce obnoví průtok." },
-            { "n": 4, "title": "Zavedení stentu", "text": "Kovová síťová trubička (stent) se zavede do tepny a rozepne balónkem. Drží tepnu otevřenou trvale. Moderní stenty uvolňují protizánětlivý lék (drug-eluting stent)." },
-            { "n": 5, "title": "Kontrolní angiografie", "text": "RTG s kontrastní látkou potvrdí průtok tepnou. Pacient přeložen na CCU (koronární JIP)." }
+            {
+              "n": 1,
+              "title": "Přístup do tepny",
+              "text": "Katetrizace se zahajuje vpichem jehly do stehenní tepny (femorální přístup) nebo do tepny na zápěstí (radiální přístup — dnes preferovaný; méně krvácení)."
+            },
+            {
+              "n": 2,
+              "title": "Vodič do věnčité tepny",
+              "text": "Po tepně se zavedou katétry a drátěný vodič do příslušné věnčité tepny (koronární arterie) k místu uzávěru."
+            },
+            {
+              "n": 3,
+              "title": "Balónková dilatace (PTCA)",
+              "text": "Balónek na katetru se nafoukne v místě uzávěru a mechanicky rozevře tepnu. Krátce obnoví průtok."
+            },
+            {
+              "n": 4,
+              "title": "Zavedení stentu",
+              "text": "Kovová síťová trubička (stent) se zavede do tepny a rozepne balónkem. Drží tepnu otevřenou trvale. Moderní stenty uvolňují protizánětlivý lék (drug-eluting stent)."
+            },
+            {
+              "n": 5,
+              "title": "Kontrolní angiografie",
+              "text": "RTG s kontrastní látkou potvrdí průtok tepnou. Pacient přeložen na CCU (koronární JIP)."
+            }
           ]
         },
         {
@@ -43,12 +84,37 @@
         {
           "type": "table",
           "caption": "Duální protidestičková terapie (DAPT) po zavedení stentu",
-          "headers": ["Lék", "Dávka", "Délka podávání", "Jak funguje"],
+          "headers": [
+            "Lék",
+            "Dávka",
+            "Délka podávání",
+            "Jak funguje"
+          ],
           "rows": [
-            ["Aspirin (kyselina acetylsalicylová)", "81 mg denně", "Doživotně", "Blokuje aktivaci destiček přes cyklooxygenázu-1 (COX-1)"],
-            ["Ticagrelor (Brilique)", "90 mg 2× denně", "12 měsíců (první volba)", "Blokuje ADP receptor na destičkách — silnější a rychleji působící"],
-            ["Klopidogrel (Plavix)", "75 mg denně", "12 měsíců (záloha za ticagrelor)", "Blokuje ADP receptor; pomalejší nástup; levnější"],
-            ["Prasugrel (Effient)", "10 mg denně", "12 měsíců", "Nejsilnější; vyšší riziko krvácení"]
+            [
+              "Aspirin (kyselina acetylsalicylová)",
+              "81 mg denně",
+              "Doživotně",
+              "Blokuje aktivaci destiček přes cyklooxygenázu-1 (COX-1)"
+            ],
+            [
+              "Ticagrelor (Brilique)",
+              "90 mg 2× denně",
+              "12 měsíců (první volba)",
+              "Blokuje ADP receptor na destičkách — silnější a rychleji působící"
+            ],
+            [
+              "Klopidogrel (Plavix)",
+              "75 mg denně",
+              "12 měsíců (záloha za ticagrelor)",
+              "Blokuje ADP receptor; pomalejší nástup; levnější"
+            ],
+            [
+              "Prasugrel (Effient)",
+              "10 mg denně",
+              "12 měsíců",
+              "Nejsilnější; vyšší riziko krvácení"
+            ]
           ]
         },
         {
@@ -58,14 +124,42 @@
         {
           "type": "table",
           "caption": "Koronární JIP (CCU) — monitorace po infarktu",
-          "headers": ["Parametr", "Cíl", "Proč"],
+          "headers": [
+            "Parametr",
+            "Cíl",
+            "Proč"
+          ],
           "rows": [
-            ["EKG monitoring", "Kontinuální 24–48 hod", "Záchyt reperfúzních arytmií — nejčastěji VT/VF v prvních hodinách"],
-            ["Troponin", "Odběr každé 6 hodin × 3", "Posouzení rozsahu infarktu; potvrzení diagnózy"],
-            ["Echokardiografie (ECHO)", "Do 24 hodin od příjmu", "Funkce levé komory (ejekční frakce); mechanické komplikace (ruptura papilárního svalu)"],
-            ["Krevní tlak", "> 100/60 mmHg", "Podpůrná terapie: dobutamin nebo noradrenalin při hypotenzi"],
-            ["Výdej moči", "> 0,5 ml/kg/hod", "Marker perfúze ledvin; časná detekce srdečního selhání"],
-            ["Hladina draslíku", "3,5–5,0 mmol/l", "Hypokalémie = riziko arytmie; korekce draslíkem IV"]
+            [
+              "EKG monitoring",
+              "Kontinuální 24–48 hod",
+              "Záchyt reperfúzních arytmií — nejčastěji VT/VF v prvních hodinách"
+            ],
+            [
+              "Troponin",
+              "Odběr každé 6 hodin × 3",
+              "Posouzení rozsahu infarktu; potvrzení diagnózy"
+            ],
+            [
+              "Echokardiografie (ECHO)",
+              "Do 24 hodin od příjmu",
+              "Funkce levé komory (ejekční frakce); mechanické komplikace (ruptura papilárního svalu)"
+            ],
+            [
+              "Krevní tlak",
+              "> 100/60 mmHg",
+              "Podpůrná terapie: dobutamin nebo noradrenalin při hypotenzi"
+            ],
+            [
+              "Výdej moči",
+              "> 0,5 ml/kg/hod",
+              "Marker perfúze ledvin; časná detekce srdečního selhání"
+            ],
+            [
+              "Hladina draslíku",
+              "3,5–5,0 mmol/l",
+              "Hypokalémie = riziko arytmie; korekce draslíkem IV"
+            ]
           ]
         }
       ],
@@ -80,14 +174,38 @@
       "id": "12.2",
       "title": "Cévní mozková příhoda (Mrtvice / Stroke) — nemocniční ošetření",
       "abbrevs": [
-        { "a": "CMP", "f": "cévní mozková příhoda — mrtvice" },
-        { "a": "tPA", "f": "tissue Plasminogen Activator — tkáňový aktivátor plazminogenu — lék rozpouštějící sraženinu v mozku" },
-        { "a": "EVT", "f": "Endovascular Thrombectomy — mechanické odstranění sraženiny z mozkové tepny katetrem" },
-        { "a": "CT", "f": "Computed Tomography" },
-        { "a": "MRI", "f": "Magnetic Resonance Imaging" },
-        { "a": "DWI", "f": "Diffusion Weighted Imaging — MRI sekvence ukazující čerstvé ischemické ložisko" },
-        { "a": "NIHSS", "f": "NIH Stroke Scale — americká stupnice závažnosti příznaků mrtvice" },
-        { "a": "INR", "f": "International Normalized Ratio — hodnota srážlivosti krve" }
+        {
+          "a": "CMP",
+          "f": "cévní mozková příhoda — mrtvice"
+        },
+        {
+          "a": "tPA",
+          "f": "tissue Plasminogen Activator — tkáňový aktivátor plazminogenu — lék rozpouštějící sraženinu v mozku"
+        },
+        {
+          "a": "EVT",
+          "f": "Endovascular Thrombectomy — mechanické odstranění sraženiny z mozkové tepny katetrem"
+        },
+        {
+          "a": "CT",
+          "f": "Computed Tomography"
+        },
+        {
+          "a": "MRI",
+          "f": "Magnetic Resonance Imaging"
+        },
+        {
+          "a": "DWI",
+          "f": "Diffusion Weighted Imaging — MRI sekvence ukazující čerstvé ischemické ložisko"
+        },
+        {
+          "a": "NIHSS",
+          "f": "NIH Stroke Scale — americká stupnice závažnosti příznaků mrtvice"
+        },
+        {
+          "a": "INR",
+          "f": "International Normalized Ratio — hodnota srážlivosti krve"
+        }
       ],
       "blocks": [
         {
@@ -101,10 +219,26 @@
         {
           "type": "steps",
           "items": [
-            { "n": 1, "title": "Non-kontrastní CT mozku do 20 minut od příjmu", "text": "Vyloučí krvácení do mozku (kontraindikaci trombolýzy). Ischemická mrtvice: CT v prvních hodinách může být NORMÁLNÍ — neznamená absenci mrtvice." },
-            { "n": 2, "title": "CT angiografie mozkových tepen", "text": "Zobrazí uzavřenou mozkovou tepnu (velký uzávěr — LVO) — rozhoduje o kandidátství pro mechanické odstranění sraženiny (EVT)." },
-            { "n": 3, "title": "CT perfúze nebo MRI-DWI", "text": "Zobrazí oblast s odumřelou tkání (core) vs. záchranná tkáň kolem (penumbra). Rozhoduje, zda pacient profituje z EVT i po 4,5 hodinách." },
-            { "n": 4, "title": "Laboratorní vyšetření", "text": "Glukóza (vyloučit hypoglykémii!); INR (při antikoagulační léčbě); krevní obraz; renální funkce." }
+            {
+              "n": 1,
+              "title": "Non-kontrastní CT mozku do 20 minut od příjmu",
+              "text": "Vyloučí krvácení do mozku (kontraindikaci trombolýzy). Ischemická mrtvice: CT v prvních hodinách může být NORMÁLNÍ — neznamená absenci mrtvice."
+            },
+            {
+              "n": 2,
+              "title": "CT angiografie mozkových tepen",
+              "text": "Zobrazí uzavřenou mozkovou tepnu (velký uzávěr — LVO) — rozhoduje o kandidátství pro mechanické odstranění sraženiny (EVT)."
+            },
+            {
+              "n": 3,
+              "title": "CT perfúze nebo MRI-DWI",
+              "text": "Zobrazí oblast s odumřelou tkání (core) vs. záchranná tkáň kolem (penumbra). Rozhoduje, zda pacient profituje z EVT i po 4,5 hodinách."
+            },
+            {
+              "n": 4,
+              "title": "Laboratorní vyšetření",
+              "text": "Glukóza (vyloučit hypoglykémii!); INR (při antikoagulační léčbě); krevní obraz; renální funkce."
+            }
           ]
         },
         {
@@ -114,14 +248,42 @@
         {
           "type": "table",
           "caption": "Kritéria vhodnosti pacienta k podání tPA",
-          "headers": ["Kritérium", "Vhodný (může dostat tPA)", "Nevhodný (kontraindikace)"],
+          "headers": [
+            "Kritérium",
+            "Vhodný (může dostat tPA)",
+            "Nevhodný (kontraindikace)"
+          ],
           "rows": [
-            ["Typ mrtvice", "Ischemická (CT bez krvácení)", "Hemoragická mrtvice (kontraindikace absolutní)"],
-            ["Čas od příznaků", "Do 4,5 hodin od LKW", "Nad 4,5 hodiny (bez CT perfúze)"],
-            ["Krevní tlak", "< 185/110 mmHg před podáním", "Nekontrolovaná hypertenze"],
-            ["Krvácení v anamnéze", "Bez recentního krvácení", "Chirurgie nebo úraz < 3 měsíce; GI krvácení < 21 dní"],
-            ["Antikoagulancia", "Bez warfarinu nebo DOACs", "INR > 1,7; heparin; přímá antikoagulancia do 48 hod"],
-            ["Cukrovka", "Normoglykémie", "Hypoglykémie musí být korigována PŘED podáním"]
+            [
+              "Typ mrtvice",
+              "Ischemická (CT bez krvácení)",
+              "Hemoragická mrtvice (kontraindikace absolutní)"
+            ],
+            [
+              "Čas od příznaků",
+              "Do 4,5 hodin od LKW",
+              "Nad 4,5 hodiny (bez CT perfúze)"
+            ],
+            [
+              "Krevní tlak",
+              "< 185/110 mmHg před podáním",
+              "Nekontrolovaná hypertenze"
+            ],
+            [
+              "Krvácení v anamnéze",
+              "Bez recentního krvácení",
+              "Chirurgie nebo úraz < 3 měsíce; GI krvácení < 21 dní"
+            ],
+            [
+              "Antikoagulancia",
+              "Bez warfarinu nebo DOACs",
+              "INR > 1,7; heparin; přímá antikoagulancia do 48 hod"
+            ],
+            [
+              "Cukrovka",
+              "Normoglykémie",
+              "Hypoglykémie musí být korigována PŘED podáním"
+            ]
           ]
         },
         {
@@ -131,13 +293,37 @@
         {
           "type": "table",
           "caption": "tPA vs. EVT — srovnání metod",
-          "headers": ["Vs.", "tPA (trombolýza)", "EVT (mechanická trombektomie)"],
+          "headers": [
+            "Vs.",
+            "tPA (trombolýza)",
+            "EVT (mechanická trombektomie)"
+          ],
           "rows": [
-            ["Čas okno", "4,5 hodiny", "24 hodin (při dobrém CT perfúzním nálezu)"],
-            ["Úspěšná rekanalizace", "55–60 %", "80–90 %"],
-            ["Nejlepší pro", "Menší uzávěry", "Velké uzávěry — střední mozková tepna, bazilární tepna"],
-            ["Krvácivé riziko", "2–6 %", "< 2 %"],
-            ["Kombinace", "Lze kombinovat (bridge therapy)", "Při kontraindikaci tPA lze samotná EVT"]
+            [
+              "Čas okno",
+              "4,5 hodiny",
+              "24 hodin (při dobrém CT perfúzním nálezu)"
+            ],
+            [
+              "Úspěšná rekanalizace",
+              "55–60 %",
+              "80–90 %"
+            ],
+            [
+              "Nejlepší pro",
+              "Menší uzávěry",
+              "Velké uzávěry — střední mozková tepna, bazilární tepna"
+            ],
+            [
+              "Krvácivé riziko",
+              "2–6 %",
+              "< 2 %"
+            ],
+            [
+              "Kombinace",
+              "Lze kombinovat (bridge therapy)",
+              "Při kontraindikaci tPA lze samotná EVT"
+            ]
           ]
         },
         {
@@ -145,6 +331,10 @@
           "style": "critical",
           "title": "HEMORAGICKÁ CMP — ODLIŠNÝ PŘÍSTUP",
           "text": "Krvácení do mozku NIKDY nedostane tPA (zhorší krvácení). Léčba: snížení tlaku krve (cíl SBP < 140 mmHg do 1 hodiny), chirurgické odstranění hematomu (u vybraných), reverze antikoagulace. Neurochirurgická JIP."
+        },
+        {
+          "type": "diagram",
+          "key": "tpa-vs-evt-scale"
         }
       ],
       "summary": [
@@ -162,26 +352,77 @@
         {
           "type": "table",
           "caption": "Léčebný algoritmus status epilepticus v nemocnici",
-          "headers": ["Fáze", "Čas", "Léky", "Cíl"],
+          "headers": [
+            "Fáze",
+            "Čas",
+            "Léky",
+            "Cíl"
+          ],
           "rows": [
-            ["1. fáze (záchranáři nebo urgentní příjem)", "0–5 minut", "Benzodiazepiny: midazolam IM/IN, diazepam IV nebo rektálně", "Zastavit záchvat ihned"],
-            ["2. fáze (urgentní příjem)", "5–20 minut", "Levetiracetam (Keppra) 60 mg/kg IV NEBO fosfenytoin 20 mg PE/kg IV NEBO valproát 40 mg/kg IV", "Druhá linie — pokud BZD nezabraly"],
-            ["3. fáze (urgentní příjem nebo JIP)", "20–40 minut", "Opakovat 2. linii jiným lékem (kombinace)", "Záchvat trvá i po dvou různých lécích"],
-            ["4. fáze — refrakterní SE (JIP)", "> 40 minut", "Anestezie: propofol infúze, midazolam infúze nebo ketamin infúze + intubace + EEG monitoring", "Záchvat nelze zastavit bez celkové anestézie"],
-            ["5. fáze — superrefrakterní SE (JIP)", "> 24 hodin", "Barbituráty: thiopental nebo fenobarbital; ketaminová anestezie; experimentálně ketogenní dieta", "Vzácný, ale smrtelný bez agresivní léčby"]
+            [
+              "1. fáze (záchranáři nebo urgentní příjem)",
+              "0–5 minut",
+              "Benzodiazepiny: midazolam IM/IN, diazepam IV nebo rektálně",
+              "Zastavit záchvat ihned"
+            ],
+            [
+              "2. fáze (urgentní příjem)",
+              "5–20 minut",
+              "Levetiracetam (Keppra) 60 mg/kg IV NEBO fosfenytoin 20 mg PE/kg IV NEBO valproát 40 mg/kg IV",
+              "Druhá linie — pokud BZD nezabraly"
+            ],
+            [
+              "3. fáze (urgentní příjem nebo JIP)",
+              "20–40 minut",
+              "Opakovat 2. linii jiným lékem (kombinace)",
+              "Záchvat trvá i po dvou různých lécích"
+            ],
+            [
+              "4. fáze — refrakterní SE (JIP)",
+              "> 40 minut",
+              "Anestezie: propofol infúze, midazolam infúze nebo ketamin infúze + intubace + EEG monitoring",
+              "Záchvat nelze zastavit bez celkové anestézie"
+            ],
+            [
+              "5. fáze — superrefrakterní SE (JIP)",
+              "> 24 hodin",
+              "Barbituráty: thiopental nebo fenobarbital; ketaminová anestezie; experimentálně ketogenní dieta",
+              "Vzácný, ale smrtelný bez agresivní léčby"
+            ]
           ]
         },
         {
           "type": "table",
           "caption": "Diagnostika příčiny záchvatu v nemocnici",
-          "headers": ["Vyšetření", "Co hledáme"],
+          "headers": [
+            "Vyšetření",
+            "Co hledáme"
+          ],
           "rows": [
-            ["Glukóza, ionty (Na, K, Ca, Mg), urea", "Metabolická příčina: nízký cukr, nízký sodík, nízký hořčík"],
-            ["Toxikologický screening krve a moči", "Intoxikace: alkohol, kokain, metamfetamin, antidepresiva, theofylin"],
-            ["EEG (elektroencefalogram)", "Elektroencefalogram: elektrická aktivita mozku; potvrzení SE; typ záchvatu; odpověď na léčbu"],
-            ["MRI mozku", "Strukturální příčina: nádor, absces, encefalitida, ischémie, hemoragie"],
-            ["Lumbální punkce (mozkomíšní mok)", "Meningitida nebo encefalitida (infekce mozku)"],
-            ["Hladiny antiepileptik", "Je pacient poddávkovaný?"]
+            [
+              "Glukóza, ionty (Na, K, Ca, Mg), urea",
+              "Metabolická příčina: nízký cukr, nízký sodík, nízký hořčík"
+            ],
+            [
+              "Toxikologický screening krve a moči",
+              "Intoxikace: alkohol, kokain, metamfetamin, antidepresiva, theofylin"
+            ],
+            [
+              "EEG (elektroencefalogram)",
+              "Elektroencefalogram: elektrická aktivita mozku; potvrzení SE; typ záchvatu; odpověď na léčbu"
+            ],
+            [
+              "MRI mozku",
+              "Strukturální příčina: nádor, absces, encefalitida, ischémie, hemoragie"
+            ],
+            [
+              "Lumbální punkce (mozkomíšní mok)",
+              "Meningitida nebo encefalitida (infekce mozku)"
+            ],
+            [
+              "Hladiny antiepileptik",
+              "Je pacient poddávkovaný?"
+            ]
           ]
         }
       ],
@@ -199,15 +440,47 @@
         {
           "type": "table",
           "caption": "Nemocniční léčba anafylaxe",
-          "headers": ["Lék", "Dávka a podání", "Funkce"],
+          "headers": [
+            "Lék",
+            "Dávka a podání",
+            "Funkce"
+          ],
           "rows": [
-            ["Epinefrin (adrenalin)", "0,3–0,5 mg IM nebo 0,1 mg IV při šoku", "Nejdůležitější lék; opakovat každých 5–15 minut"],
-            ["Difenhydramin (Benadryl)", "25–50 mg IV pomalou injekcí", "Antihistaminikum H1 — zmírňuje kopřivku a otoky"],
-            ["Ranitidin nebo famotidin", "50 mg IV (ranitidin) nebo 20 mg IV (famotidin)", "Antihistaminikum H2 — blokuje žaludeční histaminové receptory"],
-            ["Methylprednizolon (Solu-Medrol)", "125 mg IV", "Kortikosteroid — brání pozdní a bifazické reakci; nástup za 4–6 hod"],
-            ["Albuterol nebulizace", "2,5 mg přes nebulizér", "Bronchodilatancium — pískání a bronchospasmus"],
-            ["Glukagon", "1–2 mg IV (pokud pacient bere betablokátory)", "Betablokátory blokují účinek adrenalinu — glukagon ho obejde"],
-            ["Noradrenalin infúze", "0,1–1 mcg/kg/min", "Refrakterní hypotenze nereagující na adrenalin"]
+            [
+              "Epinefrin (adrenalin)",
+              "0,3–0,5 mg IM nebo 0,1 mg IV při šoku",
+              "Nejdůležitější lék; opakovat každých 5–15 minut"
+            ],
+            [
+              "Difenhydramin (Benadryl)",
+              "25–50 mg IV pomalou injekcí",
+              "Antihistaminikum H1 — zmírňuje kopřivku a otoky"
+            ],
+            [
+              "Ranitidin nebo famotidin",
+              "50 mg IV (ranitidin) nebo 20 mg IV (famotidin)",
+              "Antihistaminikum H2 — blokuje žaludeční histaminové receptory"
+            ],
+            [
+              "Methylprednizolon (Solu-Medrol)",
+              "125 mg IV",
+              "Kortikosteroid — brání pozdní a bifazické reakci; nástup za 4–6 hod"
+            ],
+            [
+              "Albuterol nebulizace",
+              "2,5 mg přes nebulizér",
+              "Bronchodilatancium — pískání a bronchospasmus"
+            ],
+            [
+              "Glukagon",
+              "1–2 mg IV (pokud pacient bere betablokátory)",
+              "Betablokátory blokují účinek adrenalinu — glukagon ho obejde"
+            ],
+            [
+              "Noradrenalin infúze",
+              "0,1–1 mcg/kg/min",
+              "Refrakterní hypotenze nereagující na adrenalin"
+            ]
           ]
         },
         {
@@ -233,13 +506,34 @@
       "id": "12.5",
       "title": "Šok — nemocniční ošetření",
       "abbrevs": [
-        { "a": "MAP", "f": "Mean Arterial Pressure — střední arteriální tlak (cíl ≥ 65 mmHg)" },
-        { "a": "CVP", "f": "Central Venous Pressure — centrální žilní tlak" },
-        { "a": "ScvO2", "f": "Central venous oxygen saturation — saturace kyslíkem v centrální žíle" },
-        { "a": "ECHO", "f": "Echokardiografie" },
-        { "a": "PICCO", "f": "Pulse Contour Cardiac Output — pokročilé hemodynamické monitorování" },
-        { "a": "ICU", "f": "Intensive Care Unit — JIP" },
-        { "a": "SvO2", "f": "Mixed venous oxygen saturation — smíšená žilní saturace" }
+        {
+          "a": "MAP",
+          "f": "Mean Arterial Pressure — střední arteriální tlak (cíl ≥ 65 mmHg)"
+        },
+        {
+          "a": "CVP",
+          "f": "Central Venous Pressure — centrální žilní tlak"
+        },
+        {
+          "a": "ScvO2",
+          "f": "Central venous oxygen saturation — saturace kyslíkem v centrální žíle"
+        },
+        {
+          "a": "ECHO",
+          "f": "Echokardiografie"
+        },
+        {
+          "a": "PICCO",
+          "f": "Pulse Contour Cardiac Output — pokročilé hemodynamické monitorování"
+        },
+        {
+          "a": "ICU",
+          "f": "Intensive Care Unit — JIP"
+        },
+        {
+          "a": "SvO2",
+          "f": "Mixed venous oxygen saturation — smíšená žilní saturace"
+        }
       ],
       "blocks": [
         {
@@ -249,26 +543,97 @@
         {
           "type": "table",
           "caption": "Hemodynamické cíle u různých typů šoku",
-          "headers": ["Typ šoku", "MAP (střední tlak)", "Srdeční výdej", "Centrální žilní saturace (ScvO2)", "Specifické léky"],
+          "headers": [
+            "Typ šoku",
+            "MAP (střední tlak)",
+            "Srdeční výdej",
+            "Centrální žilní saturace (ScvO2)",
+            "Specifické léky"
+          ],
           "rows": [
-            ["Krvácivý (hemoragický)", "≥ 65 mmHg (trauma: 50–65 permissivní)", "Normalizovat", "> 70 %", "Krevní produkty; TXA; zastavit krvácení chirurgicky"],
-            ["Septický", "≥ 65 mmHg", "Zvýšit", "> 70 %", "Noradrenalin jako první; krystaloidy 30 ml/kg; antibiotika do 1 hod"],
-            ["Kardiogenní", "≥ 65 mmHg", "Snížen — zvýšit inotropiky", "> 65 %", "Dobutamin; milrinon; IABP (balonková pumpa); ECMO"],
-            ["Distributivní — anafylaxe", "≥ 65 mmHg", "Zvýšen", "> 70 %", "Adrenalin; glukokortikoidy; antihistaminika"],
-            ["Neurogenní (mícha)", "> 85 mmHg (7 dní!)", "Normální–nízký", "> 70 %", "Noradrenalin; fenylefrin; atropin při bradykardii"]
+            [
+              "Krvácivý (hemoragický)",
+              "≥ 65 mmHg (trauma: 50–65 permissivní)",
+              "Normalizovat",
+              "> 70 %",
+              "Krevní produkty; TXA; zastavit krvácení chirurgicky"
+            ],
+            [
+              "Septický",
+              "≥ 65 mmHg",
+              "Zvýšit",
+              "> 70 %",
+              "Noradrenalin jako první; krystaloidy 30 ml/kg; antibiotika do 1 hod"
+            ],
+            [
+              "Kardiogenní",
+              "≥ 65 mmHg",
+              "Snížen — zvýšit inotropiky",
+              "> 65 %",
+              "Dobutamin; milrinon; IABP (balonková pumpa); ECMO"
+            ],
+            [
+              "Distributivní — anafylaxe",
+              "≥ 65 mmHg",
+              "Zvýšen",
+              "> 70 %",
+              "Adrenalin; glukokortikoidy; antihistaminika"
+            ],
+            [
+              "Neurogenní (mícha)",
+              "> 85 mmHg (7 dní!)",
+              "Normální–nízký",
+              "> 70 %",
+              "Noradrenalin; fenylefrin; atropin při bradykardii"
+            ]
           ]
         },
         {
           "type": "table",
           "caption": "Vazopresorické a inotropní léky — přehled",
-          "headers": ["Lék", "Hlavní účinek", "Indikace", "Typická dávka"],
+          "headers": [
+            "Lék",
+            "Hlavní účinek",
+            "Indikace",
+            "Typická dávka"
+          ],
           "rows": [
-            ["Noradrenalin (norepinefrin)", "Vazokonstrikce (alfa-1) → zvyšuje MAP", "Septický šok — lék první volby; neurogenní šok", "0,01–3 mcg/kg/min IV infúze"],
-            ["Adrenalin (epinefrin)", "Vazokonstrikce + pozitivní inotropní (beta-1)", "Septický šok refrakterní na noradrenalin; anafylaxe", "0,01–0,5 mcg/kg/min IV infúze"],
-            ["Dobutamin", "Inotropní (beta-1) — zvyšuje srdeční výdej", "Kardiogenní šok; nízkodébitní srdeční selhání", "2–20 mcg/kg/min IV infúze"],
-            ["Fenylefrin", "Čistá vazokonstrikce (alfa-1) — bez tachykardie", "Neurogenní šok; situace s tachykardií", "0,5–5 mcg/kg/min IV infúze"],
-            ["Vasopressin", "Vazokonstrikce přes V1 receptor — nezávislá na adrenergních receptorech", "Septický šok jako přídavek k noradrenalinu", "0,03–0,04 IU/min IV infúze (fixní dávka)"],
-            ["Milrinon", "Inotropní + vazodilatace (PDE3 inhibitor)", "Kardiogenní šok bez hypotenze; srdeční selhání", "0,375–0,75 mcg/kg/min IV infúze"]
+            [
+              "Noradrenalin (norepinefrin)",
+              "Vazokonstrikce (alfa-1) → zvyšuje MAP",
+              "Septický šok — lék první volby; neurogenní šok",
+              "0,01–3 mcg/kg/min IV infúze"
+            ],
+            [
+              "Adrenalin (epinefrin)",
+              "Vazokonstrikce + pozitivní inotropní (beta-1)",
+              "Septický šok refrakterní na noradrenalin; anafylaxe",
+              "0,01–0,5 mcg/kg/min IV infúze"
+            ],
+            [
+              "Dobutamin",
+              "Inotropní (beta-1) — zvyšuje srdeční výdej",
+              "Kardiogenní šok; nízkodébitní srdeční selhání",
+              "2–20 mcg/kg/min IV infúze"
+            ],
+            [
+              "Fenylefrin",
+              "Čistá vazokonstrikce (alfa-1) — bez tachykardie",
+              "Neurogenní šok; situace s tachykardií",
+              "0,5–5 mcg/kg/min IV infúze"
+            ],
+            [
+              "Vasopressin",
+              "Vazokonstrikce přes V1 receptor — nezávislá na adrenergních receptorech",
+              "Septický šok jako přídavek k noradrenalinu",
+              "0,03–0,04 IU/min IV infúze (fixní dávka)"
+            ],
+            [
+              "Milrinon",
+              "Inotropní + vazodilatace (PDE3 inhibitor)",
+              "Kardiogenní šok bez hypotenze; srdeční selhání",
+              "0,375–0,75 mcg/kg/min IV infúze"
+            ]
           ]
         },
         {

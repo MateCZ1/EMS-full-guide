@@ -9,24 +9,68 @@
       "id": "7.1",
       "title": "Komunikace s různými typy pacientů",
       "terms": [
-        { "t": "Terapeutická komunikace", "d": "záměrné používání verbálních a neverbálních technik pro navázání důvěry a snížení úzkosti pacienta; prokazatelně snižuje bolest a paniku" },
-        { "t": "Validace", "d": "uznání pacientových pocitů jako pochopitelných a normálních; \"Chápu, že se bojíte\" → pacient se cítí slyšen → snížení úzkosti" },
-        { "t": "Proxémika", "d": "vzdálenost mezi lidmi při komunikaci; záchranář kleknete na úroveň pacienta (ne stojí nad ním) → snížení napětí" },
-        { "t": "Aktivní naslouchání", "d": "záchranář opakuje nebo parafrázuje co pacient říká; potvrzení porozumění; \"Říkáte, že bolest nastoupila náhle?\"" }
+        {
+          "t": "Terapeutická komunikace",
+          "d": "záměrné používání verbálních a neverbálních technik pro navázání důvěry a snížení úzkosti pacienta; prokazatelně snižuje bolest a paniku"
+        },
+        {
+          "t": "Validace",
+          "d": "uznání pacientových pocitů jako pochopitelných a normálních; \"Chápu, že se bojíte\" → pacient se cítí slyšen → snížení úzkosti"
+        },
+        {
+          "t": "Proxémika",
+          "d": "vzdálenost mezi lidmi při komunikaci; záchranář kleknete na úroveň pacienta (ne stojí nad ním) → snížení napětí"
+        },
+        {
+          "t": "Aktivní naslouchání",
+          "d": "záchranář opakuje nebo parafrázuje co pacient říká; potvrzení porozumění; \"Říkáte, že bolest nastoupila náhle?\""
+        }
       ],
       "blocks": [
         {
           "type": "table",
           "caption": "Komunikace podle typu pacienta",
-          "headers": ["Typ pacienta", "Co nedělat — a PROČ", "Co dělat — a PROČ"],
+          "headers": [
+            "Typ pacienta",
+            "Co nedělat — a PROČ",
+            "Co dělat — a PROČ"
+          ],
           "rows": [
-            ["Panický pacient", "Neříkejte \"Uklidněte se\" — nefunguje a zhoršuje; pacient to vnímá jako: \"tvoje emoce jsou neplatné\"", "Jménem: \"Jmenuji se Pavel, jsem záchranář.\" Opakujte jednoduché instrukce: \"Dýchejte se mnou — nádech, výdech.\" PROČ: jméno záchranáře humanizuje kontakt; technika dýchání dá pacientovi kontrolu"],
-            ["Agresivní pacient", "Nestůjte přímo naproti (obranná pozice); neblokujte únikovou cestu; neprovokujte dotykem", "Udržujte bezpečnou vzdálenost (2+ metry); klidný hlas; otevřené dlaně (bez zbraně); přivolejte policii. PROČ bezpečná vzdálenost: agresivní člověk zaútočí do 21 stop (~6 metrů) než záchranář může reagovat"],
-            ["Dítě", "Nestůjte nad ním; nepoužívejte jehly bez vysvětlení; nemluvte jako s miminkem (ponižující)", "Kleknete na jeho úroveň; mluvte jednoduše; dejte pocit kontroly: \"Smíš mě držet za ruku?\". PROČ: děti se bojí ztráty kontroly; malý výběr = velká pomoc"],
-            ["Starší pacient", "Nepředpokládejte demenci nebo hluchotu; nemluvte hlasitěji automaticky", "Mluvte pomalu a jasně; zachovejte důstojnost (zakryjte je); informujte rodinu. PROČ důstojnost: starší pacienti mají velkou ztrátu kontroly; respekt snižuje úzkost"],
-            ["Pod vlivem látek", "Nehádejte se; neopravujte; neprovokujte", "Jednoduché věty; klidný tón; priorita: bezpečnost záchranáře i pacienta. PROČ: intoxikovaný pacient je neprediktabilní; záchranář nemůže \"zvítězit\" v logické diskusi s opilcem"],
-            ["Trauma — oběť násilí", "Neptejte se na detaily; nezpochybňujte; neprojevujte šok", "Empatie; minimální nutný fyzický kontakt; souhlas před každým dotykem; ideálně záchranář stejného pohlaví. PROČ minimální kontakt: oběť násilí má narušenou hranici těla; cizí dotek = trauma"]
+            [
+              "Panický pacient",
+              "Neříkejte \"Uklidněte se\" — nefunguje a zhoršuje; pacient to vnímá jako: \"tvoje emoce jsou neplatné\"",
+              "Jménem: \"Jmenuji se Pavel, jsem záchranář.\" Opakujte jednoduché instrukce: \"Dýchejte se mnou — nádech, výdech.\" PROČ: jméno záchranáře humanizuje kontakt; technika dýchání dá pacientovi kontrolu"
+            ],
+            [
+              "Agresivní pacient",
+              "Nestůjte přímo naproti (obranná pozice); neblokujte únikovou cestu; neprovokujte dotykem",
+              "Udržujte bezpečnou vzdálenost (2+ metry); klidný hlas; otevřené dlaně (bez zbraně); přivolejte policii. PROČ bezpečná vzdálenost: agresivní člověk zaútočí do 21 stop (~6 metrů) než záchranář může reagovat"
+            ],
+            [
+              "Dítě",
+              "Nestůjte nad ním; nepoužívejte jehly bez vysvětlení; nemluvte jako s miminkem (ponižující)",
+              "Kleknete na jeho úroveň; mluvte jednoduše; dejte pocit kontroly: \"Smíš mě držet za ruku?\". PROČ: děti se bojí ztráty kontroly; malý výběr = velká pomoc"
+            ],
+            [
+              "Starší pacient",
+              "Nepředpokládejte demenci nebo hluchotu; nemluvte hlasitěji automaticky",
+              "Mluvte pomalu a jasně; zachovejte důstojnost (zakryjte je); informujte rodinu. PROČ důstojnost: starší pacienti mají velkou ztrátu kontroly; respekt snižuje úzkost"
+            ],
+            [
+              "Pod vlivem látek",
+              "Nehádejte se; neopravujte; neprovokujte",
+              "Jednoduché věty; klidný tón; priorita: bezpečnost záchranáře i pacienta. PROČ: intoxikovaný pacient je neprediktabilní; záchranář nemůže \"zvítězit\" v logické diskusi s opilcem"
+            ],
+            [
+              "Trauma — oběť násilí",
+              "Neptejte se na detaily; nezpochybňujte; neprojevujte šok",
+              "Empatie; minimální nutný fyzický kontakt; souhlas před každým dotykem; ideálně záchranář stejného pohlaví. PROČ minimální kontakt: oběť násilí má narušenou hranici těla; cizí dotek = trauma"
+            ]
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "patient-comm-flashcards"
         }
       ],
       "summary": [
@@ -40,10 +84,22 @@
       "id": "7.2",
       "title": "Duševní zdraví záchranáře",
       "terms": [
-        { "t": "PTSP", "d": "Posttraumatická stresová porucha — vznik po traumatické události nebo opakovaném vystavení traumatu; příznaky: flashbacky, noční můry, vyhýbavé chování, hypervigilance" },
-        { "t": "CISD", "d": "Critical Incident Stress Debriefing — strukturované skupinové psychologické sezení po mimořádně zatěžující události; dobrovolné; veřejné vyjádření emocí" },
-        { "t": "Vicarious trauma", "d": "sekundární trauma — záchranář \"přejímá\" traumatické zkušenosti pacientů; kumulativní; nebezpečnější než jednorázový incident" },
-        { "t": "Burnout (Syndrom vyhoření)", "d": "stav emocionálního a fyzického vyčerpání způsobený chronickým stresem v pomáhající profesi; projevuje se cynismem, depersonalizací (odpojením od pacientů) a sníženou efektivitou" }
+        {
+          "t": "PTSP",
+          "d": "Posttraumatická stresová porucha — vznik po traumatické události nebo opakovaném vystavení traumatu; příznaky: flashbacky, noční můry, vyhýbavé chování, hypervigilance"
+        },
+        {
+          "t": "CISD",
+          "d": "Critical Incident Stress Debriefing — strukturované skupinové psychologické sezení po mimořádně zatěžující události; dobrovolné; veřejné vyjádření emocí"
+        },
+        {
+          "t": "Vicarious trauma",
+          "d": "sekundární trauma — záchranář \"přejímá\" traumatické zkušenosti pacientů; kumulativní; nebezpečnější než jednorázový incident"
+        },
+        {
+          "t": "Burnout (Syndrom vyhoření)",
+          "d": "stav emocionálního a fyzického vyčerpání způsobený chronickým stresem v pomáhající profesi; projevuje se cynismem, depersonalizací (odpojením od pacientů) a sníženou efektivitou"
+        }
       ],
       "lead": "Záchranáři jsou vystaveni traumatickým situacím systematicky a opakovaně. PROČ je duševní zdraví součástí záchranářského manuálu: vyhořelý záchranář chybuje; záchranář s PTSP ohrožuje sebe i pacienty; péče o záchranáře = péče o systém.",
       "blocks": [

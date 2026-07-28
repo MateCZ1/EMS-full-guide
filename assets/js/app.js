@@ -131,6 +131,7 @@ function router() {
 
   if (!chapterId) {
     renderHome();
+    mountDiagrams($content);
     highlightActiveNav();
     closeMobileSidebar();
     return;
@@ -185,6 +186,10 @@ function renderHome() {
       </div>
     </section>
     <div class="home-body">
+      <div class="section-heading">${emsIcon("compass","icon-sm")} Prozkoumej tělo</div>
+      <p class="section-sub">Klikni na část těla — rovnou tě to přehodí do příslušné sekce manuálu.</p>
+      <div class="diagram-box" data-diagram="body-map-navigator" id="diagram-body-map-navigator" style="margin-bottom:46px"></div>
+
       <div class="section-heading"><span class="part-tag">ČÁST I</span> Přednemocniční péče</div>
       <p class="section-sub">Vše, co záchranář potřebuje v terénu — od základních principů po vybavení a léčebné postupy.</p>
       <div class="card-grid">${cardsFor(partI)}</div>

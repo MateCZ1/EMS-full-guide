@@ -14,7 +14,12 @@
         {
           "type": "table",
           "caption": "Vitální funkce — nízké, normální a vysoké hodnoty s postupem korekce",
-          "headers": ["Parametr", "Nízká (Pod normou) — a co dělat", "Normální rozmezí", "Vysoká (Nad normou) — a co dělat"],
+          "headers": [
+            "Parametr",
+            "Nízká (Pod normou) — a co dělat",
+            "Normální rozmezí",
+            "Vysoká (Nad normou) — a co dělat"
+          ],
           "rows": [
             [
               "Systolický krevní tlak (SBP)",
@@ -77,6 +82,10 @@
               "NAD 38,5 °C = HOREČKA→ Antipyretika: paracetamol 1 g IV nebo PO (pro symptomatickou úlevu)→ Mechanické chlazení (vlhké utěrky, ventilátor) pokud nad 40 °C→ NAD 40 °C s poruchou vědomí = tepelný údar → AGRESIVNÍ CHLAZENÍ: ledové obklady na třísla a podpaží; ledová voda IV; ventilátor; transport urgentně"
             ]
           ]
+        },
+        {
+          "type": "diagram",
+          "key": "vitals-gauges"
         }
       ],
       "summary": [
@@ -94,23 +103,103 @@
         {
           "type": "table",
           "caption": "Léky — rychlá reference (dávky, indikace, kontraindikace)",
-          "headers": ["Lék", "Standardní dávka", "Indikace", "Klíčová kontraindikace"],
+          "headers": [
+            "Lék",
+            "Standardní dávka",
+            "Indikace",
+            "Klíčová kontraindikace"
+          ],
           "rows": [
-            ["Adrenalin (ředěný 1:10 000)", "1 mg IV/kost každé 3–5 min", "Zástava srdce", "—"],
-            ["Adrenalin (silný 1:1 000)", "0,3–0,5 mg IM na stehno", "Těžká alergická reakce", "—"],
-            ["Amiodaron", "300 mg IV bolus (+ záloha 150 mg)", "Fibrilace komor po 3. výboji", "Prodloužené QT, bradykardie"],
-            ["Atropin", "0,5 mg IV; maximum 3 mg", "Příliš pomalý srdeční rytmus", "—"],
-            ["Morfin", "2–5 mg IV titrací", "Silná bolest", "TK pod 90; útlum dýchání"],
-            ["Fentanyl", "25–100 mcg IV; 2 mcg/kg nosem", "Silná bolest; příprava před intubací", "Mít BVM připravený"],
-            ["Ketamin", "0,3–2 mg/kg IV dle indikace", "Analgezie, sedace, intubace", "Výrazná hypertenze"],
-            ["Midazolam (Versed)", "2–10 mg IV/IM; 10 mg nosem", "Záchvaty; sedace", "Těžká porucha dýchání"],
-            ["Naloxon (Narcan)", "0,4–2 mg IV/IM/IN; opakovat", "Opioidní předávkování", "Opatrně u závislých"],
-            ["Nitroglycerin spray", "0,4 mg pod jazyk; opakovat po 5 min", "Bolest na hrudi; infarkt", "TK pod 90; infarkt pravé komory; Viagra/Cialis do 48 h"],
-            ["Aspirin (žvýkat)", "324 mg (4 × 81 mg) žvýkat", "Podezření na infarkt", "Alergie; aktivní krvácení GI"],
-            ["Albuterol inhalace", "2,5 mg přes nebulizér", "Astma; zúžení průdušek", "Tachykardie (relativní)"],
-            ["Dextróza 50%", "25–50 g pomalu IV", "Nízký cukr v krvi", "Podávat POUZE po potvrzení glukometrem"],
-            ["Sukcinylcholin (Anectine)", "1,5 mg/kg IV", "Rychlé uvolnění svalů před intubací", "Vysoký draslík; popáleniny starší 72 h"],
-            ["Hydroxokobalamin (Cyanokit)", "5 g IV za 15 minut", "Otrava kyanidem", "—"]
+            [
+              "Adrenalin (ředěný 1:10 000)",
+              "1 mg IV/kost každé 3–5 min",
+              "Zástava srdce",
+              "—"
+            ],
+            [
+              "Adrenalin (silný 1:1 000)",
+              "0,3–0,5 mg IM na stehno",
+              "Těžká alergická reakce",
+              "—"
+            ],
+            [
+              "Amiodaron",
+              "300 mg IV bolus (+ záloha 150 mg)",
+              "Fibrilace komor po 3. výboji",
+              "Prodloužené QT, bradykardie"
+            ],
+            [
+              "Atropin",
+              "0,5 mg IV; maximum 3 mg",
+              "Příliš pomalý srdeční rytmus",
+              "—"
+            ],
+            [
+              "Morfin",
+              "2–5 mg IV titrací",
+              "Silná bolest",
+              "TK pod 90; útlum dýchání"
+            ],
+            [
+              "Fentanyl",
+              "25–100 mcg IV; 2 mcg/kg nosem",
+              "Silná bolest; příprava před intubací",
+              "Mít BVM připravený"
+            ],
+            [
+              "Ketamin",
+              "0,3–2 mg/kg IV dle indikace",
+              "Analgezie, sedace, intubace",
+              "Výrazná hypertenze"
+            ],
+            [
+              "Midazolam (Versed)",
+              "2–10 mg IV/IM; 10 mg nosem",
+              "Záchvaty; sedace",
+              "Těžká porucha dýchání"
+            ],
+            [
+              "Naloxon (Narcan)",
+              "0,4–2 mg IV/IM/IN; opakovat",
+              "Opioidní předávkování",
+              "Opatrně u závislých"
+            ],
+            [
+              "Nitroglycerin spray",
+              "0,4 mg pod jazyk; opakovat po 5 min",
+              "Bolest na hrudi; infarkt",
+              "TK pod 90; infarkt pravé komory; Viagra/Cialis do 48 h"
+            ],
+            [
+              "Aspirin (žvýkat)",
+              "324 mg (4 × 81 mg) žvýkat",
+              "Podezření na infarkt",
+              "Alergie; aktivní krvácení GI"
+            ],
+            [
+              "Albuterol inhalace",
+              "2,5 mg přes nebulizér",
+              "Astma; zúžení průdušek",
+              "Tachykardie (relativní)"
+            ],
+            [
+              "Dextróza 50%",
+              "25–50 g pomalu IV",
+              "Nízký cukr v krvi",
+              "Podávat POUZE po potvrzení glukometrem"
+            ],
+            [
+              "Sukcinylcholin (Anectine)",
+              "1,5 mg/kg IV",
+              "Rychlé uvolnění svalů před intubací",
+              "Vysoký draslík; popáleniny starší 72 h"
+            ],
+            [
+              "Hydroxokobalamin (Cyanokit)",
+              "5 g IV za 15 minut",
+              "Otrava kyanidem",
+              "—"
+            ]
           ]
         }
       ],
@@ -128,17 +217,57 @@
         {
           "type": "table",
           "caption": "Přehled algoritmů a jejich pořadí kroků",
-          "headers": ["Algoritmus", "Kdy použít", "Pořadí kroků"],
+          "headers": [
+            "Algoritmus",
+            "Kdy použít",
+            "Pořadí kroků"
+          ],
           "rows": [
-            ["XABCDE", "Každý traumatizovaný pacient — VŽDY", "X → A → B → C → D → E"],
-            ["MARCH", "Taktické prostředí (aktivní střelec, ohrožení záchranáře)", "M → A → R → C → H"],
-            ["ABCDE", "Interní stavy bez krvácení", "A → B → C → D → E"],
-            ["MONA", "Podezření na infarkt myokardu", "Morfin → Kyslík → Nitroglycerin → Aspirin"],
-            ["KPR — ALS", "Zástava srdce", "Masáž → Ventilace → Analýza rytmu → Výboj → Léky → 6H+6T"],
-            ["FAST+", "Podezření na mrtvici", "Obličej → Paže → Řeč → Čas → Rovnováha → Oči → Bolest hlavy"],
-            ["RICE", "Pohmoždění a měkké tkáně", "Klid → Chlazení → Komprese → Elevace"],
-            ["SBAR", "Předání pacienta", "Situace → Zázemí → Hodnocení → Doporučení"],
-            ["START", "Třídění při MCI", "Chodit schopní → Dýchání → Oběh → Vědomí → Barva"]
+            [
+              "XABCDE",
+              "Každý traumatizovaný pacient — VŽDY",
+              "X → A → B → C → D → E"
+            ],
+            [
+              "MARCH",
+              "Taktické prostředí (aktivní střelec, ohrožení záchranáře)",
+              "M → A → R → C → H"
+            ],
+            [
+              "ABCDE",
+              "Interní stavy bez krvácení",
+              "A → B → C → D → E"
+            ],
+            [
+              "MONA",
+              "Podezření na infarkt myokardu",
+              "Morfin → Kyslík → Nitroglycerin → Aspirin"
+            ],
+            [
+              "KPR — ALS",
+              "Zástava srdce",
+              "Masáž → Ventilace → Analýza rytmu → Výboj → Léky → 6H+6T"
+            ],
+            [
+              "FAST+",
+              "Podezření na mrtvici",
+              "Obličej → Paže → Řeč → Čas → Rovnováha → Oči → Bolest hlavy"
+            ],
+            [
+              "RICE",
+              "Pohmoždění a měkké tkáně",
+              "Klid → Chlazení → Komprese → Elevace"
+            ],
+            [
+              "SBAR",
+              "Předání pacienta",
+              "Situace → Zázemí → Hodnocení → Doporučení"
+            ],
+            [
+              "START",
+              "Třídění při MCI",
+              "Chodit schopní → Dýchání → Oběh → Vědomí → Barva"
+            ]
           ]
         }
       ],
@@ -172,15 +301,47 @@
         {
           "type": "table",
           "caption": "Tísňová čísla a kdy je volat",
-          "headers": ["Složka", "Číslo", "Kdy volat"],
+          "headers": [
+            "Složka",
+            "Číslo",
+            "Kdy volat"
+          ],
           "rows": [
-            ["Záchranná zdravotní služba (USA)", "911", "Základní tísňová linka"],
-            ["Policie (USA)", "911", "Bezpečnost místa; kriminální scény; střelba"],
-            ["Hasiči (USA)", "911", "Požár; záchranná technická akce; nebezpečné látky"],
-            ["Středisko pro otravy (Poison Control)", "1-800-222-1222", "Otravy; konzultace antidota — 24/7"],
-            ["FBI (aktivní střelec/terorismus)", "1-800-CALL-FBI", "Teroristický útok; aktivní střelec"],
-            ["Interní dispečink EMS", "[doplnit číslo dispečinku]", "Komunikace s výjezdovým dispečinkem"],
-            ["Přijímající nemocnice (trauma linka)", "[doplnit číslo nemocnice]", "Předavizace; aktivace trauma týmu; STEMI alert; iktové centrum"]
+            [
+              "Záchranná zdravotní služba (USA)",
+              "911",
+              "Základní tísňová linka"
+            ],
+            [
+              "Policie (USA)",
+              "911",
+              "Bezpečnost místa; kriminální scény; střelba"
+            ],
+            [
+              "Hasiči (USA)",
+              "911",
+              "Požár; záchranná technická akce; nebezpečné látky"
+            ],
+            [
+              "Středisko pro otravy (Poison Control)",
+              "1-800-222-1222",
+              "Otravy; konzultace antidota — 24/7"
+            ],
+            [
+              "FBI (aktivní střelec/terorismus)",
+              "1-800-CALL-FBI",
+              "Teroristický útok; aktivní střelec"
+            ],
+            [
+              "Interní dispečink EMS",
+              "[doplnit číslo dispečinku]",
+              "Komunikace s výjezdovým dispečinkem"
+            ],
+            [
+              "Přijímající nemocnice (trauma linka)",
+              "[doplnit číslo nemocnice]",
+              "Předavizace; aktivace trauma týmu; STEMI alert; iktové centrum"
+            ]
           ]
         },
         {
