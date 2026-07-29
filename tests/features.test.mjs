@@ -45,9 +45,10 @@ test("a call records choices and produces a copyable injury report", async () =>
   assert.match(toolsSource, /\*\*PRŮBĚH VYŠETŘENÍ A OŠETŘENÍ\*\*/);
   assert.match(toolsSource, /Zkopírovat záznam/);
   assert.match(toolsSource, /Jméno ošetřujícího/);
-  assert.match(toolsSource, /Složka ošetřujícího/);
-  assert.match(toolsSource, /\*\*Ošetřující:\*\*/);
-  assert.match(toolsSource, /\*\*Složka:\*\*/);
+  assert.match(toolsSource, /<legend>Department<\/legend>/);
+  assert.match(toolsSource, /"\*\*OŠETŘUJÍCÍ\*\*"/);
+  assert.match(toolsSource, /`\*\*Department:\*\*/);
+  assert.match(toolsSource, /"\*\*PACIENT\*\*"/);
   assert.match(toolsSource, /\["EMS", "Fire Department"\]/);
   assert.match(toolsSource, /Odeslat záznam do archivu/);
   assert.match(toolsSource, /Uloženo v archivu ✓/);
@@ -67,7 +68,11 @@ test("a call records choices and produces a copyable injury report", async () =>
   assert.doesNotMatch(pageSource, /window\.confirm/);
   assert.ok(
     toolsSource.indexOf("Jméno ošetřujícího") <
-      toolsSource.indexOf("Jméno osoby — volitelné"),
+      toolsSource.indexOf("Jméno pacienta — volitelné"),
+  );
+  assert.ok(
+    toolsSource.indexOf('"**OŠETŘUJÍCÍ**"') <
+      toolsSource.indexOf('"**PACIENT**"'),
   );
   assert.ok(
     toolsSource.indexOf('className="cpr-death-button"') <

@@ -88,18 +88,18 @@ function buildDiscordForm(data) {
         color: 6943195,
         fields: [
           {
-            name: "Pacient",
-            value: data.patientName,
-            inline: true,
-          },
-          {
             name: "Ošetřující",
             value: data.responderName,
             inline: true,
           },
           {
-            name: "Složka",
-            value: data.responderUnit,
+            name: "Department",
+            value: data.responderDepartment,
+            inline: true,
+          },
+          {
+            name: "Pacient",
+            value: data.patientName,
             inline: true,
           },
           {
@@ -169,7 +169,10 @@ async function handleReport(request, env, origin) {
   const report = requiredText(input.report, MAX_REPORT_LENGTH);
   const patientName = requiredText(input.patientName, 100);
   const responderName = requiredText(input.responderName, 80);
-  const responderUnit = requiredText(input.responderUnit, 40);
+  const responderDepartment = requiredText(
+    input.responderDepartment ?? input.responderUnit,
+    40,
+  );
   const sex = requiredText(input.sex, 30);
   const location = requiredText(input.location, 80);
   const generatedAt = Number(input.generatedAt);
@@ -179,7 +182,7 @@ async function handleReport(request, env, origin) {
     !report ||
     !patientName ||
     !responderName ||
-    !responderUnit ||
+    !responderDepartment ||
     !sex ||
     !location ||
     !Number.isFinite(generatedAt) ||
@@ -207,7 +210,7 @@ async function handleReport(request, env, origin) {
       report,
       patientName,
       responderName,
-      responderUnit,
+      responderDepartment,
       sex,
       location,
       generatedAt,

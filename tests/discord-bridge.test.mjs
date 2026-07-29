@@ -10,10 +10,10 @@ const bridgeEnvironment = {
 };
 const validReport = {
   report:
-    "**ZÁZNAM O ZRANĚNÉ OSOBĚ**\n\n**Ošetřující:** Alex Stone\n**Složka:** Fire Department",
+    "**ZÁZNAM O ZRANĚNÉ OSOBĚ**\n\n**OŠETŘUJÍCÍ**\n**Jméno:** Alex Stone\n**Department:** Fire Department\n\n**PACIENT**\n**Jméno:** John Doe",
   patientName: "John Doe",
   responderName: "Alex Stone",
-  responderUnit: "Fire Department",
+  responderDepartment: "Fire Department",
   sex: "Muž",
   location: "Los Santos",
   generatedAt: Date.UTC(2026, 6, 28, 14, 30, 0),
@@ -60,8 +60,9 @@ test("Discord bridge sends a report with a full text attachment", async () => {
     const attachment = form.get("files[0]");
 
     assert.deepEqual(payload.allowed_mentions, { parse: [] });
-    assert.equal(payload.embeds[0].fields[1].value, "Alex Stone");
-    assert.equal(payload.embeds[0].fields[2].value, "Fire Department");
+    assert.equal(payload.embeds[0].fields[0].value, "Alex Stone");
+    assert.equal(payload.embeds[0].fields[1].value, "Fire Department");
+    assert.equal(payload.embeds[0].fields[2].value, "John Doe");
     assert.equal(payload.embeds[0].fields[3].value, "Los Santos");
     assert.match(attachment.name, /^zaznam-/);
     assert.equal(await attachment.text(), validReport.report);

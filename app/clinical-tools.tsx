@@ -112,7 +112,7 @@ const pickupLocations = [
   "Mount Chiliad",
 ];
 
-const responderUnits = ["EMS", "Fire Department"];
+const responderDepartments = ["EMS", "Fire Department"];
 
 const archiveServiceUrl =
   process.env.NEXT_PUBLIC_DISCORD_BRIDGE_URL?.trim() ?? "";
@@ -852,7 +852,7 @@ export function InjuryReportPanel({
 }) {
   const [name, setName] = useState("");
   const [responderName, setResponderName] = useState("");
-  const [responderUnit, setResponderUnit] = useState("");
+  const [responderDepartment, setResponderDepartment] = useState("");
   const [sex, setSex] = useState("");
   const [location, setLocation] = useState("");
   const [generatedAt, setGeneratedAt] = useState<number | null>(null);
@@ -913,9 +913,12 @@ export function InjuryReportPanel({
     return [
       "**ZÁZNAM O ZRANĚNÉ OSOBĚ**",
       "",
+      "**OŠETŘUJÍCÍ**",
+      `**Jméno:** ${responderName.trim()}`,
+      `**Department:** ${responderDepartment}`,
+      "",
+      "**PACIENT**",
       `**Jméno:** ${name.trim() || "Nezjištěno"}`,
-      `**Ošetřující:** ${responderName.trim()}`,
-      `**Složka:** ${responderUnit}`,
       `**Pohlaví:** ${sex}`,
       `**Místo převzetí:** ${location}`,
       `**Zahájení výjezdu:** ${
@@ -950,7 +953,7 @@ export function InjuryReportPanel({
     name,
     records,
     responderName,
-    responderUnit,
+    responderDepartment,
     riskFlags,
     sex,
     startedAt,
@@ -982,7 +985,8 @@ export function InjuryReportPanel({
           report,
           patientName: name.trim() || "Nezjištěno",
           responderName: responderName.trim(),
-          responderUnit,
+          responderDepartment,
+          responderUnit: responderDepartment,
           sex,
           location,
           generatedAt,
@@ -1025,103 +1029,125 @@ export function InjuryReportPanel({
       {!generatedAt ? (
         <div className="report-form">
           <p className="tool-intro">
-            Jméno osoby je volitelné. Jméno a složka ošetřujícího, pohlaví a
-            místo převzetí jsou pro vytvoření záznamu povinné.
+            Jméno pacienta je volitelné. Jméno a department ošetřujícího,
+            pohlaví a místo převzetí jsou pro vytvoření záznamu povinné.
           </p>
-          <section
-            className={`assessment-preview ${
-              assessment.isDeceased ? "is-deceased" : ""
-            }`}
-            aria-label="Automatické zhodnocení stavu"
-          >
-            <div>
-              <span>AUTOMATICKÉ ZHODNOCENÍ</span>
-              <strong>{assessment.outcome}</strong>
-            </div>
-            {assessment.items.length ? (
-              <dl>
-                {assessment.items.map((item) => (
-                  <div key={item.label}>
-                    <dt>{item.label}</dt>
-                    <dd>{item.value}</dd>
-                  </div>
+          <section className="report-person-section responder-section">
+            <header>
+              <span>01</span>
+              <div>
+                <strong>Ošetřující</strong>
+                <small>Osoba odpovědná za ošetření a záznam</small>
+              </div>
+            </header>
+            <label>
+              Jméno ošetřujícího
+              <input
+                value={responderName}
+                onChange={(event) => setResponderName(event.target.value)}
+                placeholder="Jméno osoby, která záznam vytváří"
+                autoComplete="name"
+              />
+            </label>
+            <fieldset>
+              <legend>Department</legend>
+              <div className="report-option-grid responder-departments">
+                {responderDepartments.map((option) => (
+                  <button
+                    type="button"
+                    key={option}
+                    className={responderDepartment === option ? "active" : ""}
+                    onClick={() => setResponderDepartment(option)}
+                  >
+                    {option}
+                  </button>
                 ))}
-              </dl>
-            ) : (
-              <p>Pro zhodnocení zatím nejsou zaznamenané potřebné volby.</p>
-            )}
-            <small>
-              Sestaveno automaticky z kliknutí v průvodci. Nezjištěné údaje se
-              neuvádějí.
-            </small>
+              </div>
+            </fieldset>
           </section>
-          <label>
-            Jméno ošetřujícího
-            <input
-              value={responderName}
-              onChange={(event) => setResponderName(event.target.value)}
-              placeholder="Jméno osoby, která záznam vytváří"
-              autoComplete="name"
-            />
-          </label>
-          <fieldset>
-            <legend>Složka ošetřujícího</legend>
-            <div className="report-option-grid responder-units">
-              {responderUnits.map((option) => (
-                <button
-                  type="button"
-                  key={option}
-                  className={responderUnit === option ? "active" : ""}
-                  onClick={() => setResponderUnit(option)}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          </fieldset>
-          <label>
-            Jméno osoby — volitelné
-            <input
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-              placeholder="Při neznámé totožnosti ponechte prázdné"
-            />
-          </label>
-          <fieldset>
-            <legend>Pohlaví osoby</legend>
-            <div className="report-option-grid">
-              {["Muž", "Žena", "Nezjištěno"].map((option) => (
-                <button
-                  type="button"
-                  key={option}
-                  className={sex === option ? "active" : ""}
-                  onClick={() => setSex(option)}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Oblast převzetí osoby</legend>
-            <div className="report-option-grid locations">
-              {pickupLocations.map((option) => (
-                <button
-                  type="button"
-                  key={option}
-                  className={location === option ? "active" : ""}
-                  onClick={() => setLocation(option)}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          </fieldset>
+
+          <section className="report-person-section patient-section">
+            <header>
+              <span>02</span>
+              <div>
+                <strong>Pacient</strong>
+                <small>Základní údaje a výsledný stav osoby</small>
+              </div>
+            </header>
+            <label>
+              Jméno pacienta — volitelné
+              <input
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                placeholder="Při neznámé totožnosti ponechte prázdné"
+              />
+            </label>
+            <fieldset>
+              <legend>Pohlaví pacienta</legend>
+              <div className="report-option-grid">
+                {["Muž", "Žena", "Nezjištěno"].map((option) => (
+                  <button
+                    type="button"
+                    key={option}
+                    className={sex === option ? "active" : ""}
+                    onClick={() => setSex(option)}
+                  >
+                    {option}
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Oblast převzetí pacienta</legend>
+              <div className="report-option-grid locations">
+                {pickupLocations.map((option) => (
+                  <button
+                    type="button"
+                    key={option}
+                    className={location === option ? "active" : ""}
+                    onClick={() => setLocation(option)}
+                  >
+                    {option}
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+            <section
+              className={`assessment-preview ${
+                assessment.isDeceased ? "is-deceased" : ""
+              }`}
+              aria-label="Automatické zhodnocení stavu"
+            >
+              <div>
+                <span>AUTOMATICKÉ ZHODNOCENÍ</span>
+                <strong>{assessment.outcome}</strong>
+              </div>
+              {assessment.items.length ? (
+                <dl>
+                  {assessment.items.map((item) => (
+                    <div key={item.label}>
+                      <dt>{item.label}</dt>
+                      <dd>{item.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              ) : (
+                <p>Pro zhodnocení zatím nejsou zaznamenané potřebné volby.</p>
+              )}
+              <small>
+                Sestaveno automaticky z kliknutí v průvodci. Nezjištěné údaje
+                se neuvádějí.
+              </small>
+            </section>
+          </section>
           <button
             type="button"
             className="primary-tool-button full-width generate-report-button"
             disabled={
-              !responderName.trim() || !responderUnit || !sex || !location
+              !responderName.trim() ||
+              !responderDepartment ||
+              !sex ||
+              !location
             }
             onClick={() => {
               setSendStatus("idle");

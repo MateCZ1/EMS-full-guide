@@ -13,17 +13,13 @@ revidován proti aktuálním doporučením uvedeným v
 - kontrola účinku po zásadních intervencích,
 - trvalé tlačítko pro zhoršení a okamžité nové XABCDE,
 - automatická časová osa všech voleb, provedených úkonů a podaných léčiv,
-- automatické konečné zhodnocení stavu složené z kliknutí v průvodci bez
-  ručního zadávání životních funkcí,
 - rychlé záznamy pro turniket, záchvat, LKW, EKG, chlazení a další události,
 - automatický návrh vhodného léčiva a cesty podání v relevantní větvi,
 - trvalé označení zapsaných úkonů a krátká potvrzovací animace po stisku,
 - samostatný dospělý resuscitační režim s dvouminutovým cyklem, výboji a 4H/4T,
-- bezpečně potvrzované ukončení resuscitace nebo záznam úmrtí s přesným časem,
 - kontexty pro těhotenství, vyšší věk/křehkost, antikoagulaci a popáleniny,
 - závěrečný záznam se jménem, pohlavím, místem převzetí a úplnou chronologií,
-- povinné uvedení jména a departmentu ošetřujícího (EMS nebo Fire Department) a
-  odeslání přes skrytý serverový most na Discord,
+- povinné uvedení ošetřujícího a odeslání přes skrytý serverový most na Discord,
 - výstup připravený ke zkopírování,
 - offline PWA režim a volitelný režim pro rukavice,
 - návrat na předchozí krok a zahájení nového výjezdu odkudkoli,
@@ -33,7 +29,6 @@ revidován proti aktuálním doporučením uvedeným v
 
 - `app/guide-data.ts` — celý rozhodovací strom a texty intervencí,
 - `app/medication-data.ts` — automaticky navrhovaná léčiva a cesty podání,
-- `app/patient-assessment.ts` — automatické složení konečného stavu z voleb,
 - `app/clinical-tools.tsx` — časová osa, kontexty, resuscitace a závěrečný záznam,
 - `app/page.tsx` — interaktivní rozhraní, navigace a paměť výjezdu,
 - `app/globals.css` — vzhled, responzivita a animace,
