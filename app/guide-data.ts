@@ -1335,23 +1335,70 @@ export const nodes: Record<string, GuideNode> = {
   e_start: {
     phase: "E",
     kicker: "E.0 • celé tělo",
-    title: "Prohlédněte celé tělo, ale zabraňte prochladnutí",
+    title: "Našli jste při celkovém ohledání významný nález?",
+    description:
+      "Rychle prohlédněte osobu od hlavy k patě. Odkryjte jen potřebné části, chraňte soukromí a zabraňte prochladnutí.",
     steps: [
-      "Zachovejte soukromí a odkryjte vždy jen oblast, kterou právě vyšetřujete.",
-      "Prohlédněte a prohmatejte osobu od hlavy k patě. Hledejte poranění, která nebyla vidět při prvním pohledu.",
-      "Mokrý oděv odstraňte, osobu izolujte od země a aktivně ji zahřívejte.",
-      "Průběžně sledujte životní funkce a po každém vážném nálezu znovu zkontrolujte X až D.",
+      "Hledejte rány, deformity, popálení, bolest, otok a další zranění, která nebyla dříve vidět.",
+      "Mokrý oděv odstraňte, osobu izolujte od země a přikryjte ji.",
     ],
     choices: [
       {
-        label: "Začít hlavou",
-        target: "e_head",
-        tone: "safe",
+        label: "Ano — je přítomný nález",
+        helper: "Vybrat oblast nejzávažnějšího nálezu",
+        target: "e_finding",
+        tone: "warning",
       },
       {
-        label: "Významné popálení nebo zasažení chemickou látkou",
+        label: "Ne — bez významného nálezu",
+        helper: "Přeskočit jednotlivé části těla",
+        target: "e_finish",
+        tone: "safe",
+      },
+    ],
+  },
+  e_finding: {
+    phase: "E",
+    kicker: "E.0 • nalezené poranění",
+    title: "Kde je nejzávažnější nález?",
+    description:
+      "Pokud je nálezů více, začněte tím, který osobu ohrožuje nejvíce.",
+    choices: [
+      {
+        label: "Hlava nebo krk",
+        target: "e_head",
+        tone: "warning",
+      },
+      {
+        label: "Hrudník",
+        target: "e_chest",
+        tone: "danger",
+      },
+      {
+        label: "Břicho nebo pánev",
+        target: "e_abdomen",
+        tone: "danger",
+      },
+      {
+        label: "Záda nebo páteř",
+        target: "e_back",
+        tone: "warning",
+      },
+      {
+        label: "Paže nebo nohy",
+        target: "e_extremities",
+        tone: "warning",
+      },
+      {
+        label: "Popálení nebo chemická látka",
         target: "e_burn",
         tone: "danger",
+      },
+      {
+        label: "Více míst nebo si nejsem jistý",
+        helper: "Projít jednotlivé části těla postupně",
+        target: "e_head",
+        tone: "warning",
       },
     ],
   },
@@ -1521,17 +1568,24 @@ export const nodes: Record<string, GuideNode> = {
   e_pelvis: {
     phase: "E",
     kicker: "E.5 • pánev",
-    title: "Je podezření na nestabilní poranění pánve?",
+    title: "Je podezření na vážné poranění pánve?",
     description:
-      "Rozhodujte podle síly úrazu, bolesti, deformace a selhávání oběhu. Pánev opakovaně nestlačujte ani nezkoušejte, zda se pohybuje.",
+      "Rozhodujte podle síly úrazu, bolesti, deformace a známek krvácení. Pánev opakovaně nestlačujte ani nezkoušejte, zda se pohybuje.",
     choices: [
       {
-        label: "Ano, nebo osoba po úrazu oběhově selhává",
+        label: "Podezření na vážné poranění pánve",
+        helper: "Silný náraz, bolest, deformita nebo známky krvácení",
         target: "e_pelvis_injury",
         tone: "danger",
       },
       {
-        label: "Ne",
+        label: "Oběh selhává, příčina není jasná",
+        helper: "Vrátit se na C a znovu hledat příčinu",
+        target: "c_unstable",
+        tone: "warning",
+      },
+      {
+        label: "Bez podezření na vážné poranění",
         target: "e_back",
         tone: "safe",
       },
@@ -1753,15 +1807,19 @@ export const nodes: Record<string, GuideNode> = {
     ],
     choices: [
       {
-        label: "Postup dokončen dle protokolu",
+        label: "Odmítnutí je platné",
         target: "complete",
         tone: "safe",
       },
       {
-        label: "Schopnost rozhodnout je pochybná",
-        helper: "Lékařská konzultace a postup v nejlepším zájmu dle práva",
-        target: "e_refusal",
+        label: "Pokračovat v péči — kritický stav",
+        target: "e_critical",
         tone: "danger",
+      },
+      {
+        label: "Pokračovat v péči — stabilní stav",
+        target: "e_stable",
+        tone: "warning",
       },
     ],
   },

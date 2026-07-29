@@ -71,6 +71,14 @@ const transitions: Record<string, TransitionUpdate> = {
   "a_start>a_unconscious": {
     airway: "Osoba byla v bezvědomí a ochrana dýchacích cest byla nejistá.",
   },
+  "a_unconscious>b_start": {
+    airway:
+      "Osoba byla v bezvědomí, ale dýchací cesty zůstaly průchodné a dýchání bylo dostatečné.",
+  },
+  "a_unconscious>a_escalate": {
+    airway:
+      "Osoba nedokázala bezpečně chránit dýchací cesty a byla nutná jejich další podpora.",
+  },
   "a_spine>b_start": {
     airway: "Dýchací cesty zůstaly průchodné při ochraně krku.",
   },
@@ -147,6 +155,13 @@ const transitions: Record<string, TransitionUpdate> = {
   "c_start>c_no_pulse": {
     circulation: "Byla zjištěna zástava oběhu.",
   },
+  "c_control>d_start": {
+    circulation: "Krevní oběh se po ošetření stabilizoval nebo zlepšil.",
+  },
+  "c_control>c_unstable": {
+    circulation:
+      "Krevní oběh zůstal nestabilní a bylo nutné pokračovat v léčbě během transportu.",
+  },
   "c_no_pulse>x_start": {
     circulation: "Vlastní krevní oběh se obnovil.",
   },
@@ -191,6 +206,12 @@ const transitions: Record<string, TransitionUpdate> = {
   },
   "e_decision>e_refusal": {
     outcome: "Osoba odmítla péči nebo transport.",
+  },
+  "e_refusal>e_critical": {
+    outcome: "Kritický nebo časově závislý stav.",
+  },
+  "e_refusal>e_stable": {
+    outcome: "Stabilní stav po prvním vyšetření.",
   },
 };
 

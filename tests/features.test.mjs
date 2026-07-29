@@ -115,6 +115,69 @@ test("offline manifest and service worker contain the app shell", async () => {
   assert.match(serviceWorker, /caches\.open/);
 });
 
+test("short clinical branches have clear outcomes without dead ends", async () => {
+  const [guideSource, assessmentSource, medicationSource] = await Promise.all([
+    readFile(new URL("../app/guide-data.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/patient-assessment.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/medication-data.ts", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(guideSource, /label: "Podezření na vážné poranění pánve"/);
+  assert.match(
+    guideSource,
+    /label: "Oběh selhává, příčina není jasná"[\s\S]*?target: "c_unstable"/,
+  );
+  assert.match(
+    guideSource,
+    /label: "Pokračovat v péči — kritický stav"[\s\S]*?target: "e_critical"/,
+  );
+  assert.match(
+    guideSource,
+    /label: "Pokračovat v péči — stabilní stav"[\s\S]*?target: "e_stable"/,
+  );
+  assert.doesNotMatch(
+    guideSource,
+    /label: "Schopnost rozhodnout je pochybná"[\s\S]*?target: "e_refusal"/,
+  );
+  assert.match(assessmentSource, /"a_unconscious>b_start"/);
+  assert.match(assessmentSource, /"a_unconscious>a_escalate"/);
+  assert.match(assessmentSource, /"c_control>d_start"/);
+  assert.match(assessmentSource, /"c_control>c_unstable"/);
+  assert.match(assessmentSource, /"e_refusal>e_critical"/);
+  assert.match(assessmentSource, /"e_refusal>e_stable"/);
+  assert.match(medicationSource, /více než tři hodiny/);
+  assert.match(medicationSource, /glukóza ústy \(PO\)/);
+  assert.match(
+    medicationSource,
+    /EKG natočte co nejdříve, ale vhodné podání kvůli němu neodkládejte/,
+  );
+});
+
+test("whole-body check can skip regional questions or open a finding", async () => {
+  const guideSource = await readFile(
+    new URL("../app/guide-data.ts", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(
+    guideSource,
+    /label: "Ano — je přítomný nález"[\s\S]*?target: "e_finding"/,
+  );
+  assert.match(
+    guideSource,
+    /label: "Ne — bez významného nálezu"[\s\S]*?target: "e_finish"/,
+  );
+  assert.match(guideSource, /^  e_finding: \{$/m);
+  assert.match(
+    guideSource,
+    /label: "Popálení nebo chemická látka"[\s\S]*?target: "e_burn"/,
+  );
+  assert.match(
+    guideSource,
+    /label: "Více míst nebo si nejsem jistý"[\s\S]*?target: "e_head"/,
+  );
+});
+
 test("GitHub Pages builds and deploys the static export from Actions", async () => {
   const [nextConfig, workflow] = await Promise.all([
     readFile(new URL("../next.config.ts", import.meta.url), "utf8"),

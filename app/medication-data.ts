@@ -41,12 +41,12 @@ export const medications: Medication[] = [
     name: "Tranexamová kyselina",
     category: "Krvácení",
     indication:
-      "Silné nebo pravděpodobné vnitřní krvácení krátce po úrazu.",
+      "Silné nebo pravděpodobné vnitřní krvácení, pokud od úrazu neuplynuly více než tři hodiny.",
     route: "Do žíly (IV) nebo do kosti (IO)",
     goal: "Pomoci omezit pokračující krvácení.",
     safety: [
       "Nenahrazuje tlak na ránu, turniket ani rychlý transport.",
-      "Ověřte čas úrazu a zda jsou splněné podmínky pro podání.",
+      "Po více než třech hodinách nepodávejte, pokud interní postup neurčuje konkrétní výjimku.",
       "Dávku a rychlost podání určete podle platného interního postupu.",
     ],
     relatedNode: "c_hemorrhagic",
@@ -76,7 +76,7 @@ export const medications: Medication[] = [
     category: "Vědomí a nervy",
     indication: "Naměřený nízký cukr v krvi s odpovídajícími potížemi.",
     route:
-      "Glukóza do žíly (IV) nebo do kosti (IO); bez vstupu glukagon do svalu (IM)",
+      "Při bezpečném polykání glukóza ústy (PO); jinak glukóza do žíly (IV), do kosti (IO) nebo glukagon do svalu (IM)",
     goal: "Zvýšit cukr v krvi a zlepšit stav vědomí.",
     safety: [
       "Pokud osoba bezpečně nepolyká, nic jí nedávejte ústy.",
@@ -145,7 +145,7 @@ export const medications: Medication[] = [
     name: "Aspirin (kyselina acetylsalicylová)",
     category: "Oběh",
     indication:
-      "Podezření na srdeční infarkt po celkovém zhodnocení a natočení EKG.",
+      "Podezření na srdeční příhodu po rychlém celkovém zhodnocení. EKG natočte co nejdříve, ale vhodné podání kvůli němu neodkládejte.",
     route: "Ústy, tabletu rozkousat (PO)",
     goal: "Snížit další tvorbu krevní sraženiny při podezření na infarkt.",
     safety: [
