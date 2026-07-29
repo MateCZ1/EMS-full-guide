@@ -29,9 +29,12 @@ test("medication links point to existing guide nodes", async () => {
 });
 
 test("a call records choices and produces a copyable injury report", async () => {
-  const [pageSource, toolsSource] = await Promise.all([
+  const [pageSource, toolsSource, assessmentSource, guideSource] =
+    await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/clinical-tools.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/patient-assessment.ts", import.meta.url), "utf8"),
+    readFile(new URL("../app/guide-data.ts", import.meta.url), "utf8"),
   ]);
 
   assert.match(pageSource, /title: "Výjezd zahájen"/);
@@ -41,12 +44,39 @@ test("a call records choices and produces a copyable injury report", async () =>
   assert.match(pageSource, /Vygenerovat záznam o zraněné osobě/);
   assert.match(toolsSource, /\*\*PRŮBĚH VYŠETŘENÍ A OŠETŘENÍ\*\*/);
   assert.match(toolsSource, /Zkopírovat záznam/);
-  assert.match(toolsSource, /Jméno ošetřujícího EMS/);
-  assert.match(toolsSource, /\*\*Ošetřující EMS:\*\*/);
-  assert.match(toolsSource, /Odeslat na Discord/);
-  assert.match(toolsSource, /Odesláno ✓/);
+  assert.match(toolsSource, /Jméno ošetřujícího/);
+  assert.match(toolsSource, /Složka ošetřujícího/);
+  assert.match(toolsSource, /\*\*Ošetřující:\*\*/);
+  assert.match(toolsSource, /\*\*Složka:\*\*/);
+  assert.match(toolsSource, /\["EMS", "Fire Department"\]/);
+  assert.match(toolsSource, /Odeslat záznam do archivu/);
+  assert.match(toolsSource, /Uloženo v archivu ✓/);
   assert.match(toolsSource, /formatClock\(record\.at\)/);
   assert.match(toolsSource, /Zapsáno ✓/);
+  assert.match(toolsSource, /AUTOMATICKÉ ZHODNOCENÍ/);
+  assert.match(toolsSource, /\*\*KONEČNÝ STAV OSOBY\*\*/);
+  assert.match(assessmentSource, /buildPatientAssessment/);
+  assert.match(assessmentSource, /sourceNodeId/);
+  assert.match(assessmentSource, /Osoba zemřela\./);
+  assert.match(pageSource, /Resuscitace ukončena/);
+  assert.match(pageSource, /setCurrentId\("deceased"\)/);
+  assert.match(toolsSource, /ZÁVAŽNÉ ROZHODNUTÍ/);
+  assert.match(toolsSource, /Potvrdit — osoba zemřela/);
+  assert.match(guideSource, /^  deceased: \{$/m);
+  assert.match(pageSource, /<NewCallConfirmationPanel/);
+  assert.doesNotMatch(pageSource, /window\.confirm/);
+  assert.ok(
+    toolsSource.indexOf("Jméno ošetřujícího") <
+      toolsSource.indexOf("Jméno osoby — volitelné"),
+  );
+  assert.ok(
+    toolsSource.indexOf('className="cpr-death-button"') <
+      toolsSource.indexOf('className="rosc-button"'),
+  );
+  assert.doesNotMatch(
+    toolsSource,
+    /Na Discord|Discord most|Odeslání na Discord|webhook|DISCORD_SETUP/,
+  );
 });
 
 test("offline manifest and service worker contain the app shell", async () => {

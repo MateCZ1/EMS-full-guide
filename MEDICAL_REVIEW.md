@@ -112,6 +112,9 @@ opakování a kontraindikace musí odpovídat schválenému internímu protokolu
 - Režim pro rukavice je pouze lokální preference zařízení.
 - Resuscitační režim je časovač a dokumentační pomůcka, nikoli náhrada algoritmu,
   defibrilátoru nebo vedoucího týmu.
+- Funkce „osoba zemřela“ pouze zaznamenává rozhodnutí, které již učinila
+  oprávněná osoba podle platného místního postupu. Aplikace neposkytuje kritéria
+  pro ukončení resuscitace ani sama nerozhoduje o potvrzení úmrtí.
 - Offline režim se aktivuje po prvním úspěšném načtení aplikace na zařízení.
 
 ## Hlavní použité zdroje
@@ -123,6 +126,8 @@ opakování a kontraindikace musí odpovídat schválenému internímu protokolu
 - [NICE NG232 — Head injury: assessment and early management](https://www.nice.org.uk/guidance/ng232/chapter/recommendations)
 - [Resuscitation Council UK — The ABCDE approach](https://www.resus.org.uk/library/abcde-approach)
 - [Resuscitation Council UK — 2025 Adult ALS executive summary](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/executive-summary-main-changes-2021-guidelines)
+- [Resuscitation Council UK — 2025 Ethics Guidelines](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/ethics-guidelines)
+- [Resuscitation Council UK — 2025 Adult Advanced Life Support](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-advanced-life-support-guidelines)
 - [NICE NG40 — Major trauma service delivery and pre-alert](https://www.nice.org.uk/guidance/ng40/chapter/recommendations)
 - [NICE NG217 — Convulsive status epilepticus](https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures)
 - [NHS — First aid, burns and scalds](https://www.nhs.uk/tests-and-treatments/first-aid/)

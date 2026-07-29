@@ -4,7 +4,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ContextBanner,
   CprPanel,
+  DeathConfirmationPanel,
+  formatDuration,
   InjuryReportPanel,
+  NewCallConfirmationPanel,
   ToolsPanel,
   type CaseRecord,
   type RecordCategory,
@@ -29,6 +32,17 @@ type ContextualAction = {
   label: string;
   category: RecordCategory;
   detail?: string;
+};
+
+type RecordMetadata = {
+  sourceNodeId?: string;
+  targetNodeId?: string;
+};
+
+type DeathRequest = {
+  afterResuscitation: boolean;
+  returnTo: "cpr" | "tools" | "guide";
+  elapsedSeconds?: number;
 };
 
 const contextualActions: Record<string, ContextualAction[]> = {
@@ -92,6 +106,8 @@ export default function Home() {
   const [showTools, setShowTools] = useState(false);
   const [showCpr, setShowCpr] = useState(false);
   const [showReport, setShowReport] = useState(false);
+  const [showNewCallConfirmation, setShowNewCallConfirmation] = useState(false);
+  const [deathRequest, setDeathRequest] = useState<DeathRequest | null>(null);
   const [records, setRecords] = useState<CaseRecord[]>([]);
   const [riskFlags, setRiskFlags] = useState<RiskFlag[]>([]);
   const [gloveMode, setGloveMode] = useState(false);
@@ -104,6 +120,7 @@ export default function Home() {
   const cardRef = useRef<HTMLElement>(null);
 
   const node = nodes[currentId];
+  const isDeceased = currentId === "deceased";
   const activePhaseIndex = getPhaseIndex(node.phase);
   const quickActions = contextualActions[currentId] ?? [];
   const suggestedMedications = medications.filter(
@@ -163,6 +180,7 @@ export default function Home() {
     phase?: Phase,
     removable = true,
     at?: number,
+    metadata?: RecordMetadata,
   ) => {
     const timestamp = at ?? currentTimestamp();
     const id = makeRecordId(timestamp);
@@ -176,6 +194,7 @@ export default function Home() {
         detail,
         phase,
         removable,
+        ...metadata,
       },
     ]);
     return id;
@@ -208,16 +227,14 @@ export default function Home() {
     setShowCpr(false);
     setShowReport(false);
     setShowTools(false);
+    setShowNewCallConfirmation(false);
+    setDeathRequest(null);
     setCallKey((value) => value + 1);
   };
 
   const requestNewCall = () => {
-    if (
-      callStartedAt &&
-      !window.confirm(
-        "Začít nový výjezd? Dosavadní kroky a časová osa budou odstraněny.",
-      )
-    ) {
+    if (callStartedAt) {
+      setShowNewCallConfirmation(true);
       return;
     }
     startNewCall();
@@ -238,6 +255,11 @@ export default function Home() {
         choice.label,
         node.phase,
         false,
+        undefined,
+        {
+          sourceNodeId: currentId,
+          targetNodeId: target,
+        },
       );
     }
 
@@ -263,6 +285,13 @@ export default function Home() {
       startNewCall();
       return;
     }
+    if (choice.target === "deceased") {
+      setDeathRequest({
+        afterResuscitation: true,
+        returnTo: "guide",
+      });
+      return;
+    }
     navigate(choice.target, choice);
   };
 
@@ -279,7 +308,7 @@ export default function Home() {
   };
 
   const jumpToX = (reason: string) => {
-    if (currentId === "intro" || isLeaving) return;
+    if (currentId === "intro" || isDeceased || isLeaving) return;
     addEvent(reason);
     setIsLeaving(true);
     window.setTimeout(() => {
@@ -309,6 +338,8 @@ export default function Home() {
     setCurrentId("intro");
     setShowCpr(false);
     setShowReport(false);
+    setShowNewCallConfirmation(false);
+    setDeathRequest(null);
     setIsLeaving(false);
     setCallKey((value) => value + 1);
   };
@@ -317,6 +348,60 @@ export default function Home() {
     setShowCpr(false);
     setHistory([]);
     setCurrentId("x_start");
+  };
+
+  const requestDeath = (
+    afterResuscitation: boolean,
+    returnTo: DeathRequest["returnTo"],
+    elapsedSeconds?: number,
+  ) => {
+    setShowCpr(false);
+    setShowTools(false);
+    setDeathRequest({ afterResuscitation, returnTo, elapsedSeconds });
+  };
+
+  const closeDeathConfirmation = () => {
+    const returnTo = deathRequest?.returnTo;
+    setDeathRequest(null);
+    if (returnTo === "cpr") setShowCpr(true);
+    if (returnTo === "tools") setShowTools(true);
+  };
+
+  const confirmDeath = () => {
+    if (!deathRequest) return;
+    const timestamp = currentTimestamp();
+
+    if (deathRequest.afterResuscitation) {
+      const duration =
+        typeof deathRequest.elapsedSeconds === "number"
+          ? `Bez obnovení vlastního oběhu • zaznamenaný čas ${formatDuration(
+              deathRequest.elapsedSeconds,
+            )}`
+          : "Bez obnovení vlastního oběhu";
+      createRecord(
+        "Úkon",
+        "Resuscitace ukončena",
+        duration,
+        "C",
+        false,
+        timestamp,
+      );
+    }
+
+    createRecord(
+      "Událost",
+      "Osoba zemřela",
+      "Úmrtí potvrzeno oprávněnou osobou podle platného postupu",
+      undefined,
+      false,
+      timestamp,
+    );
+    setDeathRequest(null);
+    setShowCpr(false);
+    setShowTools(false);
+    setHistory([]);
+    setCurrentId("deceased");
+    setShowReport(true);
   };
 
   const confirmMedication = (medication: (typeof medications)[number]) => {
@@ -372,7 +457,9 @@ export default function Home() {
           type="button"
           className="brand"
           onClick={() => {
-            if (currentId !== "intro") jumpToX("Zahájeno kontrolní XABCDE");
+            if (currentId !== "intro" && !isDeceased) {
+              jumpToX("Zahájeno kontrolní XABCDE");
+            }
           }}
           aria-label="Zahájit kontrolní XABCDE"
         >
@@ -405,6 +492,14 @@ export default function Home() {
             type="button"
             className="top-tool-button cpr-top-button"
             onClick={() => setShowCpr(true)}
+            disabled={!callStartedAt || isDeceased}
+            title={
+              !callStartedAt
+                ? "Nejdříve začněte nový výjezd"
+                : isDeceased
+                  ? "Výjezd je ukončený"
+                  : undefined
+            }
           >
             <span aria-hidden="true">♥</span>
             <strong>Resuscitace</strong>
@@ -421,7 +516,7 @@ export default function Home() {
             type="button"
             className="restart-button"
             onClick={() => jumpToX("Zahájeno kontrolní XABCDE")}
-            disabled={currentId === "intro"}
+            disabled={currentId === "intro" || isDeceased}
           >
             <span className="restart-icon" aria-hidden="true">
               ↻
@@ -477,14 +572,14 @@ export default function Home() {
             tabIndex={-1}
             className={`guide-card ${isLeaving ? "is-leaving" : ""} ${
               node.complete ? "complete-card" : ""
-            }`}
+            } ${isDeceased ? "deceased-card" : ""}`}
             aria-live="polite"
           >
             <div className="card-accent" aria-hidden="true" />
 
             {node.complete && (
               <div className="success-orbit" aria-hidden="true">
-                <span>✓</span>
+                <span>{isDeceased ? "—" : "✓"}</span>
               </div>
             )}
 
@@ -682,7 +777,7 @@ export default function Home() {
         </div>
       </section>
 
-      {currentId !== "intro" && (
+      {currentId !== "intro" && !isDeceased && (
         <button
           type="button"
           className="deterioration-button"
@@ -711,6 +806,8 @@ export default function Home() {
         onFlagsChange={setRiskFlags}
         gloveMode={gloveMode}
         onGloveModeChange={changeGloveMode}
+        canDeclareDeath={Boolean(callStartedAt) && !isDeceased}
+        onRequestDeath={() => requestDeath(false, "tools")}
         onEndCall={endCall}
       />
 
@@ -722,6 +819,22 @@ export default function Home() {
           createRecord(category, title, detail, undefined, true)
         }
         onRosc={handleRosc}
+        onRequestDeath={(afterResuscitation, elapsedSeconds) =>
+          requestDeath(afterResuscitation, "cpr", elapsedSeconds)
+        }
+      />
+
+      <DeathConfirmationPanel
+        open={Boolean(deathRequest)}
+        afterResuscitation={Boolean(deathRequest?.afterResuscitation)}
+        onClose={closeDeathConfirmation}
+        onConfirm={confirmDeath}
+      />
+
+      <NewCallConfirmationPanel
+        open={showNewCallConfirmation}
+        onClose={() => setShowNewCallConfirmation(false)}
+        onConfirm={startNewCall}
       />
 
       <InjuryReportPanel

@@ -1,6 +1,6 @@
 const SCOPE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
 const CACHE_NAMESPACE = `field-guide:${SCOPE_PATH || "/"}`;
-const CACHE_NAME = `${CACHE_NAMESPACE}:v4`;
+const CACHE_NAME = `${CACHE_NAMESPACE}:v8`;
 const scopedPath = (path) => `${SCOPE_PATH}${path}`;
 const APP_SHELL = [
   scopedPath("/"),

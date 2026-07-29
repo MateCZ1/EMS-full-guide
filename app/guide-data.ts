@@ -867,6 +867,12 @@ export const nodes: Record<string, GuideNode> = {
         target: "c_no_pulse",
         tone: "danger",
       },
+      {
+        label: "Resuscitace byla ukončena — osoba zemřela",
+        helper: "Pouze po rozhodnutí oprávněné osoby podle platného postupu",
+        target: "deceased",
+        tone: "danger",
+      },
     ],
   },
   c_chest_pain: {
@@ -1776,5 +1782,16 @@ export const nodes: Record<string, GuideNode> = {
         tone: "safe",
       },
     ],
+  },
+  deceased: {
+    phase: "E",
+    kicker: "VÝJEZD • UKONČENÍ PÉČE",
+    title: "Úmrtí osoby bylo zaznamenáno",
+    description:
+      "Čas a průběh provedených úkonů zůstaly uložené v časové ose. Doplňte údaje a vytvořte závěrečný záznam.",
+    alert:
+      "Aplikace pouze zaznamenává potvrzené rozhodnutí. Další postup se řídí platnými místními pravidly.",
+    complete: true,
+    choices: [],
   },
 };

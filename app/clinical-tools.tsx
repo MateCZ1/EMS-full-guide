@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { Phase } from "./guide-data";
+import { buildPatientAssessment } from "./patient-assessment";
 
 export type RecordCategory = "Krok" | "Úkon" | "Lék" | "Událost";
 
@@ -13,6 +14,8 @@ export type CaseRecord = {
   detail?: string;
   phase?: Phase;
   removable?: boolean;
+  sourceNodeId?: string;
+  targetNodeId?: string;
 };
 
 export type RiskFlag =
@@ -109,10 +112,12 @@ const pickupLocations = [
   "Mount Chiliad",
 ];
 
-const discordBridgeUrl =
+const responderUnits = ["EMS", "Fire Department"];
+
+const archiveServiceUrl =
   process.env.NEXT_PUBLIC_DISCORD_BRIDGE_URL?.trim() ?? "";
 
-function getDiscordReportsEndpoint(baseUrl: string) {
+function getArchiveEndpoint(baseUrl: string) {
   const normalized = baseUrl.replace(/\/+$/, "");
   return normalized.endsWith("/reports")
     ? normalized
@@ -209,6 +214,92 @@ function ModalShell({
   );
 }
 
+export function DeathConfirmationPanel({
+  open,
+  afterResuscitation,
+  onClose,
+  onConfirm,
+}: {
+  open: boolean;
+  afterResuscitation: boolean;
+  onClose: () => void;
+  onConfirm: () => void;
+}) {
+  return (
+    <ModalShell
+      open={open}
+      onClose={onClose}
+      kicker="ZÁVAŽNÉ ROZHODNUTÍ"
+      title="Potvrdit ukončení péče"
+      className="death-confirmation-modal"
+    >
+      <div className="death-confirmation-content">
+        <span className="death-confirmation-symbol" aria-hidden="true">
+          !
+        </span>
+        <p>
+          {afterResuscitation
+            ? "Potvrďte pouze tehdy, pokud byla resuscitace ukončena oprávněnou osobou podle platného postupu."
+            : "Potvrďte pouze tehdy, pokud bylo úmrtí potvrzeno oprávněnou osobou podle platného postupu."}
+        </p>
+        <small>
+          Aplikace tím pouze zapíše výsledek a čas. Sama nerozhoduje o ukončení
+          resuscitace ani o potvrzení úmrtí.
+        </small>
+        <div className="death-confirmation-actions">
+          <button type="button" onClick={onClose}>
+            Vrátit se
+          </button>
+          <button type="button" className="confirm-death" onClick={onConfirm}>
+            Potvrdit — osoba zemřela
+          </button>
+        </div>
+      </div>
+    </ModalShell>
+  );
+}
+
+export function NewCallConfirmationPanel({
+  open,
+  onClose,
+  onConfirm,
+}: {
+  open: boolean;
+  onClose: () => void;
+  onConfirm: () => void;
+}) {
+  return (
+    <ModalShell
+      open={open}
+      onClose={onClose}
+      kicker="NOVÝ VÝJEZD"
+      title="Začít nový výjezd?"
+      className="new-call-confirmation-modal"
+    >
+      <div className="new-call-confirmation-content">
+        <span className="new-call-confirmation-symbol" aria-hidden="true">
+          ↻
+        </span>
+        <p>
+          Dosavadní časová osa, provedené kroky a podané léky budou odstraněny.
+        </p>
+        <small>
+          Pokud potřebujete současný průběh uchovat, nejdříve z něj vytvořte
+          závěrečný záznam.
+        </small>
+        <div className="new-call-confirmation-actions">
+          <button type="button" onClick={onClose}>
+            Pokračovat ve výjezdu
+          </button>
+          <button type="button" className="confirm-new-call" onClick={onConfirm}>
+            Ano, začít nový výjezd
+          </button>
+        </div>
+      </div>
+    </ModalShell>
+  );
+}
+
 export function ContextBanner({
   flags,
   phase,
@@ -248,6 +339,8 @@ export function ToolsPanel({
   onFlagsChange,
   gloveMode,
   onGloveModeChange,
+  canDeclareDeath,
+  onRequestDeath,
   onEndCall,
 }: {
   open: boolean;
@@ -259,6 +352,8 @@ export function ToolsPanel({
   onFlagsChange: (flags: RiskFlag[]) => void;
   gloveMode: boolean;
   onGloveModeChange: (enabled: boolean) => void;
+  canDeclareDeath: boolean;
+  onRequestDeath: () => void;
   onEndCall: () => void;
 }) {
   const [tab, setTab] = useState<"time" | "context">("time");
@@ -465,6 +560,19 @@ export function ToolsPanel({
               onChange={(event) => onGloveModeChange(event.target.checked)}
             />
           </label>
+          {canDeclareDeath && (
+            <button
+              type="button"
+              className="declare-death-button"
+              onClick={onRequestDeath}
+            >
+              <strong>Označit osobu jako zemřelou</strong>
+              <small>
+                Použijte jen po potvrzení oprávněnou osobou podle platného
+                postupu.
+              </small>
+            </button>
+          )}
           <button type="button" className="end-case-button" onClick={endCall}>
             Ukončit výjezd a smazat data
           </button>
@@ -479,6 +587,7 @@ export function CprPanel({
   onClose,
   onRecord,
   onRosc,
+  onRequestDeath,
 }: {
   open: boolean;
   onClose: () => void;
@@ -488,6 +597,7 @@ export function CprPanel({
     detail?: string,
   ) => void;
   onRosc: () => void;
+  onRequestDeath: (afterResuscitation: boolean, elapsedSeconds?: number) => void;
 }) {
   const [startedAt, setStartedAt] = useState<number | null>(null);
   const [now, setNow] = useState(0);
@@ -496,10 +606,10 @@ export function CprPanel({
   const [actionCounts, setActionCounts] = useState<Record<string, number>>({});
 
   useEffect(() => {
-    if (!startedAt) return;
+    if (!open || !startedAt) return;
     const timer = window.setInterval(() => setNow(Date.now()), 250);
     return () => window.clearInterval(timer);
-  }, [startedAt]);
+  }, [open, startedAt]);
 
   const elapsed = startedAt ? Math.floor((now - startedAt) / 1000) : 0;
   const cycleElapsed = elapsed % 120;
@@ -570,6 +680,13 @@ export function CprPanel({
           </div>
           <button type="button" className="cpr-start-button" onClick={start}>
             Zahájit časovač resuscitace
+          </button>
+          <button
+            type="button"
+            className="cpr-death-secondary"
+            onClick={() => onRequestDeath(false)}
+          >
+            Úmrtí již bylo potvrzeno
           </button>
         </div>
       ) : (
@@ -681,6 +798,13 @@ export function CprPanel({
                 : "Dýchací cesty / CO₂"}
               {!!actionCounts.airway && <small>{actionCounts.airway}×</small>}
             </button>
+            <button
+              type="button"
+              className="cpr-death-button"
+              onClick={() => onRequestDeath(true, elapsed)}
+            >
+              Resuscitace ukončena — osoba zemřela
+            </button>
             <button type="button" className="rosc-button" onClick={rosc}>
               Obnoven oběh
             </button>
@@ -728,6 +852,7 @@ export function InjuryReportPanel({
 }) {
   const [name, setName] = useState("");
   const [responderName, setResponderName] = useState("");
+  const [responderUnit, setResponderUnit] = useState("");
   const [sex, setSex] = useState("");
   const [location, setLocation] = useState("");
   const [generatedAt, setGeneratedAt] = useState<number | null>(null);
@@ -736,6 +861,10 @@ export function InjuryReportPanel({
     "idle" | "sending" | "sent" | "error"
   >("idle");
   const [sendError, setSendError] = useState("");
+  const assessment = useMemo(
+    () => buildPatientAssessment(records),
+    [records],
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -771,15 +900,22 @@ export function InjuryReportPanel({
           )
           .join("\n")
       : "• Bez zaznamenaného podání.";
+    const recordedEnd = assessment.endedAt ?? generatedAt;
     const duration = startedAt
-      ? formatDuration((generatedAt - startedAt) / 1000)
+      ? formatDuration((recordedEnd - startedAt) / 1000)
       : "Nezjištěna";
+    const assessmentLines = assessment.items.length
+      ? assessment.items
+          .map((item) => `• **${item.label}:** ${item.value}`)
+          .join("\n")
+      : "• Bez dostatku zaznamenaných voleb.";
 
     return [
       "**ZÁZNAM O ZRANĚNÉ OSOBĚ**",
       "",
       `**Jméno:** ${name.trim() || "Nezjištěno"}`,
-      `**Ošetřující EMS:** ${responderName.trim()}`,
+      `**Ošetřující:** ${responderName.trim()}`,
+      `**Složka:** ${responderUnit}`,
       `**Pohlaví:** ${sex}`,
       `**Místo převzetí:** ${location}`,
       `**Zahájení výjezdu:** ${
@@ -792,6 +928,13 @@ export function InjuryReportPanel({
           : "Bez označených zvláštních okolností"
       }`,
       "",
+      "**KONEČNÝ STAV OSOBY**",
+      `**Výsledek:** ${assessment.outcome}`,
+      ...(assessment.endedAt
+        ? [`**Čas zaznamenání úmrtí:** ${formatReportDate(assessment.endedAt)}`]
+        : []),
+      assessmentLines,
+      "",
       "**PRŮBĚH VYŠETŘENÍ A OŠETŘENÍ**",
       chronology,
       "",
@@ -802,10 +945,12 @@ export function InjuryReportPanel({
     ].join("\n");
   }, [
     generatedAt,
+    assessment,
     location,
     name,
     records,
     responderName,
+    responderUnit,
     riskFlags,
     sex,
     startedAt,
@@ -821,14 +966,14 @@ export function InjuryReportPanel({
     }
   };
 
-  const sendToDiscord = async () => {
-    if (!report || !generatedAt || !discordBridgeUrl) return;
+  const sendToArchive = async () => {
+    if (!report || !generatedAt || !archiveServiceUrl) return;
 
     setSendStatus("sending");
     setSendError("");
 
     try {
-      const response = await fetch(getDiscordReportsEndpoint(discordBridgeUrl), {
+      const response = await fetch(getArchiveEndpoint(archiveServiceUrl), {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -837,22 +982,25 @@ export function InjuryReportPanel({
           report,
           patientName: name.trim() || "Nezjištěno",
           responderName: responderName.trim(),
+          responderUnit,
           sex,
           location,
           generatedAt,
         }),
       });
 
-      const payload = (await response.json().catch(() => null)) as {
-        error?: string;
-      } | null;
-
       if (!response.ok) {
-        const fallback =
+        const archiveError =
           response.status === 403
-            ? "Odesílání z této adresy webu není povolené."
-            : "Discord záznam nepřijal. Zkuste to znovu.";
-        throw new Error(payload?.error || fallback);
+            ? "Archiv nepřijímá záznamy z této adresy."
+            : response.status === 400
+              ? "Záznam není úplný nebo má nesprávný formát."
+              : response.status === 413
+                ? "Záznam je příliš dlouhý pro uložení do archivu."
+                : response.status === 503
+                  ? "Archiv záznamů momentálně není dostupný."
+                  : "Archiv záznam nepřijal. Zkuste to znovu.";
+        throw new Error(archiveError);
       }
 
       setSendStatus("sent");
@@ -861,7 +1009,7 @@ export function InjuryReportPanel({
       setSendError(
         error instanceof Error && !(error instanceof TypeError)
           ? error.message
-          : "Nepodařilo se spojit s Discord mostem. Zkontrolujte jeho adresu a povolenou doménu.",
+          : "Nepodařilo se spojit s archivem záznamů. Zkuste to znovu později.",
       );
     }
   };
@@ -877,24 +1025,66 @@ export function InjuryReportPanel({
       {!generatedAt ? (
         <div className="report-form">
           <p className="tool-intro">
-            Jméno osoby je volitelné. Jméno ošetřujícího, pohlaví a místo
-            převzetí jsou pro vytvoření záznamu povinné.
+            Jméno osoby je volitelné. Jméno a složka ošetřujícího, pohlaví a
+            místo převzetí jsou pro vytvoření záznamu povinné.
           </p>
+          <section
+            className={`assessment-preview ${
+              assessment.isDeceased ? "is-deceased" : ""
+            }`}
+            aria-label="Automatické zhodnocení stavu"
+          >
+            <div>
+              <span>AUTOMATICKÉ ZHODNOCENÍ</span>
+              <strong>{assessment.outcome}</strong>
+            </div>
+            {assessment.items.length ? (
+              <dl>
+                {assessment.items.map((item) => (
+                  <div key={item.label}>
+                    <dt>{item.label}</dt>
+                    <dd>{item.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            ) : (
+              <p>Pro zhodnocení zatím nejsou zaznamenané potřebné volby.</p>
+            )}
+            <small>
+              Sestaveno automaticky z kliknutí v průvodci. Nezjištěné údaje se
+              neuvádějí.
+            </small>
+          </section>
+          <label>
+            Jméno ošetřujícího
+            <input
+              value={responderName}
+              onChange={(event) => setResponderName(event.target.value)}
+              placeholder="Jméno osoby, která záznam vytváří"
+              autoComplete="name"
+            />
+          </label>
+          <fieldset>
+            <legend>Složka ošetřujícího</legend>
+            <div className="report-option-grid responder-units">
+              {responderUnits.map((option) => (
+                <button
+                  type="button"
+                  key={option}
+                  className={responderUnit === option ? "active" : ""}
+                  onClick={() => setResponderUnit(option)}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+          </fieldset>
           <label>
             Jméno osoby — volitelné
             <input
               value={name}
               onChange={(event) => setName(event.target.value)}
               placeholder="Při neznámé totožnosti ponechte prázdné"
-            />
-          </label>
-          <label>
-            Jméno ošetřujícího EMS
-            <input
-              value={responderName}
-              onChange={(event) => setResponderName(event.target.value)}
-              placeholder="Jméno osoby, která záznam vytváří"
-              autoComplete="name"
             />
           </label>
           <fieldset>
@@ -930,7 +1120,9 @@ export function InjuryReportPanel({
           <button
             type="button"
             className="primary-tool-button full-width generate-report-button"
-            disabled={!responderName.trim() || !sex || !location}
+            disabled={
+              !responderName.trim() || !responderUnit || !sex || !location
+            }
             onClick={() => {
               setSendStatus("idle");
               setSendError("");
@@ -942,7 +1134,81 @@ export function InjuryReportPanel({
         </div>
       ) : (
         <div className="generated-report">
-          <pre>{report}</pre>
+          <header
+            className={`record-ready-banner ${
+              sendStatus === "sent" ? "is-archived" : ""
+            }`}
+          >
+            <span aria-hidden="true">{sendStatus === "sent" ? "✓" : "▤"}</span>
+            <div>
+              <small>
+                {sendStatus === "sent"
+                  ? "ZÁZNAM ULOŽEN"
+                  : "ZÁZNAM JE PŘIPRAVEN"}
+              </small>
+              <strong>{name.trim() || "Neznámá osoba"}</strong>
+              <p>
+                {location} • {formatReportDate(generatedAt)}
+              </p>
+            </div>
+          </header>
+
+          <section className="archive-send-card" aria-label="Uložení do archivu">
+            <div className="archive-send-heading">
+              <span aria-hidden="true">▣</span>
+              <div>
+                <strong>Archiv záznamů</strong>
+                <small>
+                  Uloží kompletní průběh výjezdu do společného archivu.
+                </small>
+              </div>
+            </div>
+            {archiveServiceUrl ? (
+              <>
+                <button
+                  type="button"
+                  className={`archive-send-button ${
+                    sendStatus === "sent" ? "is-sent" : ""
+                  }`}
+                  disabled={
+                    sendStatus === "sending" ||
+                    sendStatus === "sent"
+                  }
+                  onClick={sendToArchive}
+                >
+                  {sendStatus === "sending"
+                    ? "Ukládám do archivu…"
+                    : sendStatus === "sent"
+                      ? "Uloženo v archivu ✓"
+                      : "Odeslat záznam do archivu"}
+                </button>
+                {sendStatus === "sent" && (
+                  <p className="archive-send-success" role="status">
+                    Záznam byl úspěšně uložen do archivu.
+                  </p>
+                )}
+                {sendStatus === "error" && (
+                  <p className="archive-send-error" role="alert">
+                    {sendError}
+                  </p>
+                )}
+              </>
+            ) : (
+              <p className="archive-not-available">
+                Archiv záznamů momentálně není dostupný. Záznam lze stále
+                zkopírovat a uložit ručně.
+              </p>
+            )}
+          </section>
+
+          <details className="report-preview-panel" open>
+            <summary>
+              <span>Náhled úplného záznamu</span>
+              <small>Zobrazit nebo skrýt celý průběh</small>
+            </summary>
+            <pre>{report}</pre>
+          </details>
+
           <div className="report-actions">
             <button
               type="button"
@@ -962,53 +1228,6 @@ export function InjuryReportPanel({
               Upravit údaje
             </button>
           </div>
-          <section className="discord-send-card" aria-label="Odeslání na Discord">
-            <div className="discord-send-heading">
-              <span aria-hidden="true">↗</span>
-              <div>
-                <strong>Odeslat do místnosti se záznamy</strong>
-                <small>
-                  Na Discord se odešle přehled i úplný textový soubor.
-                </small>
-              </div>
-            </div>
-            {discordBridgeUrl ? (
-              <>
-                <button
-                  type="button"
-                  className={`discord-send-button ${
-                    sendStatus === "sent" ? "is-sent" : ""
-                  }`}
-                  disabled={
-                    sendStatus === "sending" ||
-                    sendStatus === "sent"
-                  }
-                  onClick={sendToDiscord}
-                >
-                  {sendStatus === "sending"
-                    ? "Odesílám…"
-                    : sendStatus === "sent"
-                      ? "Odesláno ✓"
-                      : "Odeslat na Discord"}
-                </button>
-                {sendStatus === "sent" && (
-                  <p className="discord-send-success" role="status">
-                    Záznam byl uložen do Discord místnosti.
-                  </p>
-                )}
-                {sendStatus === "error" && (
-                  <p className="discord-send-error" role="alert">
-                    {sendError}
-                  </p>
-                )}
-              </>
-            ) : (
-              <p className="discord-not-configured">
-                Discord zatím není propojený. Záznam lze stále zkopírovat;
-                postup propojení je v souboru DISCORD_SETUP.md.
-              </p>
-            )}
-          </section>
         </div>
       )}
     </ModalShell>

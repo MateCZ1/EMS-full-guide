@@ -746,6 +746,28 @@ h1 {
   place-items: center;
 }
 
+.deceased-card {
+  border-color: rgba(255, 115, 95, 0.2);
+  background:
+    radial-gradient(circle at 50% 0, rgba(255, 115, 95, 0.08), transparent 34%),
+    var(--surface);
+}
+
+.deceased-card .success-orbit {
+  border-color: rgba(255, 115, 95, 0.3);
+  background: rgba(255, 115, 95, 0.08);
+  box-shadow: 0 0 0 12px rgba(255, 115, 95, 0.035);
+}
+
+.deceased-card .success-orbit::after {
+  border-color: rgba(255, 115, 95, 0.18);
+}
+
+.deceased-card .success-orbit span {
+  background: #ff7360;
+  color: #32100b;
+}
+
 footer {
   display: flex;
   width: min(1200px, calc(100% - 48px));
@@ -1165,6 +1187,18 @@ footer button:hover {
   border-color: rgba(105, 241, 219, 0.36);
   background: rgba(20, 54, 57, 0.78);
   transform: translateY(-1px);
+}
+
+.top-tool-button:disabled {
+  cursor: not-allowed;
+  filter: saturate(0.45);
+  opacity: 0.42;
+}
+
+.top-tool-button:disabled:hover {
+  border-color: var(--line);
+  background: rgba(13, 35, 38, 0.62);
+  transform: none;
 }
 
 .top-tool-button > span {
@@ -1674,6 +1708,36 @@ footer button:hover {
   cursor: pointer;
 }
 
+.declare-death-button {
+  display: grid;
+  width: 100%;
+  min-height: 62px;
+  margin-top: 12px;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 115, 95, 0.34);
+  border-radius: 12px;
+  background: rgba(255, 115, 95, 0.09);
+  gap: 4px;
+  color: #ffd2cb;
+  text-align: left;
+  cursor: pointer;
+}
+
+.declare-death-button strong {
+  font-size: 0.75rem;
+}
+
+.declare-death-button small {
+  color: #b9837b;
+  font-size: 0.63rem;
+  line-height: 1.4;
+}
+
+.declare-death-button:hover {
+  border-color: rgba(255, 115, 95, 0.58);
+  background: rgba(255, 115, 95, 0.14);
+}
+
 .handover-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1938,6 +2002,17 @@ footer button:hover {
   cursor: pointer;
 }
 
+.cpr-death-secondary {
+  min-height: 48px;
+  border: 1px solid rgba(255, 115, 95, 0.2);
+  border-radius: 13px;
+  background: rgba(255, 115, 95, 0.045);
+  color: #bd827a;
+  font-size: 0.7rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
 .cpr-dashboard {
   display: grid;
   grid-template-columns: 1fr 1.4fr 0.65fr;
@@ -2009,9 +2084,163 @@ footer button:hover {
 }
 
 .cpr-actions .rosc-button {
+  min-height: 52px;
   border-color: rgba(105, 241, 219, 0.36);
   background: rgba(105, 241, 219, 0.1);
+  grid-column: 1 / -1;
   color: var(--teal);
+}
+
+.cpr-actions .cpr-death-button {
+  border-color: rgba(255, 115, 95, 0.42);
+  background: rgba(255, 115, 95, 0.11);
+  color: #ff9a8c;
+}
+
+.death-confirmation-modal {
+  max-width: 620px;
+  border-color: rgba(255, 115, 95, 0.3);
+}
+
+.new-call-confirmation-modal {
+  max-width: 620px;
+  border-color: rgba(255, 205, 114, 0.25);
+}
+
+.death-confirmation-content {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  gap: 13px;
+}
+
+.new-call-confirmation-content {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  gap: 13px;
+}
+
+.death-confirmation-symbol {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 115, 95, 0.42);
+  border-radius: 50%;
+  background: rgba(255, 115, 95, 0.12);
+  box-shadow: 0 0 0 9px rgba(255, 115, 95, 0.035);
+  color: #ff8f80;
+  font-size: 1.4rem;
+  font-weight: 950;
+  place-items: center;
+}
+
+.new-call-confirmation-symbol {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 205, 114, 0.38);
+  border-radius: 50%;
+  background: rgba(255, 205, 114, 0.1);
+  box-shadow: 0 0 0 9px rgba(255, 205, 114, 0.03);
+  color: var(--warning);
+  font-size: 1.35rem;
+  font-weight: 950;
+  place-items: center;
+}
+
+.death-confirmation-content p {
+  max-width: 510px;
+  margin: 5px 0 0;
+  color: #e6d3d0;
+  font-size: 0.88rem;
+  font-weight: 750;
+  line-height: 1.55;
+}
+
+.new-call-confirmation-content p {
+  max-width: 510px;
+  margin: 5px 0 0;
+  color: #e5ddca;
+  font-size: 0.88rem;
+  font-weight: 750;
+  line-height: 1.55;
+}
+
+.death-confirmation-content > small {
+  max-width: 500px;
+  color: #8f7572;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.new-call-confirmation-content > small {
+  max-width: 500px;
+  color: #8f8774;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.death-confirmation-actions {
+  display: grid;
+  width: 100%;
+  margin-top: 5px;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 9px;
+}
+
+.new-call-confirmation-actions {
+  display: grid;
+  width: 100%;
+  margin-top: 5px;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 9px;
+}
+
+.death-confirmation-actions button {
+  min-height: 50px;
+  border: 1px solid rgba(174, 220, 219, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #9bb0b1;
+  font-size: 0.72rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.new-call-confirmation-actions button {
+  min-height: 50px;
+  border: 1px solid rgba(174, 220, 219, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #9bb0b1;
+  font-size: 0.72rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.death-confirmation-actions .confirm-death {
+  border-color: rgba(255, 115, 95, 0.55);
+  background: rgba(255, 115, 95, 0.14);
+  color: #ffb2a7;
+}
+
+.death-confirmation-actions .confirm-death:hover {
+  border-color: #ff7360;
+  background: #ff7360;
+  color: #32100b;
+}
+
+.new-call-confirmation-actions .confirm-new-call {
+  border-color: rgba(255, 205, 114, 0.45);
+  background: rgba(255, 205, 114, 0.1);
+  color: #f6d89f;
+}
+
+.new-call-confirmation-actions .confirm-new-call:hover {
+  border-color: var(--warning);
+  background: var(--warning);
+  color: #2e2106;
 }
 
 .reversible-causes {
@@ -2482,6 +2711,80 @@ footer button:hover {
   gap: 15px;
 }
 
+.assessment-preview {
+  display: grid;
+  padding: 16px;
+  border: 1px solid rgba(105, 241, 219, 0.16);
+  border-radius: 15px;
+  background: rgba(105, 241, 219, 0.045);
+  gap: 12px;
+}
+
+.assessment-preview > div:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.assessment-preview > div:first-child span {
+  color: var(--teal);
+  font-size: 0.57rem;
+  font-weight: 950;
+  letter-spacing: 0.13em;
+}
+
+.assessment-preview > div:first-child strong {
+  color: #e3f5f2;
+  font-size: 0.86rem;
+}
+
+.assessment-preview dl {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.assessment-preview dl > div {
+  padding: 10px 11px;
+  border: 1px solid rgba(174, 220, 219, 0.07);
+  border-radius: 10px;
+  background: rgba(2, 14, 16, 0.28);
+}
+
+.assessment-preview dt {
+  color: #719092;
+  font-size: 0.58rem;
+  font-weight: 900;
+}
+
+.assessment-preview dd {
+  margin: 4px 0 0;
+  color: #b8cccc;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.assessment-preview > p,
+.assessment-preview > small {
+  margin: 0;
+  color: #789092;
+  font-size: 0.63rem;
+  line-height: 1.45;
+}
+
+.assessment-preview.is-deceased {
+  border-color: rgba(255, 115, 95, 0.28);
+  background: rgba(255, 115, 95, 0.07);
+}
+
+.assessment-preview.is-deceased > div:first-child span {
+  color: #ff9384;
+}
+
+.assessment-preview.is-deceased > div:first-child strong {
+  color: #ffd8d2;
+}
+
 .report-form > label {
   max-width: 560px;
 }
@@ -2510,6 +2813,11 @@ footer button:hover {
 
 .report-option-grid.locations {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.report-option-grid.responder-units {
+  max-width: 560px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .report-option-grid button {
@@ -2543,7 +2851,66 @@ footer button:hover {
 
 .generated-report {
   display: grid;
-  gap: 14px;
+  gap: 12px;
+}
+
+.record-ready-banner {
+  display: grid;
+  padding: 17px 18px;
+  border: 1px solid rgba(105, 241, 219, 0.2);
+  border-radius: 17px;
+  background:
+    radial-gradient(circle at 100% 0, rgba(105, 241, 219, 0.11), transparent 42%),
+    rgba(4, 20, 21, 0.72);
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 13px;
+}
+
+.record-ready-banner > span {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(105, 241, 219, 0.3);
+  border-radius: 14px;
+  background: rgba(105, 241, 219, 0.12);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  color: var(--teal);
+  font-size: 1.15rem;
+  font-weight: 900;
+  place-items: center;
+}
+
+.record-ready-banner > div {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.record-ready-banner small {
+  color: var(--teal);
+  font-size: 0.56rem;
+  font-weight: 950;
+  letter-spacing: 0.13em;
+}
+
+.record-ready-banner strong {
+  overflow: hidden;
+  color: #e7f8f5;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.record-ready-banner p {
+  margin: 0;
+  color: #718f91;
+  font-size: 0.65rem;
+}
+
+.record-ready-banner.is-archived {
+  border-color: rgba(105, 241, 219, 0.38);
+  box-shadow: inset 0 0 0 1px rgba(105, 241, 219, 0.05);
 }
 
 .generated-report pre {
@@ -2559,6 +2926,54 @@ footer button:hover {
   font-size: 0.72rem;
   line-height: 1.65;
   white-space: pre-wrap;
+}
+
+.report-preview-panel {
+  overflow: hidden;
+  border: 1px solid rgba(174, 220, 219, 0.09);
+  border-radius: 15px;
+  background: rgba(2, 12, 14, 0.36);
+}
+
+.report-preview-panel summary {
+  display: flex;
+  min-height: 52px;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #b9cdcd;
+  font-size: 0.72rem;
+  font-weight: 850;
+  cursor: pointer;
+  list-style: none;
+}
+
+.report-preview-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.report-preview-panel summary::after {
+  color: var(--teal);
+  content: "＋";
+  font-size: 0.9rem;
+}
+
+.report-preview-panel[open] summary::after {
+  content: "−";
+}
+
+.report-preview-panel summary small {
+  margin-left: auto;
+  color: #647e80;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.report-preview-panel pre {
+  max-height: 42vh;
+  border-width: 1px 0 0;
+  border-radius: 0;
 }
 
 .report-actions {
@@ -2579,80 +2994,93 @@ footer button:hover {
   cursor: pointer;
 }
 
-.discord-send-card {
+.archive-send-card {
+  position: relative;
   display: grid;
-  gap: 13px;
-  padding: clamp(15px, 3vw, 20px);
-  border: 1px solid rgba(88, 101, 242, 0.32);
-  border-radius: 16px;
+  overflow: hidden;
+  gap: 14px;
+  padding: clamp(17px, 3vw, 22px);
+  border: 1px solid rgba(105, 241, 219, 0.25);
+  border-radius: 17px;
   background:
-    radial-gradient(circle at 0 0, rgba(88, 101, 242, 0.18), transparent 52%),
-    rgba(4, 14, 20, 0.72);
+    radial-gradient(circle at 0 0, rgba(105, 241, 219, 0.12), transparent 50%),
+    linear-gradient(135deg, rgba(12, 39, 41, 0.8), rgba(3, 15, 17, 0.86));
 }
 
-.discord-send-heading {
+.archive-send-card::before {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 88px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--teal), transparent);
+  content: "";
+}
+
+.archive-send-heading {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.discord-send-heading > span {
+.archive-send-heading > span {
   display: grid;
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
-  border-radius: 12px;
-  background: #5865f2;
-  box-shadow: 0 10px 24px rgba(88, 101, 242, 0.24);
-  color: white;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border: 1px solid rgba(105, 241, 219, 0.27);
+  border-radius: 13px;
+  background: rgba(105, 241, 219, 0.11);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  color: var(--teal);
   font-size: 1rem;
   place-items: center;
 }
 
-.discord-send-heading > div {
+.archive-send-heading > div {
   display: grid;
   gap: 3px;
 }
 
-.discord-send-heading strong {
-  color: #edf0ff;
-  font-size: 0.78rem;
+.archive-send-heading strong {
+  color: #e9f8f6;
+  font-size: 0.82rem;
 }
 
-.discord-send-heading small {
-  color: #818ba7;
+.archive-send-heading small {
+  color: #769395;
   font-size: 0.64rem;
   line-height: 1.45;
 }
 
-.discord-send-button {
-  min-height: 48px;
+.archive-send-button {
+  min-height: 54px;
   padding: 0 18px;
-  border: 1px solid rgba(142, 151, 255, 0.38);
-  border-radius: 12px;
-  background: #5865f2;
-  box-shadow: 0 12px 28px rgba(88, 101, 242, 0.22);
-  color: white;
-  font-size: 0.74rem;
-  font-weight: 900;
+  border: 1px solid rgba(105, 241, 219, 0.52);
+  border-radius: 13px;
+  background: var(--teal);
+  box-shadow: 0 12px 30px rgba(28, 119, 109, 0.17);
+  color: #062223;
+  font-size: 0.76rem;
+  font-weight: 950;
   cursor: pointer;
   transition:
     transform 160ms ease,
-    filter 160ms ease,
+    box-shadow 160ms ease,
     opacity 160ms ease;
 }
 
-.discord-send-button:hover:not(:disabled) {
-  filter: brightness(1.08);
+.archive-send-button:hover:not(:disabled) {
+  box-shadow: 0 16px 36px rgba(28, 119, 109, 0.25);
   transform: translateY(-1px);
 }
 
-.discord-send-button:disabled {
+.archive-send-button:disabled {
   cursor: not-allowed;
   opacity: 0.48;
 }
 
-.discord-send-button.is-sent {
+.archive-send-button.is-sent {
   border-color: rgba(105, 241, 219, 0.5);
   background: rgba(105, 241, 219, 0.15);
   box-shadow: inset 0 0 0 1px rgba(105, 241, 219, 0.08);
@@ -2660,9 +3088,9 @@ footer button:hover {
   opacity: 1;
 }
 
-.discord-send-success,
-.discord-send-error,
-.discord-not-configured {
+.archive-send-success,
+.archive-send-error,
+.archive-not-available {
   margin: 0;
   padding: 10px 12px;
   border-radius: 10px;
@@ -2670,17 +3098,17 @@ footer button:hover {
   line-height: 1.5;
 }
 
-.discord-send-success {
+.archive-send-success {
   background: rgba(105, 241, 219, 0.09);
   color: #a7eadd;
 }
 
-.discord-send-error {
+.archive-send-error {
   background: rgba(255, 104, 104, 0.1);
   color: #ffadad;
 }
 
-.discord-not-configured {
+.archive-not-available {
   border: 1px dashed rgba(174, 220, 219, 0.13);
   color: #8da3a5;
 }
@@ -2721,9 +3149,19 @@ footer button:hover {
     flex-direction: column;
   }
 
+  .assessment-preview dl,
+  .death-confirmation-actions,
+  .new-call-confirmation-actions {
+    grid-template-columns: 1fr;
+  }
+
   .report-actions > button,
-  .discord-send-button {
+  .archive-send-button {
     width: 100%;
+  }
+
+  .report-preview-panel summary small {
+    display: none;
   }
 }
 

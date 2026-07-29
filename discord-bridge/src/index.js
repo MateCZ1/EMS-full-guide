@@ -93,8 +93,13 @@ function buildDiscordForm(data) {
             inline: true,
           },
           {
-            name: "Ošetřující EMS",
+            name: "Ošetřující",
             value: data.responderName,
+            inline: true,
+          },
+          {
+            name: "Složka",
+            value: data.responderUnit,
             inline: true,
           },
           {
@@ -135,7 +140,7 @@ function buildDiscordForm(data) {
 async function handleReport(request, env, origin) {
   if (!env.DISCORD_WEBHOOK_URL) {
     return jsonResponse(
-      { error: "Discord most ještě není dokončeně nastavený." },
+      { error: "Archiv záznamů momentálně není dostupný." },
       503,
       origin,
     );
@@ -143,7 +148,7 @@ async function handleReport(request, env, origin) {
 
   if (!request.headers.get("Content-Type")?.includes("application/json")) {
     return jsonResponse(
-      { error: "Požadavek musí obsahovat JSON." },
+      { error: "Záznam není ve správném formátu." },
       415,
       origin,
     );
@@ -164,6 +169,7 @@ async function handleReport(request, env, origin) {
   const report = requiredText(input.report, MAX_REPORT_LENGTH);
   const patientName = requiredText(input.patientName, 100);
   const responderName = requiredText(input.responderName, 80);
+  const responderUnit = requiredText(input.responderUnit, 40);
   const sex = requiredText(input.sex, 30);
   const location = requiredText(input.location, 80);
   const generatedAt = Number(input.generatedAt);
@@ -173,6 +179,7 @@ async function handleReport(request, env, origin) {
     !report ||
     !patientName ||
     !responderName ||
+    !responderUnit ||
     !sex ||
     !location ||
     !Number.isFinite(generatedAt) ||
@@ -188,7 +195,7 @@ async function handleReport(request, env, origin) {
   const discordUrl = webhookEndpoint(env.DISCORD_WEBHOOK_URL);
   if (!discordUrl) {
     return jsonResponse(
-      { error: "Discord webhook není správně nastavený." },
+      { error: "Archiv záznamů momentálně není správně nastavený." },
       503,
       origin,
     );
@@ -200,6 +207,7 @@ async function handleReport(request, env, origin) {
       report,
       patientName,
       responderName,
+      responderUnit,
       sex,
       location,
       generatedAt,
@@ -211,7 +219,7 @@ async function handleReport(request, env, origin) {
       status: discordResponse.status,
     });
     return jsonResponse(
-      { error: "Discord záznam nepřijal. Zkontrolujte nastavení webhooku." },
+      { error: "Archiv záznam nepřijal. Zkuste to znovu později." },
       502,
       origin,
     );
@@ -239,7 +247,7 @@ const discordBridge = {
       return jsonResponse(
         {
           ok: true,
-          service: "FIELD Discord bridge",
+          service: "FIELD archive service",
           configured: Boolean(env.DISCORD_WEBHOOK_URL),
         },
         200,

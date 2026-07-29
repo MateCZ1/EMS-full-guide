@@ -400,7 +400,7 @@ https://matecz1.github.io/EMS-full-guide/
 5. Vyplňte:
 
    - jméno osoby, pokud jej znáte,
-   - jméno ošetřujícího EMS,
+   - jméno a složku ošetřujícího,
    - pohlaví,
    - oblast převzetí.
 
@@ -418,7 +418,7 @@ Odesláno ✓
 V Discord kanálu by se měla objevit:
 
 - zpráva se základními údaji,
-- jméno ošetřujícího EMS,
+- jméno a složku ošetřujícího,
 - průběh ošetření,
 - přiložený textový soubor s celým záznamem.
 
