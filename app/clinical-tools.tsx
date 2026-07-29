@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { Phase } from "./guide-data";
+import type { Phase, Tone } from "./guide-data";
 import { buildPatientAssessment } from "./patient-assessment";
 
 export type RecordCategory = "Krok" | "Úkon" | "Lék" | "Událost";
@@ -16,6 +16,7 @@ export type CaseRecord = {
   removable?: boolean;
   sourceNodeId?: string;
   targetNodeId?: string;
+  choiceTone?: Tone;
 };
 
 export type RiskFlag =
@@ -163,6 +164,7 @@ function ModalShell({
   title,
   kicker,
   className = "",
+  dismissible = true,
   onClose,
   children,
 }: {
@@ -170,17 +172,18 @@ function ModalShell({
   title: string;
   kicker: string;
   className?: string;
+  dismissible?: boolean;
   onClose: () => void;
   children: React.ReactNode;
 }) {
   useEffect(() => {
-    if (!open) return;
+    if (!open || !dismissible) return;
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
     };
     window.addEventListener("keydown", closeOnEscape);
     return () => window.removeEventListener("keydown", closeOnEscape);
-  }, [onClose, open]);
+  }, [dismissible, onClose, open]);
 
   if (!open) return null;
 
@@ -189,7 +192,7 @@ function ModalShell({
       className="modal-backdrop"
       role="presentation"
       onMouseDown={(event) => {
-        if (event.target === event.currentTarget) onClose();
+        if (dismissible && event.target === event.currentTarget) onClose();
       }}
     >
       <section
@@ -198,14 +201,16 @@ function ModalShell({
         aria-modal="true"
         aria-label={title}
       >
-        <button
-          type="button"
-          className="modal-close"
-          onClick={onClose}
-          aria-label="Zavřít"
-        >
-          ×
-        </button>
+        {dismissible && (
+          <button
+            type="button"
+            className="modal-close"
+            onClick={onClose}
+            aria-label="Zavřít"
+          >
+            ×
+          </button>
+        )}
         <span className="modal-kicker">{kicker}</span>
         <h2>{title}</h2>
         {children}
@@ -667,6 +672,7 @@ export function CprPanel({
       kicker="DOSPĚLÝ • RESUSCITACE"
       title="Resuscitace"
       className="wide-modal cpr-modal"
+      dismissible={!startedAt}
     >
       {!startedAt ? (
         <div className="cpr-start">
@@ -691,6 +697,11 @@ export function CprPanel({
         </div>
       ) : (
         <>
+          <p className="cpr-lock-note" role="status">
+            <span aria-hidden="true">●</span>
+            Resuscitační režim zůstane otevřený, dokud nebude obnoven oběh
+            nebo potvrzeno úmrtí osoby.
+          </p>
           <div className="cpr-dashboard">
             <div className="cpr-time">
               <span>CELKOVÝ ČAS</span>
@@ -840,12 +851,14 @@ export function CprPanel({
 export function InjuryReportPanel({
   open,
   onClose,
+  onRequestNewCall,
   records,
   riskFlags,
   startedAt,
 }: {
   open: boolean;
   onClose: () => void;
+  onRequestNewCall: () => void;
   records: CaseRecord[];
   riskFlags: RiskFlag[];
   startedAt: number | null;
@@ -900,6 +913,49 @@ export function InjuryReportPanel({
           )
           .join("\n")
       : "• Bez zaznamenaného podání.";
+    const deteriorationEpisodes: Array<{
+      at: number;
+      records: CaseRecord[];
+    }> = [];
+    for (const record of sorted) {
+      if (
+        record.category === "Událost" &&
+        record.title.startsWith("Zhoršení stavu")
+      ) {
+        deteriorationEpisodes.push({ at: record.at, records: [] });
+        continue;
+      }
+
+      const activeEpisode =
+        deteriorationEpisodes[deteriorationEpisodes.length - 1];
+      if (!activeEpisode) continue;
+
+      const isImportant =
+        record.category === "Úkon" ||
+        record.category === "Lék" ||
+        record.category === "Událost" ||
+        (record.category === "Krok" &&
+          (record.choiceTone === "danger" ||
+            record.choiceTone === "warning"));
+      if (isImportant) activeEpisode.records.push(record);
+    }
+    const deteriorationSummary = deteriorationEpisodes.length
+      ? deteriorationEpisodes
+          .map((episode, index) => {
+            const importantRecords = episode.records.length
+              ? episode.records.map((record) => {
+                  const phase = record.phase ? `[${record.phase}] ` : "";
+                  const detail = record.detail ? ` — ${record.detail}` : "";
+                  return `• ${formatClock(record.at)} | ${phase}${record.title}${detail}`;
+                })
+              : ["• Bez dalšího zaznamenaného závažného nálezu nebo úkonu."];
+            return [
+              `**${index + 1}. zhoršení — ${formatClock(episode.at)}**`,
+              ...importantRecords,
+            ].join("\n");
+          })
+          .join("\n\n")
+      : "• Zhoršení stavu nebylo zaznamenáno.";
     const recordedEnd = assessment.endedAt ?? generatedAt;
     const duration = startedAt
       ? formatDuration((recordedEnd - startedAt) / 1000)
@@ -937,6 +993,9 @@ export function InjuryReportPanel({
         ? [`**Čas zaznamenání úmrtí:** ${formatReportDate(assessment.endedAt)}`]
         : []),
       assessmentLines,
+      "",
+      "**ZHORŠENÍ STAVU**",
+      deteriorationSummary,
       "",
       "**PRŮBĚH VYŠETŘENÍ A OŠETŘENÍ**",
       chronology,
@@ -1226,6 +1285,21 @@ export function InjuryReportPanel({
               </p>
             )}
           </section>
+
+          <button
+            type="button"
+            className="report-new-call-button"
+            onClick={onRequestNewCall}
+          >
+            <span aria-hidden="true">＋</span>
+            <span>
+              <strong>Začít nový záznam</strong>
+              <small>
+                Dosavadní průběh bude odstraněn až po potvrzení
+              </small>
+            </span>
+            <i aria-hidden="true">→</i>
+          </button>
 
           <details className="report-preview-panel" open>
             <summary>

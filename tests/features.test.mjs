@@ -61,10 +61,25 @@ test("a call records choices and produces a copyable injury report", async () =>
   assert.match(assessmentSource, /Osoba zemřela\./);
   assert.match(pageSource, /Resuscitace ukončena/);
   assert.match(pageSource, /setCurrentId\("deceased"\)/);
+  assert.match(pageSource, /choiceTone: choice\.tone \?\? "default"/);
+  assert.match(toolsSource, /dismissible=\{!startedAt\}/);
+  assert.match(
+    toolsSource,
+    /Resuscitační režim zůstane otevřený/,
+  );
+  assert.match(toolsSource, /"\*\*ZHORŠENÍ STAVU\*\*"/);
+  assert.match(toolsSource, /record\.title\.startsWith\("Zhoršení stavu"\)/);
+  assert.match(toolsSource, /record\.choiceTone === "danger"/);
+  assert.match(toolsSource, /record\.choiceTone === "warning"/);
   assert.match(toolsSource, /ZÁVAŽNÉ ROZHODNUTÍ/);
   assert.match(toolsSource, /Potvrdit — osoba zemřela/);
   assert.match(guideSource, /^  deceased: \{$/m);
   assert.match(pageSource, /<NewCallConfirmationPanel/);
+  assert.match(pageSource, /className="complete-new-call-button"/);
+  assert.match(pageSource, /requestNewCallFromReport/);
+  assert.match(pageSource, /onRequestNewCall=\{requestNewCallFromReport\}/);
+  assert.match(toolsSource, /className="report-new-call-button"/);
+  assert.match(toolsSource, /Začít nový záznam/);
   assert.doesNotMatch(pageSource, /window\.confirm/);
   assert.ok(
     toolsSource.indexOf("Jméno ošetřujícího") <

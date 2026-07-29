@@ -18,6 +18,7 @@ import {
   phases,
   type Choice,
   type Phase,
+  type Tone,
 } from "./guide-data";
 import { medications } from "./medication-data";
 
@@ -37,6 +38,7 @@ type ContextualAction = {
 type RecordMetadata = {
   sourceNodeId?: string;
   targetNodeId?: string;
+  choiceTone?: Tone;
 };
 
 type DeathRequest = {
@@ -107,6 +109,10 @@ export default function Home() {
   const [showCpr, setShowCpr] = useState(false);
   const [showReport, setShowReport] = useState(false);
   const [showNewCallConfirmation, setShowNewCallConfirmation] = useState(false);
+  const [
+    returnToReportAfterNewCallCancel,
+    setReturnToReportAfterNewCallCancel,
+  ] = useState(false);
   const [deathRequest, setDeathRequest] = useState<DeathRequest | null>(null);
   const [records, setRecords] = useState<CaseRecord[]>([]);
   const [riskFlags, setRiskFlags] = useState<RiskFlag[]>([]);
@@ -228,16 +234,32 @@ export default function Home() {
     setShowReport(false);
     setShowTools(false);
     setShowNewCallConfirmation(false);
+    setReturnToReportAfterNewCallCancel(false);
     setDeathRequest(null);
     setCallKey((value) => value + 1);
   };
 
   const requestNewCall = () => {
     if (callStartedAt) {
+      setReturnToReportAfterNewCallCancel(false);
       setShowNewCallConfirmation(true);
       return;
     }
     startNewCall();
+  };
+
+  const requestNewCallFromReport = () => {
+    setReturnToReportAfterNewCallCancel(true);
+    setShowReport(false);
+    setShowNewCallConfirmation(true);
+  };
+
+  const closeNewCallConfirmation = () => {
+    setShowNewCallConfirmation(false);
+    setReturnToReportAfterNewCallCancel(false);
+    if (returnToReportAfterNewCallCancel) {
+      setShowReport(true);
+    }
   };
 
   const navigate = (
@@ -259,6 +281,7 @@ export default function Home() {
         {
           sourceNodeId: currentId,
           targetNodeId: target,
+          choiceTone: choice.tone ?? "default",
         },
       );
     }
@@ -339,6 +362,7 @@ export default function Home() {
     setShowCpr(false);
     setShowReport(false);
     setShowNewCallConfirmation(false);
+    setReturnToReportAfterNewCallCancel(false);
     setDeathRequest(null);
     setIsLeaving(false);
     setCallKey((value) => value + 1);
@@ -752,6 +776,23 @@ export default function Home() {
                 </button>
               ))}
             </div>
+
+            {node.complete && (
+              <button
+                type="button"
+                className="complete-new-call-button"
+                onClick={requestNewCall}
+              >
+                <span aria-hidden="true">＋</span>
+                <span>
+                  <strong>Začít nový záznam</strong>
+                  <small>
+                    Uzavřít tento výjezd a začít od začátku
+                  </small>
+                </span>
+                <i aria-hidden="true">→</i>
+              </button>
+            )}
           </article>
 
           <div className="below-card">
@@ -833,7 +874,7 @@ export default function Home() {
 
       <NewCallConfirmationPanel
         open={showNewCallConfirmation}
-        onClose={() => setShowNewCallConfirmation(false)}
+        onClose={closeNewCallConfirmation}
         onConfirm={startNewCall}
       />
 
@@ -841,6 +882,7 @@ export default function Home() {
         key={`report-${callKey}`}
         open={showReport}
         onClose={() => setShowReport(false)}
+        onRequestNewCall={requestNewCallFromReport}
         records={records}
         riskFlags={riskFlags}
         startedAt={callStartedAt}
